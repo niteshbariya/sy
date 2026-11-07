@@ -1,0 +1,2381 @@
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TET / TAT / Class-2 સ્પેશિયલ: કોર્સ - ૧ (અ) ભાગ-૨ (પ્રશ્ન ૧૦૧ થી ૨૦૦ - એકમ ૩ અને ૪)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-gradient: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #06b6d4 100%);
+            --header-gradient: linear-gradient(135deg, #1e3a8a 0%, #2563eb 50%, #0284c7 100%);
+            --card-gradient: linear-gradient(135deg, #eff6ff 0%, #f5f3ff 50%, #fdf2f8 100%);
+            --bg-color: #f1f5f9;
+            --container-bg: #ffffff;
+            --text-color: #0f172a;
+            --heading-color: #1e3a8a;
+            --subheading-color: #64748b;
+            --border-color: #cbd5e1;
+            --card-border: #e2e8f0;
+            --option-bg: #f8fafc;
+            --option-hover: #ede9fe;
+            --option-border: #cbd5e1;
+            --badge-bg: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+            --correct-bg: #ecfdf5;
+            --correct-border: #34d399;
+            --correct-text: #065f46;
+            --wrong-bg: #fff1f2;
+            --wrong-border: #fb7185;
+            --wrong-text: #9f1239;
+            --exp-box-bg: #f8fafc;
+            --input-bg: #ffffff;
+            --shadow: 0 10px 25px -5px rgba(30, 58, 138, 0.12), 0 8px 10px -6px rgba(30, 58, 138, 0.08);
+            
+            --color-answered: #10b981;
+            --color-flagged: #f59e0b;
+            --color-unanswered: #94a3b8;
+            --color-current: #2563eb;
+        }
+
+        body.dark-mode {
+            --primary-gradient: linear-gradient(135deg, #3b82f6 0%, #6366f1 50%, #ec4899 100%);
+            --header-gradient: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #312e81 100%);
+            --card-gradient: linear-gradient(135deg, #1e1b4b 0%, #1e293b 50%, #0f172a 100%);
+            --bg-color: #030712;
+            --container-bg: #0b1329;
+            --text-color: #f8fafc;
+            --heading-color: #93c5fd;
+            --subheading-color: #94a3b8;
+            --border-color: #334155;
+            --card-border: #1e293b;
+            --option-bg: #1e293b;
+            --option-hover: #2e1065;
+            --option-border: #475569;
+            --badge-bg: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+            --correct-bg: #064e3b;
+            --correct-border: #059669;
+            --correct-text: #a7f3d0;
+            --wrong-bg: #881337;
+            --wrong-border: #e11d48;
+            --wrong-text: #fecdd3;
+            --exp-box-bg: #0f172a;
+            --input-bg: #1e293b;
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body { 
+            font-family: 'Noto Sans Gujarati', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: var(--bg-color); 
+            color: var(--text-color); 
+            padding: 14px; 
+            display: flex; 
+            justify-content: center; 
+            transition: all 0.3s ease;
+            min-height: 100vh;
+        }
+
+        .container { 
+            background-color: var(--container-bg); 
+            max-width: 1000px; 
+            width: 100%; 
+            border-radius: 18px; 
+            box-shadow: var(--shadow); 
+            padding: 24px; 
+            position: relative;
+            border: 1.5px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+
+        @media (max-width: 768px) {
+            body { padding: 6px; }
+            .container { padding: 14px; border-radius: 12px; }
+        }
+
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid var(--border-color);
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tag-pill {
+            background: var(--primary-gradient);
+            color: white;
+            padding: 6px 14px;
+            font-size: 12px;
+            font-weight: 800;
+            border-radius: 30px;
+            letter-spacing: 0.5px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .theme-toggle-btn {
+            background: var(--option-bg);
+            color: var(--text-color);
+            border: 1.5px solid var(--border-color);
+            padding: 6px 14px;
+            font-size: 13px;
+            font-weight: 700;
+            border-radius: 20px;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.2s;
+        }
+        .theme-toggle-btn:hover {
+            transform: scale(1.04);
+            border-color: #3b82f6;
+        }
+
+        .banner-title {
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-align: center;
+            font-size: 24px;
+            font-weight: 900;
+            margin: 5px 0 8px 0;
+            line-height: 1.3;
+        }
+
+        .banner-sub {
+            color: var(--subheading-color);
+            text-align: center;
+            font-size: 13.5px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        /* Login Screen */
+        #loginScreen {
+            max-width: 480px;
+            margin: 15px auto;
+            background: var(--card-gradient);
+            padding: 24px;
+            border-radius: 16px;
+            border: 1.5px solid var(--border-color);
+        }
+        .form-group { margin-bottom: 16px; }
+        label { display: block; font-weight: 700; margin-bottom: 6px; font-size: 13.5px; color: var(--heading-color); }
+        input[type="text"], input[type="tel"], input[type="email"] { 
+            width: 100%; 
+            padding: 11px 14px; 
+            border: 1.5px solid var(--border-color); 
+            border-radius: 8px; 
+            font-size: 14.5px; 
+            background-color: var(--input-bg);
+            color: var(--text-color);
+            transition: border-color 0.2s;
+            font-family: inherit;
+        }
+        input:focus { outline: none; border-color: #2563eb; }
+
+        .btn-gradient { 
+            background: var(--primary-gradient); 
+            color: white; 
+            border: none; 
+            padding: 12px 18px; 
+            font-size: 15px; 
+            font-weight: 800; 
+            border-radius: 8px; 
+            cursor: pointer; 
+            width: 100%; 
+            transition: all 0.25s; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+            font-family: inherit;
+        }
+        .btn-gradient:hover { opacity: 0.95; transform: translateY(-1.5px); }
+        .btn-gradient:disabled { background: #94a3b8; cursor: not-allowed; transform: none; box-shadow: none; }
+
+        .otp-box { 
+            background: var(--container-bg); 
+            border: 2px dashed #3b82f6; 
+            padding: 16px; 
+            border-radius: 10px; 
+            margin-top: 16px; 
+            display: none; 
+            text-align: center;
+        }
+
+        /* Quiz Main Layout */
+        .quiz-layout {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .quiz-main-card {
+            background: var(--container-bg);
+            border: 1.5px solid var(--border-color);
+            border-radius: 14px;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            min-height: 420px;
+            justify-content: space-between;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+        }
+
+        .quiz-header { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            border-bottom: 1.5px solid var(--border-color); 
+            padding-bottom: 12px; 
+            margin-bottom: 18px; 
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .timer-badge { 
+            font-size: 15px; 
+            font-weight: 800; 
+            color: #ef4444; 
+            background: #fee2e2;
+            padding: 6px 14px;
+            border-radius: 20px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        body.dark-mode .timer-badge { background: #450a0a; color: #fca5a5; }
+
+        .unit-badge { 
+            display: inline-block; 
+            background: var(--badge-bg); 
+            color: white; 
+            padding: 5px 12px; 
+            border-radius: 20px; 
+            font-size: 12px; 
+            font-weight: 700; 
+            margin-bottom: 14px; 
+        }
+
+        .question-text {
+            font-size: 18px;
+            line-height: 1.65;
+            margin-bottom: 22px;
+            font-weight: 700;
+            color: var(--text-color);
+        }
+
+        .option-label { 
+            display: flex;
+            align-items: center;
+            background: var(--option-bg); 
+            padding: 14px 18px; 
+            margin-bottom: 12px; 
+            border-radius: 10px; 
+            cursor: pointer; 
+            line-height: 1.5; 
+            border: 1.5px solid var(--option-border); 
+            transition: all 0.2s;
+            font-size: 15.5px;
+        }
+        .option-label:hover { 
+            background: var(--option-hover); 
+            border-color: #3b82f6;
+            transform: translateX(4px);
+        }
+        .option-label input[type="radio"] {
+            margin-right: 14px;
+            transform: scale(1.25);
+            accent-color: #2563eb;
+            cursor: pointer;
+        }
+
+        .quiz-actions-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 24px;
+            padding-top: 16px;
+            border-top: 1.5px solid var(--border-color);
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .nav-buttons-group {
+            display: flex;
+            gap: 10px;
+        }
+        .btn-prev, .btn-next, .btn-flag {
+            padding: 10px 18px;
+            font-size: 14.5px;
+            font-weight: 700;
+            border-radius: 8px;
+            cursor: pointer;
+            border: none;
+            transition: all 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-family: inherit;
+        }
+        .btn-prev { background: #64748b; color: white; }
+        .btn-prev:hover { background: #475569; }
+        .btn-next { background: var(--primary-gradient); color: white; }
+        .btn-next:hover { opacity: 0.95; }
+
+        .btn-flag {
+            background: #fef3c7;
+            color: #b45309;
+            border: 1.5px solid #f59e0b;
+        }
+        body.dark-mode .btn-flag {
+            background: #451a03;
+            color: #fde68a;
+            border-color: #d97706;
+        }
+        .btn-flag.active-flag {
+            background: #f59e0b;
+            color: white;
+            border-color: #b45309;
+        }
+
+        /* Palette Card */
+        .palette-bottom-card {
+            background: var(--card-gradient);
+            border: 1.5px solid var(--border-color);
+            border-radius: 14px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+        .palette-title {
+            font-size: 15px;
+            font-weight: 800;
+            color: var(--heading-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .legend-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            font-size: 12px;
+            font-weight: 700;
+            padding-bottom: 10px;
+            border-bottom: 1px dashed var(--border-color);
+        }
+        .legend-item { display: flex; align-items: center; gap: 6px; }
+        .legend-dot { width: 11px; height: 11px; border-radius: 50%; }
+
+        .palette-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(46px, 1fr));
+            gap: 8px;
+            max-height: 250px;
+            overflow-y: auto;
+            padding: 6px 4px;
+        }
+        .q-pill {
+            padding: 8px 0;
+            border-radius: 7px;
+            font-size: 12px;
+            font-weight: 800;
+            text-align: center;
+            cursor: pointer;
+            border: 1.5px solid var(--border-color);
+            background: var(--container-bg);
+            color: var(--text-color);
+            transition: all 0.15s ease;
+            position: relative;
+        }
+        .q-pill:hover { transform: scale(1.08); z-index: 2; }
+        .q-pill.status-current {
+            border-color: #2563eb !important;
+            box-shadow: 0 0 0 2.5px #2563eb;
+            font-weight: 900;
+        }
+        .q-pill.status-answered {
+            background: #10b981 !important;
+            color: white !important;
+            border-color: #059669 !important;
+        }
+        .q-pill.status-flagged {
+            background: #f59e0b !important;
+            color: white !important;
+            border-color: #d97706 !important;
+        }
+        .q-pill.status-flagged::after {
+            content: '🚩';
+            position: absolute;
+            top: -6px;
+            right: -3px;
+            font-size: 9px;
+        }
+
+        /* Result Screen Styles */
+        .result-summary-card {
+            background: var(--card-gradient);
+            border: 2px solid var(--border-color);
+            padding: 20px;
+            border-radius: 14px;
+            margin-bottom: 20px;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+        .score-pill {
+            display: inline-block;
+            font-size: 32px;
+            font-weight: 900;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin: 6px 0;
+        }
+
+        .res-stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-top: 14px;
+        }
+        @media (max-width: 600px) {
+            .res-stats-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        .res-stat-box {
+            padding: 8px;
+            border-radius: 8px;
+            font-weight: 700;
+            color: white;
+            font-size: 12px;
+        }
+
+        .result-tabs-nav {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 8px;
+        }
+        .res-tab-btn {
+            padding: 9px 16px;
+            font-size: 13.5px;
+            font-weight: 800;
+            border-radius: 8px;
+            cursor: pointer;
+            border: 1.5px solid var(--border-color);
+            background: var(--option-bg);
+            color: var(--text-color);
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.2s;
+            font-family: inherit;
+        }
+        .res-tab-btn:hover { border-color: #2563eb; }
+        .res-tab-btn.active-tab {
+            background: var(--primary-gradient);
+            color: white;
+            border-color: transparent;
+        }
+
+        .review-item {
+            padding: 16px;
+            border-radius: 10px;
+            margin-bottom: 14px;
+            border: 1.5px solid var(--card-border);
+            transition: all 0.2s;
+            background: var(--container-bg);
+        }
+        .review-item.is-correct {
+            background-color: var(--correct-bg);
+            border-color: var(--correct-border);
+            color: var(--correct-text);
+        }
+        .review-item.is-wrong {
+            background-color: var(--wrong-bg);
+            border-color: var(--wrong-border);
+            color: var(--wrong-text);
+        }
+
+        .exp-box {
+            background: var(--exp-box-bg);
+            color: var(--text-color);
+            padding: 10px 12px;
+            border-radius: 6px;
+            margin-top: 8px;
+            font-size: 13.5px;
+            line-height: 1.5;
+            border-left: 4px solid #2563eb;
+        }
+
+        .blank-q-card {
+            background: var(--container-bg);
+            border: 1.5px solid var(--border-color);
+            border-radius: 8px;
+            padding: 14px;
+            margin-bottom: 12px;
+        }
+
+        .msg-box {
+            display: none;
+            padding: 10px 14px;
+            border-radius: 8px;
+            margin: 10px 0;
+            font-size: 13.5px;
+            font-weight: 700;
+            text-align: center;
+        }
+        .msg-error { background-color: #fee2e2; color: #991b1b; border: 1px solid #f87171; }
+        .msg-info { background-color: #dcfce7; color: #166534; border: 1px solid #4ade80; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header class="header-top">
+        <span class="tag-pill"><i class="fa-solid fa-graduation-cap"></i> TET / TAT / GPSC Class-2: કોર્સ-૧(અ) ભાગ-૨ (પ્રશ્ન ૧૦૧ થી ૨૦૦)</span>
+        <button id="themeToggleBtn" class="theme-toggle-btn" onclick="toggleDarkMode()">
+            <i class="fa-solid fa-moon"></i> ડાર્ક મોડ
+        </button>
+    </header>
+
+    <div id="noticeMsg" class="msg-box"></div>
+
+    <!-- ૧. પ્રવેશ અને OTP સ્ક્રીન -->
+    <section id="loginScreen">
+        <div style="text-align: center; margin-bottom: 18px;">
+            <div style="font-size: 32px; color: #2563eb; margin-bottom: 4px;"><i class="fa-solid fa-book-open-reader"></i></div>
+            <h1 class="banner-title" style="font-size: 20px;">કોર્સ - ૧ (અ) : બોધ, અધ્યયન અને પરિપ્રેક્ષ્ય (ભાગ-૨)</h1>
+            <p class="banner-sub" style="margin-bottom: 10px;">ડી.એલ.એડ્. દ્વિતીય વર્ષ | ૧૦૦ HOTS પ્રશ્નોત્તરી (એકમ ૩: ભાષા-પ્રત્યાયન અને એકમ ૪: સ્વ-નૈતિક વિકાસ)</p>
+        </div>
+
+        <div class="form-group">
+            <label for="name">👤 પૂરું નામ:</label>
+            <input type="text" id="name" placeholder="તમારું પૂરું નામ દાખલ કરો">
+        </div>
+        <div class="form-group">
+            <label for="phone">📱 મોબાઇલ નંબર:</label>
+            <input type="tel" id="phone" placeholder="૧૦ અંકનો સાચો મોબાઇલ નંબર" maxlength="10">
+        </div>
+        <div class="form-group">
+            <label for="email">📧 ઇમેઇલ આઇડી:</label>
+            <input type="email" id="email" placeholder="તમારું સાચું ઈમેઈલ આઈડી લખો">
+        </div>
+
+        <button id="getOtpBtn" class="btn-gradient" onclick="requestOTP()">
+            <i class="fa-solid fa-paper-plane"></i> OTP મેળવો અને આગળ વધો
+        </button>
+
+        <div id="otpContainer" class="otp-box">
+            <p style="margin: 0 0 10px 0; color: var(--heading-color); font-weight: 700; font-size: 13px;">
+                📩 આપના ઈમેઈલ પર ૪ અંકનો સુરક્ષિત OTP મોકલવામાં આવ્યો છે:
+            </p>
+            <div class="form-group" style="max-width: 200px; margin: 0 auto 12px auto;">
+                <input type="text" id="otpInput" placeholder="૪ અંક OTP" maxlength="4" style="text-align: center; font-size: 20px; letter-spacing: 5px; font-weight: 800;">
+            </div>
+            <button id="verifyBtn" class="btn-gradient" onclick="verifyAndStart()" style="background: linear-gradient(135deg, #059669 0%, #10b981 100%);">
+                <i class="fa-solid fa-unlock-keyhole"></i> OTP ચકાસો અને મોક ટેસ્ટ શરૂ કરો
+            </button>
+        </div>
+    </section>
+
+    <!-- ૨. મોક ટેસ્ટ સ્ક્રીન -->
+    <section id="quizScreen" style="display: none;">
+        <div class="quiz-layout">
+            <div class="quiz-main-card">
+                <div>
+                    <div class="quiz-header">
+                        <div>
+                            <span id="qProgress" style="font-weight: 800; font-size: 16px; color: var(--heading-color);">પ્રશ્ન ૧૦૧ / ૨૦૦</span>
+                        </div>
+                        <div class="timer-badge">
+                            <i class="fa-regular fa-clock"></i> <span id="timerDisplay">૦૦:૦૦</span>
+                        </div>
+                    </div>
+                    <div class="question-box">
+                        <div id="unitBadge" class="unit-badge"></div>
+                        <div id="questionText" class="question-text"></div>
+                        <div id="optionsContainer"></div>
+                    </div>
+                </div>
+
+                <div class="quiz-actions-bar">
+                    <button id="flagBtn" class="btn-flag" onclick="toggleFlagCurrentQuestion()">
+                        <i class="fa-regular fa-bookmark"></i> Flag (રિવ્યુ માટે)
+                    </button>
+                    <div class="nav-buttons-group">
+                        <button id="prevBtn" class="btn-prev" onclick="prevQuestion()"><i class="fa-solid fa-arrow-left"></i> પાછળ</button>
+                        <button id="nextBtn" class="btn-next" onclick="nextQuestion()">આગળ <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Palette Card -->
+            <div class="palette-bottom-card">
+                <div class="palette-title">
+                    <span><i class="fa-solid fa-table-cells"></i> પ્રશ્ન પેલેટ (પ્રશ્ન ૧૦૧ થી ૨૦૦ ની સ્થિતિ)</span>
+                    <span id="answeredCountBadge" style="font-size: 12px; background: #10b981; color: white; padding: 4px 10px; border-radius: 12px;">0 / 100 પૂર્ણ</span>
+                </div>
+
+                <div class="legend-grid">
+                    <div class="legend-item"><div class="legend-dot" style="background:#10b981;"></div> જવાબ આપેલ</div>
+                    <div class="legend-item"><div class="legend-dot" style="background:#f59e0b;"></div> Flag / રિવ્યુ</div>
+                    <div class="legend-item"><div class="legend-dot" style="background:#94a3b8;"></div> બાકી પ્રશ્ન</div>
+                    <div class="legend-item"><div class="legend-dot" style="background:#2563eb;"></div> ચાલુ પ્રશ્ન</div>
+                </div>
+
+                <div class="palette-grid" id="questionGridContainer"></div>
+
+                <div style="text-align: right; margin-top: 6px;">
+                    <button class="btn-gradient" onclick="confirmSubmitQuiz()" style="max-width: 280px; margin-left: auto; background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%); padding: 11px 18px; font-size: 14.5px;">
+                        <i class="fa-solid fa-circle-check"></i> કસોટી સબમિટ કરો
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ૩. પરિણામ સ્ક્રીન -->
+    <section id="resultScreen" style="display: none;">
+        <div class="result-summary-card">
+            <h2 style="color: var(--heading-color); font-size: 20px; font-weight: 900; margin-bottom: 6px;">
+                🎉 કસોટી મૂલ્યાંકન અહેવાલ
+            </h2>
+            <p style="margin: 3px 0; font-size: 14px;"><strong>પરીક્ષાર્થી:</strong> <span id="resName"></span> | <strong>સંપર્ક:</strong> <span id="resPhone"></span></p>
+            <p style="margin: 3px 0; font-size: 13px; color: var(--subheading-color);"><strong>વિષય:</strong> ડી.એલ.એડ્. દ્વિતીય વર્ષ : કોર્સ-૧(અ) ભાગ-૨ (પ્રશ્ન ૧૦૧ થી ૨૦૦)</p>
+            
+            <div class="score-pill" id="resScore">0 / 100</div>
+            <div style="font-size: 17px; font-weight: 800; color: #10b981;" id="resPercent">0%</div>
+
+            <div class="res-stats-grid">
+                <div class="res-stat-box" style="background:#10b981;">
+                    <div>સાચા ઉત્તર</div>
+                    <div style="font-size: 18px; font-weight: 900;" id="resCorrectCount">0</div>
+                </div>
+                <div class="res-stat-box" style="background:#ef4444;">
+                    <div>ખોટા ઉત્તર</div>
+                    <div style="font-size: 18px; font-weight: 900;" id="resWrongCount">0</div>
+                </div>
+                <div class="res-stat-box" style="background:#f59e0b;">
+                    <div>રિવ્યુ/Flagged</div>
+                    <div style="font-size: 18px; font-weight: 900;" id="resFlagCount">0</div>
+                </div>
+                <div class="res-stat-box" style="background:#2563eb;">
+                    <div>લીધેલો સમય</div>
+                    <div style="font-size: 15px; font-weight: 900; margin-top: 2px;" id="resTime">00:00</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="result-tabs-nav">
+            <button class="res-tab-btn active-tab" id="tabBtnWrong" onclick="switchResultTab('wrong')">
+                <i class="fa-solid fa-triangle-exclamation" style="color: #ef4444;"></i> ❌ માત્ર ખોટા પડેલા પ્રશ્નો
+            </button>
+            <button class="res-tab-btn" id="tabBtnAnswers" onclick="switchResultTab('answers')">
+                <i class="fa-solid fa-square-check" style="color: #10b981;"></i> 📋 ઉત્તરવહી & સમજૂતી
+            </button>
+            <button class="res-tab-btn" id="tabBtnBlank" onclick="switchResultTab('blank')">
+                <i class="fa-solid fa-file-lines" style="color: #2563eb;"></i> 📝 મૂળ પ્રશ્નપત્ર (પ્રેક્ટિસ)
+            </button>
+        </div>
+
+        <div id="tabContentWrong">
+            <div id="wrongQuestionsList"></div>
+        </div>
+
+        <div id="tabContentAnswers" style="display: none;">
+            <div id="allAnswersList"></div>
+        </div>
+
+        <div id="tabContentBlank" style="display: none;">
+            <div id="blankQuestionsList"></div>
+        </div>
+    </section>
+</div>
+
+<script>
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbz-khogtnFjvjzRuv_ieBYJfx0TAxluM9OfoXlf72h9Yce14rdQu9_Xbmx3fnprk5Q30g/exec";
+
+// ૧૦૦ HOTS પ્રશ્નોનો ડેટાસેટ (પ્રશ્ન ૧૦૧ થી ૨૦૦ - એકમ ૩: ભાષા અને પ્રત્યાયન & એકમ ૪: સ્વ અને નૈતિક વિકાસ)
+const questions = [
+  {
+    "q": "પ્રશ્ન 101: 'Communication' (પ્રત્યાયન) શબ્દ મૂળ લૅટિન ભાષાના કયા શબ્દ પરથી ઊતરી આવ્યો છે અને તેનો મૂળ અર્થ શો થાય છે?",
+    "options": [
+      "Commune - જેનો અર્થ 'વાતચીત' થાય છે.",
+      "Communis - જેનો અર્થ 'Common' એટલે કે 'જેમાં બધાની ભાગીદારી હોય તે' એવો થાય છે.",
+      "Communicare - જેનો અર્થ 'ભાષણ આપવું' થાય છે.",
+      "Communism - જેનો અર્થ 'સમાજવાદ' થાય છે."
+    ],
+    "ans": 1,
+    "unit": "એકમ-૩: ભાષા અને પ્રત્યાયન",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૪૫ અનુસાર પ્રત્યાયન એ લેટિન શબ્દ 'Communis' પરથી આવ્યો છે, જેનો અર્થ Common shared by all (બધાની સહિયારી ભાગીદારી) થાય છે."
+  },
+  {
+    "q": "પ્રશ્ન 102: પ્રત્યાયનની વ્યાખ્યા આપતાં 'અમેરિકન કૉલેજિયન ડિક્શનરી' શું જણાવે છે?",
+    "options": [
+      "'એક વ્યક્તિથી બીજી વ્યક્તિ તરફ અર્થસભર સંદેશો લઈ જતું કંઈપણ એટલે પ્રત્યાયન.'",
+      "'પ્રત્યાયન એ વાણી, લખાણ કે સંકેતો દ્વારા વિચાર, મત કે માહિતીનું આદાન-પ્રદાન છે.'",
+      "'પ્રત્યાયન એટલે એવી ಪ್ರક્રિયા જેના દ્વારા એક માનસ બીજા માનસને અસર કરે છે.'",
+      "'પ્રત્યાયન માત્ર વ્યાકરણ આધારિત શુદ્ધ ઉચ્ચારણ છે.'"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૩: ભાષા અને પ્રત્યાયન",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૪૫ અનુસાર આ વ્યાખ્યા અમેરિકન કૉલેજિયન ડિક્શનરી દ્વારા અપાયેલી છે."
+  },
+  {
+    "q": "પ્રશ્ન 103: વ્યાખ્યા ઓળખો: 'એક વ્યક્તિથી બીજી વ્યક્તિ તરફ અર્થસભર સંદેશો લઈ જતું કંઈપણ એટલે પ્રત્યાયન.' - આ વિધાન કોનું છે?",
+    "options": [
+      "વૉરેન વિવર",
+      "બુકર (Booker)",
+      "ગિલ્ફર્ડ",
+      "સ્કિનર"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૩: ભાષા અને પ્રત્યાયન",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૪૬ મુજબ બુકરે પ્રત્યાયનની આ સરળ અને અર્થપૂર્ણ વ્યાખ્યા આપી છે."
+  },
+  {
+    "q": "પ્રશ્ન 104: વૉરેન વિવર (Warren Weaver) અનુસાર પ્રત્યાયનની સંકલ્પના કઈ છે?",
+    "options": [
+      "'પ્રત્યાયન એ વર્ગખંડ પૂરતી ઔપચારિક પ્રક્રિયા છે.'",
+      "'પ્રત્યાયન એટલે એવી પ્રત્યેક પ્રક્રિયા છે કે જેના દ્વારા એક માનસ બીજા માનસને અસર કરે છે.'",
+      "'પ્રત્યાયન માત્ર યાંત્રિક ઈ-મેલ વ્યવહાર છે.'",
+      "'પ્રત્યાયન એ શબ્દો વિના અશક્ય બાબત છે.'"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૩: ભાષા અને પ્રત્યાયન",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૪૬ અનુસાર વૉરેન વિવરે પ્રત્યાયનને એક માનસ દ્વારા બીજા માનસને પ્રભાવિત કરતી વ્યાપક પ્રક્રિયા ગણાવી છે."
+  },
+  {
+    "q": "પ્રશ્ન 105: પ્રત્યાયન પ્રક્રિયા (Communication Process) ના મુખ્ય ઘટકોનો સાચો તાર્કિક ક્રમ કયો છે?",
+    "options": [
+      "સંદેશો -> પ્રેષક -> સંકેતીકરણ -> માધ્યમ -> અસંકેતીકરણ -> ગ્રાહક -> પ્રતિપોષણ",
+      "પ્રેષક (Sender) -> સંકેતીકરણ (Encoding) -> સંદેશો (Message) -> માધ્યમ (Channel) -> અસંકેતીકરણ (Decoding) -> સંદેશો પ્રાપ્ત કરનાર (Receiver) -> પ્રતિપોષણ (Feedback)",
+      "પ્રતિપોષણ -> ગ્રાહક -> માધ્યમ -> સંદેશો -> સંકેતીકરણ -> પ્રેષક",
+      "માધ્યમ -> સંદેશો -> પ્રેષક -> અસંકેતીકરણ -> પ્રતિપોષણ"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૩: ભાષા અને પ્રત્યાયન",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૪૭-૪૮ અનુસાર સંચાર ચક્ર પ્રેષકથી શરૂ થઈ પ્રતિપોષણ (Feedback) સુધી ક્રમબદ્ધ વહે છે."
+  },
+  {
+    "q": "પ્રશ્ન 106: પ્રત્યાયન પ્રક્રિયામાં 'સંકેતીકરણ' (Encoding) અને 'અસંકેતીકરણ' (Decoding) ની સાચી જોડી કઈ છે?",
+    "options": [
+      "Encoding: ગ્રાહક દ્વારા અર્થઘટન કરવું; Decoding: પ્રેષક દ્વારા વિચારોનું પ્રતીકોમાં રૂપાંતર.",
+      "Encoding: પ્રેષક દ્વારા માહિતીનું શબ્દો કે પ્રતીકોમાં રૂપાંતર; Decoding: પ્રાપ્તકર્તા દ્વારા સંકેતોનું અર્થઘટન કરી મૂળ સંદર્ભ સમજવો.",
+      "Encoding: અવાજનો ઘોંઘાટ; Decoding: કાગળ પર લખાણ.",
+      "Encoding: પ્રશ્ન પૂછવો; Decoding: પરીક્ષા આપવી."
+    ],
+    "ans": 1,
+    "unit": "એકમ-૩: ભાષા અને પ્રત્યાયન",
+    "exp": "પ્રેષક પોતાના વિચારોને પ્રતીકાત્મક રૂપ આપે તે Encoding છે, અને રિસીવર તે પ્રતીકોનો સાચો અર્થ તારવે તે Decoding છે."
+  },
+  {
+    "q": "પ્રશ્ન 107: વર્ગખંડ શિક્ષણ દરમિયાન શિક્ષક કોઈ સંકલ્પના સમજાવે ત્યારે વિદ્યાર્થી માથું હલાવીને કે સ્મિત આપીને સમજણની અભિવ્યક્તિ કરે છે. પ્રત્યાયનના સંદર્ભમાં આ શું છે?",
+    "options": [
+      "અવરોધ કે વિક્ષેપ (Noise)",
+      "અશાબ્દિક પ્રતિપોષણ (Non-verbal Feedback)",
+      "એકમાર્ગી પ્રત્યાયન",
+      "સંકેતીકરણનો ક્ષય"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૩: ભાષા અને પ્રત્યાયન",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૪૭-૪૮ અનુસાર સંદેશો પહોંચ્યાની પ્રતીતિરૂપે વિદ્યાર્થી જે વર્તન દર્શાવે છે તે પ્રતિપોષણ (Feedback) છે."
+  },
+  {
+    "q": "પ્રશ્ન 108: પ્રત્યાયનમાં સંદેશાને વિકૃત કે અસ્પષ્ટ બનાવતી બાબતોને 'અવરોધ' (Noise/Barriers) કહે છે. નીચેનામાંથી કયો અવરોધ 'આંતરિક અવરોધ' છે?",
+    "options": [
+      "વર્ગખંડ બહાર ટ્રાફિકનો ઘોંઘાટ",
+      "વર્ગખંડમાં ઊંચું તાપમાન અને બારીમાંથી આવતો તીવ્ર તડકો",
+      "વિદ્યાર્થીના મનમાં ચાલતી ચિંતા, પૂર્વગ્રહ કે હતાશા",
+      "કાળાપાટિયા પર અસ્પષ્ટ ઝાંખા અક્ષરો"
+    ],
+    "ans": 2,
+    "unit": "એકમ-૩: ભાષા અને પ્રત્યાયન",
+    "exp": "ઘોંઘાટ, ગરમી અને અક્ષરો બાહ્ય અવરોધ છે, જ્યારે માનસિક ચિંતા કે વિચારો આંતરિક મનોવૈજ્ઞાનિક અવરોધ છે."
+  },
+  {
+    "q": "પ્રશ્ન 109: કોઈ સંસ્થામાં કર્મચારી પોતાના બોસ કે ઉપરી અધિકારીને અહેવાલ કે રજૂઆત મોકલે છે. પ્રવાહની દ્રષ્ટિએ આ કયા પ્રકારનું પ્રત્યાયન છે?",
+    "options": [
+      "અધોગામી પ્રત્યાયન (Downward Communication)",
+      "ઊર્ધ્વગામી પ્રત્યાયન (Upward Communication)",
+      "સમસ્તરીય પ્રત્યાયન (Horizontal Communication)",
+      "અનૌપચારિક પ્રત્યાયન"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૩: ભાષા અને પ્રત્યાયન",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૪૯ અનુસાર નિમ્ન દરજ્જાની વ્યક્તિ જ્યારે ઉચ્ચ દરજ્જાની વ્યક્તિ તરફ સંચાર કરે ત્યારે તે ઊર્ધ્વગામી (Upward) કહેવાય."
+  },
+  {
+    "q": "પ્રશ્ન 110: વર્ગખંડમાં શિક્ષક વિદ્યાર્થીઓને શાંત રહેવા અને પાના નંબર ૨૫ ખોલવા આદેશ આપે છે. આ પ્રત્યાયન પ્રવાહની દ્રષ્ટિએ કયું ગણાય?",
+    "options": [
+      "ઊર્ધ્વગામી પ્રત્યાયન",
+      "અધોગામી પ્રત્યાયન (Downward Communication)",
+      "સમસ્તરીય પ્રત્યાયન",
+      "આંતરિક વૈયક્તિક પ્રત્યાયન"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૩: ભાષા અને પ્રત્યાયન",
+    "exp": "ઉચ્ચ સ્થાનેથી તાબાના વર્ગ તરફ આવતી સૂચનાઓ અધોગામી (Downward) પ્રત્યાયન દર્શાવે છે."
+  },
+  {
+    "q": "પ્રશ્ન 111: વર્ગમાં બે સહાધ્યાયીઓ કે સ્ટાફરૂમમાં બે સમાન હોદ્દો ધરાવતા શિક્ષકો પરસ્પર ચર્ચા કરે છે. આ કયા પ્રકારનું પ્રત્યાયન છે?",
+    "options": [
+      "સમસ્તરીય પ્રત્યાયન (Horizontal / Lateral Communication)",
+      "ઊર્ધ્વગામી પ્રત્યાયન",
+      "એકમાર્ગી પ્રત્યાયન",
+      "ઔપચારિક અધોગામી પ્રત્યાયન"
+    ],
+    "ans": 0,
+    "unit": "એકમ-૩: ભાષા અને પ્રત્યાયન",
+    "exp": "સમાન દરજ્જો ધરાવતા વ્યક્તિઓ વચ્ચે થતું આદાન-પ્રદાન સમસ્તરીય (Horizontal) પ્રત્યાયન કહેવાય છે."
+  },
+  {
+    "q": "પ્રશ્ન 112: વ્યક્તિ પોતાની જાત સાથે વાતચીત કરે, આત્મચિંતન કરે કે મનોમન કંઈક વિચારે તેને પ્રત્યાયનના કયા પ્રકાર તરીકે ઓળખવામાં આવે છે?",
+    "options": [
+      "જૂથ પ્રત્યાયન (Group Communication)",
+      "સમૂહ માધ્યમ પ્રત્યાયન (Mass Communication)",
+      "આંતરિક વૈયક્તિક પ્રત્યાયન (Intrapersonal Communication)",
+      "દ્વિમાર્ગી પ્રત્યાયન"
+    ],
+    "ans": 2,
+    "unit": "એકમ-૩: ભાષા અને પ્રત્યાયન",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૪૯ અનુસાર વ્યક્તિ પોતાની જાત સાથે સંવાદ સાધે તે આંતરિક વૈયક્તિક (Intrapersonal) પ્રત્યાયન છે."
+  },
+  {
+    "q": "પ્રશ્ન 113: બી.એફ. સ્કિનરના 'કારક અભિસંધાન' (Operant Conditioning) નો મૂળભૂત સિદ્ધાંત ભાષાવિકાસમાં કેવી રીતે ઉપયોગી બને છે?",
+    "options": [
+      "બાળકને શિક્ષા કરવાથી ભાષા ઝડપથી સુધરે છે.",
+      "જો યોગ્ય ભાષાકીય પ્રતિચાર સામે સમયસર હકારાત્મક સુદૃઢક (બદલો/શાબાશી) આપવામાં આવે, તો તે વર્તન પુનરાવર્તિત થવાની સંભાવના વધે છે.",
+      "બાળકને ક્યારેય પ્રોત્સાહન આપવું ન જોઈએ.",
+      "ભાષા માત્ર વંશપરંપરાગત હોય છે, તેમાં અભિસંધાન કામ કરતું નથી."
+    ],
+    "ans": 1,
+    "unit": "એકમ-૩: ભાષા અને પ્રત્યાયન",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૪૯-૫૦ અનુસાર સ્કિનર માને છે કે યોગ્ય પ્રતિચાર સામે શુદ્ધ ઉચ્ચારણ માટે બદલો/પુષ્ટિ આપવાથી ભાષાકીય ટેવો દૃઢ બને છે."
+  },
+  {
+    "q": "પ્રશ્ન 114: વૉલ્ટર એસ. હન્ટર (Walter S. Hunter, 1889-1953) ના મનોવૈજ્ઞાનિક અભિગમનું કેન્દ્રબિંદુ શું હતું?",
+    "options": [
+      "માત્ર અચેતન મનની ઇચ્છાઓનું વિશ્લેષણ કરવું.",
+      "તેણે વાતાવરણવાદી-વર્તનવાદી અભિગમને અનુસરીને વાતાવરણ અને ચેતનાને એક ગણ્યા અને કારક શિક્ષણક્રિયાનો અભ્યાસ કર્યો.",
+      "તેણે મનોશારીરિક દ્વૈતવાદને નકારી માત્ર આધ્યાત્મિક ધ્યાનનો પ્રચાર કર્યો.",
+      "તેણે ભાષા શિક્ષણમાં માત્ર વ્યાકરણ ગોખવા પર ભાર મૂક્યો."
+    ],
+    "ans": 1,
+    "unit": "એકમ-૩: ભાષા અને પ્રત્યાયન",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૫૦ અનુસાર હન્ટરે બાહ્ય સામાજિક વાતાવરણ સાથેના વર્તનનું વર્ણન અને નિયંત્રણ કરવાનો અભ્યાસ કર્યો."
+  },
+  {
+    "q": "પ્રશ્ન 115: આલ્બર્ટ બાન્દુરાના 'સામાજિક અધ્યયન સિદ્ધાંત' (Social Learning Theory) અનુસાર બાળક મોટાભાગના સામાજિક અને ભાષાકીય વ્યવહારો કેવી રીતે શીખે છે?",
+    "options": [
+      "માત્ર કઠોર પરીક્ષાઓ અને ગોખણપટ્ટી દ્વારા",
+      "કુટુંબ, શાળા અને સમાજના મહત્વના વ્યક્તિઓના વ્યવહારોનું પ્રત્યક્ષ અવલોકન અને અનુકરણ (Modeling) કરીને",
+      "માત્ર પુસ્તકો વાંચીને",
+      "જન્મજાત જનીનોના આધારે"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૩: ભાષા અને પ્રત્યાયન",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૫૦-૫૧ અનુસાર બાળક અન્યોના વર્તનનું અવલોકન કરીને અનુકરણાત્મક અધ્યયન દ્વારા ભાષા અને સંસ્કાર શીખે છે."
+  },
+  {
+    "q": "પ્રશ્ન 116: બાન્દુરાના મતે 'મૉડલિંગ' (Modeling) એટલે શું?",
+    "options": [
+      "ફેશન શોમાં રેમ્પ વોક કરવું.",
+      "'મૉડલ એટલે વર્તનની તરાહ'; બાળક પોતાના ગમતા પાત્રનું અનુકરણ કરી તેના જેવા ગુણો પોતાનામાં વિકસાવવા તાદાત્મ્ય સાધે છે.",
+      "માટીના રમકડાં બનાવવા.",
+      "કમ્પ્યુટર 3D ડિઝાઇનિંગ કરવું."
+    ],
+    "ans": 1,
+    "unit": "એકમ-૩: ભાષા અને પ્રત્યાયન",
+    "exp": "બાળક માટે શિક્ષક, માતા-પિતા કે આદર્શ વ્યક્તિ મૉડલ છે, જેના વર્તનનું તાદાત્મીકરણ તે પોતાના જીવનમાં કરે છે."
+  },
+  {
+    "q": "પ્રશ્ન 117: વર્ગમાં એક બાળક ગેરવર્તન કરે છે અને શિક્ષક તેને ઠપકો આપે છે. આ જોઈને વર્ગના અન્ય બાળકો આવું ગેરવર્તન કરવાનું ટાળે છે. બાન્દુરાના સંદર્ભમાં આ કઈ ઘટના છે?",
+    "options": [
+      "પ્રત્યક્ષ શિક્ષણ",
+      "અવેજીય શિક્ષણ કે મૉડલિંગ દ્વારા અયોગ્ય વર્તન નિવારણ (Vicarious Reinforcement / Inhibition)",
+      "શાસ્ત્રીય અભિસંધાન",
+      "પ્રાસંગિક સ્મૃતિનો અવરોધ"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૩: ભાષા અને પ્રત્યાયન",
+    "exp": "અન્યના વર્તનના પરિણામનું માત્ર અવલોકન કરીને પોતાની જાતને સુધારી લેવી એ બાન્દુરાના સામાજિક અધ્યયનની મુખ્ય ખાસિયત છે."
+  },
+  {
+    "q": "પ્રશ્ન 118: સ્કિનર અને બાન્દુરાના સિદ્ધાંતો વચ્ચે અધ્યયન પ્રક્રિયા સંદર્ભે મુખ્ય ભેદ શો છે?",
+    "options": [
+      "સ્કિનર પ્રત્યક્ષ પુષ્ટિ/બદલાને અનિવાર્ય ગણે છે, જ્યારે બાન્દુરા માને છે કે માત્ર સામાજિક અવલોકનથી પણ પ્રેરણા-ઇનામ વગર અધ્યયન થઈ શકે છે.",
+      "સ્કિનર ભાષાને મહત્વ આપે છે, બાન્દુરા ભાષાને નકારે છે.",
+      "બાન્દુરા પ્રાણીઓ પર પ્રયોગો કરે છે, સ્કિનર માત્ર માણસો પર.",
+      "બંને વચ્ચે કોઈ તાત્વિક ભેદ નથી."
+    ],
+    "ans": 0,
+    "unit": "એકમ-૩: ભાષા અને પ્રત્યાયન",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૫૦-૫૨ અનુસાર બાન્દુરાના મત મુજબ સામાજિક અધ્યયન માટે તાત્કાલિક ઇનામ કે સજા વિના પણ અવલોકનથી શિક્ષણ નીપજે છે."
+  },
+  {
+    "q": "પ્રશ્ન 119: ભાષાના ચાર મૂળભૂત કૌશલ્યો (LSRW) નો સાચો મનોવૈજ્ઞાનિક ક્રમ કયો છે?",
+    "options": [
+      "વાચન -> લેખન -> શ્રવણ -> કથન",
+      "શ્રવણ (Listening) -> કથન (Speaking) -> વાચન (Reading) -> લેખન (Writing)",
+      "કથન -> શ્રવણ -> લેખન -> વાચન",
+      "લેખન -> વાચન -> કથન -> શ્રવણ"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૩: ભાષા અને પ્રત્યાયન",
+    "exp": "બાળક જન્મતાં જ પહેલાં સાંભળે છે (શ્રવણ), પછી બોલે છે (કથન), ત્યારબાદ શાળામાં વાંચતા (વાચન) અને છેલ્લે લખતા (લેખન) શીખે છે."
+  },
+  {
+    "q": "પ્રશ્ન 120: ભાષા શિક્ષણમાં 'શ્રવણ' કૌશલ્ય ક્યારે પૂર્ણ થયું ગણાય?",
+    "options": [
+      "માત્ર અવાજ કાનના પડદા સાથે અથડાય ત્યારે.",
+      "બોલાતી ભાષાના સાંભળેલા અવાજો ઓળખીને તેનો સાચો અર્થ સમજાય (અર્થગ્રહણ થાય) ત્યારે.",
+      "બાળક મોટેથી બૂમ પાડે ત્યારે.",
+      "સાંભળ્યા વગર માથું હલાવે ત્યારે."
+    ],
+    "ans": 1,
+    "unit": "એકમ-૩: ભાષા અને પ્રત્યાયન",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૫૩ અનુસાર સાંભળવું એ શ્રવણ માટે જરૂરી છે, પણ અર્થગ્રહણ થાય ત્યારે જ શ્રવણ પ્રક્રિયા પરિપૂર્ણ બને છે."
+  },
+  {
+    "q": "પ્રશ્ન 121: શૈક્ષણિક પ્રયુક્તિ તરીકે 'વાર્તાલાપ' (Conversation / Dialogue) એટલે શું?",
+    "options": [
+      "માત્ર પુસ્તકમાંથી ફકરો મોટેથી વાંચવો.",
+      "વિષયવસ્તુને વાર્તા સ્વરૂપે આરોહ-અવરોહ સાથે રજૂ કરવાની કળા અને મુક્ત વિચારોનું આદાન-પ્રદાન.",
+      "વિદ્યાર્થીઓને શાંત રાખીને શિક્ષકનું એકધારું ભાષણ.",
+      "વ્યાકરણના નિયમોનું ગોખણપટ્ટી પૃથક્કરણ."
+    ],
+    "ans": 1,
+    "unit": "એકમ-૩: ભાષા અને પ્રત્યાયન",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૫૩ મુજબ વિષયવસ્તુને રસપ્રદ સંવાદ અને વાર્તા સ્વરૂપે રજૂ કરવાની પ્રયુક્તિ એટલે વાર્તાલાપ."
+  },
+  {
+    "q": "પ્રશ્ન 122: વાર્તાલાપ દરમિયાન 'Turn Taking' ના નિયમ સંદર્ભે કઈ બે મુખ્ય માર્ગદર્શક બાબતો અનિવાર્ય છે?",
+    "options": [
+      "(૧) બધા સભ્યો એકસાથે બોલે (૨) મોટેથી રાડો પાડવી.",
+      "(૧) એક સમયે માત્ર એક જ વ્યક્તિ બોલે અને (૨) મૌનને અવકાશ ન હોય (વાર્તાલાપ સરળતાથી અટક્યા વગર ચાલવો).",
+      "(૧) માત્ર શિક્ષકે જ બોલવું (૨) વિદ્યાર્થીઓએ માત્ર સાંભળવું.",
+      "(૧) આંખો બંધ રાખવી (૨) કાગળ પર લખવું."
+    ],
+    "ans": 1,
+    "unit": "એકમ-૩: ભાષા અને પ્રત્યાયન",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૫૪ અનુસાર Turn Taking એટલે બોલવાનો વારો લેવો; જેમાં એક સમયે એક જ બોલે અને અર્થપૂર્ણ સંવાદ સતત વહેતો રહે."
+  },
+  {
+    "q": "પ્રશ્ન 123: વાર્તાલાપની શારીરિક ભાષા (Body Language) સંદર્ભે મોડ્યુલમાં દર્શાવેલ વિશિષ્ટ તારણ કયું છે?",
+    "options": [
+      "વક્તા અને શ્રોતાએ સતત એકબીજાની આંખોમાં આંખ પરોવીને જ બોલવું પડે છે.",
+      "વાર્તાલાપ દરમિયાન વક્તા જ્યારે બોલે છે ત્યારે તેની આંખો મોટેભાગે નીચી હોય છે, અને વાત પૂર્ણ થવાની હોય ત્યારે શ્રોતા સામે જુએ છે જે Turn Taking ની નિશાની છે.",
+      "શ્રોતાએ વક્તા તરફ પીઠ ફેરવીને બેસવું જોઈએ.",
+      "વાર્તાલાપમાં આંખોના હાવભાવનું કોઈ મહત્વ નથી."
+    ],
+    "ans": 1,
+    "unit": "એકમ-૩: ભાષા અને પ્રત્યાયન",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૫૪ સ્પષ્ટ કરે છે કે વાર્તાલાપમાં સતત આંખ મળવા કરતાં શ્રોતા સાંભળે છે કે નહીં અને વારો ક્યારે બદલાય છે તે મહત્વનું છે."
+  },
+  {
+    "q": "પ્રશ્ન 124: જૂથચર્ચા (Group Discussion) પ્રયુક્તિનું મુખ્ય શૈક્ષણિક મૂલ્ય શું છે?",
+    "options": [
+      "તે એક સહકારી ચિંતન છે જેમાં સભ્યો મુક્તપણે વિચારોનું આદાન-પ્રદાન કરે છે અને નેતૃત્વ તથા ખેલદિલી કેળવે છે.",
+      "તેનાથી વિદ્યાર્થીઓ વચ્ચે કાયમી દુશ્મનાવટ થાય છે.",
+      "તે માત્ર સમય પસાર કરવાનું સાધન છે.",
+      "તેમાં કોઈ નિયમો હોતા નથી."
+    ],
+    "ans": 0,
+    "unit": "એકમ-૩: ભાષા અને પ્રત્યાયન",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૫૫ મુજબ ચર્ચા એ સહકારી ચિંતન છે જે શ્રવણ-કથન બંને કૌશલ્યો અને સહિષ્ણુતાનો વિકાસ કરે છે."
+  },
+  {
+    "q": "પ્રશ્ન 125: મહેસાણાવાસી 'પાણી' ને 'પોણી' અને 'કેટલા રે કેટલા' ને બદલે 'ચેટલા રે ચેટલા' બોલે છે, જ્યારે કાઠિયાવાડમાં 'ગયો હતો' ને બદલે 'ગ્યો તો' બોલાય છે. આ બાબત ભાષાના કયા પરિમાણ સાથે સંકળાયેલી છે?",
+    "options": [
+      "માનસિક ઉચ્ચારણ વિકાર",
+      "પ્રાદેશિક બોલી, લઢણ અને લહેકો (Regional Dialect & Accent)",
+      "ડિસ્લેક્સિયાનું લક્ષણ",
+      "શ્રવણ ખામી"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૩: ભાષા અને પ્રત્યાયન",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૫૬ અનુસાર આ પ્રાદેશિક બોલી અને સમાજની લઢણનો પ્રભાવ છે, જે ભાષાનું સ્વાભાવિક વૈવિધ્ય છે."
+  },
+  {
+    "q": "પ્રશ્ન 126: ભાષાશાસ્ત્રી લીચ હાર્ડત (Leich Hardt) ના મત અનુસાર સ્વ-ભાષા અને અનુભવનો પ્રભાવ દર્શાવતું કયું ઉદાહરણ મોડ્યુલમાં આપેલ છે?",
+    "options": [
+      "શહેરી બાળક ઝડપથી અંગ્રેજી શીખે છે.",
+      "જે આદિવાસીઓના કાન ઘાસમાં જતા સાપના એકદમ ધીમા સરરર અવાજને સહેલાઈથી કળી જાય છે, તે અપરિચિત એવા ઘોડાના ડાબલાની બઘડાટી કદાચ ન પણ પારખી શકે.",
+      "બાળક ગાયને જોઈને ભેંસ બોલે છે.",
+      "વિદેશી પ્રવાસીઓ ગુજરાતી શીખી શકતા નથી."
+    ],
+    "ans": 1,
+    "unit": "એકમ-૩: ભાષા અને પ્રત્યાયન",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૫૭ અનુસાર મનુષ્ય પોતાની પરિચિત ધ્વનિ વ્યવસ્થા અને પર્યાવરણના સંદર્ભમાં જ અવાજોનું અર્થઘટન કરે છે."
+  },
+  {
+    "q": "પ્રશ્ન 127: બહુસાંસ્કૃતિક વર્ગખંડ (Multicultural Classroom) એટલે કેવો વર્ગખંડ?",
+    "options": [
+      "જ્યાં માત્ર એક જ સંસ્કૃતિના બાળકો ભણતા હોય.",
+      "એક જ વર્ગમાં વિવિધ પ્રદેશ, ભાષા, ધર્મ, ભૌગોલિક વારસો કે જીવનશૈલી ધરાવતાં બાળકો સાથે અભ્યાસ કરતાં હોય.",
+      "જ્યાં કોઈ શિક્ષક ન હોય.",
+      "જ્યાં માત્ર વિદેશી ભાષાઓ જ શીખવાતી હોય."
+    ],
+    "ans": 1,
+    "unit": "એકમ-૩: ભાષા અને પ્રત્યાયન",
+    "exp": "ઔદ્યોગિક કે શહેરી વિસ્તારોની શાળાઓમાં વિવિધ ભાષાકીય અને સાંસ્કૃતિક પૃષ્ઠભૂમિ ધરાવતા વિદ્યાર્થીઓનો વર્ગ એટલે બહુસાંસ્કૃતિક વર્ગ."
+  },
+  {
+    "q": "પ્રશ્ન 128: બહુસાંસ્કૃતિક વર્ગખંડમાં વિવિધતામાં એકતા સ્થાપવા શિક્ષકે કઈ પ્રવૃત્તિ કરાવવી હિતાવહ છે?",
+    "options": [
+      "જુદી-જુદી સંસ્કૃતિ ધરાવતા બાળકોના મિશ્ર જૂથ બનાવી 'મારું ઘર' વિશે વાક્યો અરસપરસ વહેંચવા તથા કોલાજ મેકિંગ કરાવવું.",
+      "બાળકોને તેમની પ્રાદેશિક બોલી બોલવા બદલ દંડ કરવો.",
+      "માત્ર બહુમતી સંસ્કૃતિના તહેવારોની જ ઉજવણી કરવી.",
+      "અન્ય ભાષાના બાળકોને પાછળની બેંચ પર બેસાડી દેવા."
+    ],
+    "ans": 0,
+    "unit": "એકમ-૩: ભાષા અને પ્રત્યાયન",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૫૭-૫૮ અનુસાર આવી સહિયારી પ્રવૃત્તિઓથી બાળકો એકબીજાની સંસ્કૃતિ પ્રત્યે સન્માન કેળવે છે."
+  },
+  {
+    "q": "પ્રશ્ન 129: ભારતીય સંદર્ભમાં 'દ્વિભાષિતા' અને 'બહુભાષિતા' અંગે મોડ્યુલમાં કયું વિશિષ્ટ તારણ દર્શાવાયું છે?",
+    "options": [
+      "ભારતમાં બહુભાષિતા એ એક ગંભીર રાષ્ટ્રીય સમસ્યા છે.",
+      "ભારતમાં બહુભાષિતા એક સામાન્ય સ્થિતિ છે; આપણો દેશ જ નહીં પરંતુ તેના પ્રાંત પણ બહુભાષિક છે અને ભારતીય બહુભાષિતા વ્યક્તિપરક નહીં પણ સમુદાયપરક છે.",
+      "ભારતીય બાળકો માત્ર એક જ ભાષા શીખી શકે છે.",
+      "શાળામાં માત્ર અંગ્રેજી ભાષા જ શીખવવી જોઈએ."
+    ],
+    "ans": 1,
+    "unit": "એકમ-૩: ભાષા અને પ્રત્યાયન",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૫૮ સ્પષ્ટ કરે છે કે ભારતીય સમાજ રચનામાં સહજ રીતે જ બહુભાષિકતા વણાયેલી છે."
+  },
+  {
+    "q": "પ્રશ્ન 130: બહુભાષિક વર્ગખંડમાં જ્યારે કોઈ બાળક અન્ય ભાષાના પ્રભાવ હેઠળ ખોટો ઉચ્ચારણ દોષ કરે ત્યારે શિક્ષકે શું કરવું જોઈએ?",
+    "options": [
+      "તેને તરત 'ખોટો છે' કહીને અપમાનિત કરી બેસાડી દેવો.",
+      "તેની ભૂલ પર આખો વર્ગ હસે તેવું વાતાવરણ બનાવવું.",
+      "તેને ઉતારી પાડવાને બદલે વિવિધ ભાષા જાણતા વિદ્યાર્થીઓનું જૂથ બનાવી સહયોગથી સાચું ઉચ્ચારણ શોધવા પ્રોત્સાહિત કરવો.",
+      "તેને શાળામાંથી કાઢી મૂકવાની ચેતવણી આપવી."
+    ],
+    "ans": 2,
+    "unit": "એકમ-૩: ભાષા અને પ્રત્યાયન",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૫૮-૫૯ મુજબ બાળકમાં લઘુતાગ્રંથિ ન બંધાય તે માટે સૌહાર્દપૂર્ણ જૂથપ્રવૃત્તિ દ્વારા સુધારો કરવો જોઈએ."
+  },
+  {
+    "q": "પ્રશ્ન 131: શિક્ષણની પદ્ધતિશાસ્ત્રના સાધન તરીકે 'વાર્તાકથન પદ્ધતિ' (Storytelling Method) ના પ્રણેતા તરીકે ગુજરાતના કયા મહાન કેળવણીકાર 'મૂછાળી મા' તરીકે જાણીતા છે?",
+    "options": [
+      "શ્રી નાનાભાઈ ભટ્ટ",
+      "શ્રી ગિજુભાઈ બધેકા",
+      "શ્રી જુગતરામ દવે",
+      "શ્રી મનુભાઈ પંચોળી"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૩: ભાષા અને પ્રત્યાયન",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૫૯ અનુસાર ગિજુભાઈ બધેકા ('મૂછાળી મા') બાળશિક્ષણમાં તમામ એકમો વાર્તાકથન પદ્ધતિ દ્વારા રસપ્રદ રીતે શીખવતા હતા."
+  },
+  {
+    "q": "પ્રશ્ન 132: વાર્તાકથન પદ્ધતિ વખતે શિક્ષકે ધ્યાનમાં રાખવાની બાબતોમાં નીચેનામાંથી કઈ બાબત સાચી છે?",
+    "options": [
+      "વાર્તાના હાર્દમાં કોઈ ચોક્કસ મૂલ્ય (Core Value) રહેલું હોવું જોઈએ.",
+      "વાર્તા કહેતી વખતે મુખોટા કે કાળાપાટિયા પર ચિત્રો જેવા શૈક્ષણિક સાધનો વાપરવાથી અસરકારકતા વધે છે.",
+      "વાર્તા પૂર્ણ થયા પછી બાળકો દ્વારા પુનઃ વાર્તાકથન (Re-telling) કે નાટ્યીકરણ કરાવવું.",
+      "ઉપરોક્ત તમામ બાબતો અત્યંત આવશ્યક છે."
+    ],
+    "ans": 3,
+    "unit": "એકમ-૩: ભાષા અને પ્રત્યાયન",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૬૦ મુજબ મૂલ્ય ચયન, TLM નો ઉપયોગ અને પુનઃ વાર્તાકથનથી મૂલ્યોનું ઊંડું દૃઢીકરણ થાય છે."
+  },
+  {
+    "q": "પ્રશ્ન 133: સમગ્ર વર્ગ દ્વારા વાર્તા નિર્માણ કરાવતી વખતે શિક્ષક કઈ પ્રક્રિયા અપનાવે છે?",
+    "options": [
+      "શિક્ષક જાતે જ આખી વાર્તા બોલી જાય છે.",
+      "એક વિદ્યાર્થી વાર્તાનું પ્રથમ વાક્ય બોલે છે અને અનુક્રમે અન્ય વિદ્યાર્થીઓ તેમાં એક-એક નવું વાક્ય ઉમેરતા જઈ નવી વાર્તા સર્જે છે.",
+      "બાળકોને પુસ્તકમાંથી વાર્તા ગોખીને બોલવા કહે છે.",
+      "વાર્તાના બધા પાત્રો ભૂંસી નાખવામાં આવે છે."
+    ],
+    "ans": 1,
+    "unit": "એકમ-૩: ભાષા અને પ્રત્યાયન",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૬૦ અનુસાર આ પ્રવૃત્તિથી બાળકોની કલ્પનાશક્તિ, સજાગતા અને ભાષા પ્રભુત્વ ખીલે છે."
+  },
+  {
+    "q": "પ્રશ્ન 134: બાળક જ્યારે શાળામાં પ્રવેશે છે તે પહેલાં જ તે પોતાની માતૃભાષાના કયા બે કૌશલ્યો મોટાભાગે સાહજિક રીતે હસ્તગત કરી ચૂક્યું હોય છે?",
+    "options": [
+      "વાચન અને લેખન",
+      "શ્રવણ અને કથન (Listening & Speaking)",
+      "માત્ર લેખન",
+      "વ્યાકરણ વિશ્લેષણ"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૩: ભાષા અને પ્રત્યાયન",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૫૫-૫૬ અનુસાર કુટુંબ અને માતાના સંપર્કથી બાળક શાળાએ જતાં પહેલાં શ્રવણ અને કથન શીખી ગયું હોય છે."
+  },
+  {
+    "q": "પ્રશ્ન 135: બાળક શરૂઆતમાં ઘરમાં થતી વાતચીત પરથી 'પપ્પા આવી ગયા', 'પપ્પા ઑફિસ જાય છે' સાંભળીને 'પપ્પા' શબ્દ સાથે ચોક્કસ વ્યક્તિનું અનુસંધાન જોડે છે. આ ભાષા શીખવાની કઈ રીત છે?",
+    "options": [
+      "યાંત્રિક પરીક્ષા પદ્ધતિ",
+      "શ્રવણ દ્વારા સાહચર્ય અને સંદર્ભજન્ય અર્થબોધ",
+      "ડિસ્લેક્સિયા મુશ્કેલી",
+      "ઔપચારિક વ્યાકરણ શિક્ષણ"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૩: ભાષા અને પ્રત્યાયન",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૫૫-૫૬ અનુસાર બાળક વારંવારના શ્રવણ અને પ્રત્યક્ષ અનુભવના જોડાણ દ્વારા સંકલ્પનાનો અર્થ ગ્રહણ કરે છે."
+  },
+  {
+    "q": "પ્રશ્ન 136: દ્વિમાર્ગી પ્રત્યાયન (Two-way Communication) એકમાર્ગી પ્રત્યાયન કરતાં શા માટે વધુ શ્રેષ્ઠ અને અસરકારક છે?",
+    "options": [
+      "તેમાં શિક્ષકને ઓછું બોલવું પડે છે.",
+      "તેમાં સંદેશ આપનાર અને મેળવનાર બંને પરસ્પર પ્રતિપોષણ (Feedback) પૂરું પાડે છે, જેથી ગેરસમજ દૂર થાય છે અને અધ્યયન પરિણામલક્ષી બને છે.",
+      "તે માત્ર પરીક્ષા સમયે જ શક્ય બને છે.",
+      "તેમાં કોઈ સાધનોની જરૂર પડતી નથી."
+    ],
+    "ans": 1,
+    "unit": "એકમ-૩: ભાષા અને પ્રત્યાયન",
+    "exp": "શિક્ષણમાં પ્રતિપોષણ વગરનું એકમાર્ગી વક્તવ્ય નિષ્ક્રિયતા લાવે છે, જ્યારે દ્વિમાર્ગી પ્રત્યાયન જીવંત સંવાદ રચે છે."
+  },
+  {
+    "q": "પ્રશ્ન 137: વર્ગખંડમાં શિક્ષક ભણાવતી વખતે પોતાના અવાજનો આરોહ-અવરોહ, આંખોના ઈશારા અને ચહેરાના હાવભાવ બદલે છે. આ કયા પ્રકારનું પ્રત્યાયન કૌશલ્ય છે?",
+    "options": [
+      "માત્ર શાબ્દિક પ્રત્યાયન",
+      "શાબ્દિક સાથે અસરકારક અશાબ્દિક પ્રત્યાયન (Non-verbal Cues)",
+      "યાંત્રિક પ્રત્યાયન",
+      "અધોગામી અવરોધ"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૩: ભાષા અને પ્રત્યાયન",
+    "exp": "અશાબ્દિક પ્રત્યાયન (હાવભાવ, બોડી લેંગ્વેજ) શિક્ષણને વધુ સચોટ અને આકર્ષક બનાવે છે."
+  },
+  {
+    "q": "પ્રશ્ન 138: બાન્દુરાના મતે મૉડલિંગ સફળ થવા માટેની પ્રથમ અને અનિવાર્ય શરત કઈ છે?",
+    "options": [
+      "બાળક પાસે મોંઘા સાધનો હોવા જોઈએ.",
+      "મૉડલના સંબંધમાં બાળકને સ્પષ્ટ જાણકારી હોય અને બાળક પોતાના મૉડલ પ્રત્યે પ્રબળ તાદાત્મ્ય અને સ્વીકૃતિ ધરાવતું હોય.",
+      "શિક્ષકે સોટી હાથમાં રાખવી જોઈએ.",
+      "બાળક એકાંતમાં રહેતું હોવું જોઈએ."
+    ],
+    "ans": 1,
+    "unit": "એકમ-૩: ભાષા અને પ્રત્યાયન",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૫૧ અનુસાર મૉડલ પ્રત્યે આદર અને સ્પષ્ટતા જેટલી વધુ તેટલું અનુકરણ સહજ બને છે."
+  },
+  {
+    "q": "પ્રશ્ન 139: વાર્તાકથન પદ્ધતિ માત્ર ભાષા કે ઇતિહાસમાં જ નહીં, પરંતુ ગણિત અને વિજ્ઞાન જેવા અમૂર્ત વિષયોમાં પણ શા માટે ઉપયોગી સાબિત થાય છે?",
+    "options": [
+      "તે વિદ્યાર્થીઓની કલ્પનાશક્તિને જાગૃત કરી અમૂર્ત સંકલ્પનાઓને સંદર્ભસભર અને જીવંત બનાવે છે.",
+      "તેનાથી દાખલા ગણવાની જરૂર રહેતી નથી.",
+      "તે વિજ્ઞાનના પ્રયોગો બંધ કરાવી દે છે.",
+      "તે માત્ર મનોરંજન માટે જ છે."
+    ],
+    "ans": 0,
+    "unit": "એકમ-૩: ભાષા અને પ્રત્યાયન",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૫૯ મુજબ વાર્તા કોઈપણ વિષયની જટિલ સંકલ્પનાઓને વાર્તારૂપે રજૂ કરી સરળ બનાવી શકે છે."
+  },
+  {
+    "q": "પ્રશ્ન 140: એક જ વર્ગખંડમાં ગુજરાતી, હિન્દી અને મરાઠી બોલતા બાળકો હોય ત્યારે શિક્ષકે સૂચનાઓ કેવી રીતે આપવી જોઈએ?",
+    "options": [
+      "માત્ર કઠિન સંસ્કૃતમાં જ સૂચના આપવી.",
+      "તમામ બાળકો સમજી શકે તેવી સરળ અને જરૂર પડ્યે બહુભાષી સમજૂતી સાથે સૂચના આપવી.",
+      "જેને ન સમજાય તેને વર્ગ બહાર કાઢી મૂકવા.",
+      "સૂચના આપવાનું જ બંધ કરી દેવું."
+    ],
+    "ans": 1,
+    "unit": "એકમ-૩: ભાષા અને પ્રત્યાયન",
+    "exp": "સાથે સૂચના આપવી. (C) જેને ન સમજાય તેને વર્ગ બહાર કાઢી મૂકવા. (D) સૂચના આપવાનું જ બંધ કરી દેવું. સાચો જવાબ: (B) તમામ બાળકો સમજી શકે તેવી સરળ અને જરૂર પડ્યે બહુભાષી સમજૂતી સાથે સૂચના આપવી. સમજૂતી: બહુભાષિક વર્ગમાં સમાવેશી શિક્ષણ માટે શિક્ષકની બહુભાષી સંવેદનશીલતા અનિવાર્ય છે."
+  },
+  {
+    "q": "પ્રશ્ન 141: પ્રત્યાયન પ્રક્રિયામાં 'ચેનલ' કે 'માધ્યમ' (Channel) ની ભૂમિકા શું છે?",
+    "options": [
+      "તે સંદેશો મોકલનાર વ્યક્તિ છે.",
+      "તે સંદેશાનું પ્રસરણ કરવા માટે જેનો સહારો લેવાય છે તે માર્ગ કે વાહક છે (દા.ત., વાણી, પત્ર, ફોન).",
+      "તે માત્ર અવાજનો ઘોંઘાટ છે.",
+      "તે માત્ર પ્રતિપોષણ છે."
+    ],
+    "ans": 1,
+    "unit": "એકમ-૩: ભાષા અને પ્રત્યાયન",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૪૭ અનુસાર સંદેશો મોકલવા જે માર્ગ પસંદ થાય તેને માધ્યમ કહે છે."
+  },
+  {
+    "q": "પ્રશ્ન 142: વાર્તાલાપ પ્રયુક્તિ દરમિયાન 'વિષયાંતર' (Digression) અટકાવવા માટે શિક્ષકે શું કરવું જોઈએ?",
+    "options": [
+      "વિદ્યાર્થીઓને બોલતા જ બંધ કરી દેવા.",
+      "મુખ્ય વિષય કેન્દ્રસ્થાને જળવાઈ રહે તે રીતે કુશળતાપૂર્વક સંચાલન અને દિશાનિર્દેશન કરવું.",
+      "પોતે ક્લાસરૂમ છોડીને જતા રહેવું.",
+      "વિદ્યાર્થીઓને ગમે તે બોલવાની છૂટ આપવી."
+    ],
+    "ans": 1,
+    "unit": "એકમ-૩: ભાષા અને પ્રત્યાયન",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૫૪ મુજબ વાર્તાલાપમાં વિષય ભટકી ન જાય તેની સતત કાળજી રાખવી જરૂરી છે."
+  },
+  {
+    "q": "પ્રશ્ન 143: નાનું બાળક જ્યારે ઘરમાં ઢીંગલી કે રમકડાં સાથે એકલું એકલું બોલીને રમે છે, ત્યારે તેનું પ્રત્યાયન કેવું હોય છે?",
+    "options": [
+      "માત્ર ઔપચારિક વ્યાવસાયિક",
+      "બિન્દાસ્ત, સ્વમોજમાં અને સ્વાભાવિક આંતરિક પ્રત્યાયન",
+      "અધોગામી આદેશાત્મક",
+      "કાયદાકીય સંચાર"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૩: ભાષા અને પ્રત્યાયન",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૪૬ અનુસાર એકલું બાળક વાતાવરણને અનુરૂપ સાહજિક અને મુક્ત પ્રત્યાયન કરે છે."
+  },
+  {
+    "q": "પ્રશ્ન 144: બાળક જ્યારે અજાણી વ્યક્તિ કે નવા વાતાવરણમાં જાય છે ત્યારે તેના પ્રત્યાયનમાં શો ફેરફાર જોવા મળે છે?",
+    "options": [
+      "તે વધુ વાચાળ બની જાય છે.",
+      "તે થોડું સચેત, ગંભીર કે સંકોચાઈ જાય છે અને ખીલીને વાત કરી શકતું નથી.",
+      "તે નાચવા લાગે છે.",
+      "તે અંગ્રેજીમાં બોલવા લાગે છે."
+    ],
+    "ans": 1,
+    "unit": "એકમ-૩: ભાષા અને પ્રત્યાયન",
+    "exp": "અપરિચિત પરિસ્થિતિ બાળકના સાહજિક પ્રત્યાયનમાં ખચકાટ કે સંકોચ ઊભો કરે છે."
+  },
+  {
+    "q": "પ્રશ્ન 145: વર્ગખંડ શિક્ષણમાં 'અંતર્મુખી' અને 'બહિર્મુખી' બાળકોના પ્રત્યાયન વચ્ચે શો તફાવત જોવા મળે છે?",
+    "options": [
+      "અંતર્મુખી બાળક ભાગ્યે જ બોલે છે, જ્યારે બહિર્મુખી બાળક તુરંત આંગળી ઊંચી કરીને વિચારો રજૂ કરે છે.",
+      "અંતર્મુખી બાળક હંમેશાં પ્રથમ આવે છે.",
+      "બહિર્મુખી બાળક ક્યારેય બોલતું નથી.",
+      "બંનેના પ્રત્યાયનમાં કોઈ ભેદ હોતો નથી."
+    ],
+    "ans": 0,
+    "unit": "એકમ-૩: ભાષા અને પ્રત્યાયન",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૪૬ મુજબ વ્યક્તિત્વના પ્રકારો બાળકના વર્ગખંડ સંચારને સીધી અસર કરે છે."
+  },
+  {
+    "q": "પ્રશ્ન 146: બહુસાંસ્કૃતિક શાળામાં વિદ્યાર્થીઓમાં એકબીજા પ્રત્યે આદરભાવ કેળવવા દિવાલ પર શું લગાવી શકાય?",
+    "options": [
+      "વિદ્યાર્થીઓના ગુનાઓની યાદી",
+      "બાળકનો તેના પરંપરાગત પોશાક સાથેનો ફોટો, જન્મતારીખ અને ટૂંકો પરિચય",
+      "વિદ્યાર્થીઓની સંપત્તિની વિગતો",
+      "માત્ર તેજસ્વી વિદ્યાર્થીઓના ફોટા"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૩: ભાષા અને પ્રત્યાયન",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૫૭ મુજબ આવી પ્રવૃત્તિથી દરેક બાળકની સાંસ્કૃતિક ઓળખનું ગૌરવ જળવાય છે."
+  },
+  {
+    "q": "પ્રશ્ન 147: વાર્તાકથન પછી 'ચાર્ટ પેપર પર વાર્તાનું આલેખન' કરવાની જૂથ પ્રવૃત્તિથી કયો માનસિક લાભ થાય છે?",
+    "options": [
+      "બાળકના મનમાં વાર્તાનું પુનઃસ્મરણ (Recall) થાય છે અને ખૂટતી વિગતોની આપ-લેથી મૂલ્યનું દૃઢીકરણ થાય છે.",
+      "ચાર્ટ પેપર વેચીને શાળાને આવક થાય છે.",
+      "બાળકોને થાક લાગે છે.",
+      "સમયનો વ્યય થાય છે."
+    ],
+    "ans": 0,
+    "unit": "એકમ-૩: ભાષા અને પ્રત્યાયન",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૬૦ અનુસાર જૂથમાં ચાર્ટ બનાવવાથી વાર્તા અને તેના જીવનમૂલ્યો સ્મૃતિમાં કાયમી બને છે."
+  },
+  {
+    "q": "પ્રશ્ન 148: સ્કિનરના પ્રયોગમાં ભૂખ્યા ઉંદરે પેટીમાં અચાનક હાથા પર પંજો દબાવતાં ખોરાકની ગોળી મળી. અહીં 'ખોરાક' એ મનોવિજ્ઞાનની પરિભાષામાં શું છે?",
+    "options": [
+      "પ્રતિચાર (Response)",
+      "હકારાત્મક સુદૃઢક / પુષ્ટિકારક (Positive Reinforcement)",
+      "અવરોધ (Noise)",
+      "અભિસંધિત ઉદ્દીપક"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૩: ભાષા અને પ્રત્યાયન",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૪૯-૫૦ અનુસાર જે પરિણામથી ઇચ્છિત વર્તન વારંવાર થવાની શક્યતા વધે તે સુદૃઢક (Reinforcer) છે."
+  },
+  {
+    "q": "પ્રશ્ન 149: પ્રત્યાયનમાં જ્યારે પ્રેષક બોલે છે પરંતુ રિસીવરના કાન સુધી માત્ર ઘોંઘાટ જ પહોંચે છે ત્યારે પ્રત્યાયન પ્રક્રિયાના કયા સોપાનમાં ક્ષતિ સર્જાય છે?",
+    "options": [
+      "પ્રેષકના વિચારમાં",
+      "માધ્યમ/ચેનલમાં વિક્ષેપ (Channel Noise/Distortion)",
+      "પ્રતિપોષણમાં",
+      "સંકેતીકરણમાં"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૩: ભાષા અને પ્રત્યાયન",
+    "exp": "વાહક માધ્યમમાં ઘોંઘાટ ભળવાથી સંદેશો વિકૃત થાય છે અને ગ્રાહક સુધી અર્થપૂર્ણ પહોંચતો નથી."
+  },
+  {
+    "q": "પ્રશ્ન 150: ભાષા શિક્ષણમાં 'કથન' કૌશલ્ય ખીલવવા માટે શાળામાં નીચેનામાંથી કઈ સ્પર્ધા સૌથી વધુ ઉપકારક નીવડે છે?",
+    "options": [
+      "માત્ર સુલેખન સ્પર્ધા",
+      "વક્તૃત્વ સ્પર્ધા, વાદ-વિવાદ (ડિબેટ) અને નાટ્યીકરણ",
+      "દોડ સ્પર્ધા",
+      "ચિત્ર સ્પર્ધા"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૩: ભાષા અને પ્રત્યાયન",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૫૩-૫૪ મુજબ વક્તૃત્વ અને સંવાદ કથન કૌશલ્ય, યોગ્ય આરોહ-અવરોહ અને આત્મવિશ્વાસ વધારે છે."
+  },
+  {
+    "q": "પ્રશ્ન 151: વ્યક્તિત્વના સંદર્ભમાં 'સ્વ' (Self) ની સંકલ્પના અંગે કયું વિધાન સાચું છે? ૧. 'સ્વ' એ વ્યક્તિત્વનું કેન્દ્રબિંદુ છે અને વ્યક્તિત્વનો વિકાસ 'સ્વ' પર જ નિર્ભર કરે છે. ૨. 'સ્વ' એક જટિલ ગત્યાત્મક પ્રક્રિયા છે જે અનુભવોના પરિણામે વિકસિત થાય છે. ૩. 'સ્વ' એ વ્યક્તિનો આંતરિક સંસાર છે. ઉપરોક્ત પૈકી કયું/ક્યાં વિધાન સત્ય છે?",
+    "options": [
+      "માત્ર ૧ અને ૨",
+      "માત્ર ૨ અને ૩",
+      "માત્ર ૧ અને ૩",
+      "૧, ૨ અને ૩ તમામ"
+    ],
+    "ans": 3,
+    "unit": "એકમ-૪: સ્વ અને નૈતિક વિકાસ",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૬૩ અનુસાર 'સ્વ' વ્યક્તિત્વનું કેન્દ્રબિંદુ છે, અનુભવોના પરિણામે સતત ઘડાતી ગત્યાત્મક પ્રક્રિયા છે અને તે વ્યક્તિનો વાસ્તવિક આંતરિક સંસાર છે."
+  },
+  {
+    "q": "પ્રશ્ન 152: બર્ન્સ (Burns, 1980) ના મતે 'સ્વ' (Self) ની પરિભાષા નીચેનામાંથી કઈ છે?",
+    "options": [
+      "'આપણે પોતાના વિશે શું વિચારીએ છીએ, બીજા લોકો આપણા વિશે શું વિચારે છે તથા આપણે શું થવા માગીએ છીએ - આ ત્રણેયની એક સમગ્ર તસવીર એટલે સ્વ.'",
+      "'તમારો સ્વ-ખ્યાલ એ માત્ર તમારી આર્થિક સ્થિતિનું પ્રતિબિંબ છે.'",
+      "'વ્યક્તિ જે રૂપમાં સમાજને છેતરે છે તે તેનો સ્વ છે.'",
+      "'સ્વ એટલે વ્યક્તિના મગજના જ્ઞાનતંતુઓની રચના.'"
+    ],
+    "ans": 0,
+    "unit": "એકમ-૪: સ્વ અને નૈતિક વિકાસ",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૬૪ અનુસાર બર્ન્સે ત્રિપરિમાણીય પરિપ્રેક્ષ્યમાં 'સ્વ' ની આ વ્યાપક વ્યાખ્યા રજૂ કરી છે."
+  },
+  {
+    "q": "પ્રશ્ન 153: કોલહોન (Colhoun, 1978) અનુસાર સ્વ-ખ્યાલ (Self-Concept) ની વ્યાખ્યા કઈ છે?",
+    "options": [
+      "'સ્વ-ખ્યાલ એ અચેતન મનની અતૃપ્ત કામનાઓ છે.'",
+      "'તમારો સ્વ-ખ્યાલ તમારું માનસિક રૂપ છે; તેમાં તમારું તમારા વિશેનું જ્ઞાન, તમારી અપેક્ષાઓ અને તમારી જાત વિશેનું મૂલ્યાંકન રહેલું હોય છે.'",
+      "'સ્વ-ખ્યાલ એ સમાજે વ્યક્તિ પર થોપેલી છાપ છે.'",
+      "'સ્વ-ખ્યાલ એ જન્મજાત બુદ્ધિઆંકનું માપ છે.'"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૪: સ્વ અને નૈતિક વિકાસ",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૬૪ મુજબ કોલહોને સ્વ-ખ્યાલને આત્મ-જ્ઞાન, અપેક્ષાઓ અને સ્વ-મૂલ્યાંકનનું માનસિક રૂપ ગણાવ્યું છે."
+  },
+  {
+    "q": "પ્રશ્ન 154: ક્રચ અને ક્રચફિલ્ડ (Crutch & Crutchfield) ના મતે 'સ્વ' ની સંક્ષિપ્ત અને સચોટ વ્યાખ્યા કઈ છે?",
+    "options": [
+      "'વ્યક્તિ જે રૂપમાં પોતાની જાતને જુએ છે તે જ તેનો સ્વ છે.'",
+      "'સ્વ એ પૂર્વજન્મના કર્મોનું ફળ છે.'",
+      "'સ્વ એ ભાષાકીય સંકેતોનું માળખું છે.'",
+      "'સ્વ એ માત્ર બાહ્ય શારીરિક સૌંદર્ય છે.'"
+    ],
+    "ans": 0,
+    "unit": "એકમ-૪: સ્વ અને નૈતિક વિકાસ",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૬૪ અનુસાર ક્રચ અને ક્રચફિલ્ડે સ્પષ્ટ કર્યું છે કે વ્યક્તિ પોતાની જાતનું જે રીતે પ્રત્યક્ષીકરણ કરે છે તે જ તેનો સ્વ છે."
+  },
+  {
+    "q": "પ્રશ્ન 155: શિક્ષક માટે 'સ્વ-ઓળખ' (Self-Identity) ની અનિવાર્યતા શા માટે સર્વોપરી છે?",
+    "options": [
+      "માત્ર પગાર વધારો અને બઢતી મેળવવા માટે.",
+      "શાળામાં બાળકો માટે શિક્ષક આદર્શ હોવાથી, શિક્ષક પોતાની મહત્તાઓ-મર્યાદાઓ જાણી વર્તનને આદર્શ બનાવી વિદ્યાર્થીઓ અને સમાજના શ્રેયાર્થે ઉપયોગ કરી શકે તે માટે.",
+      "વિદ્યાર્થીઓ પર ધાક જમાવવા માટે.",
+      "પરીક્ષાના પેપરો ઝડપથી તપાસવા માટે."
+    ],
+    "ans": 1,
+    "unit": "એકમ-૪: સ્વ અને નૈતિક વિકાસ",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૬૪-૬૫ અનુસાર શિક્ષકનું વ્યક્તિત્વ અનુકરણીય હોવાથી તેણે સ્વયં પોતાની જાતને સતત ઓળખીને સ્વાભિમાન અને વ્યાવસાયિક ગુણો કેળવવા અનિવાર્ય છે."
+  },
+  {
+    "q": "પ્રશ્ન 156: મોડ્યુલ અનુસાર 'સ્વ-ઓળખ એ તલવારની ધાર પર ચાલવાની પ્રક્રિયા છે' - આ વિધાન પાછળનો ગૂઢ તાત્વિક અર્થ શો છે?",
+    "options": [
+      "વ્યક્તિએ શારીરિક કરતબો કરવા પડે છે.",
+      "વ્યક્તિએ પોતાને પોતાના 'સ્વ' (અહંકાર) થી અલિપ્ત કરી, પૂર્વગ્રહ વગર નિર્દંભ, નિખાલસ અને સાક્ષીભાવે કડક આત્મનિરીક્ષણ કરવું પડે છે જે અત્યંત કઠિન છે.",
+      "તેમાં આર્થિક નુકસાન થવાનો ભય રહે છે.",
+      "તે માત્ર સાધુ-સંતો માટે જ શક્ય છે."
+    ],
+    "ans": 1,
+    "unit": "એકમ-૪: સ્વ અને નૈતિક વિકાસ",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૬૫ અનુસાર સ્વ-ઓળખમાં જો આડંબર કે દંભ આવી જાય તો તે દૂષિત બને છે; તટસ્થ સાક્ષીભાવે પોતાની કડક સમીક્ષા કરવી એ તલવારની ધાર જેવી અઘરી પ્રક્રિયા છે."
+  },
+  {
+    "q": "પ્રશ્ન 157: ભારતીય ઇતિહાસમાં કઠિન 'સ્વ-ઓળખ' અને સત્યપ્રિયતાના ઉત્કૃષ્ટ ઉદાહરણ તરીકે મોડ્યુલમાં કોના જીવનનો ઉલ્લેખ કરવામાં આવ્યો છે?",
+    "options": [
+      "સરદાર વલ્લભભાઈ પટેલ",
+      "મહાત્મા મો. ક. ગાંધી",
+      "સ્વામી વિવેકાનંદ",
+      "રવીન્દ્રનાથ ટાગોર"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૪: સ્વ અને નૈતિક વિકાસ",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૬૫ સ્પષ્ટ કરે છે કે ગાંધીજીનું જીવન સત્ય, ન્યાયદર્શિતા અને નિર્દંભ આત્મનિરીક્ષણની ઉત્કૃષ્ટ પ્રેરણા આપે છે."
+  },
+  {
+    "q": "પ્રશ્ન 158: નરસિંહ મહેતાની કઈ પંક્તિ માનવીની આત્મશોધ અને સ્વ-પ્રતીતિની તાત્વિક આવશ્યકતા સ્પષ્ટ કરે છે?",
+    "options": [
+      "'વૈષ્ણવ જન તો તેને રે કહીએ...'",
+      "'જ્યાં લગી આત્મા તત્ત્વ ચીન્યો નહિ, ત્યાં લગી સાધના સર્વ જૂઠી'",
+      "'જાગને જાદવા કૃષ્ણ ગોવાળિયા...'",
+      "'ભૂતળ ભક્તિ પદારથ મોટું...'"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૪: સ્વ અને નૈતિક વિકાસ",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૬૫ અનુસાર ભારતીય સંસ્કૃતિએ સદાય આત્મસાક્ષાત્કાર પર ભાર મૂક્યો છે, જે નરસિંહ મહેતાની આ અમર પંક્તિમાં વ્યક્ત થાય છે."
+  },
+  {
+    "q": "પ્રશ્ન 159: સ્વ-પૃથક્કરણ (Self-Analysis) દ્વારા વ્યક્તિત્વ વિકાસના મુખ્ય ત્રણ ક્રમિક સોપાનો કયા છે?",
+    "options": [
+      "આત્મનિરીક્ષણ (Self-Introspection) -> આત્મસાક્ષાત્કાર (Self-Realization) -> આત્મનિરૂપણ (Self-Expression)",
+      "આત્મસાક્ષાત્કાર -> આત્મનિરૂપણ -> આત્મનિરીક્ષણ",
+      "આત્મનિરૂપણ -> આત્મનિરીક્ષણ -> આત્મસાક્ષાત્કાર",
+      "રોજનીશી -> ક્રમ-માપદંડ -> પ્રસંગનોંધ"
+    ],
+    "ans": 0,
+    "unit": "એકમ-૪: સ્વ અને નૈતિક વિકાસ",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૬૬-૬૭ અનુસાર પ્રથમ પગથિયું આત્મનિરીક્ષણ છે, જેનાથી સ્વની સાચી પ્રતીતિ (આત્મસાક્ષાત્કાર) થાય અને અંતે શક્તિઓનું સર્વોચ્ચ પ્રદર્શન (આત્મનિરૂપણ) થાય છે."
+  },
+  {
+    "q": "પ્રશ્ન 160: સ્વ-પૃથક્કરણના પ્રથમ સોપાન 'આત્મનિરીક્ષણ' (Self-Introspection) કરવા માટે મોડ્યુલમાં કઈ ચાર પદ્ધતિઓ દર્શાવવામાં આવી છે?",
+    "options": [
+      "વાંચન, લેખન, ગણન અને વક્તૃત્વ",
+      "ધ્યાન/એકાગ્રતા, રોજનીશી (Diary), ક્રમ-માપદંડ (Rating Scale) અને પ્રસંગનોંધ",
+      "પરીક્ષા, ઈન્ટરવ્યૂ, પ્રોજેક્ટ અને પ્રવાસ",
+      "શાસ્ત્રીય સંગીત, નાટક, નૃત્ય અને રમત"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૪: સ્વ અને નૈતિક વિકાસ",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૬૬-૬૭ પર આત્મનિરીક્ષણના આ ચાર વ્યવહારુ સાધનોની વિગતવાર ચર્ચા કરવામાં આવી છે."
+  },
+  {
+    "q": "પ્રશ્ન 161: રોજનીશી લેખન (Diary Writing) દ્વારા આત્મનિરીક્ષણ કરવાની મર્યાદા કઈ છે?",
+    "options": [
+      "તેમાં ખૂબ ખર્ચ થાય છે.",
+      "વ્યક્તિ સ્મૃતિના અભાવે કેટલીક ઘટનાઓ નોંધવાનું ભૂલી જાય તથા અચેતન મનની ઇચ્છાઓ આ પદ્ધતિથી જાણી શકાતી નથી.",
+      "શાળામાં ડાયરી લખવા પર પ્રતિબંધ છે.",
+      "તેનાથી અક્ષરો બગડે છે."
+    ],
+    "ans": 1,
+    "unit": "એકમ-૪: સ્વ અને નૈતિક વિકાસ",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૬૬ અનુસાર રોજનીશી અતિ ઉપયોગી હોવા છતાં વિસ્મૃતિ અને અચેતન મનની મર્યાદા ધરાવે છે, તેથી તેને અન્ય પ્રયુક્તિઓ સાથે પૂરક તરીકે વાપરવી જોઈએ."
+  },
+  {
+    "q": "પ્રશ્ન 162: વ્યક્તિત્વ માપનની સામાન્ય પદ્ધતિઓ કરતાં 'ક્રમ-માપદંડ' (Rating Scale) શા માટે વધુ આધારભૂત ગણાય છે?",
+    "options": [
+      "તે તદ્દન મફતમાં ઉપલબ્ધ થાય છે.",
+      "તે સામાન્ય પદ્ધતિઓ કરતાં થોડી વધુ ચોક્કસ અને ઓછી આત્મલક્ષિતા (Less Subjective) ધરાવતી પદ્ધતિ છે.",
+      "તેમાં માત્ર એક જ વિકલ્પ હોય છે.",
+      "તે માત્ર કમ્પ્યુટર પર જ ચાલે છે."
+    ],
+    "ans": 1,
+    "unit": "એકમ-૪: સ્વ અને નૈતિક વિકાસ",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૬૬-૬૭ અનુસાર ત્રિબિંદુ કે પંચબિંદુ ક્રમ-માપદંડ વિધાનો આધારિત ચોક્કસ માપ આપતું હોવાથી આત્મલક્ષિતા ઘટે છે."
+  },
+  {
+    "q": "પ્રશ્ન 163: 'આપના જીવનની સૌથી સુખદ ઘટના, યાદગાર પ્રસંગ કે કરુણ પ્રસંગ નોંધો' - આત્મનિરીક્ષણની આ કઈ પ્રયુક્તિ દર્શાવે છે?",
+    "options": [
+      "રોજનીશી લેખન",
+      "પ્રસંગનોંધ (Anecdotal Record / Event Reporting)",
+      "ક્રમ-માપદંડ",
+      "ધ્યાન અને યોગ"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૪: સ્વ અને નૈતિક વિકાસ",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૬૭ અનુસાર જીવનની વિશિષ્ટ ઘટનાઓનું આલેખન કરાવી વ્યક્તિત્વના વિવિધ પાસાં ઓળખવાની રીત એટલે પ્રસંગનોંધ."
+  },
+  {
+    "q": "પ્રશ્ન 164: જે વ્યક્તિને 'આત્મસાક્ષાત્કાર' (Self-Realization) થયો હોય તેના મુખ્ય વ્યક્તિત્વ લક્ષણો કયા છે?",
+    "options": [
+      "અહંકાર, ક્રોધ અને બીજાને નીચા જોવાની વૃત્તિ.",
+      "હકારાત્મક દ્રષ્ટિબિંદુ હોવું, પરિવર્તનની પ્રક્રિયાનો ભાગ બનવું, પડકારો ઝીલવાની તૈયારી અને પહેલ કરવામાં અગ્રેસર રહેવું.",
+      "સતત ચિંતા અને ભયમાં જીવવું.",
+      "સમાજથી દૂર ભાગવું."
+    ],
+    "ans": 1,
+    "unit": "એકમ-૪: સ્વ અને નૈતિક વિકાસ",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૬૭ અનુસાર આત્મસાક્ષાત્કાર પામેલ વ્યક્તિ પોતાની મહત્તા અને મર્યાદાઓ જાણી જીવનમાં રચનાત્મક અને સક્રિય બને છે."
+  },
+  {
+    "q": "પ્રશ્ન 165: સ્વ-પૃથક્કરણના ત્રીજા સોપાન 'આત્મનિરૂપણ' (Self-Expression) નો વાસ્તવિક અર્થ શો છે?",
+    "options": [
+      "પોતાના દોષો છુપાવવા.",
+      "વ્યક્તિ સ્વયં-પૃથક્કરણ અને આત્મસાક્ષાત્કાર દ્વારા પોતાનાં સબળાં પાસાંઓ અને મહત્તમ શક્તિઓનું પ્રદર્શન વર્તન કે કાર્યો દ્વારા સમાજહિતમાં કરે.",
+      "મોટેથી ભાષણ આપી પોતાનો પ્રચાર કરવો.",
+      "માત્ર સુંદર વસ્ત્રો પહેરવા."
+    ],
+    "ans": 1,
+    "unit": "એકમ-૪: સ્વ અને નૈતિક વિકાસ",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૬૭ મુજબ પોતાની શક્તિઓનો સદુપયોગ કરી વ્યક્તિત્વને ઉચ્ચ સ્તરે પ્રગટ કરવું તે આત્મનિરૂપણ છે."
+  },
+  {
+    "q": "પ્રશ્ન 166: સ્વ-પૃથક્કરણ માટે 'અભિપ્રાયાવલી' (Opinionnaire) નું નિર્માણ કરતી વખતે સામાન્ય રીતે કયા પંચબિંદુ માપદંડનો ઉપયોગ થાય છે?",
+    "options": [
+      "સૌથી સંમત, સંમત, તટસ્થ, અસંમત, સૌથી અસંમત (અથવા હંમેશાં, વારંવાર, ક્યારેક, આંશિક, ક્યારેક નહીં)",
+      "સાચું, ખોટું, કદાચ, ખબર નથી, શૂન્ય",
+      "ઉત્તમ, મધ્યમ, કનિષ્ઠ, શૂન્ય, નકારાત્મક",
+      "પાસ, નાપાસ, ગેરહાજર, પ્રોત્સાહક, શિક્ષાત્મક"
+    ],
+    "ans": 0,
+    "unit": "એકમ-૪: સ્વ અને નૈતિક વિકાસ",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૬૭-૬૮ અનુસાર લીકર્ટ આધારિત આ પંચબિંદુ માપદંડ વિધાનો પ્રત્યેના વલણને અનાત્મલક્ષી રીતે માપે છે."
+  },
+  {
+    "q": "પ્રશ્ન 167: નૈતિક વિકાસના સિદ્ધાંતના સંદર્ભમાં લૉરેન્સ કોહલબર્ગે પોતાનું મૂળ સંશોધન કાર્ય કયા સ્વિસ મનોવૈજ્ઞાનિકના સિદ્ધાંત પરથી આગળ ધપાવ્યું હતું?",
+    "options": [
+      "સિગ્મંડ ફ્રોઈડ",
+      "જીન પિયાજે (Jean Piaget)",
+      "લેવ વાયગોત્સ્કી",
+      "બી.એફ. સ્કિનર"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૪: સ્વ અને નૈતિક વિકાસ",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૬૮ અનુસાર કોહલબર્ગે ઈ.સ. ૧૯૫૮માં સ્વિસ મનોવૈજ્ઞાનિક જીન પિયાજેના નૈતિક અને જ્ઞાનાત્મક વિકાસના સિદ્ધાંતને આધારે પોતાનું સંશોધન શરૂ કર્યું."
+  },
+  {
+    "q": "પ્રશ્ન 168: લૉરેન્સ કોહલબર્ગના નૈતિક વિકાસ સિદ્ધાંતમાં કુલ કેટલા સ્તર (Levels) અને કેટલા તબક્કા (Stages) દર્શાવવામાં આવ્યા છે?",
+    "options": [
+      "૨ સ્તર અને ૪ તબક્કા",
+      "૩ સ્તર અને ૬ તબક્કા (દરેક સ્તરમાં ૨ તબક્કા)",
+      "૪ સ્તર અને ૮ તબક્કા",
+      "૫ સ્તર અને ૧૦ તબક્કા"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૪: સ્વ અને નૈતિક વિકાસ",
+    "exp": "કોહલબર્ગે નૈતિક તર્કના ૩ સ્તરો: ૧. પૂર્વ-પરંપરાગત, ૨. પરંપરાગત, ૩. ઉત્તર-પરંપરાગત આપ્યા છે અને પ્રત્યેક સ્તરમાં ૨-૨ તબક્કા મળી કુલ ૬ તબક્કા આપ્યા છે."
+  },
+  {
+    "q": "પ્રશ્ન 169: કોહલબર્ગના મતે બાળક શાળામાંથી ભાગી જવાની ના પાડે છે કારણ કે તેને ખબર છે કે ભાગવાથી શિક્ષક તરફથી 'સજા' મળશે. આ વર્તન કયા તબક્કાનું પ્રતીક છે?",
+    "options": [
+      "સ્તર ૧ - તબક્કો ૧: આજ્ઞાકારી અને સજા અભિગમ (Obedience and Punishment Orientation)",
+      "સ્તર ૧ - તબક્કો ૨: સ્વાર્થ આધારિત અભિગમ",
+      "સ્તર ૨ - તબક્કો ૪: સામાજિક વ્યવસ્થા જાળવણી",
+      "સ્તર ૩ - તબક્કો ૬: સાર્વત્રિક નૈતિક સિદ્ધાંતો"
+    ],
+    "ans": 0,
+    "unit": "એકમ-૪: સ્વ અને નૈતિક વિકાસ",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૬૯-૭૦ અનુસાર પ્રથમ તબક્કામાં નૈતિક તર્ક માત્ર બાહ્ય સજા અને શારીરિક પરિણામોના ડર પર આધારિત હોય છે."
+  },
+  {
+    "q": "પ્રશ્ન 170: માતા-પિતા બાળકને લાલચ કે પ્રલોભન આપે છે ત્યારે બાળક માત્ર તે પ્રલોભનને ધ્યાનમાં રાખીને કાર્ય કરે છે ('તું મારું આ કામ કર તો હું તને ચોકલેટ આપું'). આ કોહલબર્ગનો કયો તબક્કો છે?",
+    "options": [
+      "તબક્કો ૧: આજ્ઞાકારી અને સજા અભિગમ",
+      "તબક્કો ૨: સ્વાર્થ આધારિત / સાધનાત્મક સાપેક્ષતાવાદી અભિગમ (Instrumental Relativist / Self-Interest)",
+      "તબક્કો ૩: આંતરવૈયક્તિક સુમેળ અભિગમ",
+      "તબક્કો ૫: સામાજિક કરાર અભિગમ"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૪: સ્વ અને નૈતિક વિકાસ",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૭૦ મુજબ આ તબક્કે બાળક પોતાના અંગત લાભ, જરૂરિયાત અને પરસ્પર લેવડ-દેવડના સંદર્ભમાં નૈતિક નિર્ણય લે છે."
+  },
+  {
+    "q": "પ્રશ્ન 171: બાળક કે કિશોર સમાજમાં 'સારો છોકરો' કે 'સારી છોકરી' દેખાવા માટે નિયમો પાળે છે જેથી અન્યો તેને સ્વીકારે અને આદર આપે. આ કોહલબર્ગનો કયો તબક્કો છે?",
+    "options": [
+      "તબક્કો ૧: સજા અભિગમ",
+      "તબક્કો ૩: આંતરવૈયક્તિક સમજૂતી અને સંવાદિતા અભિગમ (Good Boy - Nice Girl Orientation)",
+      "તબક્કો ૪: કાયદો અને વ્યવસ્થા અભિગમ",
+      "તબક્કો ૬: સાર્વત્રિક નૈતિકતા"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૪: સ્વ અને નૈતિક વિકાસ",
+    "exp": "અને સંવાદિતા અભિગમ (Good Boy - Nice Girl Orientation) (C) તબક્કો ૪: કાયદો અને વ્યવસ્થા અભિગમ (D) તબક્કો ૬: સાર્વત્રિક નૈતિકતા સાચો જવાબ: (B) તબક્કો ૩: આંતરવૈયક્તિક સમજૂતી અને સંવાદિતા અભિગમ (Good Boy - Nice Girl Orientation) સમજૂતી: મોડ્યુલ પૃષ્ઠ ૭૦ અનુસાર પરંપરાગત સ્તરના ત્રીજા તબક્કામાં અન્યની નજરમાં પ્રશંસા મેળવવી અને સંબંધો જાળવવા કેન્દ્રસ્થાને હોય છે."
+  },
+  {
+    "q": "પ્રશ્ન 172: 'જો એક વ્યક્તિ કાયદાનું ઉલ્લંઘન કરશે તો સમાજની વ્યવસ્થા છિન્નભિન્ન થઈ જશે, માટે દરેક નાગરિકે કાયદાનું ચુસ્ત પાલન કરવું જ જોઈએ.' - આ નૈતિક વિચાર કોહલબર્ગના કયા તબક્કાનો છે?",
+    "options": [
+      "તબક્કો ૨: સ્વાર્થ અભિગમ",
+      "તબક્કો ૩: આંતરવૈયક્તિક સમજૂતી",
+      "તબક્કો ૪: અધિકાર અને સામાજિક વ્યવસ્થા જાળવણી અભિગમ (Law and Order Orientation)",
+      "તબક્કો ૫: સામાજિક કરાર"
+    ],
+    "ans": 2,
+    "unit": "એકમ-૪: સ્વ અને નૈતિક વિકાસ",
+    "exp": "(C) તબક્કો ૪: અધિકાર અને સામાજિક વ્યવસ્થા જાળવણી અભિગમ (Law and Order Orientation) (D) તબક્કો ૫: સામાજિક કરાર સાચો જવાબ: (C) તબક્કો ૪: અધિકાર અને સામાજિક વ્યવસ્થા જાળવણી અભિગમ (Law and Order Orientation) સમજૂતી: મોડ્યુલ પૃષ્ઠ ૭૦ અનુસાર ચોથા તબક્કામાં કાયદો, વ્યવસ્થા, સત્તા અને સામાજિક ફરજોનું પાલન સર્વોચ્ચ બને છે."
+  },
+  {
+    "q": "પ્રશ્ન 173: લોકશાહી સરકારો અને સંવિધાનો નિયમોને 'સામાજિક કરાર' (Social Contract) તરીકે ગણે છે જેમાં બહુમતી લોકકલ્યાણ માટે કાયદામાં સુધારો પણ કરી શકાય. આ કોહલબર્ગનો કયો તબક્કો છે?",
+    "options": [
+      "તબક્કો ૩: આંતરવૈયક્તિક સુમેળ",
+      "તબક્કો ૪: સામાજિક વ્યવસ્થા જાળવણી",
+      "તબક્કો ૫: સામાજિક કરાર અભિગમ (Social Contract Orientation)",
+      "તબક્કો ૧: સજા અભિગમ"
+    ],
+    "ans": 2,
+    "unit": "એકમ-૪: સ્વ અને નૈતિક વિકાસ",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૭૦ મુજબ ઉત્તર-પરંપરાગત સ્તરનો પાંચમો તબક્કો લોકશાહી મૂલ્યો, વ્યક્તિગત અધિકારો અને પરસ્પર સામાજિક કરાર પર આધારિત છે."
+  },
+  {
+    "q": "પ્રશ્ન 174: કોહલબર્ગના સર્વોચ્ચ 'તબક્કા ૬: સાર્વત્રિક નૈતિક સિદ્ધાંતો' (Universal Ethical Principles) નું મુખ્ય લક્ષણ કયું છે?",
+    "options": [
+      "સજાના ડરથી નિયમો પાળવા.",
+      "નિર્ણયો અમૂર્ત માનવતાવાદી ન્યાય, સમાનતા અને અંતરાત્માના સાર્વત્રિક સિદ્ધાંતો પર આધારિત હોય છે; કાર્ય સાચું છે માટે કરાય છે, કોઈ બાહ્ય દબાણથી નહીં.",
+      "પોતાના સમાજના રૂઢિચુસ્ત નિયમોને અંધશ્રદ્ધાથી વળગી રહેવું.",
+      "માત્ર પોતાના પરિવારનું હિત જોવું."
+    ],
+    "ans": 1,
+    "unit": "એકમ-૪: સ્વ અને નૈતિક વિકાસ",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૭૦ અનુસાર આ પરાકાષ્ઠાનો તબક્કો છે જ્યાં માનવતા અને અંતરાત્માનો અવાજ કોઈપણ કાયદા કે સજા કરતાં પર હોય છે."
+  },
+  {
+    "q": "પ્રશ્ન 175: કેરોલ ગીલીગન (Carol Gilligan) ના નૈતિક સિદ્ધાંત સંદર્ભે અસત્ય વિધાન કયું છે?",
+    "options": [
+      "તેઓ લૉરેન્સ કોહલબર્ગના વિદ્યાર્થી અને સહસંશોધક હતા.",
+      "તેમણે 'કાળજીનું નીતિશાસ્ત્ર' (Ethics of Care) નો સિદ્ધાંત આપ્યો.",
+      "તેમણે કોહલબર્ગના નૈતિક વિકાસ સિદ્ધાંતનો સંપૂર્ણ અક્ષરશઃ સ્વીકાર કર્યો અને તેમાં કોઈ ખામી ન દર્શાવી.",
+      "તેમણે દર્શાવ્યું કે સ્ત્રીઓનો નૈતિક પરિપ્રેક્ષ્ય અમૂર્ત ન્યાય કરતાં પરસ્પર સંબંધો અને કાળજી/સંભાળ પર વધુ કેન્દ્રિત હોય છે."
+    ],
+    "ans": 2,
+    "unit": "એકમ-૪: સ્વ અને નૈતિક વિકાસ",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૭૧ અનુસાર કેરોલ ગીલીગને પોતાના ગુરુ કોહલબર્ગના પુરુષ-કેન્દ્રી ન્યાય સિદ્ધાંતથી વિપરીત જઈને સ્ત્રી-સહજ 'કાળજી નીતિશાસ્ત્ર' (Ethics of Care) ની સ્થાપના કરી હતી."
+  },
+  {
+    "q": "પ્રશ્ન 176: કેરોલ ગીલીગનના 'કાળજી નીતિશાસ્ત્ર' (Ethics of Care) અનુસાર નૈતિક પરિપ્રેક્ષ્ય કયા બે મુખ્ય પ્રશ્નો વચ્ચે ફેલાયેલો છે?",
+    "options": [
+      "'કોણ જીતશે?' થી 'કોણ હારશે?'",
+      "'આ માત્ર શું છે?' થી લઈને 'કેવી રીતે પ્રતિચાર પાઠવવો / સંભાળ લેવી?'",
+      "'કેટલો દંડ થશે?' થી 'કેવી રીતે બચવું?'",
+      "'મારો શું સ્વાર્થ છે?' થી 'બીજાનું શું નુકસાન છે?'"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૪: સ્વ અને નૈતિક વિકાસ",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૭૧ અનુસાર ગીલીગનનું નીતિશાસ્ત્ર સમસ્યાગ્રસ્ત વ્યક્તિઓની સંવેદના સમજી સહાનુભૂતિપૂર્વક પ્રતિચાર આપવા પર કેન્દ્રિત છે."
+  },
+  {
+    "q": "પ્રશ્ન 177: વિવિધ સંસ્કૃતિઓ, સમાજો કે દેશો વચ્ચે 'નૈતિક તર્ક' (Moral Reasoning) માં તફાવત શા માટે જોવા મળે છે?",
+    "options": [
+      "દરેક દેશનો બુદ્ધિઆંક જન્મજાત અલગ હોય છે.",
+      "ઇતિહાસ, નેતૃત્વ, ધાર્મિક માન્યતાઓ, શાંતિ-યુદ્ધના અનુભવો, સામાજિક વારસો અને સંસાધનોની વહેંચણીની વ્યૂહરચનામાં ભિન્નતા હોવાથી.",
+      "માનવ શરીરના અંગો અલગ હોવાથી.",
+      "નૈતિકતા માત્ર હવામાન પર આધાર રાખે છે."
+    ],
+    "ans": 1,
+    "unit": "એકમ-૪: સ્વ અને નૈતિક વિકાસ",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૭૧ અનુસાર નૈતિકતા સામાજિક-સાંસ્કૃતિક સંદર્ભમાં આકાર લે છે, તેથી દરેક સંસ્કૃતિમાં નૈતિક મૂલ્યોનું વજન બદલાય છે."
+  },
+  {
+    "q": "પ્રશ્ન 178: બાળક જન્મ સમયે નૈતિકતાના કયા તબક્કે હોય છે?",
+    "options": [
+      "ઉત્તર-પરંપરાગત નૈતિકતા",
+      "પૂર્વનૈતિકતા (Pre-moral Stage - જ્યાં કોઈ સામાજિક ધોરણોની સમજ હોતી નથી)",
+      "સાર્વત્રિક નૈતિકતા",
+      "આત્મસાક્ષાત્કાર"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૪: સ્વ અને નૈતિક વિકાસ",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૬૮ મુજબ નવજાત શિશુ પૂર્વનૈતિક અવસ્થામાં હોય છે; તે જેમ જેમ મોટું થાય તેમ સામાજિકીકરણ દ્વારા નૈતિકતા ગ્રહણ કરે છે."
+  },
+  {
+    "q": "પ્રશ્ન 179: જે વ્યક્તિમાં નૈતિક વિકાસનો અભાવ હોય છે, તેનામાં સામાજિક દ્રષ્ટિએ કઈ નકારાત્મક વૃત્તિ વિકસે છે?",
+    "options": [
+      "સહાનુભૂતિ અને પરહિત",
+      "અપરાધશીલતા (Delinquency / Criminal Tendency) અને અસામાજિક વર્તન",
+      "ઉચ્ચ આત્મસન્માન",
+      "આદર્શ નાગરિકતા"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૪: સ્વ અને નૈતિક વિકાસ",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૬૮ અનુસાર યોગ્ય નૈતિક વિકાસના અભાવે વ્યક્તિ સમાજના નિયમો તોડવા પ્રેરાય છે અને અપરાધશીલ બને છે."
+  },
+  {
+    "q": "પ્રશ્ન 180: શાળામાં શિક્ષકે વિદ્યાર્થીઓમાં નૈતિક વિકાસ કેળવવા કયો અભિગમ અપનાવવો જોઈએ?",
+    "options": [
+      "વિદ્યાર્થીઓને માત્ર નૈતિકતાના ઉપદેશો આપવા અને પોતે ગેરવર્તન કરવું.",
+      "પોતાના આચરણ દ્વારા આદર્શ નૈતિક મૉડલ પૂરું પાડવું, નૈતિક મૂંઝવણો (Moral Dilemmas) પર ચર્ચા કરાવવી અને મુક્ત તાર્કિક વિચારણાને પ્રોત્સાહિત કરવી.",
+      "જે વિદ્યાર્થી નાની ભૂલ કરે તેને આકરો શારીરિક દંડ કરવો.",
+      "નૈતિક શિક્ષણનો વિષય જ અભ્યાસક્રમમાંથી રદ કરવો."
+    ],
+    "ans": 1,
+    "unit": "એકમ-૪: સ્વ અને નૈતિક વિકાસ",
+    "exp": "કોહલબર્ગ મુજબ નૈતિક મૂંઝવણો પર સંવાદ કરવાથી બાળકની જ્ઞાનાત્મક વિચારણા ઉચ્ચ નૈતિક તબક્કા તરફ ગતિ કરે છે."
+  },
+  {
+    "q": "પ્રશ્ન 181: કોહલબર્ગના 'હિન્ઝની મૂંઝવણ' (Heinz Dilemma) ના પ્રખ્યાત પ્રયોગમાં નૈતિકતાનું મૂલ્યાંકન શેના આધારે કરવામાં આવે છે?",
+    "options": [
+      "હિન્ઝે દવા ચોરી કે નહીં તે આખરી નિર્ણયના આધારે.",
+      "હિન્ઝના નિર્ણય પાછળ વ્યક્તિએ રજૂ કરેલા 'નૈતિક તર્ક' (Moral Reasoning) ના આધારે.",
+      "દવાની કિંમત કેટલી હતી તેના આધારે.",
+      "પોલીસે હિન્ઝને પકડ્યો કે નહીં તેના આધારે."
+    ],
+    "ans": 1,
+    "unit": "એકમ-૪: સ્વ અને નૈતિક વિકાસ",
+    "exp": "કોહલબર્ગ માટે 'શું કર્યું' તેના કરતાં 'શા માટે કર્યું' તે પાછળનો નૈતિક તર્ક જ વિકાસનો તબક્કો નક્કી કરે છે."
+  },
+  {
+    "q": "પ્રશ્ન 182: એક વ્યક્તિ લાલ લાઇટ (ટ્રાફિક સિગ્નલ) પર રાત્રે ૨ વાગ્યે રસ્તા પર કોઈ પોલીસ ન હોવા છતાં ઊભી રહે છે કારણ કે તે માને છે કે 'સિગ્નલ પાળવું એ સામાજિક શિસ્ત અને સલામતી માટે જરૂરી છે'. આ કોહલબર્ગના કયા સ્તરનું ઉદાહરણ છે?",
+    "options": [
+      "પૂર્વ-પરંપરાગત સ્તર",
+      "પરંપરાગત સ્તર (તબક્કો ૪: કાયદો અને વ્યવસ્થા)",
+      "માત્ર સજા આધારિત સ્તર",
+      "પૂર્વનૈતિક સ્તર"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૪: સ્વ અને નૈતિક વિકાસ",
+    "exp": "પોલીસ કે દંડના ડર વિના પણ કાયદા અને વ્યવસ્થાની આંતરિક સ્વીકૃતિ એ ચોથા તબક્કાનું લક્ષણ છે."
+  },
+  {
+    "q": "પ્રશ્ન 183: સ્વાતંત્ર્ય સેનાનીઓ કે સમાજ સુધારકો જ્યારે અન્યાયી સરકારી કાયદાઓનો સવિનય ભંગ કરે છે (દા.ત., ગાંધીજીનો મીઠાનો સત્યાગ્રહ), ત્યારે તેઓ કોહલબર્ગના કયા સ્તરે કાર્ય કરતા હોય છે?",
+    "options": [
+      "તબક્કો ૧: સજાનો ડર",
+      "તબક્કો ૨: અંગત સ્વાર્થ",
+      "તબક્કો ૪: કાયદાનું અંધપાલન",
+      "સ્તર ૩ (ઉત્તર-પરંપરાગત સ્તર - સાર્વત્રિક માનવ અધિકારો અને અંતરાત્માનો સિદ્ધાંત)"
+    ],
+    "ans": 3,
+    "unit": "એકમ-૪: સ્વ અને નૈતિક વિકાસ",
+    "exp": "જ્યારે પ્રસ્થાપિત કાયદો માનવતા અને ન્યાયની વિરુદ્ધ હોય ત્યારે સાર્વત્રિક સિદ્ધાંતો ખાતર જેલ જવાની તૈયારી એ છઠ્ઠા તબક્કાની પરાકાષ્ઠા છે."
+  },
+  {
+    "q": "પ્રશ્ન 184: કોહલબર્ગના સિદ્ધાંતની સૌથી મોટી મર્યાદા કેરોલ ગીલીગને કઈ દર્શાવી હતી?",
+    "options": [
+      "તેમાં પ્રાણીઓ પર પ્રયોગો થયા ન હતા.",
+      "કોહલબર્ગનું સેમ્પલ માત્ર પુરુષો (છોકરાઓ) પર આધારિત હતું, જેથી તેમાં સ્ત્રી-સહજ સંભાળ અને સંબંધોના નૈતિક પરિપ્રેક્ષ્યની ઉપેક્ષા થઈ હતી (Gender Bias).",
+      "તેમાં ગણિતના પ્રશ્નો ન હતા.",
+      "તે માત્ર ભારતીય સંસ્કૃતિ માટે જ બન્યો હતો."
+    ],
+    "ans": 1,
+    "unit": "એકમ-૪: સ્વ અને નૈતિક વિકાસ",
+    "exp": "ગીલીગને સાબિત કર્યું કે કોહલબર્ગનો ન્યાય-કેન્દ્રી સ્કેલ સ્ત્રીઓના સંભાળ-કેન્દ્રી નૈતિક તર્કને અન્યાયી રીતે નીચો દર્શાવતો હતો."
+  },
+  {
+    "q": "પ્રશ્ન 185: શિક્ષકે પોતાના વર્ગખંડમાં સ્વ-પૃથક્કરણ માટે 'અભિપ્રાયાવલી' ભરાવતી વખતે કઈ બાબતની ખાસ તકેદારી રાખવી જોઈએ?",
+    "options": [
+      "વિદ્યાર્થીઓ પર ચોક્કસ જવાબો આપવા દબાણ કરવું.",
+      "વિદ્યાર્થીઓ નિર્ભયતાથી, પ્રામાણિકપણે અને પૂર્વગ્રહરહિત સાચા પ્રતિભાવો આપી શકે તેવું સુરક્ષિત અને વિશ્વાસપાત્ર વાતાવરણ પૂરું પાડવું.",
+      "જે વિદ્યાર્થી નકારાત્મક અભિપ્રાય આપે તેને સજા કરવી.",
+      "અભિપ્રાયાવલીના જવાબો આખી શાળામાં જાહેર કરી દેવા."
+    ],
+    "ans": 1,
+    "unit": "એકમ-૪: સ્વ અને નૈતિક વિકાસ",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૬૭ અનુસાર અભિપ્રાયાવલીની વિશ્વસનીયતા વ્યક્તિની નિખાલસતા પર નિર્ભર કરે છે."
+  },
+  {
+    "q": "પ્રશ્ન 186: સ્વ-ઓળખ દ્વારા વિદ્યાર્થીમાં કયો મહત્વપૂર્ણ જીવન ગુણ ખીલે છે?",
+    "options": [
+      "અહંકાર અને બીજાની અવગણના",
+      "પોતાની શક્તિઓ અને મર્યાદાઓનો વાસ્તવિક સ્વીકાર, આત્મવિશ્વાસ, સ્વાવલંબન અને સ્વ-નિયમન",
+      "પરીક્ષામાં ચોરી કરવાની કળા",
+      "આળસ અને નિરાશા"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૪: સ્વ અને નૈતિક વિકાસ",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૬૪ અનુસાર સ્વ-ઓળખ એ બાળકના સર્વાંગી વિકાસ અને ભવિષ્યની કારકિર્દીનો મજબૂત પાયો છે."
+  },
+  {
+    "q": "પ્રશ્ન 187: નીચેના પૈકી કયું વિધાન 'આત્મનિરીક્ષણ' (Self-Introspection) ના સ્વરૂપને ખોટી રીતે રજૂ કરે છે?",
+    "options": [
+      "તે વ્યક્તિનું સાતત્યપૂર્ણ અને નિરંતર ચાલતું આંતરિક મૂલ્યાંકન છે.",
+      "તે એક અતિ સરળ અને યાંત્રિક પ્રક્રિયા છે જેમાં કોઈ પરિશ્રમ કે પ્રામાણિકતાની જરૂર પડતી નથી.",
+      "તેમાં વ્યક્તિએ પોતાના સબળાં અને નબળાં પાસાંઓની તટસ્થ સમીક્ષા કરવાની હોય છે.",
+      "તે સુષુપ્ત શક્તિઓને જાગૃત કરી સન્માર્ગે વાળવામાં સહાયક બને છે."
+    ],
+    "ans": 1,
+    "unit": "એકમ-૪: સ્વ અને નૈતિક વિકાસ",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૬૫-૬૬ અનુસાર આત્મનિરીક્ષણ અત્યંત કઠિન, સાતત્યપૂર્ણ પરિશ્રમ અને કડક નિખાલસતા માંગી લેતી પ્રક્રિયા છે."
+  },
+  {
+    "q": "પ્રશ્ન 188: કોહલબર્ગના સિદ્ધાંત મુજબ પ્રારંભિક પ્રાથમિક શાળાના મોટાભાગના બાળકો (ધોરણ ૧ થી ૪) કયા નૈતિક સ્તરે જોવા મળે છે?",
+    "options": [
+      "સ્તર ૧: પૂર્વ-પરંપરાગત સ્તર (સજા અને સ્વાર્થ/પુરસ્કાર આધારિત)",
+      "સ્તર ૨: સામાજિક કાયદા અને વ્યવસ્થા સ્તર",
+      "સ્તર ૩: સાર્વત્રિક નૈતિક સિદ્ધાંતો સ્તર",
+      "કોઈપણ નૈતિક સ્તર હોતું નથી"
+    ],
+    "ans": 0,
+    "unit": "એકમ-૪: સ્વ અને નૈતિક વિકાસ",
+    "exp": "પ્રાથમિક શાળાના નાના બાળકો મુખ્યત્વે શિક્ષકની સજાથી બચવા કે સ્ટાર/ઇનામ મેળવવા માટે જ નિયમોનું પાલન કરતા હોય છે."
+  },
+  {
+    "q": "પ્રશ્ન 189: કિશોરાવસ્થા (માધ્યમિક શાળા) દરમિયાન વિદ્યાર્થીઓમાં મોટેભાગે કોહલબર્ગનો કયો તબક્કો પ્રબળ જોવા મળે છે?",
+    "options": [
+      "તબક્કો ૧: સજાનો ડર",
+      "તબક્કો ૩: સમવયસ્ક જૂથમાં 'સારો દેખાવ કરવો' (Good Boy - Nice Girl) અને સામાજિક સ્વીકૃતિ મેળવવી",
+      "તબક્કો ૬: વિશ્વ શાંતિના અમૂર્ત નિયમો",
+      "પૂર્વનૈતિક સ્તર"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૪: સ્વ અને નૈતિક વિકાસ",
+    "exp": "કિશોરાવસ્થામાં મિત્રો અને શિક્ષકોની પ્રશંસા મેળવવી તથા જૂથમાં લોકપ્રિય બનવું એ નૈતિક વર્તનનું મુખ્ય ચાલકબળ હોય છે."
+  },
+  {
+    "q": "પ્રશ્ન 190: કોહલબર્ગના સિદ્ધાંત અનુસાર વ્યક્તિ એક તબક્કામાંથી બીજા ઉચ્ચ તબક્કામાં ક્યારે પ્રવેશે છે?",
+    "options": [
+      "માત્ર શારીરિક વજન વધવાથી.",
+      "જ્યારે તેની વર્તમાન વિચારસરણી સામે 'જ્ઞાનાત્મક સંઘર્ષ' (Cognitive Conflict) કે નૈતિક મૂંઝવણ ઊભી થાય અને તે વધુ પર્યાપ્ત ઉકેલ શોધે ત્યારે.",
+      "માત્ર શાળા બદલવાથી.",
+      "સરકારી આદેશ બહાર પડવાથી."
+    ],
+    "ans": 1,
+    "unit": "એકમ-૪: સ્વ અને નૈતિક વિકાસ",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૬૮ અનુસાર નૈતિક વિકાસ રચનાત્મક તબક્કા દ્વારા થાય છે જેમાં અગાઉના તબક્કા કરતાં વધુ પર્યાપ્ત ઉત્તર મેળવવાની મનોવૈજ્ઞાનિક જરૂરિયાત ઉદ્ભવે છે."
+  },
+  {
+    "q": "પ્રશ્ન 191: સમાજમાન્ય ગુણોનું પાલન એ જ નૈતિકતા છે, પરંતુ જ્યારે કોઈ સમાજમાં સ્ત્રી શિક્ષણ પર પ્રતિબંધ હોય કે અસ્પૃશ્યતા જેવી કુરિવાજો હોય, ત્યારે વ્યક્તિ કયા નૈતિક સ્તરે જઈને તેનો વિરોધ કરે છે?",
+    "options": [
+      "પરંપરાગત સ્તર",
+      "ઉત્તર-પરંપરાગત સ્તર (Post-conventional Level - સાર્વત્રિક માનવ સમાનતા અને ન્યાય)",
+      "પૂર્વ-પરંપરાગત સ્તર",
+      "સ્વાર્થ આધારિત સ્તર"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૪: સ્વ અને નૈતિક વિકાસ",
+    "exp": "જ્યારે સામાજિક રૂઢિઓ માનવ ગરિમા વિરુદ્ધ હોય ત્યારે ઉત્તર-પરંપરાગત સ્તરની વ્યક્તિ સમાજના વિરોધ વચ્ચે પણ સાચા નૈતિક મૂલ્ય ખાતર અવાજ ઉઠાવે છે."
+  },
+  {
+    "q": "પ્રશ્ન 192: શિક્ષક તાલીમાર્થીઓ (D.El.Ed. પ્રશિક્ષણાર્થીઓ) માટે 'ઇન્ટર્નશિપ દરમિયાન શાળાના અનુભવોની રોજનીશી લખવી' એ કયા પ્રકારનું પ્રાયોગિક કાર્ય છે?",
+    "options": [
+      "માત્ર સમય પસાર કરવાની પ્રવૃત્તિ",
+      "પોતાના શૈક્ષણિક આચરણ, સફળતાઓ અને ક્ષતિઓનું સ્વ-પૃથક્કરણ કરી સ્વ-સુધારણા સાધવાની આત્મનિરીક્ષણ પદ્ધતિ",
+      "શાળાના આચાર્યની જાસૂસી કરવાની રીત",
+      "પરીક્ષા ચોરીની તૈયારી"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૪: સ્વ અને નૈતિક વિકાસ",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૭૨ અનુસાર રોજનીશી લેખન ભાવિ શિક્ષકને પોતાના વર્ગવ્યવહારની તટસ્થ સમીક્ષા કરવાની તક આપે છે."
+  },
+  {
+    "q": "પ્રશ્ન 193: પ્રાચીન ભારતીય ઉપનિષદો અને વેદાંત દર્શનનું સૂત્ર 'આત્મનામ્ વિજાનીયાત્' અને બુદ્ધનું 'આત્મદીપો ભવ' પશ્ચિમી મનોવિજ્ઞાનની કઈ સંકલ્પના સાથે સીધું સામ્ય ધરાવે છે?",
+    "options": [
+      "Conditioned Reflex (અભિસંધિત પ્રતિક્ષિપ્ત ક્રિયા)",
+      "Know Thyself / Self-Realization (સ્વ-ઓળખ અને આત્મસાક્ષાત્કાર)",
+      "Trial and Error (પ્રયત્ન અને ભૂલ)",
+      "Negative Reinforcement (નકારાત્મક સુદૃઢીકરણ)"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૪: સ્વ અને નૈતિક વિકાસ",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૬૫ સ્પષ્ટ કરે છે કે 'પોતાની જાતને ઓળખો' (Know Thyself) એ વિશ્વભરના તત્ત્વચિંતન અને મનોવિજ્ઞાનનું સર્વોચ્ચ ધ્યેય છે."
+  },
+  {
+    "q": "પ્રશ્ન 194: જો કોઈ શિક્ષક પોતાના વર્ગખંડમાં બાળકો સાથે અત્યંત સખતાઈથી કામ લેતો હોય અને બાળકો તેનાથી ડરતા હોય, તો સ્વ-પૃથક્કરણ દ્વારા આ શિક્ષકે શું સમજવું જોઈએ?",
+    "options": [
+      "તે એક શ્રેષ્ઠ શિક્ષક છે કારણ કે વર્ગ શાંત રહે છે.",
+      "પોતાની વર્તણૂક બાળકના માનસિક વિકાસ અને સંરચનાવાદી અધ્યયનમાં અવરોધરૂપ છે, માટે આત્મસુધારણા કરી સૌહાર્દપૂર્ણ વાતાવરણ બનાવવું જોઈએ.",
+      "બાળકોને વધુ સજા કરવી જોઈએ.",
+      "શિક્ષકે ભણાવવાનું બંધ કરી દેવું જોઈએ."
+    ],
+    "ans": 1,
+    "unit": "એકમ-૪: સ્વ અને નૈતિક વિકાસ",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૬૪-૬૫ અનુસાર સ્વ-ઓળખ શિક્ષકને પોતાની મર્યાદાઓ ઓળખી બાળકો માટે આદર્શ અને પ્રેરણાદાયી બનવા પ્રેરે છે."
+  },
+  {
+    "q": "પ્રશ્ન 195: બાળકમાં 'સ્વાભિમાન' (Self-Esteem) અને 'અહંકાર' (Ego/Arrogance) વચ્ચેનો તાત્વિક ભેદ શો છે?",
+    "options": [
+      "બંને એક જ બાબત છે.",
+      "સ્વાભિમાન એ પોતાની ક્ષમતાઓ અને માનવીય ગરિમાનું સ્વસ્થ સન્માન છે; જ્યારે અહંકાર એ અન્યોને ઉતારી પાડવાની અને સ્વયંને સર્વોપરી માનવાની વિકૃતિ છે.",
+      "સ્વાભિમાન ખરાબ છે અને અહંકાર સારો છે.",
+      "સ્વાભિમાન માત્ર ધનિકોમાં હોય છે."
+    ],
+    "ans": 1,
+    "unit": "એકમ-૪: સ્વ અને નૈતિક વિકાસ",
+    "exp": "સ્વ-ઓળખ સ્વાભિમાન વધારે છે પરંતુ અહંકારનું શમન કરી વ્યક્તિને નમ્ર અને સંવેદનશીલ બનાવે છે."
+  },
+  {
+    "q": "પ્રશ્ન 196: કોહલબર્ગના સિદ્ધાંત મુજબ નૈતિક વિકાસ એ શેના વિકાસ સાથે અનિવાર્યપણે જોડાયેલો છે?",
+    "options": [
+      "માત્ર શારીરિક ઊંચાઈ",
+      "બોધાત્મક/જ્ઞાનાત્મક વિકાસ (Cognitive Development - તાર્કિક વિચારણાની ક્ષમતા)",
+      "માત્ર આર્થિક સંપત્તિ",
+      "માત્ર સંગીત કળા"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૪: સ્વ અને નૈતિક વિકાસ",
+    "exp": "પિયાજે અને કોહલબર્ગ બંને માને છે કે જેમ જેમ બાળકની જ્ઞાનાત્મક તર્કશક્તિ વિકસે છે તેમ તેમ તેનો નૈતિક તર્ક પણ પરિપક્વ બને છે."
+  },
+  {
+    "q": "પ્રશ્ન 197: એક વિદ્યાર્થી પરીક્ષામાં પોતાના મિત્રને ઉત્તર બતાવવાની ના પાડે છે કારણ કે તે માને છે કે 'પરીક્ષામાં ચોરી કરવી એ પ્રામાણિકતાના મૂલ્યની વિરુદ્ધ છે, ભલે મિત્ર નારાજ થાય'. આ વિદ્યાર્થી કયા નૈતિક સ્તરે વિચારે છે?",
+    "options": [
+      "પૂર્વ-પરંપરાગત સ્તર",
+      "ઉચ્ચ પરંપરાગત / ઉત્તર-પરંપરાગત નૈતિક સ્તર (મૂલ્યનિષ્ઠ આંતરિક પ્રામાણિકતા)",
+      "માત્ર સ્વાર્થ સ્તર",
+      "સજાનો ડર"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૪: સ્વ અને નૈતિક વિકાસ",
+    "exp": "મિત્રતાના દબાણ કે બાહ્ય સંબંધોથી પર જઈને આદર્શ મૂલ્ય અને સત્યને વળગી રહેવું એ ઉચ્ચ નૈતિક પરિપક્વતા દર્શાવે છે."
+  },
+  {
+    "q": "પ્રશ્ન 198: મોડ્યુલ અનુસાર 'સ્વ-ઓળખની પ્રક્રિયામાં દંભ કે આડંબર આવી જાય તો તે દૂષિત બને છે' - આનું નિવારણ કરવા વ્યક્તિએ કયો ભાવ કેળવવો જોઈએ?",
+    "options": [
+      "સાક્ષીભાવ, તટસ્થતા અને સત્યપ્રિયતા",
+      "ક્રોધ અને ઉશ્કેરાટ",
+      "અન્યોની ઈર્ષ્યા",
+      "ખોટા પ્રશંસાપત્રો મેળવવા"
+    ],
+    "ans": 0,
+    "unit": "એકમ-૪: સ્વ અને નૈતિક વિકાસ",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૬૫ અનુસાર સાક્ષીભાવે પોતાની જાતને તટસ્થ દ્રષ્ટા તરીકે જોવાથી જ વાસ્તવિક આત્મનિરીક્ષણ શક્ય બને છે."
+  },
+  {
+    "q": "પ્રશ્ન 199: શાળામાં પ્રાર્થનાસભા દરમિયાન યોજાતા સદ્વિચાર ચિંતન અને જીવનચરિત્ર કથન બાળકના કયા વિકાસ માટે સૌથી વધુ ઉપકારક છે?",
+    "options": [
+      "માત્ર શારીરિક કસરત",
+      "સ્વ-ઓળખ, મૂલ્યનિષ્ઠા અને નૈતિક વિકાસ (Moral & Value Development)",
+      "માત્ર ગણિતની ઝડપ",
+      "વિજ્ઞાનના સમીકરણો"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૪: સ્વ અને નૈતિક વિકાસ",
+    "exp": "પ્રાર્થનાસભા અને મહાપુરુષોના જીવનપ્રસંગો બાળકના અંતરમનને સ્પર્શીને ઉચ્ચ નૈતિક સંસ્કારોનું સિંચન કરે છે."
+  },
+  {
+    "q": "પ્રશ્ન 200: સમગ્ર કોર્સ - ૧ (અ) ના ચારેય એકમોનો પાયાનો સારાંશ શો છે?",
+    "options": [
+      "શિક્ષણ એ માત્ર પરીક્ષામાં ગુણ મેળવવાની ગોખણપટ્ટી છે.",
+      "શિક્ષણ એ અધ્યેતા-કેન્દ્રી સંરચનાવાદી પ્રક્રિયા છે, જેમાં રમત, સચોટ પ્રત્યાયન, ભાષા-વૈવિધ્ય અને સ્વ-ઓળખ થકી બાળકના સર્વાંગી અને ઉચ્ચ નૈતિક વ્યક્તિત્વનું નિર્માણ થાય છે.",
+      "શિક્ષણમાં શિક્ષક જ સર્વેસર્વા છે અને બાળકે માત્ર શાંત બેસવાનું છે.",
+      "શાળામાં માત્ર પાઠ્યપુસ્તકો જ મહત્વના છે."
+    ],
+    "ans": 1,
+    "unit": "એકમ-૪: સ્વ અને નૈતિક વિકાસ",
+    "exp": "ડી.એલ.એડ્. અભ્યાસક્રમ કોર્સ-૧ (અ) બોધ, રમત, ભાષા-સંચાર અને નૈતિકતાના સમન્વય દ્વારા બાળકને સમાજનો સક્ષમ, સંવેદનશીલ અને આદર્શ નાગરિક બનાવવાનું લક્ષ્ય રાખે છે."
+  }
+];
+
+let studentName = "", studentPhone = "", studentEmail = "";
+let currentQ = 0;
+let userAnswers = new Array(questions.length).fill(null);
+let flaggedQuestions = new Array(questions.length).fill(false);
+let startTime, timerInterval;
+
+function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+    const isDark = document.body.classList.contains("dark-mode");
+    const btn = document.getElementById("themeToggleBtn");
+    btn.innerHTML = isDark ? '<i class="fa-solid fa-sun"></i> લાઈટ મોડ' : '<i class="fa-solid fa-moon"></i> ડાર્ક મોડ';
+}
+
+function showNotice(msg, type = "info") {
+    const box = document.getElementById("noticeMsg");
+    box.className = "msg-box " + (type === "error" ? "msg-error" : "msg-info");
+    box.innerText = msg;
+    box.style.display = "block";
+    setTimeout(() => { box.style.display = "none"; }, 6000);
+}
+
+function requestOTP() {
+    studentName = document.getElementById("name").value.trim();
+    studentPhone = document.getElementById("phone").value.trim();
+    studentEmail = document.getElementById("email").value.trim();
+
+    if (!studentName || studentPhone.length < 10 || !studentEmail.includes("@")) {
+        showNotice("કૃપા કરીને પૂરું નામ, ૧૦ અંકનો સાચો મોબાઇલ નંબર અને માન્ય ઇમેઇલ દાખલ કરો.", "error");
+        return;
+    }
+
+    const btn = document.getElementById("getOtpBtn");
+    btn.disabled = true;
+    btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> OTP મોકલાઈ રહ્યો છે...';
+
+    fetch(SCRIPT_URL, {
+        method: "POST",
+        mode: "no-cors",
+        headers: { "Content-Type": "text/plain" },
+        body: JSON.stringify({
+            action: "sendOTP",
+            name: studentName,
+            email: studentEmail
+        })
+    })
+    .then(function() {
+        showNotice("આપના ઈમેઈલ પર ૪ અંકનો OTP મોકલવામાં આવ્યો છે. ઇનબોક્સ/સ્પામ તપાસો.", "info");
+        document.getElementById("otpContainer").style.display = "block";
+        btn.innerHTML = '<i class="fa-solid fa-rotate-right"></i> OTP ફરીથી મોકલો';
+        btn.disabled = false;
+    })
+    .catch(function() {
+        showNotice("OTP મોકલવામાં ક્ષતિ આવી. ફરી પ્રયાસ કરો.", "error");
+        btn.disabled = false;
+        btn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> OTP મેળવો અને આગળ વધો';
+    });
+}
+
+function verifyAndStart() {
+    const enteredOTP = document.getElementById("otpInput").value.trim();
+    if (enteredOTP.length !== 4) {
+        showNotice("કૃપા કરીને ૪ અંકનો સાચો OTP દાખલ કરો.", "error");
+        return;
+    }
+
+    const vBtn = document.getElementById("verifyBtn");
+    vBtn.disabled = true;
+    vBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> ચકાસણી ચાલુ છે...';
+
+    fetch(SCRIPT_URL, {
+        method: "POST",
+        body: JSON.stringify({
+            action: "verifyOTP",
+            email: studentEmail,
+            otp: enteredOTP
+        })
+    })
+    .then(res => res.json())
+    .then(data => {
+        if (data.status === "success" && data.verified) {
+            document.getElementById("loginScreen").style.display = "none";
+            document.getElementById("quizScreen").style.display = "block";
+            initQuestionPalette();
+            startTime = new Date();
+            timerInterval = setInterval(updateTimer, 1000);
+            loadQuestion();
+        } else {
+            showNotice("ખોટો OTP અથવા સમય વીતી ગયો છે! ફરી ચકાસો.", "error");
+            vBtn.disabled = false;
+            vBtn.innerHTML = '<i class="fa-solid fa-unlock-keyhole"></i> OTP ચકાસો અને મોક ટેસ્ટ શરૂ કરો';
+        }
+    })
+    .catch(() => {
+        showNotice("ચકાસણીમાં ભૂલ થઈ. ફરી પ્રયાસ કરો.", "error");
+        vBtn.disabled = false;
+        vBtn.innerHTML = '<i class="fa-solid fa-unlock-keyhole"></i> OTP ચકાસો અને મોક ટેસ્ટ શરૂ કરો';
+    });
+}
+
+function updateTimer() {
+    const elapsed = Math.floor((new Date() - startTime) / 1000);
+    const mins = String(Math.floor(elapsed / 60)).padStart(2, '0');
+    const secs = String(elapsed % 60).padStart(2, '0');
+    document.getElementById("timerDisplay").innerText = `${mins}:${secs}`;
+}
+
+function initQuestionPalette() {
+    const container = document.getElementById("questionGridContainer");
+    container.innerHTML = "";
+    for (let i = 0; i < questions.length; i++) {
+        const pill = document.createElement("div");
+        pill.className = "q-pill";
+        pill.id = `qPill_${i}`;
+        pill.innerText = 101 + i;
+        pill.onclick = () => jumpToQuestion(i);
+        container.appendChild(pill);
+    }
+    updatePaletteStats();
+}
+
+function updatePaletteStats() {
+    let answered = 0;
+    for (let i = 0; i < questions.length; i++) {
+        const pill = document.getElementById(`qPill_${i}`);
+        if (!pill) continue;
+        pill.className = "q-pill";
+        
+        if (i === currentQ) {
+            pill.classList.add("status-current");
+        }
+        if (flaggedQuestions[i]) {
+            pill.classList.add("status-flagged");
+        } else if (userAnswers[i] !== null) {
+            pill.classList.add("status-answered");
+            answered++;
+        }
+    }
+    const totalAns = userAnswers.filter(a => a !== null).length;
+    document.getElementById("answeredCountBadge").innerText = `${totalAns} / ${questions.length} પૂર્ણ`;
+}
+
+function jumpToQuestion(idx) {
+    currentQ = idx;
+    loadQuestion();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function loadQuestion() {
+    const q = questions[currentQ];
+    document.getElementById("qProgress").innerText = `પ્રશ્ન ${101 + currentQ} / ૨૦૦ (કુલ પ્રશ્ન ${currentQ + 1} / ${questions.length})`;
+    document.getElementById("unitBadge").innerText = `📘 ${q.unit}`;
+    document.getElementById("questionText").innerText = q.q;
+
+    const flagBtn = document.getElementById("flagBtn");
+    if (flaggedQuestions[currentQ]) {
+        flagBtn.className = "btn-flag active-flag";
+        flagBtn.innerHTML = '<i class="fa-solid fa-bookmark"></i> Flag કરેલ છે 🚩';
+    } else {
+        flagBtn.className = "btn-flag";
+        flagBtn.innerHTML = '<i class="fa-regular fa-bookmark"></i> Flag (રિવ્યુ માટે)';
+    }
+
+    const optContainer = document.getElementById("optionsContainer");
+    optContainer.innerHTML = "";
+
+    q.options.forEach((opt, idx) => {
+        const label = document.createElement("label");
+        label.className = "option-label";
+        const isChecked = userAnswers[currentQ] === idx ? "checked" : "";
+        label.innerHTML = `
+            <input type="radio" name="opt" value="${idx}" ${isChecked} onchange="onOptionSelect(${idx})">
+            <span><strong>(${String.fromCharCode(65 + idx)})</strong> ${opt}</span>
+        `;
+        optContainer.appendChild(label);
+    });
+
+    document.getElementById("prevBtn").style.visibility = (currentQ === 0) ? "hidden" : "visible";
+    document.getElementById("nextBtn").innerHTML = (currentQ === questions.length - 1) 
+        ? '<i class="fa-solid fa-flag-checkered"></i> કસોટી પૂર્ણ કરો' 
+        : 'આગળ <i class="fa-solid fa-arrow-right"></i>';
+
+    updatePaletteStats();
+}
+
+function onOptionSelect(idx) {
+    userAnswers[currentQ] = idx;
+    updatePaletteStats();
+}
+
+function toggleFlagCurrentQuestion() {
+    flaggedQuestions[currentQ] = !flaggedQuestions[currentQ];
+    loadQuestion();
+}
+
+function prevQuestion() {
+    if (currentQ > 0) {
+        currentQ--;
+        loadQuestion();
+    }
+}
+
+function nextQuestion() {
+    if (currentQ < questions.length - 1) {
+        currentQ++;
+        loadQuestion();
+    } else {
+        confirmSubmitQuiz();
+    }
+}
+
+function confirmSubmitQuiz() {
+    const unans = userAnswers.filter(a => a === null).length;
+    const flagCount = flaggedQuestions.filter(f => f === true).length;
+    
+    let msg = "શું આપ ખરેખર કસોટી સબમિટ કરવા માંગો છો?";
+    if (unans > 0 || flagCount > 0) {
+        msg = `ધ્યાન આપો:
+- ${unans} પ્રશ્નોના ઉત્તર બાકી છે.
+- ${flagCount} પ્રશ્નો Flag કરેલા છે.
+
+શું આપ કસોટી સબમિટ કરવા માંગો છો?`;
+    }
+    
+    if (confirm(msg)) {
+        submitQuiz();
+    }
+}
+
+function submitQuiz() {
+    clearInterval(timerInterval);
+    const elapsed = Math.floor((new Date() - startTime) / 1000);
+    const mins = Math.floor(elapsed / 60);
+    const secs = elapsed % 60;
+    const formattedTime = `${mins} મિનિટ ${secs} સેકન્ડ`;
+
+    let score = 0;
+    let wrongIndices = [];
+    questions.forEach((q, i) => {
+        if (userAnswers[i] === q.ans) {
+            score++;
+        } else {
+            wrongIndices.push(i);
+        }
+    });
+    const percent = ((score / questions.length) * 100).toFixed(2);
+    const flagCount = flaggedQuestions.filter(f => f === true).length;
+
+    document.getElementById("quizScreen").style.display = "none";
+    document.getElementById("resultScreen").style.display = "block";
+
+    document.getElementById("resName").innerText = studentName;
+    document.getElementById("resPhone").innerText = studentPhone;
+    document.getElementById("resTime").innerText = `${mins}m ${secs}s`;
+    document.getElementById("resScore").innerText = `${score} / ${questions.length}`;
+    document.getElementById("resPercent").innerText = `${percent}% ગુણાંક`;
+    document.getElementById("resCorrectCount").innerText = score;
+    document.getElementById("resWrongCount").innerText = questions.length - score;
+    document.getElementById("resFlagCount").innerText = flagCount;
+
+    renderWrongQuestions(wrongIndices);
+    renderFullAnswerKey();
+    renderBlankPaper();
+
+    prepareAndSendBackendResult(score, percent, formattedTime);
+}
+
+function switchResultTab(tabName) {
+    document.getElementById("tabBtnWrong").classList.remove("active-tab");
+    document.getElementById("tabBtnAnswers").classList.remove("active-tab");
+    document.getElementById("tabBtnBlank").classList.remove("active-tab");
+
+    document.getElementById("tabContentWrong").style.display = "none";
+    document.getElementById("tabContentAnswers").style.display = "none";
+    document.getElementById("tabContentBlank").style.display = "none";
+
+    if (tabName === "wrong") {
+        document.getElementById("tabBtnWrong").classList.add("active-tab");
+        document.getElementById("tabContentWrong").style.display = "block";
+    } else if (tabName === "answers") {
+        document.getElementById("tabBtnAnswers").classList.add("active-tab");
+        document.getElementById("tabContentAnswers").style.display = "block";
+    } else if (tabName === "blank") {
+        document.getElementById("tabBtnBlank").classList.add("active-tab");
+        document.getElementById("tabContentBlank").style.display = "block";
+    }
+}
+
+function renderWrongQuestions(wrongIndices) {
+    const container = document.getElementById("wrongQuestionsList");
+    container.innerHTML = "";
+
+    if (wrongIndices.length === 0) {
+        container.innerHTML = `
+            <div style="text-align: center; padding: 35px; background: var(--container-bg); border-radius: 12px; border: 2px solid #10b981;">
+                <i class="fa-solid fa-circle-check fa-3x" style="color: #10b981; margin-bottom: 12px;"></i>
+                <h3 style="color: #065f46; font-size: 18px;">અભિનંદન! તમારો એક પણ પ્રશ્ન ખોટો પડ્યો નથી!</h3>
+                <p style="color: var(--subheading-color); font-size: 13.5px; margin-top: 6px;">આપે ૧૦૦ માંથી ૧૦૦ સંપૂર્ણ ગુણ મેળવી શ્રેષ્ઠ પ્રદર્શન કરેલ છે.</p>
+            </div>
+        `;
+        return;
+    }
+
+    wrongIndices.forEach((i) => {
+        const q = questions[i];
+        const userChoiceText = userAnswers[i] !== null ? q.options[userAnswers[i]] : "જવાબ આપ્યો નથી (ખાલી છોડેલ)";
+        const correctChoiceText = q.options[q.ans];
+
+        const item = document.createElement("div");
+        item.className = "review-item is-wrong";
+        item.innerHTML = `
+            <p style="font-weight: 800; font-size: 15px; margin-bottom: 8px;">
+                ${q.q}
+            </p>
+            <div style="margin: 6px 0 8px 10px; font-size: 13.5px; color: #475569;">
+                ${q.options.map((opt, oIdx) => `<div>(${String.fromCharCode(65 + oIdx)}) ${opt}</div>`).join('')}
+            </div>
+            <p style="margin: 4px 0; font-weight: 700; color: #b91c1c;">
+                ❌ તમારો ઉત્તર: ${userChoiceText}
+            </p>
+            <p style="margin: 4px 0; font-weight: 700; color: #047857;">
+                ✅ સાચો ઉત્તર: <strong>(${String.fromCharCode(65 + q.ans)}) ${correctChoiceText}</strong>
+            </p>
+            <div class="exp-box">
+                <div style="font-size: 11.5px; font-weight: 800; color: #2563eb; margin-bottom: 3px;">📘 ${q.unit}</div>
+                <strong>વિગતવાર સમજૂતી:</strong> ${q.exp}
+            </div>
+        `;
+        container.appendChild(item);
+    });
+}
+
+function renderFullAnswerKey() {
+    const container = document.getElementById("allAnswersList");
+    container.innerHTML = "";
+
+    questions.forEach((q, i) => {
+        const isCorrect = (userAnswers[i] === q.ans);
+        const userChoiceText = userAnswers[i] !== null ? q.options[userAnswers[i]] : "જવાબ આપ્યો નથી";
+        const correctChoiceText = q.options[q.ans];
+
+        const item = document.createElement("div");
+        item.className = "review-item " + (isCorrect ? "is-correct" : "is-wrong");
+        item.innerHTML = `
+            <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:6px;">
+                <span style="font-weight: 800; font-size: 15px;">${q.q}</span>
+                <span style="font-size: 12px; font-weight: 800; padding: 2px 8px; border-radius: 6px; background:${isCorrect ? '#10b981' : '#ef4444'}; color:white; white-space:nowrap;">
+                    ${isCorrect ? '✅ સાચો' : '❌ ખોટો'}
+                </span>
+            </div>
+            <div style="margin: 6px 0; font-size: 13.5px;">
+                ${q.options.map((opt, oIdx) => `
+                    <div style="padding: 2px 0; ${oIdx === q.ans ? 'font-weight:bold; color:#047857;' : ''}">
+                        (${String.fromCharCode(65 + oIdx)}) ${opt} ${oIdx === q.ans ? '⭐ (સાચો ઉત્તર)' : ''}
+                    </div>
+                `).join('')}
+            </div>
+            <p style="margin: 6px 0; font-weight: 700;">
+                તમે પસંદ કરેલ જવાબ: <span style="color:${isCorrect ? '#047857' : '#b91c1c'};">${userChoiceText}</span>
+            </p>
+            <div class="exp-box">
+                <div style="font-size: 11.5px; font-weight: 800; color: #2563eb; margin-bottom: 3px;">📘 ${q.unit}</div>
+                <strong>સમજૂતી:</strong> ${q.exp}
+            </div>
+        `;
+        container.appendChild(item);
+    });
+}
+
+function renderBlankPaper() {
+    const container = document.getElementById("blankQuestionsList");
+    container.innerHTML = `
+        <div style="background: var(--card-gradient); padding: 14px; border-radius: 10px; margin-bottom: 14px; border: 1.5px solid var(--border-color); text-align: center;">
+            <h3 style="color: var(--heading-color); font-size: 16px; font-weight: 800;">📝 મૂળ પ્રશ્નપત્ર (Offline / Practice View)</h3>
+            <p style="color: var(--subheading-color); font-size: 12.5px;">આ પ્રશ્નપત્રમાં કોઈપણ જવાબ ટીક કરેલ નથી. તમે સ્વ-અધ્યયન કે પુનરાવર્તન માટે તેનો ઉપયોગ કરી શકો છો.</p>
+        </div>
+    `;
+
+    questions.forEach((q, i) => {
+        const box = document.createElement("div");
+        box.className = "blank-q-card";
+        box.innerHTML = `
+            <div style="font-weight: 800; font-size: 14.5px; margin-bottom: 8px; color: var(--heading-color);">${q.q}</div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 6px; font-size: 13.5px; color: var(--text-color);">
+                ${q.options.map((opt, oIdx) => `
+                    <div style="background: var(--option-bg); padding: 7px 10px; border-radius: 6px; border: 1px solid var(--border-color);">
+                        <strong>(${String.fromCharCode(65 + oIdx)})</strong> ${opt}
+                    </div>
+                `).join('')}
+            </div>
+        `;
+        container.appendChild(box);
+    });
+}
+
+// 🎯 Google Drive / Apps Script માટે પરફેક્ટ HTML રિવ્યુ
+function prepareAndSendBackendResult(score, percent, formattedTime) {
+    let emailReviewHtml = "";
+    
+    questions.forEach((q, i) => {
+        const isCorrect = (userAnswers[i] === q.ans);
+        const userChoiceText = userAnswers[i] !== null ? q.options[userAnswers[i]] : "જવાબ આપ્યો નથી";
+        const correctChoiceText = q.options[q.ans];
+
+        const optionsHtml = q.options.map((opt, oIdx) => {
+            const letter = String.fromCharCode(65 + oIdx);
+            return `<div class="pdf-option-item" style="padding: 2px 0; margin-left: 10px;"><strong>(${letter})</strong> ${opt}</div>`;
+        }).join('');
+
+        emailReviewHtml += `
+            <div class="review-item pdf-q-item ${isCorrect ? 'is-correct' : 'is-wrong'}" style="border: 1.5px solid ${isCorrect ? '#cbd5e1' : '#ef4444'}; border-radius: 6px; padding: 12px; margin-bottom: 12px; background-color: ${isCorrect ? '#f0fff4' : '#fff1f2'};" data-wrong="${!isCorrect}">
+                <p class="pdf-q-title" style="margin: 0 0 6px 0; font-weight: bold; color: #1e293b;">${q.q}</p>
+                <div class="pdf-options-list" style="margin: 6px 0 8px 6px; font-size: 13.5px; color: #334155;">
+                    ${optionsHtml}
+                </div>
+                <p class="ans-user-section pdf-wrong-user-ans" style="margin: 4px 0; color: ${isCorrect ? '#166534' : '#9f1239'}; font-weight: bold;">
+                    <strong>તમારો ઉત્તર:</strong> ${userChoiceText} ${isCorrect ? '✅' : '❌'}
+                </p>
+                <p class="ans-correct-section pdf-ans-box" style="margin: 4px 0; color: #166534; font-weight: bold;">
+                    <strong>સાચો ઉત્તર:</strong> (${String.fromCharCode(65 + q.ans)}) ${correctChoiceText}
+                </p>
+                <div class="ans-explanation-section exp-box pdf-exp-box" style="background-color: #f8fafc; padding: 8px; border-radius: 4px; margin-top: 6px; font-size: 12.5px; border-left: 3px solid #2563eb;">
+                    <div style="color: #1e40af; font-weight: bold; margin-bottom: 2px;">📘 ${q.unit}</div>
+                    <strong>સમજૂતી:</strong> ${q.exp}
+                </div>
+            </div>
+        `;
+    });
+
+    const fullQuestionsData = questions.map((q, i) => {
+        return {
+            q: q.q,
+            opts: q.options,
+            correctAns: q.ans,
+            userAns: userAnswers[i],
+            exp: q.exp,
+            unit: q.unit
+        };
+    });
+
+    fetch(SCRIPT_URL, {
+        method: "POST",
+        mode: "no-cors",
+        headers: { "Content-Type": "text/plain" },
+        body: JSON.stringify({
+            action: "submitResult",
+            dateTime: new Date().toLocaleString('gu-IN', { timeZone: 'Asia/Kolkata' }),
+            name: studentName,
+            phone: studentPhone,
+            email: studentEmail,
+            timeTaken: formattedTime,
+            score: `${score} / ${questions.length}`,
+            percentage: `${percent}%`,
+            subject: "ડી.એલ.એડ્. કોર્સ-૧(અ) ભાગ-૨: ભાષા, પ્રત્યાયન, સ્વ અને નૈતિક વિકાસ (૧૦૦ HOTS)",
+            detailedReviewHtml: emailReviewHtml,
+            questionsJson: fullQuestionsData,
+            repoName: "sy",
+            testFileName: "sy1apart2.html",
+            testUploadDate: "2026-11-07"
+        })
+    });
+}
+</script>
+</body>
+</html>
