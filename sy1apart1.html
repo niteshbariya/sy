@@ -1,0 +1,2378 @@
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TET / TAT / Class-2 સ્પેશિયલ: બોધ (જ્ઞાન), અધ્યયન અને સામાજિક સાંસ્કૃતિક પરિપ્રેક્ષ્ય (૧૦૦ HOTS પ્રશ્નો)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-gradient: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #06b6d4 100%);
+            --header-gradient: linear-gradient(135deg, #1e3a8a 0%, #2563eb 50%, #0284c7 100%);
+            --card-gradient: linear-gradient(135deg, #eff6ff 0%, #f5f3ff 50%, #fdf2f8 100%);
+            --bg-color: #f1f5f9;
+            --container-bg: #ffffff;
+            --text-color: #0f172a;
+            --heading-color: #1e3a8a;
+            --subheading-color: #64748b;
+            --border-color: #cbd5e1;
+            --card-border: #e2e8f0;
+            --option-bg: #f8fafc;
+            --option-hover: #ede9fe;
+            --option-border: #cbd5e1;
+            --badge-bg: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+            --correct-bg: #ecfdf5;
+            --correct-border: #34d399;
+            --correct-text: #065f46;
+            --wrong-bg: #fff1f2;
+            --wrong-border: #fb7185;
+            --wrong-text: #9f1239;
+            --exp-box-bg: #f8fafc;
+            --input-bg: #ffffff;
+            --shadow: 0 10px 25px -5px rgba(30, 58, 138, 0.12), 0 8px 10px -6px rgba(30, 58, 138, 0.08);
+            
+            /* Status Colors */
+            --color-answered: #10b981;
+            --color-flagged: #f59e0b;
+            --color-unanswered: #94a3b8;
+            --color-current: #2563eb;
+        }
+
+        body.dark-mode {
+            --primary-gradient: linear-gradient(135deg, #3b82f6 0%, #6366f1 50%, #ec4899 100%);
+            --header-gradient: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #312e81 100%);
+            --card-gradient: linear-gradient(135deg, #1e1b4b 0%, #1e293b 50%, #0f172a 100%);
+            --bg-color: #030712;
+            --container-bg: #0b1329;
+            --text-color: #f8fafc;
+            --heading-color: #93c5fd;
+            --subheading-color: #94a3b8;
+            --border-color: #334155;
+            --card-border: #1e293b;
+            --option-bg: #1e293b;
+            --option-hover: #2e1065;
+            --option-border: #475569;
+            --badge-bg: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+            --correct-bg: #064e3b;
+            --correct-border: #059669;
+            --correct-text: #a7f3d0;
+            --wrong-bg: #881337;
+            --wrong-border: #e11d48;
+            --wrong-text: #fecdd3;
+            --exp-box-bg: #0f172a;
+            --input-bg: #1e293b;
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body { 
+            font-family: 'Noto Sans Gujarati', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: var(--bg-color); 
+            color: var(--text-color); 
+            padding: 14px; 
+            display: flex; 
+            justify-content: center; 
+            transition: all 0.3s ease;
+            min-height: 100vh;
+        }
+
+        .container { 
+            background-color: var(--container-bg); 
+            max-width: 1000px; 
+            width: 100%; 
+            border-radius: 18px; 
+            box-shadow: var(--shadow); 
+            padding: 24px; 
+            position: relative;
+            border: 1.5px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+
+        @media (max-width: 768px) {
+            body { padding: 6px; }
+            .container { padding: 14px; border-radius: 12px; }
+        }
+
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid var(--border-color);
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tag-pill {
+            background: var(--primary-gradient);
+            color: white;
+            padding: 6px 14px;
+            font-size: 12px;
+            font-weight: 800;
+            border-radius: 30px;
+            letter-spacing: 0.5px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .theme-toggle-btn {
+            background: var(--option-bg);
+            color: var(--text-color);
+            border: 1.5px solid var(--border-color);
+            padding: 6px 14px;
+            font-size: 13px;
+            font-weight: 700;
+            border-radius: 20px;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.2s;
+        }
+        .theme-toggle-btn:hover {
+            transform: scale(1.04);
+            border-color: #3b82f6;
+        }
+
+        .banner-title {
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-align: center;
+            font-size: 24px;
+            font-weight: 900;
+            margin: 5px 0 8px 0;
+            line-height: 1.3;
+        }
+
+        .banner-sub {
+            color: var(--subheading-color);
+            text-align: center;
+            font-size: 13.5px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        /* Login Screen */
+        #loginScreen {
+            max-width: 480px;
+            margin: 15px auto;
+            background: var(--card-gradient);
+            padding: 24px;
+            border-radius: 16px;
+            border: 1.5px solid var(--border-color);
+        }
+        .form-group { margin-bottom: 16px; }
+        label { display: block; font-weight: 700; margin-bottom: 6px; font-size: 13.5px; color: var(--heading-color); }
+        input[type="text"], input[type="tel"], input[type="email"] { 
+            width: 100%; 
+            padding: 11px 14px; 
+            border: 1.5px solid var(--border-color); 
+            border-radius: 8px; 
+            font-size: 14.5px; 
+            background-color: var(--input-bg);
+            color: var(--text-color);
+            transition: border-color 0.2s;
+            font-family: inherit;
+        }
+        input:focus { outline: none; border-color: #2563eb; }
+
+        .btn-gradient { 
+            background: var(--primary-gradient); 
+            color: white; 
+            border: none; 
+            padding: 12px 18px; 
+            font-size: 15px; 
+            font-weight: 800; 
+            border-radius: 8px; 
+            cursor: pointer; 
+            width: 100%; 
+            transition: all 0.25s; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+            font-family: inherit;
+        }
+        .btn-gradient:hover { opacity: 0.95; transform: translateY(-1.5px); }
+        .btn-gradient:disabled { background: #94a3b8; cursor: not-allowed; transform: none; box-shadow: none; }
+
+        .otp-box { 
+            background: var(--container-bg); 
+            border: 2px dashed #3b82f6; 
+            padding: 16px; 
+            border-radius: 10px; 
+            margin-top: 16px; 
+            display: none; 
+            text-align: center;
+        }
+
+        /* Test Main Layout: Single column (Questions on Top, Palette at Bottom) */
+        .quiz-layout {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .quiz-main-card {
+            background: var(--container-bg);
+            border: 1.5px solid var(--border-color);
+            border-radius: 14px;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            min-height: 420px;
+            justify-content: space-between;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+        }
+
+        .quiz-header { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            border-bottom: 1.5px solid var(--border-color); 
+            padding-bottom: 12px; 
+            margin-bottom: 18px; 
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .timer-badge { 
+            font-size: 15px; 
+            font-weight: 800; 
+            color: #ef4444; 
+            background: #fee2e2;
+            padding: 6px 14px;
+            border-radius: 20px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        body.dark-mode .timer-badge { background: #450a0a; color: #fca5a5; }
+
+        .unit-badge { 
+            display: inline-block; 
+            background: var(--badge-bg); 
+            color: white; 
+            padding: 5px 12px; 
+            border-radius: 20px; 
+            font-size: 12px; 
+            font-weight: 700; 
+            margin-bottom: 14px; 
+        }
+
+        .question-text {
+            font-size: 18px;
+            line-height: 1.65;
+            margin-bottom: 22px;
+            font-weight: 700;
+            color: var(--text-color);
+        }
+
+        .option-label { 
+            display: flex;
+            align-items: center;
+            background: var(--option-bg); 
+            padding: 14px 18px; 
+            margin-bottom: 12px; 
+            border-radius: 10px; 
+            cursor: pointer; 
+            line-height: 1.5; 
+            border: 1.5px solid var(--option-border); 
+            transition: all 0.2s;
+            font-size: 15.5px;
+        }
+        .option-label:hover { 
+            background: var(--option-hover); 
+            border-color: #3b82f6;
+            transform: translateX(4px);
+        }
+        .option-label input[type="radio"] {
+            margin-right: 14px;
+            transform: scale(1.25);
+            accent-color: #2563eb;
+            cursor: pointer;
+        }
+
+        .quiz-actions-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 24px;
+            padding-top: 16px;
+            border-top: 1.5px solid var(--border-color);
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .nav-buttons-group {
+            display: flex;
+            gap: 10px;
+        }
+        .btn-prev, .btn-next, .btn-flag {
+            padding: 10px 18px;
+            font-size: 14.5px;
+            font-weight: 700;
+            border-radius: 8px;
+            cursor: pointer;
+            border: none;
+            transition: all 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-family: inherit;
+        }
+        .btn-prev { background: #64748b; color: white; }
+        .btn-prev:hover { background: #475569; }
+        .btn-next { background: var(--primary-gradient); color: white; }
+        .btn-next:hover { opacity: 0.95; }
+
+        .btn-flag {
+            background: #fef3c7;
+            color: #b45309;
+            border: 1.5px solid #f59e0b;
+        }
+        body.dark-mode .btn-flag {
+            background: #451a03;
+            color: #fde68a;
+            border-color: #d97706;
+        }
+        .btn-flag.active-flag {
+            background: #f59e0b;
+            color: white;
+            border-color: #b45309;
+        }
+
+        /* Question Palette at the Bottom */
+        .palette-bottom-card {
+            background: var(--card-gradient);
+            border: 1.5px solid var(--border-color);
+            border-radius: 14px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+        .palette-title {
+            font-size: 15px;
+            font-weight: 800;
+            color: var(--heading-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .legend-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            font-size: 12px;
+            font-weight: 700;
+            padding-bottom: 10px;
+            border-bottom: 1px dashed var(--border-color);
+        }
+        .legend-item { display: flex; align-items: center; gap: 6px; }
+        .legend-dot { width: 11px; height: 11px; border-radius: 50%; }
+
+        /* Multi-column grid for 100 questions */
+        .palette-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(42px, 1fr));
+            gap: 8px;
+            max-height: 250px;
+            overflow-y: auto;
+            padding: 6px 4px;
+        }
+        .q-pill {
+            padding: 8px 0;
+            border-radius: 7px;
+            font-size: 12.5px;
+            font-weight: 800;
+            text-align: center;
+            cursor: pointer;
+            border: 1.5px solid var(--border-color);
+            background: var(--container-bg);
+            color: var(--text-color);
+            transition: all 0.15s ease;
+            position: relative;
+        }
+        .q-pill:hover { transform: scale(1.08); z-index: 2; }
+        .q-pill.status-current {
+            border-color: #2563eb !important;
+            box-shadow: 0 0 0 2.5px #2563eb;
+            font-weight: 900;
+        }
+        .q-pill.status-answered {
+            background: #10b981 !important;
+            color: white !important;
+            border-color: #059669 !important;
+        }
+        .q-pill.status-flagged {
+            background: #f59e0b !important;
+            color: white !important;
+            border-color: #d97706 !important;
+        }
+        .q-pill.status-flagged::after {
+            content: '🚩';
+            position: absolute;
+            top: -6px;
+            right: -3px;
+            font-size: 9px;
+        }
+
+        /* Result Screen Styles */
+        .result-summary-card {
+            background: var(--card-gradient);
+            border: 2px solid var(--border-color);
+            padding: 20px;
+            border-radius: 14px;
+            margin-bottom: 20px;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+        .score-pill {
+            display: inline-block;
+            font-size: 32px;
+            font-weight: 900;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin: 6px 0;
+        }
+
+        .res-stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-top: 14px;
+        }
+        @media (max-width: 600px) {
+            .res-stats-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        .res-stat-box {
+            padding: 8px;
+            border-radius: 8px;
+            font-weight: 700;
+            color: white;
+            font-size: 12px;
+        }
+
+        /* Result Tabs Navigation */
+        .result-tabs-nav {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 8px;
+        }
+        .res-tab-btn {
+            padding: 9px 16px;
+            font-size: 13.5px;
+            font-weight: 800;
+            border-radius: 8px;
+            cursor: pointer;
+            border: 1.5px solid var(--border-color);
+            background: var(--option-bg);
+            color: var(--text-color);
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.2s;
+            font-family: inherit;
+        }
+        .res-tab-btn:hover { border-color: #2563eb; }
+        .res-tab-btn.active-tab {
+            background: var(--primary-gradient);
+            color: white;
+            border-color: transparent;
+        }
+
+        /* Review Item Style */
+        .review-item {
+            padding: 16px;
+            border-radius: 10px;
+            margin-bottom: 14px;
+            border: 1.5px solid var(--card-border);
+            transition: all 0.2s;
+            background: var(--container-bg);
+        }
+        .review-item.is-correct {
+            background-color: var(--correct-bg);
+            border-color: var(--correct-border);
+            color: var(--correct-text);
+        }
+        .review-item.is-wrong {
+            background-color: var(--wrong-bg);
+            border-color: var(--wrong-border);
+            color: var(--wrong-text);
+        }
+
+        .exp-box {
+            background: var(--exp-box-bg);
+            color: var(--text-color);
+            padding: 10px 12px;
+            border-radius: 6px;
+            margin-top: 8px;
+            font-size: 13.5px;
+            line-height: 1.5;
+            border-left: 4px solid #2563eb;
+        }
+
+        .blank-q-card {
+            background: var(--container-bg);
+            border: 1.5px solid var(--border-color);
+            border-radius: 8px;
+            padding: 14px;
+            margin-bottom: 12px;
+        }
+
+        .msg-box {
+            display: none;
+            padding: 10px 14px;
+            border-radius: 8px;
+            margin: 10px 0;
+            font-size: 13.5px;
+            font-weight: 700;
+            text-align: center;
+        }
+        .msg-error { background-color: #fee2e2; color: #991b1b; border: 1px solid #f87171; }
+        .msg-info { background-color: #dcfce7; color: #166534; border: 1px solid #4ade80; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- હેડર અને થીમ ટોગલ -->
+    <header class="header-top">
+        <span class="tag-pill"><i class="fa-solid fa-graduation-cap"></i> TET / TAT / GPSC Class-2: બોધ, અધ્યયન અને પરિપ્રેક્ષ્ય</span>
+        <button id="themeToggleBtn" class="theme-toggle-btn" onclick="toggleDarkMode()">
+            <i class="fa-solid fa-moon"></i> ડાર્ક મોડ
+        </button>
+    </header>
+
+    <!-- નોટિસ બોક્સ -->
+    <div id="noticeMsg" class="msg-box"></div>
+
+    <!-- ૧. પ્રવેશ અને OTP સ્ક્રીન -->
+    <section id="loginScreen">
+        <div style="text-align: center; margin-bottom: 18px;">
+            <div style="font-size: 32px; color: #2563eb; margin-bottom: 4px;"><i class="fa-solid fa-brain"></i></div>
+            <h1 class="banner-title" style="font-size: 20px;">બોધ (જ્ઞાન), અધ્યયન અને સામાજિક સાંસ્કૃતિક પરિપ્રેક્ષ્ય</h1>
+            <p class="banner-sub" style="margin-bottom: 10px;">ડી.એલ.એડ્. દ્વિતીય વર્ષ | કોર્સ - ૧ (અ) | ૧૦૦ HOTS પ્રશ્નોત્તરી (એકમ ૧ અને ૨)</p>
+        </div>
+
+        <div class="form-group">
+            <label for="name">👤 પૂરું નામ:</label>
+            <input type="text" id="name" placeholder="તમારું પૂરું નામ દાખલ કરો">
+        </div>
+        <div class="form-group">
+            <label for="phone">📱 મોબાઇલ નંબર:</label>
+            <input type="tel" id="phone" placeholder="૧૦ અંકનો સાચો મોબાઇલ નંબર" maxlength="10">
+        </div>
+        <div class="form-group">
+            <label for="email">📧 ઇમેઇલ આઇડી:</label>
+            <input type="email" id="email" placeholder="તમારું સાચું ઈમેઈલ આઈડી લખો">
+        </div>
+
+        <button id="getOtpBtn" class="btn-gradient" onclick="requestOTP()">
+            <i class="fa-solid fa-paper-plane"></i> OTP મેળવો અને આગળ વધો
+        </button>
+
+        <div id="otpContainer" class="otp-box">
+            <p style="margin: 0 0 10px 0; color: var(--heading-color); font-weight: 700; font-size: 13px;">
+                📩 આપના ઈમેઈલ પર ૪ અંકનો સુરક્ષિત OTP મોકલવામાં આવ્યો છે:
+            </p>
+            <div class="form-group" style="max-width: 200px; margin: 0 auto 12px auto;">
+                <input type="text" id="otpInput" placeholder="૪ અંક OTP" maxlength="4" style="text-align: center; font-size: 20px; letter-spacing: 5px; font-weight: 800;">
+            </div>
+            <button id="verifyBtn" class="btn-gradient" onclick="verifyAndStart()" style="background: linear-gradient(135deg, #059669 0%, #10b981 100%);">
+                <i class="fa-solid fa-unlock-keyhole"></i> OTP ચકાસો અને મોક ટેસ્ટ શરૂ કરો
+            </button>
+        </div>
+    </section>
+
+    <!-- ૨. મોક ટેસ્ટ સ્ક્રીન (ઉપર પ્રશ્ન અને વિકલ્પ, નીચે પેલેટ) -->
+    <section id="quizScreen" style="display: none;">
+        <div class="quiz-layout">
+            <!-- Top Section: Main Question Card -->
+            <div class="quiz-main-card">
+                <div>
+                    <div class="quiz-header">
+                        <div>
+                            <span id="qProgress" style="font-weight: 800; font-size: 16px; color: var(--heading-color);">પ્રશ્ન ૧ / ૧૦૦</span>
+                        </div>
+                        <div class="timer-badge">
+                            <i class="fa-regular fa-clock"></i> <span id="timerDisplay">૦૦:૦૦</span>
+                        </div>
+                    </div>
+                    <div class="question-box">
+                        <div id="unitBadge" class="unit-badge"></div>
+                        <div id="questionText" class="question-text"></div>
+                        <div id="optionsContainer"></div>
+                    </div>
+                </div>
+
+                <div class="quiz-actions-bar">
+                    <button id="flagBtn" class="btn-flag" onclick="toggleFlagCurrentQuestion()">
+                        <i class="fa-regular fa-bookmark"></i> Flag (રિવ્યુ માટે)
+                    </button>
+                    <div class="nav-buttons-group">
+                        <button id="prevBtn" class="btn-prev" onclick="prevQuestion()"><i class="fa-solid fa-arrow-left"></i> પાછળ</button>
+                        <button id="nextBtn" class="btn-next" onclick="nextQuestion()">આગળ <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Section: Question Palette, Status Legend & Submit Button -->
+            <div class="palette-bottom-card">
+                <div class="palette-title">
+                    <span><i class="fa-solid fa-table-cells"></i> પ્રશ્ન પેલેટ (૧૦૦ પ્રશ્નોની સ્થિતિ)</span>
+                    <span id="answeredCountBadge" style="font-size: 12px; background: #10b981; color: white; padding: 4px 10px; border-radius: 12px;">0 / 100 પૂર્ણ</span>
+                </div>
+
+                <div class="legend-grid">
+                    <div class="legend-item"><div class="legend-dot" style="background:#10b981;"></div> જવાબ આપેલ</div>
+                    <div class="legend-item"><div class="legend-dot" style="background:#f59e0b;"></div> Flag / રિવ્યુ</div>
+                    <div class="legend-item"><div class="legend-dot" style="background:#94a3b8;"></div> બાકી પ્રશ્ન</div>
+                    <div class="legend-item"><div class="legend-dot" style="background:#2563eb;"></div> ચાલુ પ્રશ્ન</div>
+                </div>
+
+                <div class="palette-grid" id="questionGridContainer"></div>
+
+                <div style="text-align: right; margin-top: 6px;">
+                    <button class="btn-gradient" onclick="confirmSubmitQuiz()" style="max-width: 280px; margin-left: auto; background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%); padding: 11px 18px; font-size: 14.5px;">
+                        <i class="fa-solid fa-circle-check"></i> કસોટી સબમિટ કરો
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ૩. પરિણામ સ્ક્રીન (Multi-Tab Review System) -->
+    <section id="resultScreen" style="display: none;">
+        <div class="result-summary-card">
+            <h2 style="color: var(--heading-color); font-size: 20px; font-weight: 900; margin-bottom: 6px;">
+                🎉 કસોટી મૂલ્યાંકન અહેવાલ
+            </h2>
+            <p style="margin: 3px 0; font-size: 14px;"><strong>પરીક્ષાર્થી:</strong> <span id="resName"></span> | <strong>સંપર્ક:</strong> <span id="resPhone"></span></p>
+            <p style="margin: 3px 0; font-size: 13px; color: var(--subheading-color);"><strong>વિષય:</strong> ડી.એલ.એડ્. દ્વિતીય વર્ષ : કોર્સ-૧(અ) બોધ (જ્ઞાન), અધ્યયન અને સામાજિક સાંસ્કૃતિક પરિપ્રેક્ષ્ય</p>
+            
+            <div class="score-pill" id="resScore">0 / 100</div>
+            <div style="font-size: 17px; font-weight: 800; color: #10b981;" id="resPercent">0%</div>
+
+            <div class="res-stats-grid">
+                <div class="res-stat-box" style="background:#10b981;">
+                    <div>સાચા ઉત્તર</div>
+                    <div style="font-size: 18px; font-weight: 900;" id="resCorrectCount">0</div>
+                </div>
+                <div class="res-stat-box" style="background:#ef4444;">
+                    <div>ખોટા ઉત્તર</div>
+                    <div style="font-size: 18px; font-weight: 900;" id="resWrongCount">0</div>
+                </div>
+                <div class="res-stat-box" style="background:#f59e0b;">
+                    <div>રિવ્યુ/Flagged</div>
+                    <div style="font-size: 18px; font-weight: 900;" id="resFlagCount">0</div>
+                </div>
+                <div class="res-stat-box" style="background:#2563eb;">
+                    <div>લીધેલો સમય</div>
+                    <div style="font-size: 15px; font-weight: 900; margin-top: 2px;" id="resTime">00:00</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ૩ અલગ ટેબ (વિભાગો) -->
+        <div class="result-tabs-nav">
+            <button class="res-tab-btn active-tab" id="tabBtnWrong" onclick="switchResultTab('wrong')">
+                <i class="fa-solid fa-triangle-exclamation" style="color: #ef4444;"></i> ❌ માત્ર ખોટા પડેલા પ્રશ્નો
+            </button>
+            <button class="res-tab-btn" id="tabBtnAnswers" onclick="switchResultTab('answers')">
+                <i class="fa-solid fa-square-check" style="color: #10b981;"></i> 📋 ઉત્તરવહી & સમજૂતી
+            </button>
+            <button class="res-tab-btn" id="tabBtnBlank" onclick="switchResultTab('blank')">
+                <i class="fa-solid fa-file-lines" style="color: #2563eb;"></i> 📝 મૂળ પ્રશ્નપત્ર (પ્રેક્ટિસ)
+            </button>
+        </div>
+
+        <!-- ટેબ ૧: માત્ર ખોટા પડેલા પ્રશ્નો -->
+        <div id="tabContentWrong">
+            <div id="wrongQuestionsList"></div>
+        </div>
+
+        <!-- ટેબ ૨: આપેલા જવાબો સાથેનું પ્રશ્નપત્ર -->
+        <div id="tabContentAnswers" style="display: none;">
+            <div id="allAnswersList"></div>
+        </div>
+
+        <!-- ટેબ ૩: મૂળ પ્રશ્નપત્ર (Blank Question Paper) -->
+        <div id="tabContentBlank" style="display: none;">
+            <div id="blankQuestionsList"></div>
+        </div>
+    </section>
+</div>
+
+<script>
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbz-khogtnFjvjzRuv_ieBYJfx0TAxluM9OfoXlf72h9Yce14rdQu9_Xbmx3fnprk5Q30g/exec";
+
+// ૧૦૦ ઉચ્ચ કઠિનતામૂલ્ય (HOT) પ્રશ્નોનો ડેટાસેટ (કોર્સ-૧(અ): બોધ અને જ્ઞાન તથા રમતો)
+const questions = [
+  {
+    "q": "પ્રશ્ન 1: સંરચનાવાદી શિક્ષણ (Constructivist Learning) સંદર્ભે નીચેના વિધાનો તપાસો: ૧. અધ્યેતા બાહ્ય પર્યાવરણમાંથી સીધેસીધું જ્ઞાન પોતાની સ્મૃતિમાં સંક્રમિત કરે છે. ૨. અધ્યેતા બહારની દુનિયાના વ્યક્તિગત અનુભવો તથા આંતરક્રિયા દ્વારા વ્યક્તિગત અર્થનું સર્જન કરે છે. ૩. જ્ઞાનનું આંતરિક પ્રત્યક્ષીકરણ સતત પરિવર્તનશીલ હોય છે. ઉપરોક્ત પૈકી કયું/ક્યાં વિધાન સાચાં છે?",
+    "options": [
+      "માત્ર ૧ અને ૨",
+      "માત્ર ૨ અને ૩",
+      "માત્ર ૧ અને ૩",
+      "૧, ૨ અને ૩ તમામ"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૧ : બોધ અને જ્ઞાન",
+    "exp": "સંરચનાવાદ અનુસાર જ્ઞાન બાહ્ય જગતમાંથી સ્મૃતિમાં બેઠેબેઠું સંક્રમિત થતું નથી, પરંતુ અધ્યેતા પોતાના સ્વાનુભવ અને આંતરક્રિયાથી અર્થનું સર્જન કરે છે, અને આ જ્ઞાનનું પ્રત્યક્ષીકરણ સતત પરિવર્તનશીલ હોય છે."
+  },
+  {
+    "q": "પ્રશ્ન 2: સંરચનાવાદના ઐતિહાસિક તત્ત્વચિંતન સંદર્ભે મોડ્યુલ અનુસાર કયા પ્રાચીન ગ્રીક ચિંતકોના વિચારોમાં તેનાં મૂળિયાં રહેલાં છે?",
+    "options": [
+      "પ્લેટો, સોક્રેટીસ અને ડેસકાર્ટિસ",
+      "પ્રોટાગોરસ, એરિસ્ટોટલ અને હેરોક્લિટસ",
+      "સ્પિનોઝા, લોક અને રૂસો",
+      "હેગલ, કાન્ટ અને ફ્રોઈડ"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૧ : બોધ અને જ્ઞાન",
+    "exp": "મોડ્યુલના પૃષ્ઠ ૬ અનુસાર સંરચનાવાદ નવી સંકલ્પના નથી; તેના ઐતિહાસિક મૂળિયાં પ્રોટાગોરસ, એરિસ્ટોટલ તેમજ હેરોક્લિટસના તત્ત્વચિંતનમાં અભિપ્રેત છે."
+  },
+  {
+    "q": "પ્રશ્ન 3: સંરચનાવાદના વિકાસમાં યોગદાન આપનાર અર્વાચીન મનોવૈજ્ઞાનિકો અને ચિંતકોના સાચા જૂથને ઓળખો:",
+    "options": [
+      "વોટસન, પાવલોવ, સ્કિનર અને થોર્નડાઈક",
+      "વીકો, જ્હૉન ડ્યૂઈ, જેરોમ બ્રુનર, જિન પિયાજે, ગુડમૅન અને હેગલ",
+      "કોહલબર્ગ, કેરોલ ગીલીગન અને બાન્દુરા",
+      "ગિલ્ફર્ડ, વુડવર્થ, બર્ન હાર્ટ અને હન્ટર"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૧ : બોધ અને જ્ઞાન",
+    "exp": "સંરચનાવાદને મૂળભૂત રીતે વિકસાવવામાં વીકો, જ્હૉન ડ્યૂઈ, બ્રુનર, જિન પિયાજે, ગુડમૅન ઉપરાંત હેગલ જેવા વિચારકોનો મુખ્ય ફાળો છે."
+  },
+  {
+    "q": "પ્રશ્ન 4: સંરચનાવાદી વર્ગખંડમાં 'શિક્ષકની ભૂમિકા' અંગે નીચેનામાંથી કયું વિધાન અયોગ્ય છે?",
+    "options": [
+      "શિક્ષક માત્ર ગાઇડ, સુવિધાકાર અને સહાયકની ભૂમિકામાં હોય છે.",
+      "શિક્ષક વિદ્યાર્થીઓમાં સ્પર્ધાત્મક ઉત્તેજના વધારી પ્રથમ ક્રમાંક મેળવવા પ્રેરિત કરે છે.",
+      "શિક્ષક વિદ્યાર્થીઓને પ્રશ્નો પૂછવામાં અને ઉત્તરો શોધવામાં મદદરૂપ બને છે.",
+      "શિક્ષક પ્રવર્તમાન જ્ઞાન અને નવીન જ્ઞાન વચ્ચે અનુસંધાન સાધવા સહાયક બને છે."
+    ],
+    "ans": 1,
+    "unit": "એકમ-૧ : બોધ અને જ્ઞાન",
+    "exp": "સંરચનાવાદી વર્ગખંડમાં વિદ્યાર્થીઓ વચ્ચે પરસ્પર સ્પર્ધાત્મક ભાવ ન ઉદ્ભવે તેનું નિયમન શિક્ષકે કરવાનું હોય છે, અને સહકારજન્ય-સહયોગજન્ય અધ્યયનને પ્રોત્સાહન આપવાનું હોય છે."
+  },
+  {
+    "q": "પ્રશ્ન 5: સંરચનાવાદના સિદ્ધાંત 'અર્થસર્જન' સંદર્ભે 'સક્રિય અધ્યેતા' (Active Learner) શબ્દપ્રયોગ કોણે આપ્યો છે?",
+    "options": [
+      "જિન પિયાજે",
+      "જેરોમ બ્રુનર",
+      "જ્હૉન ડ્યૂઈ",
+      "બી.એફ. સ્કિનર"
+    ],
+    "ans": 2,
+    "unit": "એકમ-૧ : બોધ અને જ્ઞાન",
+    "exp": "મોડ્યુલના પૃષ્ઠ ૭ મુજબ અધ્યયન એ સક્રિય પ્રક્રિયા છે જેમાં અધ્યેતા ઇન્દ્રિયજન્ય પ્રત્યક્ષીકરણ કરીને અર્થનું સર્જન કરે છે, જેના માટે જ્હૉન ડ્યૂઈએ 'સક્રિય અધ્યેતા' શબ્દપ્રયોગ કર્યો છે."
+  },
+  {
+    "q": "પ્રશ્ન 6: સંરચનાવાદી વર્ગખંડમાં વિદ્યાર્થી સમક્ષ કોઈ નવો વિચાર કે માહિતી આવે છે ત્યારે તે સૌપ્રથમ શું કરે છે?",
+    "options": [
+      "તરત જ તેનો બિનશરતી સ્વીકાર કરી ગોખી લે છે.",
+      "પૂર્વજ્ઞાનના આધારે ચકાસે છે, મૂંઝવણ અનુભવે છે અને અર્થ સ્વીકારે છે કે નકારે છે.",
+      "શિક્ષકના આદેશની રાહ જુએ છે અને શિક્ષક કહે તે જ માને છે.",
+      "માત્ર પરીક્ષામાં પૂછાશે કે નહીં તે આધારે યાદ રાખે છે."
+    ],
+    "ans": 1,
+    "unit": "એકમ-૧ : બોધ અને જ્ઞાન",
+    "exp": "સંરચનાવાદ મુજબ અધ્યેતા પૂર્વજ્ઞાન સાથે નવી સમજનું તાદાત્મ્ય સાધે છે, સંકલ્પનાત્મક સંઘર્ષ કે મૂંઝવણ અનુભવે છે અને ચિંતન બાદ તે અર્થ સ્વીકારે કે નકારે છે."
+  },
+  {
+    "q": "પ્રશ્ન 7: માહિતી પ્રક્રિયાકરણ (Information Processing Model) અનુસાર કમ્પ્યુટર પ્રણાલીના ત્રણ સોપાનો (Input, Processing, Storage) સાથે માનવ સ્મૃતિની કઈ જોડી સુસંગત છે?",
+    "options": [
+      "Input = સાંવેદિક સ્મૃતિ, Processing = ટૂંકાગાળાની સ્મૃતિ/સંકેતીકરણ, Storage = લાંબાગાળાની સ્મૃતિ",
+      "Input = ટૂંકાગાળાની સ્મૃતિ, Processing = લાંબાગાળાની સ્મૃતિ, Storage = સાંવેદિક સ્મૃતિ",
+      "Input = સંકેતીકરણ, Processing = ધારણ, Storage = પુનઃસ્મૃતિ",
+      "Input = લાંબાગાળાની સ્મૃતિ, Processing = ધ્યાન, Storage = ટૂંકાગાળાની સ્મૃતિ"
+    ],
+    "ans": 0,
+    "unit": "એકમ-૧ : બોધ અને જ્ઞાન",
+    "exp": "કમ્પ્યુટરની જેમ સાંવેદનિક સ્મૃતિ બાહ્ય ઉદ્દીપકો ગ્રહણ કરતી હોવાથી Input છે; ટૂંકાગાળાની સ્મૃતિ અને સંકેતીકરણ Processing છે; અને લાંબાગાળાની સ્મૃતિ માહિતીનો કાયમી સંગ્રહ કરતી હોવાથી Storage છે."
+  },
+  {
+    "q": "પ્રશ્ન 8: જે. પી. ગિલ્ફર્ડે આપેલી 'જ્ઞાનાત્મક પ્રક્રિયા'ની ટૂંકી અને સચોટ સંકલ્પના કઈ છે?",
+    "options": [
+      "'જ્ઞાનાત્મક પ્રક્રિયા એટલે માનસિક તંદુરસ્તી'",
+      "'જ્ઞાનાત્મક પ્રક્રિયા એટલે વ્યક્તિની જાગૃતતા (Awareness)'",
+      "'જ્ઞાનાત્મક પ્રક્રિયા એટલે અનુભવોનું કાયમી જોડાણ'",
+      "'જ્ઞાનાત્મક પ્રક્રિયા એટલે ઉદ્દીપક-પ્રતિચાર સાહચર્ય'"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૧ : બોધ અને જ્ઞાન",
+    "exp": "મોડ્યુલના પૃષ્ઠ ૧૧ અનુસાર ગિલ્ફર્ડે જ્ઞાનાત્મક પ્રક્રિયાને 'વ્યક્તિની જાગૃતતા (Awareness)' તરીકે વ્યાખ્યાયિત કરી છે."
+  },
+  {
+    "q": "પ્રશ્ન 9: ટૂંકાગાળાની સ્મૃતિ (Short Term Memory - STM) સંદર્ભે બિહલર અને સ્નોમૅન (1993)ના તારણ મુજબ કયું વિધાન સાચું છે?",
+    "options": [
+      "તેમાં માહિતી અમર્યાદિત સમય સુધી અકબંધ રહે છે.",
+      "તેમાં આશરે ૭ જેટલા નાના-મોટા એકમો લગભગ ૨૦ સેકન્ડ માટે સંઘરાય છે.",
+      "તેમાં માત્ર અશાબ્દિક માહિતી જ સંગ્રહાય છે.",
+      "તે ક્યારેય અવરોધ કે ક્ષયથી પ્રભાવિત થતી નથી."
+    ],
+    "ans": 1,
+    "unit": "એકમ-૧ : બોધ અને જ્ઞાન",
+    "exp": "બિહલર અને સ્નોમૅન અનુસાર ટૂંકાગાળાની સ્મૃતિમાં લગભગ ૨૦ સેકન્ડ સુધી આશરે ૭ એકમો સંગ્રહાય છે, જેને કામચલાઉ કે કાર્યરત સ્મૃતિ પણ કહે છે."
+  },
+  {
+    "q": "પ્રશ્ન 10: તાત્કાલિક ઉપયોગ માટે ટૂંકાગાળાની સ્મૃતિમાં માહિતીને સજીવન રાખવા મનોમન જે વારંવાર પુનરાવર્તન કરવામાં આવે છે તેને શું કહેવાય?",
+    "options": [
+      "વિસ્તૃત પુનરાવર્તન (Elaborative Rehearsal)",
+      "જાળવણી માટેનું પુનરાવર્તન (Maintenance Rehearsal)",
+      "અવરોધક પુનરાવર્તન (Interference Rehearsal)",
+      "સાંવેદિક પુનરાવર્તન (Sensory Rehearsal)"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૧ : બોધ અને જ્ઞાન",
+    "exp": "મોડ્યુલ અનુસાર તાત્કાલિક ઉપયોગ માટે માહિતી સાચવી રાખવા વ્યક્તિ મનોમન જે સતત પુનરાવર્તન કરે છે તેને Maintenance Rehearsal (જાળવણી પુનરાવર્તન) કહે છે."
+  },
+  {
+    "q": "પ્રશ્ન 11: ટૂંકાગાળાની સ્મૃતિમાંથી માહિતી ગુમ થઈ જવા પાછળ કાર્યરત બે મુખ્ય પરિબળો 'અવરોધ' (Interference) અને 'ક્ષય' (Decay) વચ્ચેનો ભેદ શો છે?",
+    "options": [
+      "અવરોધમાં સમય જતાં છાપ ઝાંખી થાય છે; ક્ષયમાં નવી માહિતી જૂની માહિતીને ધકેલે છે.",
+      "અવરોધમાં નવી માહિતી જૂની માહિતીને દૂર ધકેલે છે; ક્ષયમાં લાંબા સમય સુધી બિનઉપયોગ કે ધ્યાન ન આપવાને કારણે છાપ ઝાંખી થાય છે.",
+      "અવરોધ માત્ર શારીરિક થાક છે; ક્ષય માત્ર માનસિક રોગ છે.",
+      "અવરોધ ઐચ્છિક છે; ક્ષય અનૈચ્છિક છે."
+    ],
+    "ans": 1,
+    "unit": "એકમ-૧ : બોધ અને જ્ઞાન",
+    "exp": "નવી માહિતીનું આગમન જૂની માહિતીને ભૂંસી નાખે તે અવરોધ છે, જ્યારે વપરાશના અભાવે સમય વીતતાં સ્મૃતિચિહ્નો ક્ષીણ થવા તે ક્ષય (Decay) છે."
+  },
+  {
+    "q": "પ્રશ્ન 12: લાંબાગાળાની સ્મૃતિ (Long Term Memory - LTM)ની લાક્ષણિકતા સંદર્ભે અસત્ય વિધાન કયું છે?",
+    "options": [
+      "તે અમર્યાદિત ક્ષમતાવાળો કાયમી માહિતી સંગ્રહ છે.",
+      "તેમાં માહિતી ગ્રંથાલયની પુસ્તકોની જેમ સુવ્યવસ્થિત અને સંગઠિત હોય છે.",
+      "તેમાંથી માહિતી મેળવવી એ ટૂંકાગાળાની સ્મૃતિ કરતાં વધુ ત્વરિત અને સરળ હોય છે.",
+      "તેમાં માહિતી સંચય માટે વિસ્તૃતીકરણ (Elaboration) અને સંદર્ભ (Context) નિર્ણાયક બને છે."
+    ],
+    "ans": 2,
+    "unit": "એકમ-૧ : બોધ અને જ્ઞાન",
+    "exp": "લાંબાગાળાની સ્મૃતિ અત્યંત વિશાળ હોવાથી તેમાંથી પુનઃપ્રાપ્તિ માટે સંકેતો કે કડીઓ (Retrieval cues)ની જરૂર પડે છે અને તેમાં વાર લાગે છે, જ્યારે STMમાંથી માહિતી ત્વરિત મળે છે."
+  },
+  {
+    "q": "પ્રશ્ન 13: સ્મૃતિ સુધારણા માટે વપરાતી 'SQ3R' પદ્ધતિમાં ત્રણ 'R' નો સાચો અર્થ અને ક્રમ કયો છે?",
+    "options": [
+      "Recall, Repeat, Review",
+      "Read, Recite, Review",
+      "Remember, Recite, Reorganize",
+      "Record, Reflect, Retrieve"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૧ : બોધ અને જ્ઞાન",
+    "exp": "SQ3R પદ્ધતિ: S = Survey, Q = Question, R1 = Read, R2 = Recite, R3 = Review."
+  },
+  {
+    "q": "પ્રશ્ન 14: વ્યાખ્યા ઓળખો: 'સ્મરણ એટલે પ્રાપ્ત થયેલા અનુભવોને સંગ્રહિત કરવાની તેમજ જરૂર પડ્યે ફરી તાજા કરવાની કે ઓળખવાની ક્રિયા.' - આ વ્યાખ્યા કયા મનોવૈજ્ઞાનિકે આપી છે?",
+    "options": [
+      "બર્ન હાર્ટ",
+      "વુડવર્થ આર.એસ.",
+      "એચ.ઈ. ગેરેટ",
+      "જે.પી. ગિલ્ફર્ડ"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૧ : બોધ અને જ્ઞાન",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૧૨ મુજબ આર.એસ. વુડવર્થે સ્મરણની આ વ્યાખ્યા આપી છે."
+  },
+  {
+    "q": "પ્રશ્ન 15: બર્ન હાર્ટના મતે સ્મરણની વ્યાખ્યા નીચેનામાંથી કઈ છે?",
+    "options": [
+      "'સ્મરણ એ નવી માહિતીનું સંકેતીકરણ છે.'",
+      "'સ્મરણ એ ભૂતકાલીન અનુભવોને અર્થમય બને એ રીતે વર્તમાન પરિસ્થિતિમાં પુનઃજાગૃત કરવાની ક્રિયા છે.'",
+      "'સ્મરણ એ પસંદગીયુક્ત માનસિક સક્રિયતા છે.'",
+      "'સ્મરણ એ સાંવેદિક સંસ્કારોની યાંત્રિક જાળવણી છે.'"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૧ : બોધ અને જ્ઞાન",
+    "exp": "બર્ન હાર્ટના શબ્દોમાં ભૂતકાળના અનુભવો વર્તમાનમાં અર્થમય રીતે પુનઃજાગૃત થાય તે સ્મરણ છે."
+  },
+  {
+    "q": "પ્રશ્ન 16: સ્મૃતિના સામાન્ય બંધારણમાં સમાવિષ્ટ પાંચ તત્ત્વોનો સાચો ક્રમ કયો છે?",
+    "options": [
+      "ધ્યાન -> કાર્યરત સ્મૃતિ -> લાંબાગાળાની સ્મૃતિ -> સંકેતીકરણ -> પુનઃસ્મૃતિ",
+      "સંકેતીકરણ -> પુનઃસ્મૃતિ -> ધ્યાન -> લાંબાગાળાની સ્મૃતિ -> કાર્યરત સ્મૃતિ",
+      "કાર્યરત સ્મૃતિ -> લાંબાગાળાની સ્મૃતિ -> સંકેતીકરણ -> પુનઃસ્મૃતિ -> ધ્યાન",
+      "પુનઃસ્મૃતિ -> ધ્યાન -> સંકેતીકરણ -> કાર્યરત સ્મૃતિ -> લાંબાગાળાની સ્મૃતિ"
+    ],
+    "ans": 2,
+    "unit": "એકમ-૧ : બોધ અને જ્ઞાન",
+    "exp": "મોડ્યુલના પૃષ્ઠ ૧૩ પર સ્મૃતિના પૃથક્કરણમાં પાંચ ઘટકો ક્રમશઃ દર્શાવાયા છે: ૧. કાર્યરત સ્મૃતિ, ૨. લાંબાગાળાની સ્મૃતિ, ૩. સંકેતીકરણ (ધારણ), ૪. પુનઃસ્મૃતિ, ૫. ધ્યાન."
+  },
+  {
+    "q": "પ્રશ્ન 17: સાહચર્યના નિયમો (Laws of Association) સંદર્ભે 'Law of Recency' (સાંપ્રતતાનો નિયમ) શું દર્શાવે છે?",
+    "options": [
+      "જે વિચાર વારંવાર રજૂ થાય તે જલદી યાદ આવે છે.",
+      "તાજેતરમાં અનુભવેલો કે વાંચેલો વિચાર વધુ ઝડપથી પુનઃસ્મૃતિમાં આવે છે.",
+      "જે વિચારમાં ઊંડો રસ હોય તે જલદી યાદ આવે છે.",
+      "વિરોધાભાસી વિચારો જલદી યાદ આવે છે."
+    ],
+    "ans": 1,
+    "unit": "એકમ-૧ : બોધ અને જ્ઞાન",
+    "exp": "Law of Recency અનુસાર જે સંસ્કાર બહુ તાજા સંકળાયેલા હોય તેની પુનઃસ્મૃતિ સૌથી વહેલી થાય છે (દા.ત., તાજેતરમાં વાંચેલું પુસ્તક)."
+  },
+  {
+    "q": "પ્રશ્ન 18: 'ઘાસ' શબ્દ સાંભળતાં જ 'લીલું' યાદ આવી જવું એ સાહચર્યના કયા નિયમનું પરિણામ છે?",
+    "options": [
+      "Law of Recency (સાંપ્રતતા)",
+      "Law of Frequency (વારંવારતા)",
+      "Intensity of Interest (રસની ઉત્કટતા)",
+      "Law of Contrast (વિષમતા)"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૧ : બોધ અને જ્ઞાન",
+    "exp": "જ્યારે બે વિચારો જીવનમાં અનેકવાર એકસાથે સંકળાયા હોય ત્યારે એક વિચાર આવતાં જ બીજો વિચાર તુરંત આવે છે (Law of Frequency)."
+  },
+  {
+    "q": "પ્રશ્ન 19: ઈ.સ. ૧૯૬૨માં ચીને લડાખ અને નેફા વિસ્તારમાં કરેલા આક્રમણની વિગતો આજે પણ કોઈ વ્યક્તિને તાદૃશ યાદ આવી જાય છે. આ સ્મૃતિ પાછળ સાહચર્યનો કયો નિયમ કાર્યરત છે?",
+    "options": [
+      "Law of Recency",
+      "Law of Frequency",
+      "Intensity of Interest (અનુભવ કે રસની ઉત્કટતા)",
+      "Law of Similarity"
+    ],
+    "ans": 2,
+    "unit": "એકમ-૧ : બોધ અને જ્ઞાન",
+    "exp": "જે અનુભવની અસર અત્યંત ઉત્કટ અને પ્રબળ હોય તે જીવનભર સરળતાથી સ્મરણમાં સચવાઈ રહે છે."
+  },
+  {
+    "q": "પ્રશ્ન 20: ધ્યાનની વ્યાખ્યા: 'ચોક્કસ ઉદ્દીપક પ્રત્યે ચેતનાને કેન્દ્રિત કરવાની માનસિક પ્રક્રિયા એટલે ધ્યાન.' - આ કથન કોનું છે?",
+    "options": [
+      "એચ.ઈ. ગેરેટ",
+      "જે.પી. ગિલ્ફર્ડ",
+      "વુડવર્થ",
+      "સ્કિનર"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૧ : બોધ અને જ્ઞાન",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૧૫ મુજબ ગિલ્ફર્ડે આ વ્યાખ્યા આપી છે: 'ચોક્કસ ઉદ્દીપક પ્રત્યે ચેતનાને કેન્દ્રિત કરવાની માનસિક પ્રક્રિયા એટલે ધ્યાન.' જ્યારે 'અમુક ક્ષણે જેનું નિરીક્ષણ કરવું છે તેની તે સમય માટે પસંદગી કરવી' તે પણ ગિલ્ફર્ડનું કથન છે."
+  },
+  {
+    "q": "પ્રશ્ન 21: ધ્યાનની વ્યાખ્યા: 'ધ્યાન એટલે ચોક્કસ ઉદ્દીપકની પસંદગી કરી તેના પર એકાગ્ર બનવાની પ્રક્રિયા.' - આ વ્યાખ્યા કોણે આપી છે?",
+    "options": [
+      "એચ.ઈ. ગેરેટ",
+      "જે.પી. ગિલ્ફર્ડ",
+      "બર્ન હાર્ટ",
+      "વીકો"
+    ],
+    "ans": 0,
+    "unit": "એકમ-૧ : બોધ અને જ્ઞાન",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૧૫ અનુસાર એચ.ઈ. ગેરેટે ધ્યાનને ચોક્કસ ઉદ્દીપકની પસંદગી કરી તેના પર એકાગ્ર થવાની પ્રક્રિયા કહી છે."
+  },
+  {
+    "q": "પ્રશ્ન 22: નીચેના પૈકી કયું વિધાન ધ્યાનની લાક્ષણિકતા દર્શાવતું નથી?",
+    "options": [
+      "ધ્યાન ચંચળ અને વિચિલિત થતું રહે છે.",
+      "ધ્યાન એક અચેતન અને નિષ્ક્રિય શારીરિક પ્રક્રિયા છે.",
+      "ધ્યાન પસંદગીયુક્ત અને હેતુલક્ષી પ્રક્રિયા છે.",
+      "ધ્યાનનો વિસ્તાર (Span of attention) મર્યાદિત હોય છે."
+    ],
+    "ans": 1,
+    "unit": "એકમ-૧ : બોધ અને જ્ઞાન",
+    "exp": "ધ્યાન સક્રિય અને ચેતન માનસિક પ્રક્રિયા છે, નિષ્ક્રિય નથી."
+  },
+  {
+    "q": "પ્રશ્ન 23: વર્ગખંડમાં ચાલુ તાસ દરમિયાન અચાનક બહાર મોટો ધડાકો થતાં કે બૅગ પડતાં તમામ વિદ્યાર્થીઓનું ધ્યાન તે તરફ ખેંચાઈ જવું એ કયા પ્રકારનું ધ્યાન છે?",
+    "options": [
+      "ઐચ્છિક ધ્યાન (Voluntary Attention)",
+      "અનૈચ્છિક ધ્યાન (Involuntary Attention)",
+      "સાહજિક ઐચ્છિક ધ્યાન",
+      "વિસ્તૃત ધ્યાન"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૧ : બોધ અને જ્ઞાન",
+    "exp": "વ્યક્તિની ઇચ્છા ન હોય છતાં કોઈ તીવ્ર બાહ્ય ઉદ્દીપક સામે આવતાં જ આપોઆપ ધ્યાન તે તરફ જતું રહે તેને અનૈચ્છિક ધ્યાન કહે છે."
+  },
+  {
+    "q": "પ્રશ્ન 24: પરીક્ષા નજીક હોવાથી વિદ્યાર્થી ગણિત જેવા અણગમતા વિષયમાં પણ મન મક્કમ કરીને લાંબો સમય એકાગ્ર થઈને દાખલા ગણે છે. આ કયા પ્રકારનું ધ્યાન છે?",
+    "options": [
+      "અનૈચ્છિક ધ્યાન",
+      "ઐચ્છિક ધ્યાન (Voluntary Attention)",
+      "સાંવેદિક ધ્યાન",
+      "પ્રાસંગિક ધ્યાન"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૧ : બોધ અને જ્ઞાન",
+    "exp": "પોતાની ઇચ્છા અને જરૂરિયાતથી સભાન પ્રયત્નપૂર્વક કોઈ બાબત પર ચિત્ત કેન્દ્રિત કરવામાં આવે તેને ઐચ્છિક ધ્યાન કહેવાય છે."
+  },
+  {
+    "q": "પ્રશ્ન 25: શિક્ષક વર્ગખંડમાં મહત્વના મુદ્દા કાળાપાટિયા પર મોટા અને રંગીન અક્ષરે લખે છે. ધ્યાન ખેંચતા પરિબળોના સંદર્ભમાં આ કયું પરિબળ છે?",
+    "options": [
+      "ધ્યાનનું આંતરિક પરિબળ - રસ",
+      "ધ્યાનનું બાહ્ય/વસ્તુલક્ષી પરિબળ - ઉદ્દીપકનું કદ અને રંગ",
+      "ધ્યાનનું આંતરિક પરિબળ - માનસિક સ્થિતિ",
+      "ધ્યાનનું સામાજિક પરિબળ"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૧ : બોધ અને જ્ઞાન",
+    "exp": "ઉદ્દીપકનું કદ (મોટા અક્ષરો) અને રંગ (રંગીન ચૉક) એ ઉદ્દીપકમાં રહેલા વસ્તુલક્ષી કે બાહ્ય પરિબળો છે જે ધ્યાન આકર્ષિત કરે છે."
+  },
+  {
+    "q": "પ્રશ્ન 26: દરરોજ પેન્ટ-શર્ટ પહેરીને શાળાએ આવતા શિક્ષક કોઈ એક દિવસ અચાનક ઝભ્ભો અને ધોતિયું પહેરીને આવે ત્યારે તમામ વિદ્યાર્થીઓનું ધ્યાન તુરંત ખેંચાય છે. આ કયા બાહ્ય પરિબળને આભારી છે?",
+    "options": [
+      "ઉદ્દીપકની તીવ્રતા",
+      "ઉદ્દીપકની નવીનતા (Novelty)",
+      "ઉદ્દીપકનું પુનરાવર્તન",
+      "ઉદ્દીપકની ગતિ"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૧ : બોધ અને જ્ઞાન",
+    "exp": "સામાન્ય પરિસ્થિતિ કરતાં તદ્દન નવું કે અપરિચિત રૂપ ધ્યાન ખેંચે છે, જેને ઉદ્દીપકની નવીનતા કહેવાય છે."
+  },
+  {
+    "q": "પ્રશ્ન 27: નીચેના પૈકી કયું પરિબળ ધ્યાનનું 'આંતરિક પરિબળ' (વ્યક્તિક્ષી પરિબળ) નથી?",
+    "options": [
+      "રસ કે અભિરુચિ",
+      "શારીરિક અને માનસિક સ્થિતિ",
+      "ઉદ્દીપકની વિષમતા કે વિરોધ (Contrast)",
+      "જરૂરિયાત અને મનોવલણ"
+    ],
+    "ans": 2,
+    "unit": "એકમ-૧ : બોધ અને જ્ઞાન",
+    "exp": "વિષમતા કે વિરોધ એ બાહ્ય/વસ્તુલક્ષી પરિબળ છે, જ્યારે રસ, જરૂરિયાત, વલણ અને માનસિક સ્થિતિ આંતરિક પરિબળો છે."
+  },
+  {
+    "q": "પ્રશ્ન 28: પ્રાયોગિક અભ્યાસો અનુસાર માનવી સામાન્ય સંજોગોમાં કોઈપણ એક ઉદ્દીપક પ્રત્યે સતત વધુમાં વધુ કેટલા સમય સુધી ધ્યાન આપી શકે છે?",
+    "options": [
+      "માત્ર ૧ થી ૨ સેકન્ડ",
+      "૫ થી ૬ સેકન્ડ",
+      "૧૫ થી ૨૦ સેકન્ડ",
+      "૧ થી ૨ મિનિટ"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૧ : બોધ અને જ્ઞાન",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૧૮ અનુસાર ધ્યાન-વિચલનના અભ્યાસો દર્શાવે છે કે આપણે કોઈપણ ઉદ્દીપક પર વધુમાં વધુ ૫ થી ૬ સેકન્ડ સુધી જ અવિરત ધ્યાન આપી શકીએ છીએ; તેથી જ ટીવી અને ફિલ્મોમાં ઝડપથી દ્રશ્યો બદલાય છે."
+  },
+  {
+    "q": "પ્રશ્ન 29: મનોવૈજ્ઞાનિક ગ્લેને (Glenn) ૧૦ પુખ્ત વ્યક્તિઓ પર વ્યુત્ક્રામ્ય આકૃતિ (Reversible figure) વડે કરેલા પ્રયોગમાં એક મિનિટમાં 'નિયંત્રિત વિચલન' કેટલું નોંધાયું હતું?",
+    "options": [
+      "૧૫",
+      "૩૦",
+      "૮",
+      "૨૦"
+    ],
+    "ans": 2,
+    "unit": "એકમ-૧ : બોધ અને જ્ઞાન",
+    "exp": "ગ્લેનના પ્રયોગના તારણો: ૧ મિનિટમાં તટસ્થ વિચલન = ૧૫, ઝડપીમાં ઝડપી વિચલન = ૩૦, અને નિયંત્રિત વિચલન = ૮."
+  },
+  {
+    "q": "પ્રશ્ન 30: ધ્યાન-વિસ્તાર (Span of Attention) માપવા માટે મનોવિજ્ઞાનની પ્રયોગશાળામાં કયા વિશિષ્ટ સાધનનો ઉપયોગ થાય છે?",
+    "options": [
+      "મેમોરી ડ્રમ (Memory Drum)",
+      "ટેચિસ્ટોસ્કોપ (Tachistoscope)",
+      "એર્ગોગ્રાફ (Ergograph)",
+      "ઓડિયોમીટર (Audiometer)"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૧ : બોધ અને જ્ઞાન",
+    "exp": "ટેચિસ્ટોસ્કોપ વડે સેકન્ડના પાંચમા કે દસમા ભાગ સુધી ઉદ્દીપક કાર્ડ રજૂ કરીને વ્યક્તિનો ધ્યાન-વિસ્તાર માપવામાં આવે છે."
+  },
+  {
+    "q": "પ્રશ્ન 31: ધ્યાન-વિસ્તાર અંગેનો સૌપ્રથમ પ્રયોગ ઈ.સ. ૧૮૫૪માં કોણે કર્યો હતો અને તેમાં શું તારણ મળ્યું હતું?",
+    "options": [
+      "સર વિલિયમ હેમિલ્ટને કાચની લખોટીઓ દ્વારા પ્રયોગ કર્યો (૬ થી ૭ લખોટીઓ)",
+      "વુડવર્થે શબ્દોની યાદી દ્વારા પ્રયોગ કર્યો (૧૦ થી ૧૨ શબ્દો)",
+      "બિહલરે ફોન નંબર દ્વારા પ્રયોગ કર્યો (૪ થી ૫ આંકડા)",
+      "ગિલ્ફર્ડે ટપકાંના કાર્ડ દ્વારા પ્રયોગ કર્યો (૮ થી ૯ ટપકાં)"
+    ],
+    "ans": 0,
+    "unit": "એકમ-૧ : બોધ અને જ્ઞાન",
+    "exp": "૧૮૫૪માં સર વિલિયમ હેમિલ્ટને કાચની લખોટીઓ ફેંકીને દર્શાવ્યું કે એક સમયે એકસાથે ૬ થી ૭ ઉદ્દીપકો જ જોઈ શકાય છે."
+  },
+  {
+    "q": "પ્રશ્ન 32: 'મારું બાળપણ લોકભારતીમાં વીત્યું હતું', 'ગઈકાલે સાંજે હું ડૉક્ટર પાસે ગયો હતો' - આ કયા પ્રકારની સ્મૃતિ દર્શાવે છે?",
+    "options": [
+      "અર્થગત સ્મૃતિ (Semantic Memory)",
+      "પ્રાસંગિક સ્મૃતિ (Episodic Memory / આત્મચરિત્ર સ્મૃતિ)",
+      "કાર્યકારી યાંત્રિક સ્મૃતિ",
+      "સાંવેદિક ક્ષણિક સ્મૃતિ"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૧ : બોધ અને જ્ઞાન",
+    "exp": "જે સ્મૃતિમાં વ્યક્તિગત જીવનની ઘટનાઓ ક્યારે અને ક્યાં બની તેની માનસિક ડાયરી જેવી અસ્થાયી નોંધ હોય તેને પ્રાસંગિક સ્મૃતિ કહેવાય."
+  },
+  {
+    "q": "પ્રશ્ન 33: 'પાણીનું રાસાયણિક સૂત્ર H2O છે' અને 'કોઈપણ સંખ્યાનો શૂન્ય સાથે ગુણાકાર શૂન્ય થાય છે' - આ જ્ઞાન કઈ સ્મૃતિનો ભાગ છે?",
+    "options": [
+      "પ્રાસંગિક સ્મૃતિ (Episodic Memory)",
+      "અર્થગત સ્મૃતિ (Semantic Memory)",
+      "કામચલાઉ સ્મૃતિ (STM)",
+      "અનૈચ્છિક સ્મૃતિ"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૧ : બોધ અને જ્ઞાન",
+    "exp": "અર્થગત સ્મૃતિ એ માનસિક શબ્દકોશ કે જ્ઞાનકોશ સમાન છે જેમાં તથ્યો, સંકેતો, નિયમો અને ભાષાકીય અર્થો સંગઠિત હોય છે."
+  },
+  {
+    "q": "પ્રશ્ન 34: નિર્દેશક સ્મૃતિ (Declarative Memory)માં નીચેના પૈકી કઈ બે સ્મૃતિઓનો સંયુક્ત સમાવેશ થાય છે?",
+    "options": [
+      "ટૂંકાગાળાની સ્મૃતિ અને લાંબાગાળાની સ્મૃતિ",
+      "પ્રાસંગિક સ્મૃતિ (Episodic) અને અર્થગત સ્મૃતિ (Semantic)",
+      "સાંવેદિક સ્મૃતિ અને કાર્યરત સ્મૃતિ",
+      "ઐચ્છિક સ્મૃતિ અને અનૈચ્છિક સ્મૃતિ"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૧ : બોધ અને જ્ઞાન",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૧૯-૨૦ મુજબ પ્રાસંગિક અને અર્થગત સ્મૃતિ ભેગી મળીને નિર્દેશક સ્મૃતિ (Declarative Memory) બને છે જેને શબ્દો કે તથ્યોમાં વ્યક્ત કરી શકાય છે."
+  },
+  {
+    "q": "પ્રશ્ન 35: દરિયાકાંઠાના વિસ્તારમાંથી આવતા બાળકને ભરતી-ઓટ અને સામુદ્રિક બાબતોની ઊંડી સમજ હોય છે, જ્યારે જંગલ વિસ્તારના બાળકને વિવિધ વનસ્પતિ-ઔષધિઓનું જ્ઞાન હોય છે. આ બાબત શું દર્શાવે છે?",
+    "options": [
+      "જ્ઞાનમાં વ્યક્તિગત માનસિક વિકલાંગતા",
+      "જ્ઞાનમાં સામાજિક-સાંસ્કૃતિક અને ભૌગોલિક તફાવત",
+      "જ્ઞાનમાં ડિસ્લેક્સિયાની અસર",
+      "જ્ઞાનમાં બુદ્ધિઆંકનો તફાવત"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૧ : બોધ અને જ્ઞાન",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૨૦-૨૧ અનુસાર બાળક જે ભૌગોલિક અને સાંસ્કૃતિક પરિવેશમાં ઉછરે છે તે પરિવેશ તેના જ્ઞાનના બંધારણને સીધું ઘડે છે."
+  },
+  {
+    "q": "પ્રશ્ન 36: શાળામાં ભણતા બાળકોમાં દેખાતી અધ્યયન અક્ષમતાઓ સંદર્ભે કઈ જોડ સાચી છે? ૧. ડિસ્લેક્સિયા - વાંચવા અને ભાષા સંબંધિત મુશ્કેલી ૨. ડિસ્કેલ્ક્યુલિયા - ગણિત અને ગણન સંબંધિત મુશ્કેલી ૩. ડિસગ્રાફિયા - લેખન અને અક્ષર-જોડણી સંબંધિત મુશ્કેલી",
+    "options": [
+      "માત્ર ૧ અને ૨",
+      "માત્ર ૨ અને ૩",
+      "માત્ર ૧ અને ૩",
+      "૧, ૨ અને ૩ ત્રણેય સાચી છે"
+    ],
+    "ans": 3,
+    "unit": "એકમ-૧ : બોધ અને જ્ઞાન",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૨૨-૨૩ મુજબ Dyslexia = વાંચન/શબ્દ મુશ્કેલી, Dyscalculia = ગણતરી મુશ્કેલી, Dysgraphia = લેખન સંબંધિત વિકાર છે."
+  },
+  {
+    "q": "પ્રશ્ન 37: 'ડિસ્લેક્સિયા' (Dyslexia) શબ્દની વ્યુત્પત્તિ સંદર્ભે 'Dys' અને 'Lexia' નો સાચો અર્થ શો છે?",
+    "options": [
+      "Dys = રોગ, Lexia = મગજ",
+      "Dys = મુશ્કેલી, Lexia = શબ્દો સંબંધિત",
+      "Dys = અભાવ, Lexia = વાચન",
+      "Dys = અક્ષમતા, Lexia = ગણિત"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૧ : બોધ અને જ્ઞાન",
+    "exp": "મોડ્યુલ મુજબ ગ્રીક ભાષા અનુસાર 'ડિસ' એટલે મુશ્કેલી અને 'લેક્સિઆ' એટલે શબ્દો સંબંધિત મુશ્કેલી."
+  },
+  {
+    "q": "પ્રશ્ન 38: એક વિદ્યાર્થી સરવાળાના (+) ચિહ્નને ગુણાકાર (*) સમજે છે, બરાબરના (=) ચિહ્નને બાદબાકી (-) સમજે છે અને ૩૬ ને બદલે ૦૬+૩ લખે છે. આ બાળક કઈ સમસ્યાથી પીડાય છે?",
+    "options": [
+      "ડિસ્લેક્સિયા",
+      "ડિસ્કેલ્ક્યુલિયા (Dyscalculia)",
+      "ડિસગ્રાફિયા",
+      "ડિસ્પ્રેક્સિયા"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૧ : બોધ અને જ્ઞાન",
+    "exp": "મોડ્યુલના પૃષ્ઠ ૨૨ પર ચિત્ર-૧ અને લખાણ સ્પષ્ટ કરે છે કે ગાણિતિક ચિહ્નો અને સ્થાનકિંમતની આવી ગૂંચવણ ડિસ્કેલ્ક્યુલિયાનું લક્ષણ છે."
+  },
+  {
+    "q": "પ્રશ્ન 39: એક બાળક મૌખિક રીતે સાચા જવાબો આપે છે, પરંતુ જ્યારે લખવાનું આવે ત્યારે અક્ષરો અત્યંત ગડબડિયા કાઢે છે, જોડણીમાં હ્રસ્વ-દીર્ઘની પુષ્કળ ભૂલો કરે છે અને લીટીની બહાર લખે છે. આ કઈ સમસ્યા છે?",
+    "options": [
+      "ડિસ્કેલ્ક્યુલિયા",
+      "ડિસગ્રાફિયા (Dysgraphia)",
+      "શ્રવણ વિકાર",
+      "માનસિક મંદતા"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૧ : બોધ અને જ્ઞાન",
+    "exp": "મૌખિક આવડવા છતાં લેખનમાં ગંભીર અક્ષમતા, અવાચ્ય અક્ષરો અને વિરામચિહ્નો-જોડણીના દોષ એ ડિસગ્રાફિયા દર્શાવે છે."
+  },
+  {
+    "q": "પ્રશ્ન 40: ડિસ્લેક્સિક બાળકના લક્ષણોમાં નીચેનામાંથી કયું લક્ષણ સુસંગત નથી?",
+    "options": [
+      "વાચન વખતે 'b' ને બદલે 'd' અને 'ઢ' ને બદલે 'ઠ' વાંચવા.",
+      "'God' ના સ્થાને 'Gob' અને 'Time' ના સ્થાને 'Tim' લખવું.",
+      "ડાબા-જમણા અને દિશાઓનો ભેદ પારખવામાં મુશ્કેલી થવી.",
+      "તેમનો બુદ્ધિઆંક હંમેશાં ૭૦ થી નીચે (મંદબુદ્ધિ) જ હોય છે."
+    ],
+    "ans": 3,
+    "unit": "એકમ-૧ : બોધ અને જ્ઞાન",
+    "exp": "ડિસ્લેક્સિક બાળકો મંદબુદ્ધિ હોતા નથી; તેઓ દેખીતી રીતે તેજસ્વી, સામાન્ય કે ઉચ્ચ બુદ્ધિ ધરાવતા હોઈ શકે છે અને અન્ય સર્જનાત્મક પ્રવૃત્તિઓમાં ખૂબ આગળ હોય છે."
+  },
+  {
+    "q": "પ્રશ્ન 41: ડિસ્લેક્સિક બાળકને ભણાવતી વખતે શિક્ષકે નીચેનામાંથી કયું વલણ દાખવવું જોઈએ?",
+    "options": [
+      "બાળકની શૈક્ષણિક નિષ્ફળતા બદલ વર્ગ સમક્ષ તેને સજા કરવી જેથી તે ગંભીર બને.",
+      "બાળકની અન્ય બાળકો સાથે સતત સરખામણી કરવી.",
+      "બાળક પર 'ઠોઠ' કે 'નબળો' જેવું કોઈ લેબલ મારવું નહીં અને ધીરજપૂર્વક નાની સફળતાને પ્રોત્સાહિત કરવી.",
+      "બાળકને ઝડપથી સુધારવા માટે એકનો એક શબ્દ ૨૫-૫૦ વાર લખવાની સજા આપવી."
+    ],
+    "ans": 2,
+    "unit": "એકમ-૧ : બોધ અને જ્ઞાન",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૨૪ અનુસાર આવા બાળકો પર ગુસ્સો ન કરવો, કોઈ લેબલ ન મારવું અને ધીરજ રાખી સૌહાર્દપૂર્ણ વાતાવરણ આપવું જોઈએ."
+  },
+  {
+    "q": "પ્રશ્ન 42: ડિસ્લેક્સિક બાળકને શીખવવાની યોગ્ય પ્રયુક્તિ સંદર્ભે મોડ્યુલ અનુસાર સાચી બાબત કઈ છે?",
+    "options": [
+      "બાળકને શરૂઆતથી જ ડબલ-લાઇન કે ફોર-લાઇનની સાંકડી નોટબુકમાં લખાવવું.",
+      "બાળકને અંગ્રેજીમાં વળાંકયુક્ત (Cursive writing) અક્ષરોમાં ફરજિયાત લખાવવું.",
+      "બાળકને પહોળી (Broad) સિંગલ-લાઇનની નોટબુકમાં લખાવવું અને ક્યારેય થોડી જગ્યામાં નજીક-નજીક ન લખાવવું.",
+      "શરૂઆતમાં બાળકને માત્ર બ્લેકબોર્ડ પરથી ઝડપથી ઉતારો કરાવવો."
+    ],
+    "ans": 2,
+    "unit": "એકમ-૧ : બોધ અને જ્ઞાન",
+    "exp": "ડિસ્લેક્સિક બાળકો માટે ફોર-લાઇન કે કર્સિવ રાઇટિંગ અત્યંત કષ્ટદાયક હોય છે; તેમને પહોળી સિંગલ-લાઇનની નોટબુક આપવી જોઈએ."
+  },
+  {
+    "q": "પ્રશ્ન 43: ડિસ્લેક્સિક બાળકની નોટબુક તપાસતી વખતે શિક્ષકે શું ન કરવું જોઈએ?",
+    "options": [
+      "ભૂલો સુધારવા માટે શાંતિથી પાસે બેસીને સમજાવવું.",
+      "લાલ પેનથી મોટા મોટા ગોળા કે ચોકડીઓ મારીને નિરાશાજનક શેરો મારવો.",
+      "મૌલિક વિચારો વ્યક્ત કરવાની તક આપવી.",
+      "વાચનક્ષમતા વધારવા માટે વ્યક્તિગત સહકાર આપવો."
+    ],
+    "ans": 1,
+    "unit": "એકમ-૧ : બોધ અને જ્ઞાન",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૨૫ અનુસાર બાળકની નોટબુકમાં જ્યાં ભૂલ થઈ હોય ત્યાં લાલ નિશાનીઓ ન કરવી, કારણ કે તેનાથી બાળક લઘુતાગ્રંથિ અનુભવે છે."
+  },
+  {
+    "q": "પ્રશ્ન 44: ડિસ્લેક્સિક બાળકના ભાષા શિક્ષણ સંદર્ભે મનોવૈજ્ઞાનિક દ્રષ્ટિએ કઈ બાબત હિતાવહ છે?",
+    "options": [
+      "એકસાથે ત્રણ-ચાર ભાષાઓનું શિક્ષણ શરૂ કરવું.",
+      "એક ભાષા પૂરેપૂરી વાંચતા, અર્થગ્રહણ કરતા અને અભિવ્યક્ત કરતા આવડે તે પછી જ બીજી ભાષા શીખવવી.",
+      "માતૃભાષા બંધ કરીને સીધી અંગ્રેજી માધ્યમમાં જ તાલીમ આપવી.",
+      "ભાષાના બદલે માત્ર ગોખણપટ્ટી કરાવવી."
+    ],
+    "ans": 1,
+    "unit": "એકમ-૧ : બોધ અને જ્ઞાન",
+    "exp": "જો ડિસ્લેક્સિક બાળકને એક ભાષા પર પ્રભુત્વ આવે તે પહેલાં બીજી ભાષા પરાણે લાદવામાં આવે, તો તે પ્રથમ ભાષા પરથી પણ પકડ ગુમાવી બેસે છે."
+  },
+  {
+    "q": "પ્રશ્ન 45: વર્ગખંડ બહાર ડિસ્લેક્સિક બાળક પ્રત્યે સહાધ્યાયીઓ અને સમાજનું વલણ કેવું હોવું જોઈએ?",
+    "options": [
+      "તેમની મજાક-મશ્કરી કરવી અને તેમને રમતોમાંથી બાકાત રાખવા.",
+      "તેમની વિશિષ્ટ સર્જનાત્મક શક્તિઓ, ચિત્ર, રમતગમત કે સંગીત જેવી કળાઓને બિરદાવવી.",
+      "તેમને 'મંદબુદ્ધિ'નું સર્ટિફિકેટ આપી સ્પેશિયલ સ્કૂલમાં ધકેલી દેવા.",
+      "તેમના પર દયા ખાઈને કોઈ કાર્ય ન સોંપવું."
+    ],
+    "ans": 1,
+    "unit": "એકમ-૧ : બોધ અને જ્ઞાન",
+    "exp": "આવા બાળકો વર્ગખંડ બહારની સર્જનાત્મક પ્રવૃત્તિઓમાં અત્યંત કુશળ હોય છે; તેમની સફળતા બિરદાવવાથી તેમનો આત્મવિશ્વાસ વધે છે."
+  },
+  {
+    "q": "પ્રશ્ન 46: સંરચનાવાદના વિવિધ પ્રકારોમાં 'જ્ઞાન મીમાંસાત્મક સંરચનાવાદ', 'સામાજિક સંરચનાવાદ' ઉપરાંત નીચેનામાંથી કયો પ્રકાર મોડ્યુલમાં દર્શાવેલ છે?",
+    "options": [
+      "માત્ર યાંત્રિક સંરચનાવાદ",
+      "મનોવૈજ્ઞાનિક, આનુવંશિક જ્ઞાન મીમાંસાત્મક અને ગાણિતિક સંરચનાવાદ",
+      "વર્તનવાદી સંરચનાવાદ",
+      "શાસ્ત્રીય સંરચનાવાદ"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૧ : બોધ અને જ્ઞાન",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૭ અનુસાર જ્ઞાન મીમાંસાત્મક, સામાજિક, મનોવૈજ્ઞાનિક, આનુવંશિક જ્ઞાન મીમાંસાત્મક અને ગાણિતિક સંરચનાવાદ તેના મુખ્ય પ્રકારો છે."
+  },
+  {
+    "q": "પ્રશ્ન 47: સંરચનાવાદી અધ્યયનમાં 'ભાષા અને અધ્યયન' વચ્ચેનો સંબંધ કેવો છે?",
+    "options": [
+      "ભાષા અને અધ્યયન એકબીજાથી તદ્દન સ્વતંત્ર અને અલગ છે.",
+      "ભાષાના ઉપયોગ દ્વારા અધ્યયન આકાર પામે છે અને ભાષાને અધ્યયનથી અલગ ન કરી શકાય.",
+      "ભાષા માત્ર પરીક્ષામાં લખવા પૂરતી જ મર્યાદિત છે.",
+      "સંરચનાવાદમાં ભાષા કરતાં માત્ર શારીરિક ક્રિયાઓ જ મહત્વની છે."
+    ],
+    "ans": 1,
+    "unit": "એકમ-૧ : બોધ અને જ્ઞાન",
+    "exp": "અધ્યેતા જે પ્રકારની ભાષા વાપરે છે તે તેની વિચાર પ્રક્રિયા અને અર્થસર્જનને ઘડે છે; ભાષા અને વિચાર અવિભાજ્ય છે."
+  },
+  {
+    "q": "પ્રશ્ન 48: પ્રાથમિક શાળાઓમાં અભ્યાસ કરતા અંદાજે કેટલા ટકા બાળકો કોઈને કોઈ સ્વરૂપે ડિસ્લેક્સિક લક્ષણો ધરાવતા હોવાનું મોડ્યુલમાં નોંધાયું છે?",
+    "options": [
+      "૫% થી ૧૦%",
+      "૧૦% થી ૧૫%",
+      "૨૦% થી ૨૫%",
+      "૪૦% થી ૫૦%"
+    ],
+    "ans": 2,
+    "unit": "એકમ-૧ : બોધ અને જ્ઞાન",
+    "exp": "મોડ્યુલના પૃષ્ઠ ૬ અનુસાર પ્રાથમિકમાં ભણતાં આશરે ૨૦% થી ૨૫% બાળકો ડિસ્લેક્સિક હોય છે."
+  },
+  {
+    "q": "પ્રશ્ન 49: જ્ઞાનાત્મક પ્રક્રિયામાં કઈ ઉચ્ચ કક્ષાની માનસિક પ્રક્રિયાઓનો સમાવેશ થાય છે?",
+    "options": [
+      "માત્ર પ્રત્યક્ષીકરણ અને સ્મૃતિ",
+      "પ્રત્યક્ષીકરણ, વિચાર, ધ્યાન, ભાષા, તર્ક, સમસ્યા ઉકેલ, સર્જનાત્મકતા, સ્મૃતિ અને બુદ્ધિ",
+      "માત્ર ઉત્તેજના અને પ્રતિક્રિયા",
+      "માત્ર વાંચન અને લેખન"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૧ : બોધ અને જ્ઞાન",
+    "exp": "જ્ઞાનાત્મક પ્રક્રિયા એ માનવ મગજની તમામ ઉચ્ચ કક્ષાની બોધાત્મક ક્ષમતાઓનો સમન્વય છે."
+  },
+  {
+    "q": "પ્રશ્ન 50: સામાન્ય રીતે ટેલિફોન કે મોબાઈલ નંબરો ૬ થી ૭ કે ૧૦ આંકડાના હોય છે અને તેને બે ભાગમાં વહેંચીને યાદ રખાય છે (Chunking). આની પાછળનું મનોવૈજ્ઞાનિક કારણ શું છે?",
+    "options": [
+      "લાંબાગાળાની સ્મૃતિની અસિમિતતા",
+      "ધ્યાનનો વિસ્તાર (Span of Attention) અને કાર્યરત સ્મૃતિની ક્ષમતા મર્યાદિત હોવી",
+      "અનૈચ્છિક ધ્યાનની ઉત્કટતા",
+      "પ્રાસંગિક સ્મૃતિનો ક્ષય"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૧ : બોધ અને જ્ઞાન",
+    "exp": "કાર્યરત સ્મૃતિ એક સમયે આશરે ૭ એકમો જ ગ્રહણ કરી શકે છે, માટે મોટા નંબરોને નાના ટુકડામાં (Chunks) વહેંચીને યાદ રાખવા પડે છે."
+  },
+  {
+    "q": "પ્રશ્ન 51: વિદ્યાર્થી કોઈ એક વિષયવસ્તુ શીખે છે ત્યારે ભૂલરહિત મહાવરો કરવાથી સ્મૃતિમાં કયો ફાયદો થાય છે?",
+    "options": [
+      "અવરોધની અસર ઘટે છે અને લાંબાગાળાની સ્મૃતિ સુદૃઢ બને છે.",
+      "ટૂંકાગાળાની સ્મૃતિનો કાયમી ક્ષય થાય છે.",
+      "ધ્યાન-વિચલનમાં તીવ્ર વધારો થાય છે.",
+      "પ્રાસંગિક સ્મૃતિ નષ્ટ પામે છે."
+    ],
+    "ans": 0,
+    "unit": "એકમ-૧ : બોધ અને જ્ઞાન",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૧૨ મુજબ વધુ અધ્યયન અને ભૂલરહિત મનની પ્રેક્ટિસ કરવાથી માહિતી સંસ્કરણમાં અવરોધ ઘટે છે."
+  },
+  {
+    "q": "પ્રશ્ન 52: જ્ઞાનમાં વ્યક્તિગત ભિન્નતા (Individual Differences) માટે જવાબદાર આંતરિક પરિબળોમાં નીચેનામાંથી કોનો સમાવેશ થાય છે?",
+    "options": [
+      "વિશ્લેષણાત્મક ક્ષમતા, સર્જનાત્મકતા, ભાવનાત્મક બુદ્ધિ અને બુદ્ધિઆંક",
+      "શાળાનું મકાન અને રમતના મેદાનનું ક્ષેત્રફળ",
+      "વર્ગખંડના પાટિયાનો રંગ",
+      "સરકારની શિષ્યવૃત્તિ યોજના"
+    ],
+    "ans": 0,
+    "unit": "એકમ-૧ : બોધ અને જ્ઞાન",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૨૦ અનુસાર અધ્યેતાની વિચારશક્તિ, IQ, સર્જનાત્મકતા અને લાગણીતંત્ર વ્યક્તિગત જ્ઞાનાત્મક ભિન્નતા લાવે છે."
+  },
+  {
+    "q": "પ્રશ્ન 53: બાળક 'દિન' (દિવસ) અને 'દીન' (ગરીબ) વચ્ચેનો અર્થભેદ સમજી શકતું નથી અને લખાણમાં ગૂંચવાય છે. શિક્ષકે આ ભૂલ સુધારવા કઈ પદ્ધતિ અપનાવવી જોઈએ?",
+    "options": [
+      "તેને ૧૦૦ વખત 'દિન-દીન' લખવાની સજા કરવી.",
+      "બંને શબ્દોનો વાક્યપ્રયોગ કરાવી સંદર્ભ સાથે અર્થભેદ સ્પષ્ટ કરવો.",
+      "તેના વાલીને બોલાવી ફરિયાદ કરવી.",
+      "લાલ પેનથી નોટબુકમાં ચેકો મારી દેવો."
+    ],
+    "ans": 1,
+    "unit": "એકમ-૧ : બોધ અને જ્ઞાન",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૨૫ મુજબ માત્ર ગોખણપટ્ટી કરાવ્યા વિના શબ્દોનો વાક્યમાં અર્થપૂર્ણ ઉપયોગ કરાવીને જ ભેદ સ્પષ્ટ કરવો જોઈએ."
+  },
+  {
+    "q": "પ્રશ્ન 54: અધ્યયન અક્ષમતા 'APD' નું પૂર્ણ સ્વરૂપ મોડ્યુલ અનુસાર શું થાય છે?",
+    "options": [
+      "Advanced Psychological Disorder",
+      "Auditory Processing Disorder (સાંભળવાની પ્રક્રિયાની સમસ્યા)",
+      "Applied Physical Deficit",
+      "Automated Perception Development"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૧ : બોધ અને જ્ઞાન",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૨૧ અનુસાર APD એટલે Auditory Processing Disorder."
+  },
+  {
+    "q": "પ્રશ્ન 55: સંરચનાવાદી અધ્યાપનમાં 'Scaffolding' (આધારજન્ય અધ્યયન સહાય) નો મુખ્ય ઉદ્દેશ શો છે?",
+    "options": [
+      "વિદ્યાર્થીને તૈયાર જવાબો લખાવી દેવા.",
+      "અધ્યેતા પોતાની પ્રવર્તમાન ક્ષમતાની મર્યાદા કરતાં વધુ ઉચ્ચ ક્ષમતા કેળવી શકે તે માટે કામચલાઉ માર્ગદર્શક ટેકો પૂરો પાડવો.",
+      "વિદ્યાર્થીને પરીક્ષામાં ચોરી કરવા દેવી.",
+      "વિદ્યાર્થીને ગૃહકાર્યમાંથી મુક્તિ આપવી."
+    ],
+    "ans": 1,
+    "unit": "એકમ-૧ : બોધ અને જ્ઞાન",
+    "exp": "સંરચનાવાદમાં જ્યાં સુધી બાળક સ્વનિર્ભર ન બને ત્યાં સુધી શિક્ષક સહાયક આધાર પૂરો પાડે છે જેને સ્કેફોલ્ડિંગ કહેવાય છે. \n★ એકમ-૨: રમતો"
+  },
+  {
+    "q": "પ્રશ્ન 56: રમતની વ્યાખ્યા આપતાં ટી.પી. નન (T.P. Nunn) એ શું કહ્યું છે?",
+    "options": [
+      "'રમત કાર્યમાં એક પ્રકારનું મનોરંજન છે.'",
+      "'રમત રચનાત્મક પ્રવૃત્તિઓનું સુદૃઢ સ્વરૂપ છે.'",
+      "'રમત એ સ્વાભાવિક ઊર્જાનો વ્યય છે.'",
+      "'રમત સામાજિક સ્પર્ધાનું માધ્યમ છે.'"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૨ : રમતો",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૩૨ મુજબ ટી.પી. નને રમતને 'રચનાત્મક પ્રવૃત્તિઓનું સુદૃઢ સ્વરૂપ' ગણાવી છે."
+  },
+  {
+    "q": "પ્રશ્ન 57: વ્યાખ્યા ઓળખો: 'રમત કાર્યમાં એક પ્રકારનું મનોરંજન છે.' - આ કથન કયા શિક્ષણશાસ્ત્રી/મનોવૈજ્ઞાનિકનું છે?",
+    "options": [
+      "વૅલેન્ટાઇન",
+      "ટી.પી. નન",
+      "ગિજુભાઈ બધેકા",
+      "જ્હૉન ડ્યૂઈ"
+    ],
+    "ans": 0,
+    "unit": "એકમ-૨ : રમતો",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૩૨ અનુસાર વૅલેન્ટાઇનના મતે રમત કાર્યમાં એક પ્રકારનું મનોરંજન છે."
+  },
+  {
+    "q": "પ્રશ્ન 58: શ્રી ગિજુભાઈ બધેકાએ પોતાના પ્રખ્યાત પુસ્તક 'દિવાસ્વપ્ન'માં રમત સંદર્ભે કયો કેન્દ્રીય વિચાર રજૂ કર્યો છે?",
+    "options": [
+      "રમતમાં હંમેશાં પ્રથમ ક્રમાંક મેળવવો અનિવાર્ય છે.",
+      "રમત એટલે માત્ર આનંદ અનુભવવાની વાત; કોઈ હાર-જીત કે નંબર નહીં, માત્ર આત્મવિશ્વાસ, સમૂહભાવના, સંપ અને નીડરતા કેળવવી.",
+      "રમતો માત્ર શારીરિક કસરત માટે જ રમાડવી જોઈએ.",
+      "રમતોમાં સખત દંડની જોગવાઈ હોવી જોઈએ."
+    ],
+    "ans": 1,
+    "unit": "એકમ-૨ : રમતો",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૩૯ અનુસાર 'દિવાસ્વપ્ન'માં ગિજુભાઈએ રમતને માત્ર નિષ્કપટ આનંદ, નીડરતા અને સમૂહભાવના કેળવવાનું સાધન ગણાવ્યું છે."
+  },
+  {
+    "q": "પ્રશ્ન 59: રમતની લાક્ષણિકતાઓ સંદર્ભે નીચેનામાંથી કયું વિધાન સાચું નથી?",
+    "options": [
+      "રમતમાં પ્રક્રિયા મહત્વની છે, નહીં કે માત્ર અંત કે પરિણામ.",
+      "રમતની પસંદગી બાળક દ્વારા જાતે થયેલી હોવી જોઈએ અને રમત છોડવાની સ્વતંત્રતા હોવી જોઈએ.",
+      "રમતમાં બાહ્ય દબાણ અને પરાણે નિયમો થોપવામાં આવે ત્યારે જ તેનો સાચો વિકાસ થાય છે.",
+      "રમત બાળકના અહમ્ (Ego)ને વાસ્તવિકતા સાથે મેળવતી સંયોજન પ્રવૃત્તિ છે."
+    ],
+    "ans": 2,
+    "unit": "એકમ-૨ : રમતો",
+    "exp": "રમત સ્વૈચ્છિક, સહજ અને મુક્ત પ્રવૃત્તિ છે; જો તેના પર દબાણ લાદવામાં આવે તો તે રમત મટીને ભારરૂપ કાર્ય બની જાય છે."
+  },
+  {
+    "q": "પ્રશ્ન 60: બાળક માટીમાંથી ઘર બનાવે, મંદિર બનાવે કે ધજા બનાવે અને તેમાંથી જે પરમ સંતોષ મેળવે છે તે રમતના કયા ફાયદાનું ઉત્કૃષ્ટ ઉદાહરણ છે?",
+    "options": [
+      "શારીરિક કાર્ડિયો ફાયદો",
+      "ભાવનાત્મક અને રચનાત્મક ફાયદો (Affective / Emotional Benefit)",
+      "માત્ર આર્થિક ફાયદો",
+      "ભાષાકીય વ્યાકરણ ફાયદો"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૨ : રમતો",
+    "exp": "બાળક સ્વેચ્છાએ માટીકામ કરી આનંદ અને માનસિક આરામ અનુભવે છે, જે ભાવનાત્મક અને સુષુપ્ત શક્તિઓનો સહજ ઉન્મેષ છે."
+  },
+  {
+    "q": "પ્રશ્ન 61: નીચેનામાંથી કઈ રમત 'વ્યક્તિગત રમત' (Individual Game) નું ઉદાહરણ નથી?",
+    "options": [
+      "૧૦૦ મીટર દોડ",
+      "સ્વિમિંગ (તરવું) અને ગોળાફેંક",
+      "કબડ્ડી અને ખો-ખો",
+      "ટેબલ ટેનિસ (સિંગલ્સ)"
+    ],
+    "ans": 2,
+    "unit": "એકમ-૨ : રમતો",
+    "exp": "કબડ્ડી અને ખો-ખો એ સાંધિક (ટીમ/જૂથ) રમતો છે જેમાં સામૂહિક સંકલન અનિવાર્ય છે."
+  },
+  {
+    "q": "પ્રશ્ન 62: સાંધિક રમતો (Team Games)માં વિજેતા બનવા માટે વ્યક્તિગત કૌશલ્ય ઉપરાંત કયો ગુણ સૌથી નિર્ણાયક પુરવાર થાય છે?",
+    "options": [
+      "માત્ર વ્યક્તિગત અહંકાર અને આક્રમકતા",
+      "ટીમવર્ક, પરસ્પર સંકલન, સંઘભાવના, ખેલદિલી અને ગેમ પ્લાન",
+      "સામેના ખેલાડી સાથે શારીરિક ઝઘડો કરવાની વૃત્તિ",
+      "રેફરીના નિર્ણયોનો બહિષ્કાર કરવાની ક્ષમતા"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૨ : રમતો",
+    "exp": "સાંધિક રમતમાં સહિયારો પુરુષાર્થ, સુમેળ અને એકબીજા માટે જતું કરવાની વૃત્તિ જ ટીમને વિજય અપાવે છે."
+  },
+  {
+    "q": "પ્રશ્ન 63: રમત દરમિયાન સામેનો ખેલાડી તમને ચીડવે છે કે ગુસ્સે કરવાનો પ્રયત્ન કરે છે, છતાં તમે તમારું માનસિક સમતુલન જાળવી રાખી રમત પર ધ્યાન કેન્દ્રિત કરો છો. આ રમતનો કયો શૈક્ષણિક ફાયદો છે?",
+    "options": [
+      "આર્થિક ઉપાર્જન",
+      "સંયમ અને આવેગિક નિયંત્રણની કેળવણી (Self-Control & Emotional Regulation)",
+      "શારીરિક ઝડપ",
+      "અનૈચ્છિક સ્મૃતિ"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૨ : રમતો",
+    "exp": "રમત ખેલાડીને ઉશ્કેરાટ વચ્ચે પણ મનની સ્થિરતા અને સંયમ જાળવવાની અમૂલ્ય તાલીમ આપે છે."
+  },
+  {
+    "q": "પ્રશ્ન 64: કબડ્ડીની રમતમાં રેઇડર જ્યારે ડિફેન્ડરને અડીને પરત ફરે ત્યારે અમ્પાયર આઉટ આપે તે પહેલાં જ સ્પર્શ થયેલો ખેલાડી સ્વેચ્છાએ હાથ ઊંચો કરીને બહાર જતો રહે છે. આ વર્તન શું પ્રગટ કરે છે?",
+    "options": [
+      "નબળાઈ અને ડરપોકપણું",
+      "ઉચ્ચ ખેલદિલી (Sportsmanship)",
+      "ટીમના નિયમોનો ભંગ",
+      "આત્મવિશ્વાસનો અભાવ"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૨ : રમતો",
+    "exp": "પોતાની ભૂલ કે આઉટ થવાનો સ્વેચ્છાએ અને પ્રામાણિકપણે સ્વીકાર કરવો એ સાચી ખેલદિલીનું લક્ષણ છે."
+  },
+  {
+    "q": "પ્રશ્ન 65: નાનું બાળક રમકડાંના ભાગો તોડી નાખે છે અને ફરીથી તેને નવી રીતે જોડવાનો કે ગોઠવવાનો પ્રયત્ન કરે છે. બાળવિકાસના સંદર્ભમાં આ બાબત શું સૂચવે છે?",
+    "options": [
+      "બાળકની વિનાશક અને આક્રમક વિકૃતિ",
+      "બાળકના કલ્પના વિકાસ અને સર્જનાત્મક જિજ્ઞાસાની શરૂઆત",
+      "બાળકની સ્નાયુબદ્ધ અસમર્થતા",
+      "બાળકમાં ડિસ્લેક્સિયાનું પ્રારંભિક લક્ષણ"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૨ : રમતો",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૩૭ અનુસાર રમકડાંની તોડફોડ અને પુનઃરચના એ બાળકના કલ્પનાશીલ મન અને સંશોધક વૃત્તિનું પ્રતીક છે."
+  },
+  {
+    "q": "પ્રશ્ન 66: રમત રમતી વખતે ખુલ્લી હવામાં મેદાન પર રહેવાથી બાળકના શરીરમાં કયો જૈવિક ફાયદો થાય છે?",
+    "options": [
+      "તેના શરીરમાં વિશેષ પ્રકારના બેક્ટેરિયા સામે રોગપ્રતિકારક શક્તિ (Immunity) વિકસે છે.",
+      "તેના ફેફસાં સંકોચાઈ જાય છે.",
+      "તેની શારીરિક વૃદ્ધિ કાયમ માટે અટકી જાય છે.",
+      "તેની દ્રષ્ટિક્ષમતા ઘટી જાય છે."
+    ],
+    "ans": 0,
+    "unit": "એકમ-૨ : રમતો",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૩૮ મુજબ બહારના વાતાવરણમાં રમવાથી બાળક કુદરતી ઘટકોના સંપર્કમાં આવે છે અને તેની પ્રતિરોધક ક્ષમતા ખીલે છે."
+  },
+  {
+    "q": "પ્રશ્ન 67: શતરંજ (ચેસ), ટેનિસ કે લખોટીની રમતમાં સામા પક્ષની ચાલ પારખીને વળતી યોજના બનાવવી એ બાળકના કયા વિકાસ સાથે સીધું જોડાયેલું છે?",
+    "options": [
+      "બોધાત્મક વિકાસ (Cognitive Development - તર્ક અને વ્યૂહાત્મક વિચાર)",
+      "માત્ર શારીરિક વજન વધારવા સાથે",
+      "માત્ર ધાર્મિક વિકાસ સાથે",
+      "ભાષાકીય જોડણી સાથે"
+    ],
+    "ans": 0,
+    "unit": "એકમ-૨ : રમતો",
+    "exp": "આ રમતોમાં ત્વરિત નિર્ણય, પૂર્વાનુમાન, તાર્કિક ગણતરી અને એકાગ્રતાની જરૂર પડે છે જે બોધાત્મક વિકાસ કરે છે."
+  },
+  {
+    "q": "પ્રશ્ન 68: કેરળમાં નદીઓ અને દરિયાકાંઠાને કારણે નૌકા સ્પર્ધા (Boat Race) પ્રખ્યાત છે, જ્યારે જમ્મુ-કાશ્મીરમાં બરફ પર સરકવાની રમત રમાય છે. આ ઉદાહરણ રમતમાં કયો તફાવત દર્શાવે છે?",
+    "options": [
+      "આર્થિક કૌભાંડનો તફાવત",
+      "ભૌગોલિક અને સાંસ્કૃતિક પરિવેશ આધારિત તફાવત",
+      "બુદ્ધિઆંકનો તફાવત",
+      "રાજકીય પક્ષપાતનો તફાવત"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૨ : રમતો",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૪૦ મુજબ પ્રદેશની ભૌગોલિક સ્થિતિ અને લોકસંસ્કૃતિ અનુસાર રમતોનું સ્વરૂપ ઘડાય છે."
+  },
+  {
+    "q": "પ્રશ્ન 69: આદિવાસી સંસ્કૃતિમાં તીર-કામઠા, ભાલાફેંક અને ડુંગરાળ દોડ જેવી રમતો વધુ જોવા મળે છે, તેનું મુખ્ય કારણ શું છે?",
+    "options": [
+      "તેમની સંસ્કૃતિ, જીવનશૈલી અને પર્યાવરણ સાથેનું સીધું જોડાણ",
+      "સરકાર દ્વારા અન્ય રમતો પર મુકાયેલો પ્રતિબંધ",
+      "આધુનિક સાધનો પ્રત્યેનો અણગમો",
+      "માનસિક પછાતપણું"
+    ],
+    "ans": 0,
+    "unit": "એકમ-૨ : રમતો",
+    "exp": "આદિવાસી પ્રજાની પારંપરિક જીવનરીતિ અને જંગલ પરિવેશમાંથી તેમની વિશિષ્ટ રમતો વિકસી છે."
+  },
+  {
+    "q": "પ્રશ્ન 70: આર્થિક દ્રષ્ટિએ ઓછી આવક ધરાવતા પરિવારોના બાળકો ગિલ્લી-દંડા, ભમરડા, નદી-પર્વત કે લંગડી જેવી દેશી રમતો રમે છે, જ્યારે ઉચ્ચ આર્થિક વર્ગના બાળકો ગોલ્ફ, બિલિયર્ડ્સ કે વીડિયો ગેમ્સ તરફ વળે છે. આ તફાવત શાળા શિક્ષણમાં શિક્ષકે કેવી રીતે હેન્ડલ કરવો જોઈએ?",
+    "options": [
+      "શાળામાં માત્ર મોંઘી સાધનવાળી રમતોને જ પ્રોત્સાહન આપવું.",
+      "શાળામાં તમામ બાળકો ભેદભાવ ભૂલીને સમાનતા અને ભાઈચારાથી રમી શકે તેવું સમરસ વાતાવરણ પૂરું પાડવું.",
+      "ગરીબ અને અમીર બાળકોના રમતના મેદાનો અલગ કરી દેવા.",
+      "દેશી રમતો રમવા પર પ્રતિબંધ મૂકવો."
+    ],
+    "ans": 1,
+    "unit": "એકમ-૨ : રમતો",
+    "exp": "રમત એ સામાજિક સમરસતા સ્થાપવાનું ઉત્તમ માધ્યમ છે જ્યાં વર્ગ, જ્ઞાતિ કે આર્થિક ભેદભાવ ઓગળી જાય છે."
+  },
+  {
+    "q": "પ્રશ્ન 71: રમતના નિયમોનું પાલન કરવાથી બાળકોમાં 'સંઘર્ષ નિવારણ' (Conflict Resolution) કેવી રીતે સહજ બને છે?",
+    "options": [
+      "બાળકો નિયમભંગનું પરિણામ સમજે છે, હાર-જીતને પચાવતા શીખે છે અને પૂર્વગ્રહ વગર નિર્ણાયકનો ફેંસલો સ્વીકારે છે.",
+      "બાળકો હારી જાય ત્યારે રેફરી સાથે ઝઘડો કરી પોતાની તાકાત બતાવે છે.",
+      "બાળકો હંમેશાં જીતવા માટે નિયમો તોડવાની કળા શીખી જાય છે.",
+      "બાળકો રમવાનું કાયમ માટે બંધ કરી દે છે."
+    ],
+    "ans": 0,
+    "unit": "એકમ-૨ : રમતો",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૪૧-૪૨ મુજબ નિયમો વ્યક્તિગત આવેગોને અંકુશમાં રાખે છે અને બાળકો વિવાદ ટાળીને પરસ્પર આદર દાખવતા શીખે છે."
+  },
+  {
+    "q": "પ્રશ્ન 72: આધુનિક રમતોમાં વિવાદ કે સંઘર્ષ ટાળવા માટે 'થર્ડ અમ્પાયર' કે સ્ક્રીન પર વારંવાર રીપ્લે (DRS/Video Review) બતાવવામાં આવે છે. આ ટેકનોલોજીથી બાળકોમાં કઈ નૈતિક સમજ કેળવાય છે?",
+    "options": [
+      "ચોરી પકડાઈ જાય ત્યારે શરમ અનુભવવી.",
+      "હકીકત અને પુરાવા આધારિત સત્યનો સ્વીકાર કરવો અને અવિશ્વાસ કે ભ્રમણા દૂર કરવી.",
+      "મેદાન પર રેફરીની કોઈ જરૂર નથી તેવું માનવું.",
+      "માત્ર મશીનો પર જ ભરોસો રાખવો."
+    ],
+    "ans": 1,
+    "unit": "એકમ-૨ : રમતો",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૪૨ મુજબ સ્ક્રીન પર સ્પષ્ટ દ્રશ્ય જોવાથી ખેલાડી પોતાની ક્ષતિ સ્વીકારી લે છે અને સંઘર્ષ આપોઆપ શમી જાય છે."
+  },
+  {
+    "q": "પ્રશ્ન 73: શિક્ષકે શાળામાં રમત રમાડતી વખતે કઈ બાબતની ખાસ તકેદારી રાખવી જોઈએ?",
+    "options": [
+      "પોતે ઉગ્ર અને કડક બની રહેવું જેથી બાળકો ડરીને રમે.",
+      "બાળકોની શારીરિક ક્ષમતા અને તંદુરસ્તી ધ્યાને રાખવી, સાધનો પૂરતા રાખવા અને શિક્ષકે શાંત સ્વભાવ રાખી માર્ગદર્શકની ભૂમિકા ભજવવી.",
+      "માત્ર હોશિયાર અને તંદુરસ્ત બાળકોને જ મેદાનમાં ઉતારવા, નબળા બાળકોને ક્લાસમાં બેસાડી રાખવા.",
+      "રમતના નિયમો અગાઉથી બાળકોને ન જણાવવા."
+    ],
+    "ans": 1,
+    "unit": "એકમ-૨ : રમતો",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૩૬-૩૭ અનુસાર શિક્ષક માર્ગદર્શક છે, તેનો શાંત સ્વભાવ બાળકોનો ડર દૂર કરે છે અને પૂરતા સાધનો સૌને સમાન મહાવરો આપે છે."
+  },
+  {
+    "q": "પ્રશ્ન 74: જો રમત દરમિયાન શિક્ષકથી કોઈ નિયમ કે નિર્ણય લેવામાં ભૂલ થઈ જાય, તો શિક્ષકે શું કરવું જોઈએ?",
+    "options": [
+      "પોતાનો કક્કો ખરો કરવા વિદ્યાર્થીઓને ધમકાવવા.",
+      "પોતાની ભૂલનો નિખાલસપણે સ્વીકાર કરવો, જેથી વિદ્યાર્થીઓમાં પણ પ્રામાણિકતા અને સત્યપ્રિયતાનો ગુણ કેળવાય.",
+      "રમત અધવચ્ચેથી રદ કરી દેવી.",
+      "કોઈ વિદ્યાર્થી પર દોષનો ટોપલો ઢોળી દેવો."
+    ],
+    "ans": 1,
+    "unit": "એકમ-૨ : રમતો",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૩૭ મુજબ શિક્ષકે પોતાની ભૂલનો સ્વીકાર કરવો જોઈએ, જે વિદ્યાર્થીઓ સમક્ષ ઉત્તમ આદર્શ મૉડલ પૂરું પાડે છે."
+  },
+  {
+    "q": "પ્રશ્ન 75: રમત દ્વારા બાળકના 'ભાષાવિકાસ' પર કઈ વિધાયક અસર થાય છે?",
+    "options": [
+      "બાળક અન્ય સાથીદારો સાથે મુક્ત સંવાદ સાધે છે, સૂચનાઓ આપે-લે છે અને તેનું વાણી કૌશલ્ય તથા શબ્દભંડોળ ખીલે છે.",
+      "બાળકની બોલવાની શક્તિ કાયમ માટે ક્ષીણ થઈ જાય છે.",
+      "બાળક માત્ર મૂક સંકેતો જ વાપરતું થઈ જાય છે.",
+      "ભાષાવિકાસ અને રમત વચ્ચે કોઈ સંબંધ નથી."
+    ],
+    "ans": 0,
+    "unit": "એકમ-૨ : રમતો",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૩૯ અનુસાર જૂથ રમતમાં બાળક વિવિધ સામાજિક પૃષ્ઠભૂમિના સંપર્કમાં આવે છે, જેથી તેની ભાષા અભિવ્યક્તિ નિડર અને સમૃદ્ધ બને છે."
+  },
+  {
+    "q": "પ્રશ્ન 76: બાળક જ્યારે રમતમાં તલ્લીન હોય છે ત્યારે તે ખાવા-પીવાની ભૂખ, સમય અને સ્થળનું ભાન પણ ભૂલી જાય છે. આ બાળકના કયા વિકાસની પરાકાષ્ઠા દર્શાવે છે?",
+    "options": [
+      "સાંવેગિક વિકાસ અને એકાગ્રતા (Emotional Intersity & Absorption)",
+      "શારીરિક થાક અને અશક્તિ",
+      "માનસિક બીમારી",
+      "સ્મૃતિભ્રંશ"
+    ],
+    "ans": 0,
+    "unit": "એકમ-૨ : રમતો",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૩૮ મુજબ રમતમાં લીન થવું એ બાળકના આવેગોનું પરમોચ્ચ સંયોજન છે જ્યાં બાહ્ય ભૌતિક જરૂરિયાતો ગૌણ બની જાય છે."
+  },
+  {
+    "q": "પ્રશ્ન 77: રમત બાળકને સમાજજીવન માટે કેવી રીતે સક્ષમ બનાવે છે?",
+    "options": [
+      "માત્ર વ્યક્તિવાદી બનીને પોતાના સ્વાર્થ માટે લડતા શીખવે છે.",
+      "જૂથમાં કામ કરવાની આવડત (Teamwork), નેતૃત્વ, સહિષ્ણુતા અને સામાજિક અનુકૂલન કેળવે છે.",
+      "સમાજના કાયદાઓનો ભંગ કરવાની હિંમત આપે છે.",
+      "બાળકને એકાંતપ્રિય અને અંતર્મુખી બનાવે છે."
+    ],
+    "ans": 1,
+    "unit": "એકમ-૨ : રમતો",
+    "exp": "રમત સામાજિકીકરણની પાઠશાળા છે, જ્યાં બાળક વહેંચણી, સહકાર અને જૂથહિત માટે સમર્પણ શીખે છે."
+  },
+  {
+    "q": "પ્રશ્ન 78: રમત રમવાથી બાળકના હૃદય અને શ્વસનતંત્ર પર કઈ અનુકૂળ અસર થાય છે?",
+    "options": [
+      "તે એક પ્રકારનું કાર્ડિયો વર્કઆઉટ (Cardio workout) પૂરું પાડે છે, જેનાથી હૃદય અને ફેફસાં કાર્યક્ષમ બને છે.",
+      "હૃદયના ધબકારા અનિયમિત થઈ જાય છે.",
+      "ફેફસાંની ઓક્સિજન ક્ષમતા ઘટે છે.",
+      "શરીરમાં લોહીનું પરિભ્રમણ ધીમું પડી જાય છે."
+    ],
+    "ans": 0,
+    "unit": "એકમ-૨ : રમતો",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૩૮ મુજબ દોડવા-કૂદવાની પ્રવૃત્તિઓ કાર્ડિયો વર્કઆઉટ સમાન હોવાથી બાળકના ફેફસાં અને રુધિરાભિસરણ તંત્ર મજબૂત બને છે."
+  },
+  {
+    "q": "પ્રશ્ન 79: નીચેનામાંથી કયો ગુણ રમત દ્વારા વિકસતો નથી?",
+    "options": [
+      "સમયસૂચકતા અને ઝડપી નિર્ણયશક્તિ",
+      "પરસ્પર ઈર્ષ્યા, વેરભાવ અને અપ્રામાણિકતા",
+      "ખેલદિલી અને પરાજય સ્વીકારવાની ક્ષમતા",
+      "સ્નાયુબદ્ધ સમન્વય અને ચપળતા"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૨ : રમતો",
+    "exp": "સાચી રમત ઈર્ષ્યા અને દ્વેષનું શમન કરે છે અને હકારાત્મક આવેગો વધારે છે."
+  },
+  {
+    "q": "પ્રશ્ન 80: ચેસ (શતરંજ)ની રમતમાં જ્યારે કોઈ ખેલાડી સામેના ખેલાડીની ચાલમાં ફસાઈને હારી જાય છે ત્યારે તે સંઘર્ષ કરવાને બદલે હાર સ્વીકારીને વિજેતાને અભિનંદન આપે છે. આનું મનોવૈજ્ઞાનિક કારણ શું છે?",
+    "options": [
+      "પોતાની ભૂલનું સ્વયં અવલોકન અને નિયમોની સ્પષ્ટતા",
+      "સામેના ખેલાડીનો ડર",
+      "શારીરિક ઈજા થવાની બીક",
+      "દર્શકોનું દબાણ"
+    ],
+    "ans": 0,
+    "unit": "એકમ-૨ : રમતો",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૪૨ મુજબ ખેલાડી પોતે ક્યાં ભૂલ કરી તે જાણે છે, જેથી તે વાસ્તવિકતા સ્વીકારી સંઘર્ષ ટાળે છે."
+  },
+  {
+    "q": "પ્રશ્ન 81: રમત દરમિયાન ખેલાડીઓ માટે અનુકૂળ પોશાક (Sports Dress) પહેરવાનો આગ્રહ શા માટે રાખવો જોઈએ?",
+    "options": [
+      "માત્ર સુંદર દેખાવા માટે",
+      "શરીરની હિલચાલમાં સરળતા રહે, લવચિકતા જળવાય અને ઈજાઓથી બચી શકાય",
+      "શાળાની ફી વસૂલવા માટે",
+      "બાળકોને ઠંડીથી બચાવવા માટે"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૨ : રમતો",
+    "exp": "યોગ્ય સ્પોર્ટ્સ પોશાક રમતવીરને મુક્તપણે અંગકસરત અને દોડવાની અનુકૂળતા આપે છે."
+  },
+  {
+    "q": "પ્રશ્ન 82: બાળક જ્યારે પોતાની માતા સાથે સંતાકૂકડી કે ઘર-ઘર રમે છે ત્યારે તે રમતનો કયો પ્રકાર ગણાય?",
+    "options": [
+      "માત્ર કઠોર લશ્કરી તાલીમ",
+      "સાહજિક કલ્પનાત્મક રમત (Imaginative & Symbolic Play)",
+      "વ્યાવસાયિક આંતરરાષ્ટ્રીય સ્પર્ધા",
+      "યાંત્રિક કમ્પ્યુટર રમત"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૨ : રમતો",
+    "exp": "આ રમતોમાં બાળક વાસ્તવિક જીવનની ભૂમિકાઓનું અનુકરણ કરી આનંદ મેળવે છે."
+  },
+  {
+    "q": "પ્રશ્ન 83: શિક્ષકે મેદાન પર સૂચનાઓ આપતી વખતે કઈ જગ્યાએ ઊભા રહેવું જોઈએ?",
+    "options": [
+      "મેદાનના એક ખૂણામાં મોઢું નીચું રાખીને",
+      "એવી જગ્યાએ જ્યાંથી દરેક રમતવીર શિક્ષકને જોઈ અને સાંભળી શકે તથા શિક્ષક તમામ બાળકો પર નજર રાખી શકે",
+      "વર્ગખંડની બારીમાંથી લાઉડસ્પીકર દ્વારા",
+      "માત્ર કૅપ્ટનની બાજુમાં કાનમાં બોલવું"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૨ : રમતો",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૩૭ અનુસાર વર્ગ વ્યવસ્થા અને સંચારની અસરકારકતા માટે શિક્ષકની કેન્દ્રિય સ્થિતિ જરૂરી છે."
+  },
+  {
+    "q": "પ્રશ્ન 84: રમતમાં 'ખેલાડી જાતે જ ભૂલ કબૂલ કરે તો તેને બિરદાવવો જોઈએ' - આ વિધાન શિક્ષક માટે શા માટે અત્યંત મહત્વનું છે?",
+    "options": [
+      "તેનાથી ખેલાડીમાં નૈતિક હિંમત અને પ્રામાણિકતાનું સુદૃઢીકરણ થાય છે.",
+      "તેનાથી સમયનો બગાડ અટકે છે.",
+      "તેનાથી શિક્ષકને આરામ મળે છે.",
+      "તેનાથી રમત જલદી પૂરી થઈ જાય છે."
+    ],
+    "ans": 0,
+    "unit": "એકમ-૨ : રમતો",
+    "exp": "ભૂલ સ્વીકારવાની નૈતિક હિંમતને પ્રોત્સાહન આપવાથી બાળકના ચારિત્ર્યનું ઉમદા ઘડતર થાય છે."
+  },
+  {
+    "q": "પ્રશ્ન 85: બાળપણની રમતો અને રમકડાં પ્રત્યે પુખ્ત વયે પણ એક પ્રકારનો ઊંડો લગાવ રહે છે. આ સ્મૃતિ માહિતી સંસ્કરણના કયા પાસા સાથે સંકળાયેલી છે?",
+    "options": [
+      "ક્ષણિક સાંવેદિક સ્મૃતિ",
+      "ભાવનાત્મક જોડાણ ધરાવતી દીર્ઘકાલીન પ્રાસંગિક સ્મૃતિ (Long Term Episodic Memory)",
+      "ટૂંકાગાળાની કાર્યકારી સ્મૃતિ",
+      "વિસ્મૃતિનો કાયમી ક્ષય"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૨ : રમતો",
+    "exp": "બાળપણના આનંદદાયી સંસ્કારો મનમાં ઊંડા મૂળિયાં ધરાવતા હોવાથી આજીવન સ્મરણમાં અકબંધ રહે છે."
+  },
+  {
+    "q": "પ્રશ્ન 86: રમત રમતા બાળકમાં 'આવેશ અને આક્રમકતા પર કાબૂ' આવે છે, આ રમતના કયા વિકાસાત્મક ક્ષેત્રનો ફાયદો છે?",
+    "options": [
+      "સામાજિક અને સાંવેગિક વિકાસ (Socio-Emotional Development)",
+      "માત્ર ગણિત-વિજ્ઞાન ક્ષેત્ર",
+      "માત્ર વજન વધારવાનું ક્ષેત્ર",
+      "માત્ર આર્થિક બચત ક્ષેત્ર"
+    ],
+    "ans": 0,
+    "unit": "એકમ-૨ : રમતો",
+    "exp": "રમતોમાં નિયમોની મર્યાદા અને સાથીદારોનો સહકાર બાળકના આવેગોનું શુદ્ધિકરણ (Catharsis) કરે છે."
+  },
+  {
+    "q": "પ્રશ્ન 87: ખો-ખોની રમતમાં જ્યારે કોઈ ખેલાડી ફાઉલ કરે છે ત્યારે રેફરી તરત વ્હિસલ વગાડી ભૂલ દર્શાવે છે. જો આ નિયમનું સખત પાલન ન કરાવવામાં આવે તો શું પરિણામ આવે?",
+    "options": [
+      "રમત વધુ રસપ્રદ બને.",
+      "રમતનો સાચો આનંદ ઓછો થઈ જાય છે, અરાજકતા ફેલાય છે અને શીખવાની પ્રક્રિયા ખોરવાય છે.",
+      "બાળકો ઓલિમ્પિકમાં પહોંચી જાય.",
+      "બાળકો ક્યારેય થાકતા નથી."
+    ],
+    "ans": 1,
+    "unit": "એકમ-૨ : રમતો",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૩૭ મુજબ નિયમોના ચુસ્ત પાલન વિના રમતનું માળખું તૂટી પડે છે અને ખેલદિલી મરી પરવારે છે."
+  },
+  {
+    "q": "પ્રશ્ન 88: રમત દ્વારા બાળકોમાં 'હસ્તકૌશલ્ય' (Manual Dexterity) કેવી રીતે વિકસે છે?",
+    "options": [
+      "રમતો દ્વારા સ્નાયુઓ, ઝડપ, લવચિકતા, ચપળતા અને આંખ-હાથના સંકલનનો સુમેળ સધાય છે જેથી તે અન્ય વ્યવહારુ કાર્યો પણ ઝડપથી શીખી શકે છે.",
+      "બાળક માત્ર પુસ્તકો વાંચીને હાથ પાવરધો બનાવે છે.",
+      "હાથ પર પાટા બાંધવાથી હસ્તકૌશલ્ય વધે છે.",
+      "માત્ર આરામ કરવાથી સ્નાયુઓ મજબૂત બને છે."
+    ],
+    "ans": 0,
+    "unit": "એકમ-૨ : રમતો",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૩૬ અનુસાર શારીરિક ગતિવિધિઓ સ્નાયુબદ્ધ કુશળતા આપે છે જે જીવનના અન્ય તમામ કાર્યોમાં સહાયક બને છે."
+  },
+  {
+    "q": "પ્રશ્ન 89: સમાજશાસ્ત્રીય દ્રષ્ટિએ 'બાળક જન્મથી સમાજનિષ્ઠ હોતું નથી.' તેને સમાજનિષ્ઠ બનાવવામાં રમત કેવી ભૂમિકા ભજવે છે?",
+    "options": [
+      "બાળક રમત દ્વારા અન્ય સાથે આદાન-પ્રદાન, વહેંચણી અને સામાજિક નિયમોનું પાલન કરતાં શીખીને આદર્શ નાગરિક બને છે.",
+      "બાળક સમાજથી અલગ થઈને જંગલમાં રહેવા પ્રેરાય છે.",
+      "બાળક માત્ર પોતાના પરિવાર પૂરતો જ સીમિત રહે છે.",
+      "રમત સામાજિક મૂલ્યોનો નાશ કરે છે."
+    ],
+    "ans": 0,
+    "unit": "એકમ-૨ : રમતો",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૪૦ અનુસાર રમત એ સામાજિક સમરસતા અને નાગરિકતાના ગુણો કેળવવાનું પ્રથમ અનૌપચારિક ક્ષેત્ર છે."
+  },
+  {
+    "q": "પ્રશ્ન 90: રમત રમતી વખતે બાળકની એકાગ્રતા અને ધ્યાન-વિસ્તારમાં શો સુધારો થાય છે?",
+    "options": [
+      "ધ્યાનમાં અનિયમિતતા અને ભટકાવ વધે છે.",
+      "ધ્યાનમાં નિયમિતતા આવે છે, એકાગ્રતા વધે છે અને બાળક ખંતીલું તથા પરિસ્થિતિ પ્રત્યે સભાન બને છે.",
+      "બાળક ક્યારેય કોઈ બાબત પર ધ્યાન આપી શકતું નથી.",
+      "બાળકની સ્મૃતિ કાયમ માટે ક્ષીણ થાય છે."
+    ],
+    "ans": 1,
+    "unit": "એકમ-૨ : રમતો",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૩૫ અનુસાર રમત ધ્યાનની એકાગ્રતા વધારે છે અને બાળકને લક્ષ્યકેન્દ્રી બનાવે છે."
+  },
+  {
+    "q": "પ્રશ્ન 91: નીચેનામાંથી કઈ રમત બાળકમાં 'સંઘભાવના' (Team Spirit) ખીલવવા માટે શ્રેષ્ઠ ગણાય?",
+    "options": [
+      "દોડ સ્પર્ધા (૧૦૦ મીટર)",
+      "રિલે દોડ (Relay Race) અને ફૂટબોલ",
+      "લાંબી કૂદ",
+      "તીરંદાજી (વ્યક્તિગત)"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૨ : રમતો",
+    "exp": "રિલે દોડ અને ફૂટબોલમાં એક ખેલાડીનો પુરુષાર્થ સમગ્ર ટીમના વિજય પર આધાર રાખે છે, જે ઉચ્ચ સંઘભાવના જન્માવે છે."
+  },
+  {
+    "q": "પ્રશ્ન 92: બાળક જ્યારે મેદાન પર કોઈ સાથીદારને પડી જતાં જુએ છે અને રમત અટકાવીને તેને ઊભો કરવામાં મદદ કરે છે, ત્યારે આ વર્તન શું દર્શાવે છે?",
+    "options": [
+      "રમતનો સમય બગાડવાની વૃત્તિ",
+      "સહાનુભૂતિ અને પરહિતવૃત્તિ (Empathy & Pro-social Behavior)",
+      "રમત હારી જવાનો ડર",
+      "શિક્ષકની સજાનો ભય"
+    ],
+    "ans": 1,
+    "unit": "એકમ-૨ : રમતો",
+    "exp": "રમતના નિયમોથી પણ પર જઈને માનવતા અને સહાનુભૂતિ દાખવવી એ સામાજિક-નૈતિક વિકાસની ઉત્કૃષ્ટ નિશાની છે."
+  },
+  {
+    "q": "પ્રશ્ન 93: બાળકોની રમતો પર પ્રાદેશિક સંસ્કૃતિનો પ્રભાવ દર્શાવતું કયું વિધાન સત્ય છે?",
+    "options": [
+      "ગુજરાત અને મહારાષ્ટ્રમાં કબડ્ડી અને ખો-ખો જેવી દેશી રમતો વિશેષ મહત્વ ધરાવે છે.",
+      "તમામ પ્રદેશોમાં સંસ્કૃતિ બદલાવા છતાં રમતોમાં કોઈ વૈવિધ્ય જોવા મળતું નથી.",
+      "દરિયાકાંઠે રહેતા બાળકો ક્યારેય તરવાની રમત રમતા નથી.",
+      "પહાડી પ્રદેશોમાં બિલિયર્ડ્સ સૌથી વધુ રમાય છે."
+    ],
+    "ans": 0,
+    "unit": "એકમ-૨ : રમતો",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૪૦ મુજબ પ્રદેશની સંસ્કૃતિ અને લોકજીવન અનુસાર દેશી રમતોની લોકપ્રિયતા નક્કી થાય છે."
+  },
+  {
+    "q": "પ્રશ્ન 94: શાળામાં જે બાળકો રમતમાં બિલકુલ ભાગ લેતા ન હોય અને એકલા અટૂલા બેસી રહેતા હોય, તેમને રમતમાં જોડવા શિક્ષકે શું કરવું જોઈએ?",
+    "options": [
+      "તેમને આખા વર્ગ સમક્ષ ઠપકો આપી લજ્જિત કરવા.",
+      "તેમની રુચિ જાણીને નાની અને સરળ રમતોથી શરૂઆત કરાવવી તથા સહાનુભૂતિપૂર્વક સાથીદારો સાથે જૂથમાં જોડવા.",
+      "તેમના માર્કસ કાપી લેવાની ધમકી આપવી.",
+      "તેમની અવગણના કરીને માત્ર હોશિયાર બાળકો પર જ ધ્યાન આપવું."
+    ],
+    "ans": 1,
+    "unit": "એકમ-૨ : રમતો",
+    "exp": "અંતર્મુખી કે ડરપોક બાળકને ધીમે ધીમે રમતના આનંદ સાથે જોડીને તેનો સંકોચ દૂર કરવો એ શિક્ષકની આવડત છે."
+  },
+  {
+    "q": "પ્રશ્ન 95: રમતમાં 'પ્રક્રિયા મહત્વની છે, નહીં કે અંત' - આ વિધાનનો સાચો શૈક્ષણિક ભાવાર્થ શો છે?",
+    "options": [
+      "માત્ર જીતવું જ સર્વસ્વ છે, પછી ભલે ગમે તેવા અયોગ્ય રસ્તા અપનાવાય.",
+      "રમત રમવાની પ્રક્રિયા દરમિયાન જે કૌશલ્યો, આનંદ, સહકાર અને મૂલ્યો શીખવા મળે છે તે પરિણામ કે ટ્રોફી કરતાં વધુ મહત્વના છે.",
+      "રમત ક્યારેય પૂરી જ ન કરવી જોઈએ.",
+      "રમતમાં કોઈ નિયમો ન હોવા જોઈએ."
+    ],
+    "ans": 1,
+    "unit": "એકમ-૨ : રમતો",
+    "exp": "શિક્ષણમાં રમતનો હેતુ બાળકનો સર્વાંગી વિકાસ છે, માત્ર યાંત્રિક હાર-જીત નહીં."
+  },
+  {
+    "q": "પ્રશ્ન 96: રમત દ્વારા બાળકોમાં 'નેતૃત્વશક્તિ' (Leadership) કેવી રીતે ખીલે છે?",
+    "options": [
+      "ટીમના કૅપ્ટન તરીકે સાથી ખેલાડીઓને માર્ગદર્શન આપવું, ઉત્સાહ વધારવો અને કટોકટીમાં નિર્ણયો લેવાની તક મળવાથી.",
+      "બીજા બાળકો પર હુકમ ચલાવીને દાદાગીરી કરવાથી.",
+      "શિક્ષકની ગેરહાજરીમાં વર્ગમાં તોફાન કરવાથી.",
+      "માત્ર મોટેથી બૂમો પાડવાથી."
+    ],
+    "ans": 0,
+    "unit": "એકમ-૨ : રમતો",
+    "exp": "રમતમાં સુકાનીપદ સંભાળવાથી જવાબદારીનું વહન અને ટીમ સંચાલનની ક્ષમતા કેળવાય છે."
+  },
+  {
+    "q": "પ્રશ્ન 97: રમત રમતી વખતે બાળકો પોતાની આસપાસના વાતાવરણ સાથે કેવું જોડાણ સાધે છે?",
+    "options": [
+      "તેઓ બાહ્ય જગતના પદાર્થો સાથે બાળસહજ આંતરક્રિયા કરી પોતાના અનુભવોનું વિશ્વ વિસ્તારે છે.",
+      "તેઓ વાતાવરણને પ્રદૂષિત કરે છે.",
+      "તેઓ વાતાવરણથી તદ્દન અલિપ્ત થઈ જાય છે.",
+      "તેઓ વાતાવરણ સામે સંઘર્ષ કરી થાકી જાય છે."
+    ],
+    "ans": 0,
+    "unit": "એકમ-૨ : રમતો",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૩૭ મુજબ બાળક બાહ્ય પદાર્થો સાથે જે સહજ સંવાદ સાધે છે તેમાંથી રમત પ્રગટ થાય છે."
+  },
+  {
+    "q": "પ્રશ્ન 98: રમત દરમિયાન હાર-જીતને પચાવવાની તાલીમ વાસ્તવિક જીવનમાં ક્યાં ઉપયોગી બને છે?",
+    "options": [
+      "જીવનમાં આવતી મુશ્કેલીઓ, નિષ્ફળતાઓ અને પડકારોનો હતાશ થયા વગર સ્થિર મનથી સામનો કરવામાં.",
+      "પરીક્ષામાં નાપાસ થવા માટે બહાના શોધવામાં.",
+      "નોકરીમાં કામચોરી કરવામાં.",
+      "કોઈપણ સ્પર્ધાથી દૂર ભાગવામાં."
+    ],
+    "ans": 0,
+    "unit": "એકમ-૨ : રમતો",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૩૯ અનુસાર રમતથી બાળક પ્રવાહ સાથે પરિવર્તન સ્વીકારે છે અને જીવનના ઉતાર-ચઢાવમાં અડગ રહે છે."
+  },
+  {
+    "q": "પ્રશ્ન 99: સાંધિક રમતમાં જ્યારે બે ખેલાડીઓ વચ્ચે બોલ પાસ કરવા બાબતે મતભેદ થાય છે ત્યારે તેઓ રમત બગાડ્યા વિના ત્વરિત સમાધાન કરી લે છે. આ કૌશલ્ય શું કહેવાય?",
+    "options": [
+      "તાત્કાલિક સંઘર્ષ નિવારણ અને પરિસ્થિતિજન્ય અનુકૂલન",
+      "સ્વાર્થવૃત્તિ",
+      "માનસિક પરાજય",
+      "અનૈચ્છિક સ્મૃતિ"
+    ],
+    "ans": 0,
+    "unit": "એકમ-૨ : રમતો",
+    "exp": "જૂથરમતમાં સમાન ધ્યેય (વિજય) માટે નાના મતભેદો બાજુ પર રાખવાની આવડત ખીલે છે."
+  },
+  {
+    "q": "પ્રશ્ન 100: મોડ્યુલ અનુસાર 'સ્વસ્થ મસ્તિષ્ક કુશળતાથી જાણકારીઓ સંગ્રહિત કરે છે' - આ બાબત રમત સાથે કેવી રીતે જોડાયેલી છે?",
+    "options": [
+      "શારીરિક ગતિવિધિઓથી મગજના અવયવો-કોષો સક્રિય અને પૂર્ણરૂપે વિકસે છે, જે અધ્યયન અને ગ્રહણક્ષમતા વધારે છે.",
+      "રમત રમવાથી મગજ સુકાઈ જાય છે.",
+      "રમત માત્ર શરીરને થકવે છે, મગજ સાથે તેને કોઈ સંબંધ નથી.",
+      "રમતથી બુદ્ધિનો ક્ષય થાય છે."
+    ],
+    "ans": 0,
+    "unit": "એકમ-૨ : રમતો",
+    "exp": "મોડ્યુલ પૃષ્ઠ ૩૯-૪૦ અનુસાર રમતથી મગજમાં ન્યુરોનલ ઉત્તેજના વધે છે જે ઝડપી અધ્યયન અને સ્મૃતિમાં સહાયક બને છે."
+  }
+];
+
+let studentName = "", studentPhone = "", studentEmail = "";
+let currentQ = 0;
+let userAnswers = new Array(questions.length).fill(null);
+let flaggedQuestions = new Array(questions.length).fill(false);
+let startTime, timerInterval;
+
+function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+    const isDark = document.body.classList.contains("dark-mode");
+    const btn = document.getElementById("themeToggleBtn");
+    btn.innerHTML = isDark ? '<i class="fa-solid fa-sun"></i> લાઈટ મોડ' : '<i class="fa-solid fa-moon"></i> ડાર્ક મોડ';
+}
+
+function showNotice(msg, type = "info") {
+    const box = document.getElementById("noticeMsg");
+    box.className = "msg-box " + (type === "error" ? "msg-error" : "msg-info");
+    box.innerText = msg;
+    box.style.display = "block";
+    setTimeout(() => { box.style.display = "none"; }, 6000);
+}
+
+/* ૧. ઑથેન્ટિકેશન & OTP */
+function requestOTP() {
+    studentName = document.getElementById("name").value.trim();
+    studentPhone = document.getElementById("phone").value.trim();
+    studentEmail = document.getElementById("email").value.trim();
+
+    if (!studentName || studentPhone.length < 10 || !studentEmail.includes("@")) {
+        showNotice("કૃપા કરીને પૂરું નામ, ૧૦ અંકનો સાચો મોબાઇલ નંબર અને માન્ય ઇમેઇલ દાખલ કરો.", "error");
+        return;
+    }
+
+    const btn = document.getElementById("getOtpBtn");
+    btn.disabled = true;
+    btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> OTP મોકલાઈ રહ્યો છે...';
+
+    fetch(SCRIPT_URL, {
+        method: "POST",
+        mode: "no-cors",
+        headers: { "Content-Type": "text/plain" },
+        body: JSON.stringify({
+            action: "sendOTP",
+            name: studentName,
+            email: studentEmail
+        })
+    })
+    .then(function() {
+        showNotice("આપના ઈમેઈલ પર ૪ અંકનો OTP મોકલવામાં આવ્યો છે. ઇનબોક્સ/સ્પામ તપાસો.", "info");
+        document.getElementById("otpContainer").style.display = "block";
+        btn.innerHTML = '<i class="fa-solid fa-rotate-right"></i> OTP ફરીથી મોકલો';
+        btn.disabled = false;
+    })
+    .catch(function() {
+        showNotice("OTP મોકલવામાં ક્ષતિ આવી. ફરી પ્રયાસ કરો.", "error");
+        btn.disabled = false;
+        btn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> OTP મેળવો અને આગળ વધો';
+    });
+}
+
+function verifyAndStart() {
+    const enteredOTP = document.getElementById("otpInput").value.trim();
+    if (enteredOTP.length !== 4) {
+        showNotice("કૃપા કરીને ૪ અંકનો સાચો OTP દાખલ કરો.", "error");
+        return;
+    }
+
+    const vBtn = document.getElementById("verifyBtn");
+    vBtn.disabled = true;
+    vBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> ચકાસણી ચાલુ છે...';
+
+    fetch(SCRIPT_URL, {
+        method: "POST",
+        body: JSON.stringify({
+            action: "verifyOTP",
+            email: studentEmail,
+            otp: enteredOTP
+        })
+    })
+    .then(res => res.json())
+    .then(data => {
+        if (data.status === "success" && data.verified) {
+            document.getElementById("loginScreen").style.display = "none";
+            document.getElementById("quizScreen").style.display = "block";
+            initQuestionPalette();
+            startTime = new Date();
+            timerInterval = setInterval(updateTimer, 1000);
+            loadQuestion();
+        } else {
+            showNotice("ખોટો OTP અથવા સમય વીતી ગયો છે! ફરી ચકાસો.", "error");
+            vBtn.disabled = false;
+            vBtn.innerHTML = '<i class="fa-solid fa-unlock-keyhole"></i> OTP ચકાસો અને મોક ટેસ્ટ શરૂ કરો';
+        }
+    })
+    .catch(() => {
+        showNotice("ચકાસણીમાં ભૂલ થઈ. ફરી પ્રયાસ કરો.", "error");
+        vBtn.disabled = false;
+        vBtn.innerHTML = '<i class="fa-solid fa-unlock-keyhole"></i> OTP ચકાસો અને મોક ટેસ્ટ શરૂ કરો';
+    });
+}
+
+/* ૨. ટાઈમર */
+function updateTimer() {
+    const elapsed = Math.floor((new Date() - startTime) / 1000);
+    const mins = String(Math.floor(elapsed / 60)).padStart(2, '0');
+    const secs = String(elapsed % 60).padStart(2, '0');
+    document.getElementById("timerDisplay").innerText = `${mins}:${secs}`;
+}
+
+/* ૩. પ્રશ્ન પેલેટ (Question Palette 1-100) */
+function initQuestionPalette() {
+    const container = document.getElementById("questionGridContainer");
+    container.innerHTML = "";
+    for (let i = 0; i < questions.length; i++) {
+        const pill = document.createElement("div");
+        pill.className = "q-pill";
+        pill.id = `qPill_${i}`;
+        pill.innerText = i + 1;
+        pill.onclick = () => jumpToQuestion(i);
+        container.appendChild(pill);
+    }
+    updatePaletteStats();
+}
+
+function updatePaletteStats() {
+    let answered = 0;
+    for (let i = 0; i < questions.length; i++) {
+        const pill = document.getElementById(`qPill_${i}`);
+        if (!pill) continue;
+        pill.className = "q-pill";
+        
+        if (i === currentQ) {
+            pill.classList.add("status-current");
+        }
+        if (flaggedQuestions[i]) {
+            pill.classList.add("status-flagged");
+        } else if (userAnswers[i] !== null) {
+            pill.classList.add("status-answered");
+            answered++;
+        }
+    }
+    const totalAns = userAnswers.filter(a => a !== null).length;
+    document.getElementById("answeredCountBadge").innerText = `${totalAns} / ${questions.length} પૂર્ણ`;
+}
+
+function jumpToQuestion(idx) {
+    currentQ = idx;
+    loadQuestion();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+/* ૪. પ્રશ્ન લોડિંગ અને Flagging */
+function loadQuestion() {
+    const q = questions[currentQ];
+    document.getElementById("qProgress").innerText = `પ્રશ્ન ${currentQ + 1} / ${questions.length}`;
+    document.getElementById("unitBadge").innerText = `📘 ${q.unit}`;
+    document.getElementById("questionText").innerText = q.q;
+
+    // Flag button update
+    const flagBtn = document.getElementById("flagBtn");
+    if (flaggedQuestions[currentQ]) {
+        flagBtn.className = "btn-flag active-flag";
+        flagBtn.innerHTML = '<i class="fa-solid fa-bookmark"></i> Flag કરેલ છે 🚩';
+    } else {
+        flagBtn.className = "btn-flag";
+        flagBtn.innerHTML = '<i class="fa-regular fa-bookmark"></i> Flag (રિવ્યુ માટે)';
+    }
+
+    const optContainer = document.getElementById("optionsContainer");
+    optContainer.innerHTML = "";
+
+    q.options.forEach((opt, idx) => {
+        const label = document.createElement("label");
+        label.className = "option-label";
+        const isChecked = userAnswers[currentQ] === idx ? "checked" : "";
+        label.innerHTML = `
+            <input type="radio" name="opt" value="${idx}" ${isChecked} onchange="onOptionSelect(${idx})">
+            <span><strong>(${String.fromCharCode(65 + idx)})</strong> ${opt}</span>
+        `;
+        optContainer.appendChild(label);
+    });
+
+    document.getElementById("prevBtn").style.visibility = (currentQ === 0) ? "hidden" : "visible";
+    document.getElementById("nextBtn").innerHTML = (currentQ === questions.length - 1) 
+        ? '<i class="fa-solid fa-flag-checkered"></i> કસોટી પૂર્ણ કરો' 
+        : 'આગળ <i class="fa-solid fa-arrow-right"></i>';
+
+    updatePaletteStats();
+}
+
+function onOptionSelect(idx) {
+    userAnswers[currentQ] = idx;
+    updatePaletteStats();
+}
+
+function toggleFlagCurrentQuestion() {
+    flaggedQuestions[currentQ] = !flaggedQuestions[currentQ];
+    loadQuestion();
+}
+
+function prevQuestion() {
+    if (currentQ > 0) {
+        currentQ--;
+        loadQuestion();
+    }
+}
+
+function nextQuestion() {
+    if (currentQ < questions.length - 1) {
+        currentQ++;
+        loadQuestion();
+    } else {
+        confirmSubmitQuiz();
+    }
+}
+
+function confirmSubmitQuiz() {
+    const unans = userAnswers.filter(a => a === null).length;
+    const flagCount = flaggedQuestions.filter(f => f === true).length;
+    
+    let msg = "શું આપ ખરેખર કસોટી સબમિટ કરવા માંગો છો?";
+    if (unans > 0 || flagCount > 0) {
+        msg = `ધ્યાન આપો:
+- ${unans} પ્રશ્નોના ઉત્તર બાકી છે.
+- ${flagCount} પ્રશ્નો Flag કરેલા છે.
+
+શું આપ કસોટી સબમિટ કરવા માંગો છો?`;
+    }
+    
+    if (confirm(msg)) {
+        submitQuiz();
+    }
+}
+
+/* ૫. સબમિશન અને પરિણામ */
+function submitQuiz() {
+    clearInterval(timerInterval);
+    const elapsed = Math.floor((new Date() - startTime) / 1000);
+    const mins = Math.floor(elapsed / 60);
+    const secs = elapsed % 60;
+    const formattedTime = `${mins} મિનિટ ${secs} સેકન્ડ`;
+
+    let score = 0;
+    let wrongIndices = [];
+    questions.forEach((q, i) => {
+        if (userAnswers[i] === q.ans) {
+            score++;
+        } else {
+            wrongIndices.push(i);
+        }
+    });
+    const percent = ((score / questions.length) * 100).toFixed(2);
+    const flagCount = flaggedQuestions.filter(f => f === true).length;
+
+    document.getElementById("quizScreen").style.display = "none";
+    document.getElementById("resultScreen").style.display = "block";
+
+    document.getElementById("resName").innerText = studentName;
+    document.getElementById("resPhone").innerText = studentPhone;
+    document.getElementById("resTime").innerText = `${mins}m ${secs}s`;
+    document.getElementById("resScore").innerText = `${score} / ${questions.length}`;
+    document.getElementById("resPercent").innerText = `${percent}% ગુણાંક`;
+    document.getElementById("resCorrectCount").innerText = score;
+    document.getElementById("resWrongCount").innerText = questions.length - score;
+    document.getElementById("resFlagCount").innerText = flagCount;
+
+    // ૧. માત્ર ખોટા પડેલા પ્રશ્નો રેન્ડર કરવા
+    renderWrongQuestions(wrongIndices);
+
+    // ૨. આપેલા જવાબો સાથેનું સંપૂર્ણ પ્રશ્નપત્ર
+    renderFullAnswerKey();
+
+    // ૩. મૂળ પ્રશ્નપત્ર (Blank Question Paper)
+    renderBlankPaper();
+
+    // ૪. Apps Script માટે HTML રિવ્યુ પેક કરવો
+    prepareAndSendBackendResult(score, percent, formattedTime);
+}
+
+function switchResultTab(tabName) {
+    document.getElementById("tabBtnWrong").classList.remove("active-tab");
+    document.getElementById("tabBtnAnswers").classList.remove("active-tab");
+    document.getElementById("tabBtnBlank").classList.remove("active-tab");
+
+    document.getElementById("tabContentWrong").style.display = "none";
+    document.getElementById("tabContentAnswers").style.display = "none";
+    document.getElementById("tabContentBlank").style.display = "none";
+
+    if (tabName === "wrong") {
+        document.getElementById("tabBtnWrong").classList.add("active-tab");
+        document.getElementById("tabContentWrong").style.display = "block";
+    } else if (tabName === "answers") {
+        document.getElementById("tabBtnAnswers").classList.add("active-tab");
+        document.getElementById("tabContentAnswers").style.display = "block";
+    } else if (tabName === "blank") {
+        document.getElementById("tabBtnBlank").classList.add("active-tab");
+        document.getElementById("tabContentBlank").style.display = "block";
+    }
+}
+
+function renderWrongQuestions(wrongIndices) {
+    const container = document.getElementById("wrongQuestionsList");
+    container.innerHTML = "";
+
+    if (wrongIndices.length === 0) {
+        container.innerHTML = `
+            <div style="text-align: center; padding: 35px; background: var(--container-bg); border-radius: 12px; border: 2px solid #10b981;">
+                <i class="fa-solid fa-circle-check fa-3x" style="color: #10b981; margin-bottom: 12px;"></i>
+                <h3 style="color: #065f46; font-size: 18px;">અભિનંદન! તમારો એક પણ પ્રશ્ન ખોટો પડ્યો નથી!</h3>
+                <p style="color: var(--subheading-color); font-size: 13.5px; margin-top: 6px;">આપે ૧૦૦ માંથી ૧૦૦ સંપૂર્ણ ગુણ મેળવી શ્રેષ્ઠ પ્રદર્શન કરેલ છે.</p>
+            </div>
+        `;
+        return;
+    }
+
+    wrongIndices.forEach((i) => {
+        const q = questions[i];
+        const userChoiceText = userAnswers[i] !== null ? q.options[userAnswers[i]] : "જવાબ આપ્યો નથી (ખાલી છોડેલ)";
+        const correctChoiceText = q.options[q.ans];
+
+        const item = document.createElement("div");
+        item.className = "review-item is-wrong";
+        item.innerHTML = `
+            <p style="font-weight: 800; font-size: 15px; margin-bottom: 8px;">
+                ${q.q}
+            </p>
+            <p style="margin: 4px 0; font-weight: 700; color: #b91c1c;">
+                ❌ તમારો ઉત્તર: ${userChoiceText}
+            </p>
+            <p style="margin: 4px 0; font-weight: 700; color: #047857;">
+                ✅ સાચો ઉત્તર: <strong>(${String.fromCharCode(65 + q.ans)}) ${correctChoiceText}</strong>
+            </p>
+            <div class="exp-box">
+                <div style="font-size: 11.5px; font-weight: 800; color: #2563eb; margin-bottom: 3px;">📘 ${q.unit}</div>
+                <strong>વિગતવાર સમજૂતી:</strong> ${q.exp}
+            </div>
+        `;
+        container.appendChild(item);
+    });
+}
+
+function renderFullAnswerKey() {
+    const container = document.getElementById("allAnswersList");
+    container.innerHTML = "";
+
+    questions.forEach((q, i) => {
+        const isCorrect = (userAnswers[i] === q.ans);
+        const userChoiceText = userAnswers[i] !== null ? q.options[userAnswers[i]] : "જવાબ આપ્યો નથી";
+        const correctChoiceText = q.options[q.ans];
+
+        const item = document.createElement("div");
+        item.className = "review-item " + (isCorrect ? "is-correct" : "is-wrong");
+        item.innerHTML = `
+            <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:6px;">
+                <span style="font-weight: 800; font-size: 15px;">${q.q}</span>
+                <span style="font-size: 12px; font-weight: 800; padding: 2px 8px; border-radius: 6px; background:${isCorrect ? '#10b981' : '#ef4444'}; color:white; white-space:nowrap;">
+                    ${isCorrect ? '✅ સાચો' : '❌ ખોટો'}
+                </span>
+            </div>
+            <div style="margin: 6px 0; font-size: 13.5px;">
+                ${q.options.map((opt, oIdx) => `
+                    <div style="padding: 2px 0; ${oIdx === q.ans ? 'font-weight:bold; color:#047857;' : ''}">
+                        (${String.fromCharCode(65 + oIdx)}) ${opt} ${oIdx === q.ans ? '⭐ (સાચો ઉત્તર)' : ''}
+                    </div>
+                `).join('')}
+            </div>
+            <p style="margin: 6px 0; font-weight: 700;">
+                તમે પસંદ કરેલ જવાબ: <span style="color:${isCorrect ? '#047857' : '#b91c1c'};">${userChoiceText}</span>
+            </p>
+            <div class="exp-box">
+                <div style="font-size: 11.5px; font-weight: 800; color: #2563eb; margin-bottom: 3px;">📘 ${q.unit}</div>
+                <strong>સમજૂતી:</strong> ${q.exp}
+            </div>
+        `;
+        container.appendChild(item);
+    });
+}
+
+function renderBlankPaper() {
+    const container = document.getElementById("blankQuestionsList");
+    container.innerHTML = `
+        <div style="background: var(--card-gradient); padding: 14px; border-radius: 10px; margin-bottom: 14px; border: 1.5px solid var(--border-color); text-align: center;">
+            <h3 style="color: var(--heading-color); font-size: 16px; font-weight: 800;">📝 મૂળ પ્રશ્નપત્ર (Offline / Practice View)</h3>
+            <p style="color: var(--subheading-color); font-size: 12.5px;">આ પ્રશ્નપત્રમાં કોઈપણ જવાબ ટીક કરેલ નથી. તમે સ્વ-અધ્યયન કે પુનરાવર્તન માટે તેનો ઉપયોગ કરી શકો છો.</p>
+        </div>
+    `;
+
+    questions.forEach((q, i) => {
+        const box = document.createElement("div");
+        box.className = "blank-q-card";
+        box.innerHTML = `
+            <div style="font-weight: 800; font-size: 14.5px; margin-bottom: 8px; color: var(--heading-color);">${q.q}</div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 6px; font-size: 13.5px; color: var(--text-color);">
+                ${q.options.map((opt, oIdx) => `
+                    <div style="background: var(--option-bg); padding: 7px 10px; border-radius: 6px; border: 1px solid var(--border-color);">
+                        <strong>(${String.fromCharCode(65 + oIdx)})</strong> ${opt}
+                    </div>
+                `).join('')}
+            </div>
+        `;
+        container.appendChild(box);
+    });
+}
+
+function prepareAndSendBackendResult(score, percent, formattedTime) {
+    let emailReviewHtml = "";
+    
+    questions.forEach((q, i) => {
+        const isCorrect = (userAnswers[i] === q.ans);
+        const userChoiceText = userAnswers[i] !== null ? q.options[userAnswers[i]] : "જવાબ આપ્યો નથી";
+        const correctChoiceText = q.options[q.ans];
+
+        emailReviewHtml += `
+            <div style="border: 1px solid #cbd5e1; border-radius: 6px; padding: 12px; margin-bottom: 12px; background-color: ${isCorrect ? '#f0fdf4' : '#fff1f2'};">
+                <p style="margin: 0 0 6px 0; font-weight: bold; color: #1e293b;">${q.q}</p>
+                <p style="margin: 3px 0; color: ${isCorrect ? '#166534' : '#9f1239'};">
+                    <strong>પરીક્ષાર્થીનો ઉત્તર:</strong> ${userChoiceText} ${isCorrect ? '✅' : '❌'}
+                </p>
+                ${!isCorrect ? `<p style="margin: 3px 0; color: #166534; font-weight: bold;"><strong>સાચો ઉત્તર:</strong> (${String.fromCharCode(65 + q.ans)}) ${correctChoiceText}</p>` : ''}
+                <div style="background-color: #f8fafc; padding: 8px; border-radius: 4px; margin-top: 6px; font-size: 12.5px; border-left: 3px solid #2563eb;">
+                    <div style="color: #1e40af; font-weight: bold; margin-bottom: 2px;">📘 ${q.unit}</div>
+                    <strong>સમજૂતી:</strong> ${q.exp}
+                </div>
+            </div>
+        `;
+    });
+
+    fetch(SCRIPT_URL, {
+        method: "POST",
+        mode: "no-cors",
+        headers: { "Content-Type": "text/plain" },
+        body: JSON.stringify({
+            action: "submitResult",
+            dateTime: new Date().toLocaleString('gu-IN', { timeZone: 'Asia/Kolkata' }),
+            name: studentName,
+            phone: studentPhone,
+            email: studentEmail,
+            timeTaken: formattedTime,
+            score: `${score} / ${questions.length}`,
+            percentage: `${percent}%`,
+            subject: "ડી.એલ.એડ્. કોર્સ-૧(અ) બોધ (જ્ઞાન), અધ્યયન અને સામાજિક સાંસ્કૃતિક પરિપ્રેક્ષ્ય (૧૦૦ HOTS)",
+            detailedReviewHtml: emailReviewHtml,
+            repoName: "sy",
+            testFileName: "sy1apart1.html",
+            testUploadDate: "2026-11-07"
+        })
+    });
+}
+</script>
+</body>
+</html>
