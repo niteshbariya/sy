@@ -1,0 +1,2373 @@
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TET / TAT / Class-2 સ્પેશિયલ: વૈવિધ્ય, જાતિ અને સમાવેશી શિક્ષણ (૧૦૦ HOTS પ્રશ્નો)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-gradient: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #06b6d4 100%);
+            --header-gradient: linear-gradient(135deg, #1e3a8a 0%, #2563eb 50%, #0284c7 100%);
+            --card-gradient: linear-gradient(135deg, #eff6ff 0%, #f5f3ff 50%, #fdf2f8 100%);
+            --bg-color: #f1f5f9;
+            --container-bg: #ffffff;
+            --text-color: #0f172a;
+            --heading-color: #1e3a8a;
+            --subheading-color: #64748b;
+            --border-color: #cbd5e1;
+            --card-border: #e2e8f0;
+            --option-bg: #f8fafc;
+            --option-hover: #ede9fe;
+            --option-border: #cbd5e1;
+            --badge-bg: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+            --correct-bg: #ecfdf5;
+            --correct-border: #34d399;
+            --correct-text: #065f46;
+            --wrong-bg: #fff1f2;
+            --wrong-border: #fb7185;
+            --wrong-text: #9f1239;
+            --exp-box-bg: #f8fafc;
+            --input-bg: #ffffff;
+            --shadow: 0 10px 25px -5px rgba(30, 58, 138, 0.12), 0 8px 10px -6px rgba(30, 58, 138, 0.08);
+            
+            /* Status Colors */
+            --color-answered: #10b981;
+            --color-flagged: #f59e0b;
+            --color-unanswered: #94a3b8;
+            --color-current: #2563eb;
+        }
+
+        body.dark-mode {
+            --primary-gradient: linear-gradient(135deg, #3b82f6 0%, #6366f1 50%, #ec4899 100%);
+            --header-gradient: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #312e81 100%);
+            --card-gradient: linear-gradient(135deg, #1e1b4b 0%, #1e293b 50%, #0f172a 100%);
+            --bg-color: #030712;
+            --container-bg: #0b1329;
+            --text-color: #f8fafc;
+            --heading-color: #93c5fd;
+            --subheading-color: #94a3b8;
+            --border-color: #334155;
+            --card-border: #1e293b;
+            --option-bg: #1e293b;
+            --option-hover: #2e1065;
+            --option-border: #475569;
+            --badge-bg: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+            --correct-bg: #064e3b;
+            --correct-border: #059669;
+            --correct-text: #a7f3d0;
+            --wrong-bg: #881337;
+            --wrong-border: #e11d48;
+            --wrong-text: #fecdd3;
+            --exp-box-bg: #0f172a;
+            --input-bg: #1e293b;
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body { 
+            font-family: 'Noto Sans Gujarati', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: var(--bg-color); 
+            color: var(--text-color); 
+            padding: 14px; 
+            display: flex; 
+            justify-content: center; 
+            transition: all 0.3s ease;
+            min-height: 100vh;
+        }
+
+        .container { 
+            background-color: var(--container-bg); 
+            max-width: 1000px; 
+            width: 100%; 
+            border-radius: 18px; 
+            box-shadow: var(--shadow); 
+            padding: 24px; 
+            position: relative;
+            border: 1.5px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+
+        @media (max-width: 768px) {
+            body { padding: 6px; }
+            .container { padding: 14px; border-radius: 12px; }
+        }
+
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid var(--border-color);
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tag-pill {
+            background: var(--primary-gradient);
+            color: white;
+            padding: 6px 14px;
+            font-size: 12px;
+            font-weight: 800;
+            border-radius: 30px;
+            letter-spacing: 0.5px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .theme-toggle-btn {
+            background: var(--option-bg);
+            color: var(--text-color);
+            border: 1.5px solid var(--border-color);
+            padding: 6px 14px;
+            font-size: 13px;
+            font-weight: 700;
+            border-radius: 20px;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.2s;
+        }
+        .theme-toggle-btn:hover {
+            transform: scale(1.04);
+            border-color: #3b82f6;
+        }
+
+        .banner-title {
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-align: center;
+            font-size: 24px;
+            font-weight: 900;
+            margin: 5px 0 8px 0;
+            line-height: 1.3;
+        }
+
+        .banner-sub {
+            color: var(--subheading-color);
+            text-align: center;
+            font-size: 13.5px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        /* Login Screen */
+        #loginScreen {
+            max-width: 480px;
+            margin: 15px auto;
+            background: var(--card-gradient);
+            padding: 24px;
+            border-radius: 16px;
+            border: 1.5px solid var(--border-color);
+        }
+        .form-group { margin-bottom: 16px; }
+        label { display: block; font-weight: 700; margin-bottom: 6px; font-size: 13.5px; color: var(--heading-color); }
+        input[type="text"], input[type="tel"], input[type="email"] { 
+            width: 100%; 
+            padding: 11px 14px; 
+            border: 1.5px solid var(--border-color); 
+            border-radius: 8px; 
+            font-size: 14.5px; 
+            background-color: var(--input-bg);
+            color: var(--text-color);
+            transition: border-color 0.2s;
+            font-family: inherit;
+        }
+        input:focus { outline: none; border-color: #2563eb; }
+
+        .btn-gradient { 
+            background: var(--primary-gradient); 
+            color: white; 
+            border: none; 
+            padding: 12px 18px; 
+            font-size: 15px; 
+            font-weight: 800; 
+            border-radius: 8px; 
+            cursor: pointer; 
+            width: 100%; 
+            transition: all 0.25s; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+            font-family: inherit;
+        }
+        .btn-gradient:hover { opacity: 0.95; transform: translateY(-1.5px); }
+        .btn-gradient:disabled { background: #94a3b8; cursor: not-allowed; transform: none; box-shadow: none; }
+
+        .otp-box { 
+            background: var(--container-bg); 
+            border: 2px dashed #3b82f6; 
+            padding: 16px; 
+            border-radius: 10px; 
+            margin-top: 16px; 
+            display: none; 
+            text-align: center;
+        }
+
+        /* Test Main Layout */
+        .quiz-layout {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .quiz-main-card {
+            background: var(--container-bg);
+            border: 1.5px solid var(--border-color);
+            border-radius: 14px;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            min-height: 420px;
+            justify-content: space-between;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+        }
+
+        .quiz-header { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            border-bottom: 1.5px solid var(--border-color); 
+            padding-bottom: 12px; 
+            margin-bottom: 18px; 
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .timer-badge { 
+            font-size: 15px; 
+            font-weight: 800; 
+            color: #ef4444; 
+            background: #fee2e2;
+            padding: 6px 14px;
+            border-radius: 20px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        body.dark-mode .timer-badge { background: #450a0a; color: #fca5a5; }
+
+        .unit-badge { 
+            display: inline-block; 
+            background: var(--badge-bg); 
+            color: white; 
+            padding: 5px 12px; 
+            border-radius: 20px; 
+            font-size: 12px; 
+            font-weight: 700; 
+            margin-bottom: 14px; 
+        }
+
+        .question-text {
+            font-size: 18px;
+            line-height: 1.65;
+            margin-bottom: 22px;
+            font-weight: 700;
+            color: var(--text-color);
+        }
+
+        .option-label { 
+            display: flex;
+            align-items: center;
+            background: var(--option-bg); 
+            padding: 14px 18px; 
+            margin-bottom: 12px; 
+            border-radius: 10px; 
+            cursor: pointer; 
+            line-height: 1.5; 
+            border: 1.5px solid var(--option-border); 
+            transition: all 0.2s;
+            font-size: 15.5px;
+        }
+        .option-label:hover { 
+            background: var(--option-hover); 
+            border-color: #3b82f6;
+            transform: translateX(4px);
+        }
+        .option-label input[type="radio"] {
+            margin-right: 14px;
+            transform: scale(1.25);
+            accent-color: #2563eb;
+            cursor: pointer;
+        }
+
+        .quiz-actions-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 24px;
+            padding-top: 16px;
+            border-top: 1.5px solid var(--border-color);
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .nav-buttons-group {
+            display: flex;
+            gap: 10px;
+        }
+        .btn-prev, .btn-next, .btn-flag {
+            padding: 10px 18px;
+            font-size: 14.5px;
+            font-weight: 700;
+            border-radius: 8px;
+            cursor: pointer;
+            border: none;
+            transition: all 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-family: inherit;
+        }
+        .btn-prev { background: #64748b; color: white; }
+        .btn-prev:hover { background: #475569; }
+        .btn-next { background: var(--primary-gradient); color: white; }
+        .btn-next:hover { opacity: 0.95; }
+
+        .btn-flag {
+            background: #fef3c7;
+            color: #b45309;
+            border: 1.5px solid #f59e0b;
+        }
+        body.dark-mode .btn-flag {
+            background: #451a03;
+            color: #fde68a;
+            border-color: #d97706;
+        }
+        .btn-flag.active-flag {
+            background: #f59e0b;
+            color: white;
+            border-color: #b45309;
+        }
+
+        /* Question Palette */
+        .palette-bottom-card {
+            background: var(--card-gradient);
+            border: 1.5px solid var(--border-color);
+            border-radius: 14px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+        .palette-title {
+            font-size: 15px;
+            font-weight: 800;
+            color: var(--heading-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .legend-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            font-size: 12px;
+            font-weight: 700;
+            padding-bottom: 10px;
+            border-bottom: 1px dashed var(--border-color);
+        }
+        .legend-item { display: flex; align-items: center; gap: 6px; }
+        .legend-dot { width: 11px; height: 11px; border-radius: 50%; }
+
+        .palette-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(42px, 1fr));
+            gap: 8px;
+            max-height: 250px;
+            overflow-y: auto;
+            padding: 6px 4px;
+        }
+        .q-pill {
+            padding: 8px 0;
+            border-radius: 7px;
+            font-size: 12.5px;
+            font-weight: 800;
+            text-align: center;
+            cursor: pointer;
+            border: 1.5px solid var(--border-color);
+            background: var(--container-bg);
+            color: var(--text-color);
+            transition: all 0.15s ease;
+            position: relative;
+        }
+        .q-pill:hover { transform: scale(1.08); z-index: 2; }
+        .q-pill.status-current {
+            border-color: #2563eb !important;
+            box-shadow: 0 0 0 2.5px #2563eb;
+            font-weight: 900;
+        }
+        .q-pill.status-answered {
+            background: #10b981 !important;
+            color: white !important;
+            border-color: #059669 !important;
+        }
+        .q-pill.status-flagged {
+            background: #f59e0b !important;
+            color: white !important;
+            border-color: #d97706 !important;
+        }
+        .q-pill.status-flagged::after {
+            content: '🚩';
+            position: absolute;
+            top: -6px;
+            right: -3px;
+            font-size: 9px;
+        }
+
+        /* Result Screen Styles */
+        .result-summary-card {
+            background: var(--card-gradient);
+            border: 2px solid var(--border-color);
+            padding: 20px;
+            border-radius: 14px;
+            margin-bottom: 20px;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+        .score-pill {
+            display: inline-block;
+            font-size: 32px;
+            font-weight: 900;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin: 6px 0;
+        }
+
+        .res-stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-top: 14px;
+        }
+        @media (max-width: 600px) {
+            .res-stats-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        .res-stat-box {
+            padding: 8px;
+            border-radius: 8px;
+            font-weight: 700;
+            color: white;
+            font-size: 12px;
+        }
+
+        /* Result Tabs Navigation */
+        .result-tabs-nav {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 8px;
+        }
+        .res-tab-btn {
+            padding: 9px 16px;
+            font-size: 13.5px;
+            font-weight: 800;
+            border-radius: 8px;
+            cursor: pointer;
+            border: 1.5px solid var(--border-color);
+            background: var(--option-bg);
+            color: var(--text-color);
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.2s;
+            font-family: inherit;
+        }
+        .res-tab-btn:hover { border-color: #2563eb; }
+        .res-tab-btn.active-tab {
+            background: var(--primary-gradient);
+            color: white;
+            border-color: transparent;
+        }
+
+        /* Review Item Style */
+        .review-item {
+            padding: 16px;
+            border-radius: 10px;
+            margin-bottom: 14px;
+            border: 1.5px solid var(--card-border);
+            transition: all 0.2s;
+            background: var(--container-bg);
+        }
+        .review-item.is-correct {
+            background-color: var(--correct-bg);
+            border-color: var(--correct-border);
+            color: var(--correct-text);
+        }
+        .review-item.is-wrong {
+            background-color: var(--wrong-bg);
+            border-color: var(--wrong-border);
+            color: var(--wrong-text);
+        }
+
+        .exp-box {
+            background: var(--exp-box-bg);
+            color: var(--text-color);
+            padding: 10px 12px;
+            border-radius: 6px;
+            margin-top: 8px;
+            font-size: 13.5px;
+            line-height: 1.5;
+            border-left: 4px solid #2563eb;
+        }
+
+        .blank-q-card {
+            background: var(--container-bg);
+            border: 1.5px solid var(--border-color);
+            border-radius: 8px;
+            padding: 14px;
+            margin-bottom: 12px;
+        }
+
+        .msg-box {
+            display: none;
+            padding: 10px 14px;
+            border-radius: 8px;
+            margin: 10px 0;
+            font-size: 13.5px;
+            font-weight: 700;
+            text-align: center;
+        }
+        .msg-error { background-color: #fee2e2; color: #991b1b; border: 1px solid #f87171; }
+        .msg-info { background-color: #dcfce7; color: #166534; border: 1px solid #4ade80; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- હેડર અને થીમ ટોગલ -->
+    <header class="header-top">
+        <span class="tag-pill"><i class="fa-solid fa-graduation-cap"></i> TET / TAT / GPSC Class-2: વૈવિધ્ય, જાતિ અને સમાવેશી શિક્ષણ</span>
+        <button id="themeToggleBtn" class="theme-toggle-btn" onclick="toggleDarkMode()">
+            <i class="fa-solid fa-moon"></i> ડાર્ક મોડ
+        </button>
+    </header>
+
+    <!-- નોટિસ બોક્સ -->
+    <div id="noticeMsg" class="msg-box"></div>
+
+    <!-- ૧. પ્રવેશ અને OTP સ્ક્રીન -->
+    <section id="loginScreen">
+        <div style="text-align: center; margin-bottom: 18px;">
+            <div style="font-size: 32px; color: #2563eb; margin-bottom: 4px;"><i class="fa-solid fa-users-viewfinder"></i></div>
+            <h1 class="banner-title" style="font-size: 20px;">વૈવિધ્ય, જાતિ અને સમાવેશી શિક્ષણ</h1>
+            <p class="banner-sub" style="margin-bottom: 10px;">GCERT D.El.Ed. કોર્સ - 2 (બ) | ૧૦૦ HOTS વિશેષ પ્રશ્નબૅંક (તબક્કો - 1)</p>
+        </div>
+
+        <div class="form-group">
+            <label for="name">👤 પૂરું નામ:</label>
+            <input type="text" id="name" placeholder="તમારું પૂરું નામ દાખલ કરો">
+        </div>
+        <div class="form-group">
+            <label for="phone">📱 મોબાઇલ નંબર:</label>
+            <input type="tel" id="phone" placeholder="૧૦ અંકનો સાચો મોબાઇલ નંબર" maxlength="10">
+        </div>
+        <div class="form-group">
+            <label for="email">📧 ઇમેઇલ આઇડી:</label>
+            <input type="email" id="email" placeholder="તમારું સાચું ઈમેઈલ આઈડી લખો">
+        </div>
+
+        <button id="getOtpBtn" class="btn-gradient" onclick="requestOTP()">
+            <i class="fa-solid fa-paper-plane"></i> OTP મેળવો અને આગળ વધો
+        </button>
+
+        <div id="otpContainer" class="otp-box">
+            <p style="margin: 0 0 10px 0; color: var(--heading-color); font-weight: 700; font-size: 13px;">
+                📩 આપના ઈમેઈલ પર ૪ અંકનો સુરક્ષિત OTP મોકલવામાં આવ્યો છે:
+            </p>
+            <div class="form-group" style="max-width: 200px; margin: 0 auto 12px auto;">
+                <input type="text" id="otpInput" placeholder="૪ અંક OTP" maxlength="4" style="text-align: center; font-size: 20px; letter-spacing: 5px; font-weight: 800;">
+            </div>
+            <button id="verifyBtn" class="btn-gradient" onclick="verifyAndStart()" style="background: linear-gradient(135deg, #059669 0%, #10b981 100%);">
+                <i class="fa-solid fa-unlock-keyhole"></i> OTP ચકાસો અને મોક ટેસ્ટ શરૂ કરો
+            </button>
+        </div>
+    </section>
+
+    <!-- ૨. મોક ટેસ્ટ સ્ક્રીન -->
+    <section id="quizScreen" style="display: none;">
+        <div class="quiz-layout">
+            <!-- Top Section: Main Question Card -->
+            <div class="quiz-main-card">
+                <div>
+                    <div class="quiz-header">
+                        <div>
+                            <span id="qProgress" style="font-weight: 800; font-size: 16px; color: var(--heading-color);">પ્રશ્ન ૧ / ૧૦૦</span>
+                        </div>
+                        <div class="timer-badge">
+                            <i class="fa-regular fa-clock"></i> <span id="timerDisplay">૦૦:૦૦</span>
+                        </div>
+                    </div>
+                    <div class="question-box">
+                        <div id="unitBadge" class="unit-badge"></div>
+                        <div id="questionText" class="question-text"></div>
+                        <div id="optionsContainer"></div>
+                    </div>
+                </div>
+
+                <div class="quiz-actions-bar">
+                    <button id="flagBtn" class="btn-flag" onclick="toggleFlagCurrentQuestion()">
+                        <i class="fa-regular fa-bookmark"></i> Flag (રિવ્યુ માટે)
+                    </button>
+                    <div class="nav-buttons-group">
+                        <button id="prevBtn" class="btn-prev" onclick="prevQuestion()"><i class="fa-solid fa-arrow-left"></i> પાછળ</button>
+                        <button id="nextBtn" class="btn-next" onclick="nextQuestion()">આગળ <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Section: Question Palette, Status Legend & Submit Button -->
+            <div class="palette-bottom-card">
+                <div class="palette-title">
+                    <span><i class="fa-solid fa-table-cells"></i> પ્રશ્ન પેલેટ (૧૦૦ પ્રશ્નોની સ્થિતિ)</span>
+                    <span id="answeredCountBadge" style="font-size: 12px; background: #10b981; color: white; padding: 4px 10px; border-radius: 12px;">0 / 100 પૂર્ણ</span>
+                </div>
+
+                <div class="legend-grid">
+                    <div class="legend-item"><div class="legend-dot" style="background:#10b981;"></div> જવાબ આપેલ</div>
+                    <div class="legend-item"><div class="legend-dot" style="background:#f59e0b;"></div> Flag / રિવ્યુ</div>
+                    <div class="legend-item"><div class="legend-dot" style="background:#94a3b8;"></div> બાકી પ્રશ્ન</div>
+                    <div class="legend-item"><div class="legend-dot" style="background:#2563eb;"></div> ચાલુ પ્રશ્ન</div>
+                </div>
+
+                <div class="palette-grid" id="questionGridContainer"></div>
+
+                <div style="text-align: right; margin-top: 6px;">
+                    <button class="btn-gradient" onclick="confirmSubmitQuiz()" style="max-width: 280px; margin-left: auto; background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%); padding: 11px 18px; font-size: 14.5px;">
+                        <i class="fa-solid fa-circle-check"></i> કસોટી સબમિટ કરો
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ૩. પરિણામ સ્ક્રીન -->
+    <section id="resultScreen" style="display: none;">
+        <div class="result-summary-card">
+            <h2 style="color: var(--heading-color); font-size: 20px; font-weight: 900; margin-bottom: 6px;">
+                🎉 કસોટી મૂલ્યાંકન અહેવાલ
+            </h2>
+            <p style="margin: 3px 0; font-size: 14px;"><strong>પરીક્ષાર્થી:</strong> <span id="resName"></span> | <strong>સંપર્ક:</strong> <span id="resPhone"></span></p>
+            <p style="margin: 3px 0; font-size: 13px; color: var(--subheading-color);"><strong>વિષય:</strong> GCERT D.El.Ed. કોર્સ - 2 (બ): વૈવિધ્ય, જાતિ અને સમાવેશી શિક્ષણ (૧૦૦ HOTS પ્રશ્નબૅંક)</p>
+            
+            <div class="score-pill" id="resScore">0 / 100</div>
+            <div style="font-size: 17px; font-weight: 800; color: #10b981;" id="resPercent">0%</div>
+
+            <div class="res-stats-grid">
+                <div class="res-stat-box" style="background:#10b981;">
+                    <div>સાચા ઉત્તર</div>
+                    <div style="font-size: 18px; font-weight: 900;" id="resCorrectCount">0</div>
+                </div>
+                <div class="res-stat-box" style="background:#ef4444;">
+                    <div>ખોટા ઉત્તર</div>
+                    <div style="font-size: 18px; font-weight: 900;" id="resWrongCount">0</div>
+                </div>
+                <div class="res-stat-box" style="background:#f59e0b;">
+                    <div>રિવ્યુ/Flagged</div>
+                    <div style="font-size: 18px; font-weight: 900;" id="resFlagCount">0</div>
+                </div>
+                <div class="res-stat-box" style="background:#2563eb;">
+                    <div>લીધેલો સમય</div>
+                    <div style="font-size: 15px; font-weight: 900; margin-top: 2px;" id="resTime">00:00</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ૩ અલગ ટેબ -->
+        <div class="result-tabs-nav">
+            <button class="res-tab-btn active-tab" id="tabBtnWrong" onclick="switchResultTab('wrong')">
+                <i class="fa-solid fa-triangle-exclamation" style="color: #ef4444;"></i> ❌ માત્ર ખોટા પડેલા પ્રશ્નો
+            </button>
+            <button class="res-tab-btn" id="tabBtnAnswers" onclick="switchResultTab('answers')">
+                <i class="fa-solid fa-square-check" style="color: #10b981;"></i> 📋 ઉત્તરવહી & સમજૂતી
+            </button>
+            <button class="res-tab-btn" id="tabBtnBlank" onclick="switchResultTab('blank')">
+                <i class="fa-solid fa-file-lines" style="color: #2563eb;"></i> 📝 મૂળ પ્રશ્નપત્ર (પ્રેક્ટિસ)
+            </button>
+        </div>
+
+        <div id="tabContentWrong">
+            <div id="wrongQuestionsList"></div>
+        </div>
+
+        <div id="tabContentAnswers" style="display: none;">
+            <div id="allAnswersList"></div>
+        </div>
+
+        <div id="tabContentBlank" style="display: none;">
+            <div id="blankQuestionsList"></div>
+        </div>
+    </section>
+</div>
+
+<script>
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbz-khogtnFjvjzRuv_ieBYJfx0TAxluM9OfoXlf72h9Yce14rdQu9_Xbmx3fnprk5Q30g/exec";
+
+// ૧૦૦ ઉચ્ચ વિચાર કૌશલ્ય (HOTS) પ્રશ્નોનો સંપૂર્ણ ડેટાસેટ (કોર્સ - ૨ (બ))
+const questions = [
+  {
+    "q": "પ્રશ્ન 1. સમાવેશી શિક્ષણ (Inclusive Education) અને શિક્ષણમાં સમાવેશન (Inclusion in Education) વચ્ચેના તાત્વિક ભેદ સંદર્ભે કયું વિધાન સૌથી વધુ યથાર્થ છે?",
+    "options": [
+      "બંને સંકલ્પનાઓ માત્ર દિવ્યાંગ બાળકોને સામાન્ય શાળામાં બેસાડવા પૂરતી સીમિત અને પર્યાયવાચી છે.",
+      "સમાવેશી શિક્ષણ ઐતિહાસિક રીતે વિકલાંગ બાળકોના શિક્ષણ સાથે જોડાયેલું હતું, જ્યારે શિક્ષણમાં સમાવેશન ધર્મ, જાતિ, લિંગ, આર્થિક સ્તર કે વિકલાંગતા જેવા તમામ ભેદભાવો વિના સૌને સમાન અવસર આપવાની વ્યાપક પ્રક્રિયા છે.",
+      "સમાવેશી શિક્ષણ સમગ્ર સમાજનું પરિવર્તન સૂચવે છે જ્યારે શિક્ષણમાં સમાવેશન માત્ર શાળાકીય વર્ગખંડ પૂરતું મર્યાદિત છે.",
+      "શિક્ષણમાં સમાવેશન એ કાયદાકીય પ્રક્રિયા છે જ્યારે સમાવેશી શિક્ષણ માત્ર સ્વૈચ્છિક એનજીઓ આધારિત પ્રવૃત્તિ છે."
+    ],
+    "ans": 1,
+    "unit": "એકમ 1: સમાવેશી શિક્ષણ",
+    "exp": "મોડ્યુલના પાના 6-7 અનુસાર, પ્રારંભમાં સમાવેશી શિક્ષણ શબ્દ વિકલાંગ બાળકોના એક જ શાળામાં સાથે ભણવા સાથે સંકળાયેલો હતો જેથી અન્ય વંચિત જૂથોની બાદબાકી થતી હતી. આધુનિક પરિપ્રેક્ષ્યમાં 'શિક્ષણમાં સમાવેશન' એ ધર્મ, જ્ઞાતિ, જાતિ, લિંગ કે વિસ્તાર સહિત તમામ બાળકોને કોઈપણ ભેદભાવ વિના સમાન તકો પૂરી પાડવાની વ્યાપક સંકલ્પના છે."
+  },
+  {
+    "q": "પ્રશ્ન 2. શિક્ષણમાં 'સમતા' (Equity) અને 'સમાનતા' (Equality) વચ્ચેના સંબંધ અંગે નીચેના પૈકી કયું વિધાન અસત્ય છે?",
+    "options": [
+      "સમતા એ કુદરતી ન્યાયની એવી પ્રક્રિયા છે જેમાં પ્રત્યેક વ્યક્તિ સાથે ન્યાયપૂર્ણ અને સમાન રીતે વ્યવહાર કરવામાં આવે છે.",
+      "સમાનતા એટલે કોઈપણ જાતના ભેદભાવ વિના પ્રત્યેકને વિકસવા માટેની સમાન તકો પ્રાપ્ત થવી.",
+      "સમાન પરિણામો હાંસલ કરવા માટે વિષમ પરિસ્થિતિ ધરાવતી વ્યક્તિઓ સાથે પણ અક્ષરશઃ એકસરખો જ વ્યવહાર કરવો એ સમતાનો મુખ્ય સિદ્ધાંત છે.",
+      "સમતા એ ન્યાયી વ્યવહાર સૂચવે છે જ્યારે સમાનતા એ હકો, દરજ્જો અને લાભોની એકરૂપતા દર્શાવે છે."
+    ],
+    "ans": 2,
+    "unit": "એકમ 1: સમાવેશી શિક્ષણ",
+    "exp": "સમતા એટલે કુદરતી ન્યાય અનુસાર દરેકની જરૂરિયાત મુજબ ન્યાયી વ્યવહાર કરવો; વિષમ પરિસ્થિતિ ધરાવતા વંચિતોને સમાન સ્તરે લાવવા વિશેષ અનુકૂલન પૂરું પાડવું પડે, માત્ર યાંત્રિક એકસરખો વ્યવહાર રાખવાથી સમાનતા સિદ્ધ થતી નથી."
+  },
+  {
+    "q": "પ્રશ્ન 3. પશ્ચિમી વિચારક રૂસોના સમાનતા અંગેના વિચારોના સંદર્ભમાં કયું વિધાન મોડ્યુલ મુજબ સુસંગત છે?",
+    "options": [
+      "પ્રકૃતિએ મનુષ્યો વચ્ચે જન્મેથી જ સંપત્તિ અને દરજ્જાની અસમાનતા સર્જેલી છે.",
+      "પોતાના નિબંધ 'Discourse on the origin of inequality'માં તેઓ નોંધે છે કે પ્રાકૃતિક રીતે પ્રત્યેક મનુષ્ય સમાન છે, પરંતુ સામાજિક, રાજનૈતિક અને સંપત્તિજન્ય અધિકારની દ્રષ્ટિએ અસમાનતા ઊભી થઈ છે.",
+      "રૂસોના મતે માનસિક ક્ષમતાઓને આધારે મનુષ્યોમાં પ્રાકૃતિક ભેદભાવ અનિવાર્ય છે.",
+      "રૂસો માત્ર કાયદા સમક્ષ સમાનતાનો સ્વીકાર કરે છે, સામાજિક સમાનતાનો નહીં."
+    ],
+    "ans": 1,
+    "unit": "એકમ 1: સમાવેશી શિક્ષણ",
+    "exp": "મોડ્યુલ પાના નં. 6 પર સ્પષ્ટ ઉલ્લેખ છે કે રૂસોએ તેમના નિબંધ 'Discourse on the origin of inequality'માં પ્રાકૃતિક સમાનતા દર્શાવી સામાજિક-સંપત્તિજન્ય અસમાનતાની ટીકા કરી છે."
+  },
+  {
+    "q": "પ્રશ્ન 4. વિચારક થોમસ હોબ્સ અને જ્હોન લોકના સમાનતા અંગેના દ્રષ્ટિકોણની તુલના કરતાં શું તારવી શકાય?",
+    "options": [
+      "હોબ્સના મતે પ્રકૃતિએ પ્રત્યેકને શારીરિક અને માનસિક દ્રષ્ટિએ સમાન બનાવ્યા છે, જ્યારે લોકની માન્યતા મુજબ પ્રકૃતિની દ્રષ્ટિએ સૌ મનુષ્ય સમાન છે જેમાં તમામ શક્તિઓ અને અધિકાર ક્ષેત્ર પરસ્પરાવલંબી છે.",
+      "લોક માત્ર બૌદ્ધિક સમાનતા સ્વીકારે છે જ્યારે હોબ્સ શારીરિક અસમાનતાનું સમર્થન કરે છે.",
+      "બંને વિચારકો સમાનતાને એક સામાજિક ભ્રમણા ગણાવે છે.",
+      "હોબ્સ સમાવેશી શિક્ષણના પિતા ગણાય છે જ્યારે લોક વિશિષ્ટ શાળાઓના પ્રણેતા છે."
+    ],
+    "ans": 0,
+    "unit": "એકમ 1: સમાવેશી શિક્ષણ",
+    "exp": "મોડ્યુલ પાના 6 અનુસાર હોબ્સ મુજબ પ્રકૃતિએ પ્રત્યેકને શારીરિક-માનસિક દ્રષ્ટિએ સમાન બનાવ્યા છે અને લોક મુજબ પ્રકૃતિની દ્રષ્ટિએ સૌ સમાન છે અને શક્તિઓ પરસ્પરાવલંબી છે."
+  },
+  {
+    "q": "પ્રશ્ન 5. ભારતીય ધર્મદર્શનનો કયો પ્રધાન વિચાર અથવા મહાવાક્ય પ્રત્યેક મનુષ્યમાં રહેલી મૂળભૂત સમાનતાને સૌથી વધુ પુષ્ટિ આપે છે?",
+    "options": [
+      "વસુધૈવ કુટુંબકમ્",
+      "તત્વમસિ",
+      "શ્રીમદ્ ભગવદ્ ગીતાનું પ્રધાન વાક્ય ‘અહં બ્રહ્માસ્મિ’ (હું બ્રહ્મ સ્વરૂપ છું)",
+      "સત્યમેવ જયતે"
+    ],
+    "ans": 2,
+    "unit": "એકમ 1: સમાવેશી શિક્ષણ",
+    "exp": "મોડ્યુલના પાના નં. 6 અનુસાર શ્રીમદ્ ભગવદ્ ગીતાનું પ્રધાન વાક્ય ‘અહં બ્રહ્માસ્મિ’ (‘હું બ્રહ્મ સ્વરૂપ છું’) પ્રત્યેક મનુષ્યમાં રહેલી આંતરિક સમાનતાને સૂચવે છે."
+  },
+  {
+    "q": "પ્રશ્ન 6. ઐતિહાસિક પરિપ્રેક્ષ્યમાં ભારતમાં 'બહિષ્કૃતિકરણ' (Exclusion) ના સંદર્ભમાં નીચેના વિધાનો તપાસો: ૧. પ્રાચીન ભારતમાં મોટાભાગે શિક્ષણમાં સમભાવ જોવા મળતો હતો, જેમ કે કૃષ્ણ-સુદામા સાથે ભણતા હતા. ૨. પ્રાચીન કાળમાં ગાર્ગી, મૈત્રેયી અને રોહિણી ભેદભાવ વગર પ્રતિભા પ્રસ્થાપિત કરી શક્યા હતા. ૩. મધ્યકાલીન યુગમાં કાર્ય વહેંચણી અને બાળકીઓને દૂધ પીતી કરવાનો રિવાજ જાતિગત અસમાનતાની પરાકાષ્ઠા દર્શાવે છે. ઉપરોક્ત પૈકી કયા વિધાનો સત્ય છે?",
+    "options": [
+      "માત્ર ૧ અને ૨",
+      "માત્ર ૨ અને ૩",
+      "માત્ર ૧ અને ૩",
+      "૧, ૨ અને ૩ તમામ"
+    ],
+    "ans": 3,
+    "unit": "એકમ 1: સમાવેશી શિક્ષણ",
+    "exp": "મોડ્યુલ પાના નં. 5 પર આ ત્રણેય બાબતો ભારતીય શિક્ષણમાં ઐતિહાસિક બહિષ્કૃતિકરણના સંદર્ભમાં દર્શાવેલ છે."
+  },
+  {
+    "q": "પ્રશ્ન 7. યુનેસ્કો (UNESCO) ના મતે સમાવેશી શિક્ષણની વ્યાખ્યાનો મુખ્ય હાર્દ શું છે?",
+    "options": [
+      "માત્ર આર્થિક રીતે નબળા વર્ગના બાળકોને ખાનગી શાળાઓમાં પ્રવેશ આપવો.",
+      "શિક્ષણ, સંસ્કૃતિઓ અને સમુદાયોની સહભાગિતા વધારીને શિક્ષણ તથા શિક્ષણની અંદરના નિષેધ (Exclusion) ને ઘટાડી તમામ અધ્યેતાઓની વિવિધ જરૂરિયાતોને ધ્યાનમાં લેવાની અને પ્રતિભાવ આપવાની પ્રક્રિયા.",
+      "તમામ દિવ્યાંગ બાળકો માટે અલગ વિશિષ્ટ શાળાઓનું નેટવર્ક ઊભું કરવું.",
+      "સામાન્ય બાળકોના અભ્યાસક્રમમાં કાપ મૂકી દિવ્યાંગો માટે લઘુત્તમ અભ્યાસક્રમ ઘડવો."
+    ],
+    "ans": 1,
+    "unit": "એકમ 1: સમાવેશી શિક્ષણ",
+    "exp": "મોડ્યુલ પાના 7 પર યુનેસ્કોની સત્તાવાર વ્યાખ્યા આપેલી છે જેમાં સંસ્કૃતિ અને સમુદાયોમાં સહભાગિતા વધારવી અને નિષેધ ઘટાડવાનો સ્પષ્ટ ઉલ્લેખ છે."
+  },
+  {
+    "q": "પ્રશ્ન 8. વિખ્યાત અમેરિકન કેળવણીકાર સેમ્યુઅલ હોવે (Samuel Howe) ના મતે વંચિત જૂથો અને સમાજ વચ્ચે કેવો સંબંધ હોવો જોઈએ?",
+    "options": [
+      "વંચિત જૂથોને આશ્રય ગૃહોમાં રાખીને જ શિક્ષણ આપવું જોઈએ.",
+      "વંચિત જૂથો એ સમાજથી અલગ હોઈ જ ન શકે; તેઓ સમાજમાં રહી, સમાજમાન્ય માર્ગે વિકસિત થઈ રાષ્ટ્રીય વિકાસમાં યોગદાન આપી શકે તેવા સમર્થ બનવા જોઈએ.",
+      "તેઓને સામાન્ય અભ્યાસક્રમથી મુક્ત રાખી માત્ર વ્યાવસાયિક તાલીમ આપવી જોઈએ.",
+      "તેઓ માટે અલગ સ્વાયત્ત વસાહતોનું નિર્માણ કરવું જોઈએ."
+    ],
+    "ans": 1,
+    "unit": "એકમ 1: સમાવેશી શિક્ષણ",
+    "exp": "મોડ્યુલ પાના 10 પર સેમ્યુઅલ હોવેના વિચારો સ્પષ્ટ ટાંકવામાં આવ્યા છે."
+  },
+  {
+    "q": "પ્રશ્ન 9. બનાસકાંઠા જિલ્લાની 'સાપસણ પ્રાથમિક શાળા (તા. દાંતીવાડા)' માં શિક્ષકે સમાવેશન માટે કયું નવતર પગલું ભર્યું હતું?",
+    "options": [
+      "બાળકોને મફત ગણવેશ અને સાયકલોનું વિતરણ કર્યું.",
+      "આદિવાસી બોલી માન્ય ગુજરાતી ભાષા કરતાં જુદી હોવાથી, શિક્ષકે સ્વયં સ્થાનિક બોલી શીખી તેનો શબ્દકોશ, ગીતો અને વાર્તાઓ બનાવી બોલીથી માન્ય ભાષા તરફ શિક્ષણ આપ્યું.",
+      "શાળામાં રેમ્પ અને બ્રેઈલ લિપિના સાધનો વસાવ્યા.",
+      "મધ્યાહ્ન ભોજન યોજનામાં વિશેષ પોષક આહાર શરૂ કર્યો."
+    ],
+    "ans": 1,
+    "unit": "એકમ 1: સમાવેશી શિક્ષણ",
+    "exp": "મોડ્યુલ પાના 9 પર સાપસણ પ્રાથમિક શાળાનું ઉદાહરણ આપેલ છે જ્યાં ભાષાકીય વંચિતતા દૂર કરવા શિક્ષકે સ્થાનિક બોલીનો શબ્દકોશ તૈયાર કર્યો હતો."
+  },
+  {
+    "q": "પ્રશ્ન 10. ભરૂચ જિલ્લાની 'નવા તવરા પ્રાથમિક શાળા' માં કઈ સમસ્યાના સમાધાન માટે લોકભાગીદારી અને SMC દ્વારા સમાવેશન સાધવામાં આવ્યું?",
+    "options": [
+      "વિકલાંગ બાળકોના પ્રવેશનો અભાવ.",
+      "ગામના લોકોનો મુખ્ય વ્યવસાય મજૂરી હોવાથી બાળકોની અનિયમિતતા અને ગેરહાજરીનું મોટું પ્રમાણ હતું, જેને SMC જાગૃતિ અને આનંદદાયી વાતાવરણ રચી હલ કરાયું.",
+      "જાતિગત ભેદભાવ અને કન્યા કેળવણીનો વિરોધ.",
+      "શાળા મકાન અને ભૌતિક સુવિધાઓનો અભાવ."
+    ],
+    "ans": 1,
+    "unit": "એકમ 1: સમાવેશી શિક્ષણ",
+    "exp": "મોડ્યુલ પાના 9 અનુસાર મજૂરી કરતા વાલીઓના બાળકો શિક્ષણથી વંચિત ન રહે તે માટે નવા તવરા શાળાએ એસએમસી અને વાલી મિટિંગ દ્વારા ઉકેલ લાવ્યો હતો."
+  },
+  {
+    "q": "પ્રશ્ન 11. સમાવેશી શિક્ષણમાં વિવિધ સિનેમા/ફિલ્મો દ્વારા સામાજિક જાગૃતિનો સંદર્ભ મોડ્યુલમાં આપેલ છે. તે સંદર્ભે કઈ જોડી અયોગ્ય છે?",
+    "options": [
+      "'તારે જમીં પર' - ડિસ્લેક્સિયા ધરાવતા બાળકની સર્જનાત્મકતા અને સમાવેશન",
+      "'સ્પર્શ' - નેત્રહીન વ્યક્તિઓનું સ્વાવલંબન",
+      "'બ્લેક' - બહુવિકલાંગ વ્યક્તિને શિક્ષક દ્વારા અપાતું જીવન શિક્ષણ",
+      "'ચક દે ઇન્ડિયા' - દિવ્યાંગ ખેલાડીઓ માટેની પેરાલિમ્પિક સ્પર્ધા"
+    ],
+    "ans": 3,
+    "unit": "એકમ 1: સમાવેશી શિક્ષણ",
+    "exp": "મોડ્યુલ પાના 8 અનુસાર 'ચક દે ઇન્ડિયા' મહિલા હોકી ટીમને પ્રેરણા આપી સિત્તેર મિનિટ ઝઝૂમી વિજય અપાવવા એટલે કે જાતિગત સમાનતા અને સ્ત્રી સશક્તિકરણનું દ્રષ્ટાંત છે."
+  },
+  {
+    "q": "પ્રશ્ન 12. હેલન કેલરનું કયું વિધાન સમાજમાં વિકલાંગ વ્યક્તિઓ પ્રત્યેના દ્રષ્ટિકોણને ચોટદાર રીતે રજૂ કરે છે?",
+    "options": [
+      "શિક્ષણ એ પ્રત્યેક દિવ્યાંગનો બંધારણીય અધિકાર છે.",
+      "વિકલાંગતા વ્યક્તિને એટલું નુકસાન નથી પહોંચાડતી જેટલું વિકલાંગ પ્રત્યે સમાજના નકારાત્મક વલણો નુકસાન પહોંચાડે છે.",
+      "દિવ્યાંગો માટે દયા અને સહાનુભૂતિ એ સર્વોચ્ચ ઉપહાર છે.",
+      "શારીરિક ક્ષતિ માનસિક ક્ષમતાને ક્યારેય સીમિત કરી શકતી નથી."
+    ],
+    "ans": 1,
+    "unit": "એકમ 1: સમાવેશી શિક્ષણ",
+    "exp": "મોડ્યુલ પાના 8 પર હેલન કેલરનું આ વિધાન અક્ષરશઃ ટાંકવામાં આવ્યું છે."
+  },
+  {
+    "q": "પ્રશ્ન 13. સમાવેશી શિક્ષણના પરિપ્રેક્ષ્યમાં 'મૂલ્યાંકન પદ્ધતિ' કેવી હોવી જોઈએ?",
+    "options": [
+      "પરંપરાગત અને કઠોર ધોરણો આધારિત જેથી ગુણવત્તા જળવાય.",
+      "સામાન્ય બાળકો અને વંચિત જૂથો વચ્ચે સ્પર્ધાત્મક વાતાવરણ સર્જતી.",
+      "લચીલાપણું (Flexibility) અને ઔદાર્ય ધરાવતી, જેમાં પાસિંગ ધોરણો અને માપદંડોમાં જરૂરી અનુકૂલન હોય.",
+      "માત્ર લેખિત પરીક્ષા આધારિત અને કોઈપણ પ્રકારની વિશેષ છૂટછાટ વિનાની."
+    ],
+    "ans": 2,
+    "unit": "એકમ 1: સમાવેશી શિક્ષણ",
+    "exp": "મોડ્યુલ પાના 9-10 અનુસાર સમાવેશી શિક્ષણમાં પરંપરાગત કઠોર મૂલ્યાંકનને બદલે લચીલાપણું અને ઔદાર્ય રાખવું જોઈએ, જેમ કે પાસિંગ સ્ટાન્ડર્ડમાં છૂટછાટ."
+  },
+  {
+    "q": "પ્રશ્ન 14. ભારતીય વસ્તીમાં દિવ્યાંગોનું પ્રમાણ આશરે કેટલા ટકા છે અને તેમનો સાક્ષરતા દર કેવો છે?",
+    "options": [
+      "આશરે 10% પ્રમાણ અને રાષ્ટ્રીય સરેરાશ કરતાં ઊંચો દર.",
+      "આશરે 3% પ્રમાણ અને રાષ્ટ્રીય સાક્ષરતા દર કરતાં ઘણો નીચો દર.",
+      "આશરે 7% પ્રમાણ અને રાષ્ટ્રીય દરની સમકક્ષ.",
+      "આશરે 1% પ્રમાણ અને સંપૂર્ણ નિરક્ષરતા."
+    ],
+    "ans": 1,
+    "unit": "એકમ 1: સમાવેશી શિક્ષણ",
+    "exp": "મોડ્યુલ પાના 5 અનુસાર ભારતીય વસ્તીમાં દિવ્યાંગો આશરે 3% પ્રમાણ ધરાવે છે અને સામાજિક ઉપેક્ષાને કારણે તેમનો સાક્ષરતા દર ઘણો નીચો છે."
+  },
+  {
+    "q": "પ્રશ્ન 15. કુટુંબને 'સમાજની લઘુ આવૃત્તિ' ગણવામાં આવે છે. સમાવેશી શિક્ષણના સંદર્ભમાં કુટુંબનું વલણ કેવી રીતે નિર્ણાયક બને છે?",
+    "options": [
+      "કુટુંબ માત્ર આર્થિક ખર્ચ ઉઠાવે છે, શિક્ષણ સાથે તેને સંબંધ નથી.",
+      "'દીકરો-દીકરી એક સમાન' માન્યતા શિક્ષણની તકો વધારે છે, જ્યારે દીકરીને 'સાપનો ભારો' કે 'પારકી થાપણ' ગણતી માનસિકતા વંચિતતા સર્જે છે.",
+      "માત્ર ઉચ્ચ શિક્ષિત પરિવારો જ સમાવેશ સાધી શકે છે.",
+      "સંયુક્ત કુટુંબો હંમેશા સમાવેશી શિક્ષણના વિરોધી હોય છે."
+    ],
+    "ans": 1,
+    "unit": "એકમ 1: સમાવેશી શિક્ષણ",
+    "exp": "મોડ્યુલ પાના 7 પર કુટુંબની રૂઢિઓ, વલણો અને 'દીકરો દીકરી એક સમાન' ની માન્યતા સમાવેશનને અસર કરતી દર્શાવી છે."
+  },
+  {
+    "q": "પ્રશ્ન 16. શાળાના મુખ્ય ત્રણ ઘટકો કયા છે અને તેઓ સમાવેશી શિક્ષણને કઈ રીતે પ્રભાવિત કરે છે?",
+    "options": [
+      "ટ્રસ્ટી, આચાર્ય અને પટાવાળા",
+      "મુખ્ય શિક્ષક, શિક્ષક અને વિદ્યાર્થી - આ ત્રણેયની વ્યક્તિગત સમજણ અને પારસ્પરિક સંબંધો સમાવેશી શિક્ષણને સીધા અસર કરે છે.",
+      "શિક્ષણ નિરીક્ષક, BRC અને CRC",
+      "SMC અધ્યક્ષ, ગ્રામ પંચાયત અને વાલી"
+    ],
+    "ans": 1,
+    "unit": "એકમ 1: સમાવેશી શિક્ષણ",
+    "exp": "મોડ્યુલ પાના 7 અનુસાર શાળાના મુખ્ય ત્રણ ઘટકો: મુખ્ય શિક્ષક, શિક્ષક અને વિદ્યાર્થી છે, જેમના પારસ્પરિક સહકારથી સમાવેશન સફળ બને છે."
+  },
+  {
+    "q": "પ્રશ્ન 17. 'સુગમ્ય ભારત' (Accessible India) અભિયાનનો મુખ્ય ઉદ્દેશ કયો છે?",
+    "options": [
+      "ગ્રામીણ શાળાઓમાં ફ્રી વાઈફાઈ આપવું.",
+      "ભૌતિક સંસાધનો, ઇમારતો અને પર્યાવરણને દિવ્યાંગ વ્યક્તિઓ માટે અવરોધમુક્ત અને અનુકૂળ (Accessible) બનાવવું.",
+      "તમામ નાગરિકોને મફત સ્માર્ટફોન પૂરા પાડવા.",
+      "સરકારી કચેરીઓનું ડિજિટાઈઝેશન કરવું."
+    ],
+    "ans": 1,
+    "unit": "એકમ 1: સમાવેશી શિક્ષણ",
+    "exp": "મોડ્યુલ પાના 8 અને 10 અનુસાર સુગમ્ય ભારત અભિયાન ભૌતિક માળખાને દિવ્યાંગો માટે સુગમ બનાવવા માટે કાર્યરત છે."
+  },
+  {
+    "q": "પ્રશ્ન 18. સકલાંગ (સામાન્ય) અને વિકલાંગ (દિવ્યાંગ) વ્યક્તિ પરસ્પર લગ્નગ્રંથિથી જોડાય ત્યારે સરકાર દ્વારા કયા પ્રકારનું પ્રોત્સાહન આપવામાં આવે છે?",
+    "options": [
+      "સરકારી નોકરીમાં સીધી બઢતી.",
+      "આર્થિક અનુદાન અને પ્રોત્સાહક સહાય યોજના.",
+      "મફત વિદેશ પ્રવાસ.",
+      "આવકવેરામાંથી કાયમી મુક્તિ."
+    ],
+    "ans": 1,
+    "unit": "એકમ 1: સમાવેશી શિક્ષણ",
+    "exp": "મોડ્યુલ પાના 10 અનુસાર સકલાંગ અને વિકલાંગ વ્યક્તિ લગ્ન કરે ત્યારે સરકાર દ્વારા આર્થિક અનુદાન / પ્રોત્સાહક યોજના અમલમાં છે."
+  },
+  {
+    "q": "પ્રશ્ન 19. કઈ આંતરરાષ્ટ્રીય સંસ્થાએ ઘોષિત કર્યું છે કે 'સૌના માટે ગુણવત્તાસભર શિક્ષણ' (Education for All) મેળવવા તમામ વંચિત જૂથોને ઔપચારિક શિક્ષણ સાથે જોડવા જ પડે?",
+    "options": [
+      "વિશ્વ આરોગ્ય સંસ્થા (WHO)",
+      "યુનિસેફ (UNICEF) અને યુનેસ્કો (UNESCO)",
+      "આંતરરાષ્ટ્રીય નાણાં ભંડોળ (IMF)",
+      "રેડક્રોસ સોસાયટી"
+    ],
+    "ans": 1,
+    "unit": "એકમ 1: સમાવેશી શિક્ષણ",
+    "exp": "મોડ્યુલ પાના 5 અને 7 પર યુનેસ્કો અને યુનિસેફના શિક્ષણમાં સમાવેશન અંગેના વૈશ્વિક લક્ષ્યો ટાંકવામાં આવ્યા છે."
+  },
+  {
+    "q": "પ્રશ્ન 20. શિક્ષણમાં 'બહિષ્કૃતિકરણ' (Exclusion) ની સાચી સંકલ્પના કઈ છે?",
+    "options": [
+      "પરીક્ષામાં નાપાસ થયેલા વિદ્યાર્થીઓને શાળામાંથી કાઢી મૂકવા.",
+      "કેટલાક ચોક્કસ જૂથોને ઇરાદાપૂર્વક સામાજિક, આર્થિક, શારીરિક કે સાંસ્કૃતિક કારણોસર શિક્ષણથી વંચિત રાખવાની વ્યવસ્થા કે પ્રક્રિયા.",
+      "શાળામાં ગેરહાજર રહેતા વિદ્યાર્થીઓ પર દંડ લાદવો.",
+      "ઉચ્ચ શિક્ષણમાં મેરિટ આધારિત પ્રવેશ આપવો."
+    ],
+    "ans": 1,
+    "unit": "એકમ 1: સમાવેશી શિક્ષણ",
+    "exp": "મોડ્યુલ પાના 5 અનુસાર બહિષ્કૃતિકરણ એટલે ચોક્કસ જૂથોને ઇરાદાપૂર્વક બહિષ્કૃત કરી શિક્ષણથી વંચિત રાખવાની વ્યવસ્થા."
+  },
+  {
+    "q": "પ્રશ્ન 21. ગુજરાતમાં દિવ્યાંગ કલ્યાણ અને શિક્ષણ ક્ષેત્રે કાર્યરત જાણીતી બિન-સરકારી સંસ્થાઓ (NGOs) ના સંદર્ભમાં મોડ્યુલમાં કઈ સંસ્થાનો ઉલ્લેખ છે?",
+    "options": [
+      "અંધજન મંડળ - અમદાવાદ",
+      "નવચેતના ટ્રસ્ટ - માધાપર (કચ્છ)",
+      "'સેવ ધ ગર્લ' અને 'સેવ ધ ચાઇલ્ડ'",
+      "ઉપરોક્ત તમામ"
+    ],
+    "ans": 3,
+    "unit": "એકમ 1: સમાવેશી શિક્ષણ",
+    "exp": "મોડ્યુલ પાના 8 પર આ તમામ NGO ના નામો સ્પષ્ટપણે આપેલા છે."
+  },
+  {
+    "q": "પ્રશ્ન 22. વિકલાંગ બાળકો માટે પરીક્ષામાં પાસિંગ ગુણ સામાન્ય બાળકોના 35% ના સ્થાને કેવા રાખવામાં આવે છે?",
+    "options": [
+      "50% કરવામાં આવે છે.",
+      "સહેજ નીચું passing ધોરણ રાખવામાં આવે છે અને લવચીકતા દાખવવામાં આવે છે.",
+      "પરીક્ષામાંથી સંપૂર્ણ મુક્તિ આપી 100% ગુણ અપાય છે.",
+      "કોઈ ફેરફાર કરવામાં આવતો નથી."
+    ],
+    "ans": 1,
+    "unit": "એકમ 1: સમાવેશી શિક્ષણ",
+    "exp": "મોડ્યુલ પાના 9-10 અનુસાર દિવ્યાંગો માટે 35% ના સ્થાને લચીલાપણું દાખવી પાસિંગ સ્ટાન્ડર્ડ થોડું નીચું રાખવાની નીતિવિષયક જોગવાઈ છે."
+  },
+  {
+    "q": "પ્રશ્ન 23. મૂક-બધિર વ્યક્તિઓના સામાજિક સમાયોજન અને સંઘર્ષની કથા દર્શાવતી કઈ ફિલ્મોનો ઉલ્લેખ મોડ્યુલમાં થયો છે?",
+    "options": [
+      "'કશિશ' અને 'ખામોશી'",
+      "'શોલે' અને 'દીવાર'",
+      "'લગાન' અને 'સ્વદેશ'",
+      "'દંગલ' અને 'મેરી કોમ'"
+    ],
+    "ans": 0,
+    "unit": "એકમ 1: સમાવેશી શિક્ષણ",
+    "exp": "મોડ્યુલ પાના 8 અનુસાર 'કશિશ' અને 'ખામોશી' ફિલ્મો મૂક-બધિર વ્યક્તિઓના સમાયોજન અને વિકાસની વાતો રજૂ કરે છે."
+  },
+  {
+    "q": "પ્રશ્ન 24. સમાવેશી શિક્ષણનો આધુનિક દ્રષ્ટિકોણ કઈ બાબત પર સૌથી વધુ ભાર મૂકે છે?",
+    "options": [
+      "બાળકને શાળા વ્યવસ્થાને અનુકૂળ થવું પડશે.",
+      "શાળા વ્યવસ્થા, વાતાવરણ અને અભ્યાસક્રમે બાળકની વિશિષ્ટ જરૂરિયાતોને અનુરૂપ અનુકૂલન સાધવું પડશે.",
+      "માત્ર હોશિયાર બાળકોને જ ઉચ્ચ શિક્ષણ માટે તૈયાર કરવા.",
+      "દિવ્યાંગ બાળકોને સામાન્ય બાળકોથી અલગ રાખવા."
+    ],
+    "ans": 1,
+    "unit": "એકમ 1: સમાવેશી શિક્ષણ",
+    "exp": "સમાવેશી શિક્ષણની મૂળભૂત ફિલસૂફી એ છે કે સિસ્ટમે બાળકની જરૂરિયાતો મુજબ પરિવર્તિત થવું પડે છે, બાળકે સિસ્ટમ મુજબ ઢળવાનું નથી."
+  },
+  {
+    "q": "પ્રશ્ન 25. સમાવેશી શિક્ષણના મૂલ્યાંકન સંદર્ભે 'વંચિત જૂથો' માં કોનો કોનો સમાવેશ થાય છે?",
+    "options": [
+      "માત્ર શારીરિક વિકલાંગતા ધરાવતા બાળકો",
+      "જ્ઞાતિ, જાતિ, લિંગ, ધર્મ, ભાષા, સામાજિક-આર્થિક દરજ્જો કે ભૌગોલિક વિસ્તારના કારણે ઉપેક્ષિત રહેલા તમામ સમુદાયો",
+      "માત્ર શાળા છોડી ગયેલા ડ્રોપ-આઉટ બાળકો",
+      "માત્ર શહેરી ઝૂંપડપટ્ટીના બાળકો"
+    ],
+    "ans": 1,
+    "unit": "એકમ 1: સમાવેશી શિક્ષણ",
+    "exp": "મોડ્યુલ પાના 5, 7 અને 9 અનુસાર વંચિત જૂથોમાં સામાજિક, આર્થિક, ભાષાકીય, ભૌગોલિક અને શારીરિક તમામ ઉપેક્ષિત ઘટકો સામેલ છે."
+  },
+  {
+    "q": "પ્રશ્ન 26. ઓક્સફર્ડ ડિક્શનરી અનુસાર 'Equality' નો અર્થ નીચેના પૈકી કયો દર્શાવવામાં આવ્યો છે?",
+    "options": [
+      "The survival of the fittest in society",
+      "The principle of equality before the law / The fact of being equal in rights, status, advantages etc.",
+      "Equal distribution of physical wealth only",
+      "Special privileges to elite classes"
+    ],
+    "ans": 1,
+    "unit": "એકમ 1: સમાવેશી શિક્ષણ",
+    "exp": "મોડ્યુલ પાના 6 પર ઓક્સફર્ડ ડિક્શનરીના આ શબ્દકોશીય અર્થો સ્પષ્ટપણે આપેલા છે."
+  },
+  {
+    "q": "પ્રશ્ન 27. ભારતમાં સમાવેશી શિક્ષણ અંગેના વિડિયો સાહિત્ય સંદર્ભે મોડ્યુલમાં કઈ સંસ્થા નિર્મિત ડી.વી.ડી. જોવાનો નિર્દેશ આપવામાં આવ્યો છે?",
+    "options": [
+      "NCERT - નવી દિલ્હી",
+      "GIET (ગુજરાત શૈક્ષણિક ટેકનોલોજી ભવન) - અમદાવાદ",
+      "UGC - નવી દિલ્હી",
+      "સ્પેસ એપ્લિકેશન સેન્ટર (SAC) - ઇસરો"
+    ],
+    "ans": 1,
+    "unit": "એકમ 1: સમાવેશી શિક્ષણ",
+    "exp": "મોડ્યુલ પાના 9 અને સંદર્ભસૂચિ (પાના 11) અનુસાર GIET, અમદાવાદ નિર્મિત 'સમાવેશી શિક્ષણ' ડી.વી.ડી. નો ઉલ્લેખ છે."
+  },
+  {
+    "q": "પ્રશ્ન 28. વિધાન (A): સમાવેશી વર્ગખંડમાં પ્રત્યેક બાળકની શીખવાની ગતિ અલગ હોવા છતાં સહકારયુક્ત અધ્યયન શક્ય બને છે. \nકારણ (R): સમાવેશી શિક્ષણ વ્યક્તિગત તફાવતોને ખામી ગણવાને બદલે વર્ગખંડનું વૈવિધ્ય અને મૂલ્યવાન સ્ત્રોત ગણે છે. \nયોગ્ય વિકલ્પ પસંદ કરો:",
+    "options": [
+      "(A) અને (R) બંને સાચાં છે અને (R) એ (A) ની સાચી સમજૂતી છે.",
+      "(A) સાચું છે પણ (R) ખોટું છે.",
+      "(A) ખોટું છે પણ (R) સાચું છે.",
+      "(A) અને (R) બંને તદ્દન અસત્ય છે."
+    ],
+    "ans": 0,
+    "unit": "એકમ 1: સમાવેશી શિક્ષણ",
+    "exp": "વૈયક્તિક ભિન્નતાઓ સમાવેશી વર્ગખંડમાં સંસાધન બને છે અને પીઅર લર્નિંગથી સૌ સાથે શીખે છે."
+  },
+  {
+    "q": "પ્રશ્ન 29. સાપસણ પ્રાથમિક શાળાના કેસ સ્ટડી પરથી વર્ગ-2 ના શિક્ષણ અધિકારી તરીકે તમારે ભાષાકીય લઘુમતી કે આદિવાસી વિસ્તારમાં કઈ નીતિ અપનાવવી જોઈએ?",
+    "options": [
+      "સ્થાનિક બોલી પર તાત્કાલિક પ્રતિબંધ મૂકી માત્ર પ્રમાણભૂત ભાષાનો આગ્રહ રાખવો.",
+      "માતૃભાષા/સ્થાનિક બોલીને સેતુ (Bridge Language) તરીકે વાપરીને ક્રમશઃ માન્ય ભાષા તરફ લઈ જવી.",
+      "આવા બાળકોને અલગ ભાષા શાળાઓમાં મોકલી દેવા.",
+      "અભ્યાસક્રમમાંથી ભાષા વિષય જ રદ કરવો."
+    ],
+    "ans": 1,
+    "unit": "એકમ 1: સમાવેશી શિક્ષણ",
+    "exp": "સાપસણ શાળાના મોડેલ અનુસાર સ્થાનિક બોલીનો સેતુ બનાવી માન્ય ભાષા સુધી પહોંચાડવું એ જ શ્રેષ્ઠ સમાવેશી શિક્ષણ પદ્ધતિ છે."
+  },
+  {
+    "q": "પ્રશ્ન 30. આધુનિક મનોવૈજ્ઞાનિકો અનુસાર સૃષ્ટિ અને વ્યક્તિઓમાં જોવા મળતી કઈ બાબત સમાવેશી શિક્ષણનો મનોવૈજ્ઞાનિક પાયો બને છે?",
+    "options": [
+      "યાંત્રિક સમાનતાનો નિયમ",
+      "વૈયક્તિક ભિન્નતાઓનો સિદ્ધાંત (Principle of Individual Differences)",
+      "વર્તમાન સામાજિક સ્તરીકરણ",
+      "જૈવિક એકરૂપતા"
+    ],
+    "ans": 1,
+    "unit": "એકમ 1: સમાવેશી શિક્ષણ",
+    "exp": "મોડ્યુલ પાના 5 પર પ્રસ્તાવનામાં જ સ્પષ્ટ છે કે એક જ મા-બાપના બે સંતાનો કે એક જ છોડની બે ડાળીના ફૂલો પણ ભિન્ન હોય છે; વૈયક્તિક ભિન્નતા એ કુદરતી નિયમ છે."
+  },
+  {
+    "q": "પ્રશ્ન 31. શિક્ષણમાં 'ઇરાદાપૂર્વક શિક્ષણથી વંચિત રાખવાની પ્રક્રિયા' માટે મોડ્યુલમાં કયો ચોક્કસ પારિભાષિક શબ્દ પ્રયોજાયો છે?",
+    "options": [
+      "પ્રથક્કરણ",
+      "બહિષ્કૃતિકરણ (Exclusion)",
+      "અવરોધન",
+      "સ્થગિતતા"
+    ],
+    "ans": 1,
+    "unit": "એકમ 1: સમાવેશી શિક્ષણ",
+    "exp": "મોડ્યુલ પાના 5 અનુસાર 'બહિષ્કૃતિકરણ' એટલે કેટલાક જૂથોને ઇરાદાપૂર્વક બહિષ્કૃત કરી શિક્ષણથી વંચિત કરી રાખવાની પ્રક્રિયા."
+  },
+  {
+    "q": "પ્રશ્ન 32. વિકલાંગ વ્યક્તિઓના સશક્તિકરણ માટે RPWD Act 2016 હેઠળ કયો મહત્વપૂર્ણ અધિકાર પ્રથમવાર વિસ્તૃત રીતે ઉમેરવામાં આવ્યો?",
+    "options": [
+      "વારસાઈ સંપત્તિ, ઘર વસાવવાનો અને સંતાનો પેદા કરવાનો કાનૂની અધિકાર",
+      "મફત વાહન ખરીદીનો અધિકાર",
+      "કરવેરામાંથી 100% મુક્તિનો અધિકાર",
+      "કોઈપણ પ્રકારના કામ વગર વેતન મેળવવાનો અધિકાર"
+    ],
+    "ans": 0,
+    "unit": "એકમ 1: સમાવેશી શિક્ષણ",
+    "exp": "મોડ્યુલ પાના 15-16 અનુસાર RPWD Act 2016 વ્યક્તિને વારસાઈ સંપત્તિ, સંપત્તિ માલિકી હક્ક, ઘર વસાવવાનો અને સંતાનો પેદા કરવાનો માનવ અધિકાર સુનિશ્ચિત કરે છે."
+  },
+  {
+    "q": "પ્રશ્ન 33. શાળામાં પ્રવેશ મેળવવા ઇચ્છુક દિવ્યાંગ બાળકને મુખ્ય શિક્ષક પ્રવેશ ન આપે તો તે કયા કાયદાનું ઉલ્લંઘન છે?",
+    "options": [
+      "RTE Act 2009 અને RPWD Act 2016 બંનેનું",
+      "માત્ર ફેક્ટરી એક્ટ",
+      "ગ્રાહક સુરક્ષા ધારો",
+      "એકપણ નહીં, શાળા ના પાડી શકે છે."
+    ],
+    "ans": 0,
+    "unit": "એકમ 1: સમાવેશી શિક્ષણ",
+    "exp": "RTE Act 2009 અંતર્ગત 6 થી 14 વર્ષના દરેક બાળકને મફત ફરજિયાત શિક્ષણનો હક છે અને RPWD Act 2016 અંતર્ગત દિવ્યાંગને ભેદભાવ રહિત પ્રવેશ આપવો ફરજિયાત છે."
+  },
+  {
+    "q": "પ્રશ્ન 34. સમાવેશી શિક્ષણના પરિણામે સમાજમાં કયું દીર્ઘકાલીન પરિવર્તન નોંધાયું છે?",
+    "options": [
+      "વંચિત જૂથો સામાન્ય સમાજથી સંપૂર્ણ અલિપ્ત થઈ ગયા છે.",
+      "વંચિત જૂથોના સભ્યોનો સામાન્ય સમાજ દ્વારા સહજ સ્વીકાર થયો છે અને તેઓ સહઅસ્તિત્વ સાથે રાષ્ટ્રીય વિકાસમાં ભાગીદાર બન્યા છે.",
+      "સામાન્ય શાળાઓની ગુણવત્તા ઘટી ગઈ છે.",
+      "વિશિષ્ટ શાળાઓની સંખ્યામાં અપ્રતિમ વધારો થયો છે."
+    ],
+    "ans": 1,
+    "unit": "એકમ 1: સમાવેશી શિક્ષણ",
+    "exp": "મોડ્યુલ પાના 10 અનુસાર સમાવેશી શિક્ષણથી સમાજનો વલણ બદલાયું છે અને વંચિતોનો સહજ સ્વીકાર થયો છે."
+  },
+  {
+    "q": "પ્રશ્ન 35. કન્યા કેળવણી ઝુંબેશ અને બેટી બચાવો બેટી પઢાઓ અભિયાનના કારણે કયું ક્ષેત્ર મહિલાઓ માટે ખૂલ્યું છે જેનો ઉલ્લેખ મોડ્યુલમાં ગૌરવપૂર્વક થયો છે?",
+    "options": [
+      "ભારતીય સેના (આર્મી) માં મહિલાઓની ઉચ્ચ હોદ્દાઓ પર નિમણૂક",
+      "માત્ર પ્રાથમિક શિક્ષણ",
+      "માત્ર ગૃહઉદ્યોગ",
+      "માત્ર આંગણવાડી"
+    ],
+    "ans": 0,
+    "unit": "એકમ 1: સમાવેશી શિક્ષણ",
+    "exp": "મોડ્યુલ પાના 8 અનુસાર સરકારી પ્રયાસોથી કન્યાઓ સુશિક્ષિત થઈ અને હાલમાં ભારતીય સેનામાં પણ મહિલાઓ ઉચ્ચ હોદ્દાઓ પર કાર્ય કરી રહી છે. \n★ એકમ 2: વિશિષ્ટ જરૂરિયાતવાળા બાળકો"
+  },
+  {
+    "q": "પ્રશ્ન 36. શિક્ષણમાં વિકલાંગતા સાથે સંકળાયેલા ઐતિહાસિક તબક્કાઓનો સાચો ક્રમિક વિકાસ કયો છે?",
+    "options": [
+      "Segregation → Integration → Exclusion → Inclusion",
+      "Exclusion (બહિષ્કૃતિકરણ) → Segregation (અલગીકરણ/વિશિષ્ટ શાળા) → Integration (સંકલિત/સમ્મિલિત શિક્ષણ) → Inclusion (સમાવેશી શિક્ષણ)",
+      "Integration → Exclusion → Segregation → Inclusion",
+      "Inclusion → Segregation → Exclusion → Integration"
+    ],
+    "ans": 1,
+    "unit": "એકમ 2: વિશિષ્ટ જરૂરિયાતવાળા બાળકો",
+    "exp": "મોડ્યુલ પાના 19-20 પર દર્શાવેલા ચિત્રો અને વિવરણ મુજબ સાચો ક્રમ: Exclusion (બહિષ્કાર) → Segregation (વિશિષ્ટ શાળામાં અલગ રાખવા) → Integration (સામાન્ય શાળામાં લાવવા પણ અલગ વ્યવસ્થા) → Inclusion (સંપૂર્ણ સમાવેશન) છે."
+  },
+  {
+    "q": "પ્રશ્ન 37. 'સંકલિત શિક્ષણ' (Integration) અને 'સમાવેશી શિક્ષણ' (Inclusion) વચ્ચેનો મુખ્ય ભેદ શું હતો?",
+    "options": [
+      "સંકલિત શિક્ષણ માત્ર કૉલેજ કક્ષાએ હતું જ્યારે સમાવેશી પ્રાથમિકમાં છે.",
+      "સંકલિત શિક્ષણમાં દિવ્યાંગ બાળકોને સામાન્ય શાળામાં લાવી અંશકાલીન વિશિષ્ટ શિક્ષકો દ્વારા ભણાવાતા, જેથી તેઓ શાળાકીય અનુભવોથી વંચિત રહેતા; જ્યારે સમાવેશી શિક્ષણમાં સંપૂર્ણ વ્યવસ્થાતંત્ર બાળકની જરૂરિયાત મુજબ બદલાય છે.",
+      "સંકલિત શિક્ષણમાં મફત પ્રવેશ હતો જ્યારે સમાવેશમાં ફી લેવાય છે.",
+      "બંને વચ્ચે કોઈ તફાવત નથી."
+    ],
+    "ans": 1,
+    "unit": "એકમ 2: વિશિષ્ટ જરૂરિયાતવાળા બાળકો",
+    "exp": "મોડ્યુલ પાના 20 અનુસાર સંકલિત શિક્ષણ (IEDC) માં વિશિષ્ટ શિક્ષક પૂર્ણકાલીન ન હોવાથી બાળકો વંચિત રહેતા, જે ખામી નિવારવા સંપૂર્ણ વ્યવસ્થા બદલતું સમાવેશી શિક્ષણ આવ્યું."
+  },
+  {
+    "q": "પ્રશ્ન 38. ભારતમાં માનવ સંસાધન વિકાસ મંત્રાલય દ્વારા 'સંકલિત શિક્ષણ યોજના' (IEDC) કયા વર્ષે શરૂ કરવામાં આવી અને તેનું સંચાલન શિક્ષણ વિભાગને ક્યારે સોંપાયું?",
+    "options": [
+      "1950 માં શરૂ થઈ અને 1960 માં સોંપાઈ.",
+      "1974 માં જાહેરાત થઈ અને તેનાં અમલીકરણની જવાબદારી 1982 થી શિક્ષણ વિભાગને સોંપાઈ.",
+      "1986 માં શરૂ થઈ અને 2005 માં સોંપાઈ.",
+      "2000 માં શરૂ થઈ અને 2009 માં સોંપાઈ."
+    ],
+    "ans": 1,
+    "unit": "એકમ 2: વિશિષ્ટ જરૂરિયાતવાળા બાળકો",
+    "exp": "મોડ્યુલ પાના 20 અનુસાર 1974 માં સામાજિક વિભાગ દ્વારા IEDC યોજના શરૂ થઈ અને 1982 થી શિક્ષણ વિભાગને અમલીકરણ સોંપાયું."
+  },
+  {
+    "q": "પ્રશ્ન 39. RPWD Act 2016 અનુસાર 'માનદંડ વિકલાંગતા' (Benchmark Disability) ની ન્યૂનતમ ટકાવારી કેટલી નિર્ધારિત કરવામાં આવી છે?",
+    "options": [
+      "ઓછામાં ઓછી 30%",
+      "ઓછામાં ઓછી 40%",
+      "ઓછામાં ઓછી 50%",
+      "ઓછામાં ઓછી 60%"
+    ],
+    "ans": 1,
+    "unit": "એકમ 2: વિશિષ્ટ જરૂરિયાતવાળા બાળકો",
+    "exp": "મોડ્યુલ પાના 16 અનુસાર નિર્દેશિત 40% કે તેથી વધુ માપી શકાય તેવી વિકલાંગતા ધરાવતી વ્યક્તિને બેન્ચમાર્ક (માનદંડ) વિકલાંગ ગણવામાં આવે છે."
+  },
+  {
+    "q": "પ્રશ્ન 40. RPWD Act 2016 હેઠળ અગાઉના 7 પ્રકારોને બદલે હવે કુલ કેટલી કેટેગરીઓનો સમાવેશ કરવામાં આવ્યો છે?",
+    "options": [
+      "14 કેટેગરી",
+      "18 કેટેગરી",
+      "21 કેટેગરી",
+      "25 કેટેગરી"
+    ],
+    "ans": 2,
+    "unit": "એકમ 2: વિશિષ્ટ જરૂરિયાતવાળા બાળકો",
+    "exp": "મોડ્યુલ પાના 15 અનુસાર RPWD Act 2016 માં કુલ 21 પ્રકારની વિકલાંગતા કેટેગરીઓનો સમાવેશ કરવામાં આવ્યો છે."
+  },
+  {
+    "q": "પ્રશ્ન 41. RPWD Act 2016 મુજબ સરકારી નોકરીઓમાં દિવ્યાંગ વ્યક્તિઓ માટે અનામત 3% થી વધારીને કેટલા ટકા કરવામાં આવી છે?",
+    "options": [
+      "4%",
+      "5%",
+      "6%",
+      "7%"
+    ],
+    "ans": 0,
+    "unit": "એકમ 2: વિશિષ્ટ જરૂરિયાતવાળા બાળકો",
+    "exp": "મોડ્યુલ પાના 18 પર સ્પષ્ટ નોંધ છે કે RPWD Act 2016 હેઠળ સરકારી નોકરીઓમાં અનામત 3% થી વધારી 4% કરવામાં આવી છે."
+  },
+  {
+    "q": "પ્રશ્ન 42. RPWD Act 2016 અનુસાર ઉચ્ચ શિક્ષણ સંસ્થાઓ અને સરકાર પાસેથી અનુદાન મેળવતી સંસ્થાઓમાં બેન્ચમાર્ક દિવ્યાંગો માટે કેટલા ટકાથી ઓછી નહીં તેટલી બેઠકો અનામત રાખવાની જોગવાઈ છે?",
+    "options": [
+      "3%",
+      "4%",
+      "5%",
+      "10%"
+    ],
+    "ans": 2,
+    "unit": "એકમ 2: વિશિષ્ટ જરૂરિયાતવાળા બાળકો",
+    "exp": "મોડ્યુલ પાના 18 અનુસાર ઉચ્ચ શિક્ષણ સંસ્થાઓમાં 5% થી ઓછી નહીં તેટલી બેઠકો માનદંડક વિકલાંગતા ધરાવતા વિદ્યાર્થીઓ માટે અનામત રાખવાની જોગવાઈ છે."
+  },
+  {
+    "q": "પ્રશ્ન 43. RPWD Act 2016 મુજબ માનદંડ (બેન્ચમાર્ક) વિકલાંગતા ધરાવતા વિદ્યાર્થીઓને કઈ વય સુધી મફત પુસ્તકો, ગણવેશ અને સહાયક ઉપકરણો આપવાની જોગવાઈ છે?",
+    "options": [
+      "14 વર્ષ સુધી",
+      "16 વર્ષ સુધી",
+      "18 વર્ષની વય સુધી",
+      "21 વર્ષની વય સુધી"
+    ],
+    "ans": 2,
+    "unit": "એકમ 2: વિશિષ્ટ જરૂરિયાતવાળા બાળકો",
+    "exp": "મોડ્યુલ પાના 17 અનુસાર સામાન્ય બાળકો માટે 14 વર્ષ છે, પરંતુ RPWD Act હેઠળ બેન્ચમાર્ક દિવ્યાંગ બાળકો માટે 18 વર્ષની વય સુધી મફત પુસ્તકો/સામગ્રીની જોગવાઈ છે."
+  },
+  {
+    "q": "પ્રશ્ન 44. RPWD Act 2016 અંતર્ગત વિકલાંગ બાળકોને ઓળખી કાઢવા માટે દર કેટલા વર્ષે સર્વેક્ષણ હાથ ધરવાની જોગવાઈ છે?",
+    "options": [
+      "દર વર્ષે",
+      "દર બે વર્ષે",
+      "દર ત્રણ વર્ષે",
+      "દર પાંચ વર્ષે"
+    ],
+    "ans": 3,
+    "unit": "એકમ 2: વિશિષ્ટ જરૂરિયાતવાળા બાળકો",
+    "exp": "મોડ્યુલ પાના 17 પર ક્રમાંક 7 પર સ્પષ્ટ ઉલ્લેખ છે: 'વિકલાંગતા ધરાવતા બાળકોને ઓળખી કાઢવા માટે દર પાંચ વર્ષે સર્વેક્ષણ હાથ ધરવું.'"
+  },
+  {
+    "q": "પ્રશ્ન 45. ધ નેશનલ ટ્રસ્ટ એકટ, 1999 કઈ ચોક્કસ 4 અક્ષમતાઓ ધરાવતી વ્યક્તિઓના કલ્યાણ અને સંરક્ષણ માટે રચાયેલો છે?",
+    "options": [
+      "અંધત્વ, બહેરાશ, મૂંગાપણું અને શારીરિક ખોડ",
+      "સ્વલીનતા (Autism), મગજનો લકવો (Cerebral Palsy), મંદબુદ્ધિ (Mental Retardation) અને બહુવિધ વિકલાંગતા (Multiple Disabilities)",
+      "ડિસ્લેક્સિયા, ડિસ્કેલ્ક્યુલિયા, ડિસ્ગ્રાફિયા અને એડીએચડી",
+      "માત્ર રક્તપિત્ત અને ટીબી"
+    ],
+    "ans": 1,
+    "unit": "એકમ 2: વિશિષ્ટ જરૂરિયાતવાળા બાળકો",
+    "exp": "મોડ્યુલ પાના 13 અને 18 અનુસાર નેશનલ ટ્રસ્ટ એક્ટ 1999 સ્પષ્ટપણે Autism, Cerebral Palsy, Mental Retardation અને Multiple Disabilities આ 4 ખામીઓ માટે છે."
+  },
+  {
+    "q": "પ્રશ્ન 46. નેશનલ ટ્રસ્ટ એક્ટ 1999 અંતર્ગત વાલીઓના કયા વેધક પ્રશ્નનો કાયદાકીય ઉકેલ આપવાનો પ્રયાસ કરવામાં આવ્યો છે?",
+    "options": [
+      "બાળકની શાળા ફી કોણ ભરશે?",
+      "'અમારા પછી કોણ?' (માતા-પિતાના અવસાન બાદ બાળકનું રક્ષણ અને પુનર્વસન કોણ કરશે?)",
+      "બાળકને કયો વ્યવસાય મળશે?",
+      "બાળકને કયા રાજ્યમાં વસવાટ મળશે?"
+    ],
+    "ans": 1,
+    "unit": "એકમ 2: વિશિષ્ટ જરૂરિયાતવાળા બાળકો",
+    "exp": "મોડ્યુલ પાના 18 પર ઉલ્લેખ છે: 'આ કાયદામાં અમારા પછી કોણ? એ પ્રશ્નનો ઉત્તર આપવામાં આવ્યો છે' જેમાં સંસ્થાકીય સારસંભાળ અને સંરક્ષણની જોગવાઈ છે."
+  },
+  {
+    "q": "પ્રશ્ન 47. નેશનલ ટ્રસ્ટને મદદરૂપ થવા માટે નાગરિકો દ્વારા આપવામાં આવતી આર્થિક સહાય કે દાન પર આવકવેરામાં કેટલી છૂટ મળે છે?",
+    "options": [
+      "50% મુક્તિ",
+      "80% મુક્તિ",
+      "100% મુક્તિ",
+      "કોઈ મુક્તિ મળતી નથી"
+    ],
+    "ans": 2,
+    "unit": "એકમ 2: વિશિષ્ટ જરૂરિયાતવાળા બાળકો",
+    "exp": "મોડ્યુલ પાના 19 અનુસાર નેશનલ ટ્રસ્ટને આપેલ આર્થિક સહાય-દાનને આવકવેરામાંથી 100 ટકા મુક્તિ મળે છે."
+  },
+  {
+    "q": "પ્રશ્ન 48. રીહેબીલીટેશન કાઉન્સીલ ઓફ ઇન્ડિયા (RCI) એકટ ક્યારે બન્યો અને તેમાં મુખ્ય સુધારો ક્યારે થયો?",
+    "options": [
+      "1986 માં બન્યો અને 1995 માં સુધારો થયો.",
+      "1992 માં બન્યો અને સન 2000 માં સુધારો કરવામાં આવ્યો.",
+      "1995 માં બન્યો અને 2016 માં સુધારો થયો.",
+      "2005 માં બન્યો અને 2014 માં સુધારો થયો."
+    ],
+    "ans": 1,
+    "unit": "એકમ 2: વિશિષ્ટ જરૂરિયાતવાળા બાળકો",
+    "exp": "મોડ્યુલ પાના 15 અનુસાર RCI એક્ટ 1992 માં ઘડાયો અને સન 2000 માં તેમાં સુધારા કરવામાં આવ્યા, જે તાલીમ અને પ્રોફેશનલ્સના ધોરણો નક્કી કરે છે."
+  },
+  {
+    "q": "પ્રશ્ન 49. સામાન્ય પ્રાથમિક શાળામાં 1995 ના કાયદા મુજબની નાણાકીય સહાયના નિયમો સંદર્ભે કઈ જોડી અયોગ્ય છે?",
+    "options": [
+      "પુસ્તકો અને સ્ટેશનરી - વાર્ષિક રૂા. 400/-",
+      "યુનિફોર્મ - વિદ્યાર્થી દીઠ રૂા. 200/-",
+      "દ્રષ્ટિહીન બાળકો માટે રીડર એલાઉન્સ - વિદ્યાર્થી દીઠ રૂા. 50/- પ્રતિ માસ",
+      "હોસ્ટેલ ચાર્જ - વિદ્યાર્થી દીઠ રૂા. 1500/- માસિક બાર માસ માટે"
+    ],
+    "ans": 3,
+    "unit": "એકમ 2: વિશિષ્ટ જરૂરિયાતવાળા બાળકો",
+    "exp": "મોડ્યુલ પાના 17 અનુસાર હોસ્ટેલ ચાર્જ વિદ્યાર્થી દીઠ રૂા. 350/- (માસિક) દસ માસ માટે નિર્ધારિત છે."
+  },
+  {
+    "q": "પ્રશ્ન 50. પ્રાથમિક શાળામાં વિકલાંગતા અનુસાર તાલીમ મેળવેલ સહાયક વિશિષ્ટ શિક્ષક (Special Educator) નું પ્રમાણ કેટલું નિયત થયેલું છે?",
+    "options": [
+      "1:20 (વીસ વિકલાંગે એક)",
+      "1:10 (દસ વિકલાંગે એક)",
+      "1:5 (પાંચ વિકલાંગ બાળકો દીઠ એક શિક્ષક)",
+      "1:1 (દરેક બાળકે એક)"
+    ],
+    "ans": 2,
+    "unit": "એકમ 2: વિશિષ્ટ જરૂરિયાતવાળા બાળકો",
+    "exp": "મોડ્યુલ પાના 17 અનુસાર 'વિકલાંગતા અનુસારની તાલીમ મેળવેલ 1:5 ના પ્રમાણમાં સહાયક વિશિષ્ટ શિક્ષકની સુવિધા' જોગવાઈ છે."
+  },
+  {
+    "q": "પ્રશ્ન 51. ગુજરાત રાજ્ય સરકારે કયા વર્ષમાં 'વિકલાંગ બાળક' ના બદલે 'દિવ્યાંગ બાળક' નામકરણ સત્તાવાર રીતે જાહેર કર્યું હતું?",
+    "options": [
+      "વર્ષ 2005",
+      "વર્ષ 2009",
+      "વર્ષ 2011",
+      "વર્ષ 2016"
+    ],
+    "ans": 2,
+    "unit": "એકમ 2: વિશિષ્ટ જરૂરિયાતવાળા બાળકો",
+    "exp": "મોડ્યુલ પાના 14 પર સ્પષ્ટ ઉલ્લેખ છે: 'ગુજરાત રાજ્ય સરકારે ચાલુ વર્ષ 2011 માં ‘વિકલાંગ બાળક’ ના બદલે ‘દિવ્યાંગ બાળક’ એમ નામકરણ જાહેર કરેલ છે.'"
+  },
+  {
+    "q": "પ્રશ્ન 52. અપવાદરૂપ/વિશિષ્ટ બાળકની વ્યાખ્યા આપતા કયા શિક્ષણવિદે જણાવ્યું કે: 'જે બાળકની શૈક્ષણિક જરૂરિયાતો સામાન્ય બાળકથી એટલી બધી જુદી હોય છે કે તેને ખાસ શૈક્ષણિક કાર્યક્રમો, સેવાઓ, સુવિધાઓ અને સાહિત્ય વગર અસરકારક રીતે શીખવી શકાય નહીં'?",
+    "options": [
+      "સેમ્યુઅલ કિર્ક (Kirk)",
+      "ગીર હર્ટ (Gearheart)",
+      "સ્કીનર",
+      "પિયાજે"
+    ],
+    "ans": 1,
+    "unit": "એકમ 2: વિશિષ્ટ જરૂરિયાતવાળા બાળકો",
+    "exp": "મોડ્યુલ પાના 14 અનુસાર આ વ્યાખ્યા 'ગીર હર્ટ' દ્વારા આપવામાં આવેલ છે."
+  },
+  {
+    "q": "પ્રશ્ન 53. અધ્યયન પ્રક્રિયા સાથે સંકળાયેલી 'જ્ઞાનાત્મક પ્રક્રિયા' (Cognitive Process) ના ચાર ક્રમિક સોપાનોનો સાચો ક્રમ કયો છે?",
+    "options": [
+      "નિર્ણય ઘડતર → માનસિક ક્રિયાઓ → પ્રત્યક્ષીકરણ → વર્તનો",
+      "પ્રત્યક્ષીકરણ (Perception) → માનસિક ક્રિયાઓ (Mental Operations) → વર્તનો (Behaviors) → નિર્ણય ઘડતર (Decision Making)",
+      "માનસિક ક્રિયાઓ → વર્તનો → પ્રત્યક્ષીકરણ → નિર્ણય ઘડતર",
+      "વર્તનો → પ્રત્યક્ષીકરણ → નિર્ણય ઘડતર → માનસિક ક્રિયાઓ"
+    ],
+    "ans": 1,
+    "unit": "એકમ 2: વિશિષ્ટ જરૂરિયાતવાળા બાળકો",
+    "exp": "મોડ્યુલ પાના 20-22 પર જ્ઞાનાત્મક પ્રક્રિયાના ચાર સોપાનો આ મુજબ છે: (1) પ્રત્યક્ષીકરણ, (2) માનસિક ક્રિયાઓ, (3) વર્તનો, અને (4) નિર્ણય ઘડતર."
+  },
+  {
+    "q": "પ્રશ્ન 54. જ્ઞાનાત્મક પ્રક્રિયાના પ્રથમ સોપાન 'પ્રત્યક્ષીકરણ' (Perception) માં કઈ ત્રણ ક્રમિક આંતરિક ક્રિયાઓ થાય છે?",
+    "options": [
+      "1. પંચેન્દ્રિય વડે માહિતી (ઉદ્દીપક) સ્વીકારે, 2. સ્વીકારેલ માહિતીને પૂર્વ અનુભવ સાથે જોડે, 3. માહિતીની ઓળખ કે અર્થઘટન કરે.",
+      "1. વાંચન કરે, 2. લેખન કરે, 3. પરીક્ષા આપે.",
+      "1. તર્ક કરે, 2. ભૂલી જાય, 3. સ્મૃતિ સંચય કરે.",
+      "1. સંવેદના ગુમાવે, 2. વર્તન કરે, 3. નિર્ણય લે."
+    ],
+    "ans": 0,
+    "unit": "એકમ 2: વિશિષ્ટ જરૂરિયાતવાળા બાળકો",
+    "exp": "મોડ્યુલ પાના 21 અનુસાર પ્રત્યક્ષીકરણમાં સંવેદન અંગો દ્વારા માહિતી ગ્રહણ, પૂર્વ અનુભવ સાથે જોડાણ અને અર્થબોધ/અર્થઘટન થાય છે."
+  },
+  {
+    "q": "પ્રશ્ન 55. જ્ઞાનાત્મક પ્રક્રિયાના બીજા સોપાન 'માનસિક ક્રિયાઓ' માં સ્મૃતિ સંચય અને તર્ક થાય છે. જો વર્ગમાં અતિ પ્રતિભાશાળી (Gifted) બાળક હોય તો તેને આ સોપાનમાં કઈ સમસ્યા થઈ શકે?",
+    "options": [
+      "તે માહિતી સાવ ભૂલી જાય છે.",
+      "તેનામાં આ પ્રક્રિયા અતિ ઝડપી હોવાથી સામાન્ય બાળકોની રાહ જોવામાં કંટાળો કે નીરસતા અનુભવે છે.",
+      "તેના સંવેદન અંગો કામ કરતાં બંધ થઈ જાય છે.",
+      "તે ક્યારેય વાંચી શકતું નથી."
+    ],
+    "ans": 1,
+    "unit": "એકમ 2: વિશિષ્ટ જરૂરિયાતવાળા બાળકો",
+    "exp": "મોડ્યુલ પાના 21-22 અનુસાર પ્રતિભાશાળી બાળકોમાં માનસિક પ્રક્રિયા ખૂબ ઝડપી હોવાથી સામાન્ય ગતિએ ચાલતા વર્ગખંડમાં તેમને નીરસતા અને કંટાળો આવે છે."
+  },
+  {
+    "q": "પ્રશ્ન 56. જ્ઞાનાત્મક પ્રક્રિયાના ત્રીજા સોપાન 'વર્તનો' (Behaviors) માં પરિણામની રજૂઆત મુખ્યત્વે કયા બે સ્વરૂપે અભિવ્યક્ત થાય છે?",
+    "options": [
+      "વાંચન અને મનન દ્વારા",
+      "(1) શબ્દો દ્વારા (ભાષાકીય) અને (2) સ્નાયુઓ દ્વારા (મોટર/શારીરિક સંકલન)",
+      "માત્ર આંખોના પલકારા દ્વારા",
+      "ધ્યાન અને સમાધિ દ્વારા"
+    ],
+    "ans": 1,
+    "unit": "એકમ 2: વિશિષ્ટ જરૂરિયાતવાળા બાળકો",
+    "exp": "મોડ્યુલ પાના 22 અનુસાર માનસિક પ્રક્રિયાનું પરિણામ બાળક મુખ્યત્વે બે રીતે વર્તનમાં મૂકે છે: શબ્દો દ્વારા અને સ્નાયુઓ દ્વારા."
+  },
+  {
+    "q": "પ્રશ્ન 57. 'ડિસ્લેક્સિયા' (Dyslexia) શબ્દ કયા બે ઘટક શબ્દોથી બન્યો છે અને તેનો વાસ્તવિક અર્થ શું થાય છે?",
+    "options": [
+      "'Dys' (મુશ્કેલ) અને 'lexia' (ગણિત) = ગણિતની ખામી",
+      "'Dys' (Disorder - વિસંગતતા) અને 'lexia' (શબ્દ) = શબ્દ સંબંધિત વિસંગતતા અથવા વાચન અક્ષમતા/શબ્દ-અંધતા",
+      "'Dys' (લેખન) અને 'lexia' (અક્ષર) = ખરાબ અક્ષરો",
+      "'Dys' (ધ્યાન) અને 'lexia' (દોડવું) = અતિસક્રિયતા"
+    ],
+    "ans": 1,
+    "unit": "એકમ 2: વિશિષ્ટ જરૂરિયાતવાળા બાળકો",
+    "exp": "મોડ્યુલ પાના 23 અનુસાર Dyslexia એ Disorder અને lexia (શબ્દ) પરથી બનેલો છે, જેને શબ્દ-અંધતા કે વાચન અપંગતા પણ કહે છે."
+  },
+  {
+    "q": "પ્રશ્ન 58. એક બાળક વાંચતી વખતે 'ગ' ને બદલે 'ઘ' બોલે છે, અથવા 'ચ' નો 'છ' ઉચ્ચાર કરે છે. આ બાળકમાં ડિસ્લેક્સિયાનો કયો પેટા-પ્રકાર જોવા મળે છે?",
+    "options": [
+      "દ્રષ્ટિ વિષયક શબ્દ વિસંગતતા",
+      "શ્રવણ શબ્દ વિસંગતતા (Auditory dyslexia - ધ્વનિ સંકેતોનું લિપિ સાથે જોડાણ ન થવું)",
+      "ડિસ્કેલ્ક્યુલિયા",
+      "ડિસ્ગ્રાફિયા"
+    ],
+    "ans": 1,
+    "unit": "એકમ 2: વિશિષ્ટ જરૂરિયાતવાળા બાળકો",
+    "exp": "મોડ્યુલ પાના 23 અનુસાર શ્રવણ શબ્દ વિસંગતતામાં બાળક લેખિત લિપિને ધ્વનિ સંકેત સાથે જોડવામાં ગૂંચવાય છે (દા.ત. 'ગ' નો 'ઘ' ઉચ્ચાર)."
+  },
+  {
+    "q": "પ્રશ્ન 59. એક વિદ્યાર્થી વાંચતી વખતે 'અજગર' શબ્દને 'ખમગર' કે 'બજગર' વાંચે છે અને અંકોમાં '1' ને '9' અથવા '9' ને '1' વાંચે છે. આ કઈ સમસ્યા દર્શાવે છે?",
+    "options": [
+      "શ્રવણ શબ્દ વિસંગતતા",
+      "દ્રષ્ટિ વિષયક શબ્દ વિસંગતતા (Visual Dyslexia - આકારો, અક્ષરો કે શબ્દો પારખવામાં મુશ્કેલી)",
+      "ઓટીઝમ",
+      "અલ્પદ્રષ્ટિ"
+    ],
+    "ans": 1,
+    "unit": "એકમ 2: વિશિષ્ટ જરૂરિયાતવાળા બાળકો",
+    "exp": "મોડ્યુલ પાના 23 અનુસાર દ્રષ્ટિ વિષયક શબ્દ વિસંગતતામાં ભળતા અક્ષરો કે આકારો વચ્ચે તફાવત પારખવામાં બાળક થાપ ખાઈ જાય છે."
+  },
+  {
+    "q": "પ્રશ્ન 60. ડિસ્લેક્સિયા ધરાવતા બાળકના બુદ્ધિઆંક (IQ) સંદર્ભે કયું વિધાન સૌથી વધુ વૈજ્ઞાનિક રીતે સાચું છે?",
+    "options": [
+      "તેમનો બુદ્ધિઆંક હંમેશા 70 થી નીચે (મંદબુદ્ધિ) હોય છે.",
+      "તેઓ તેમના સહપાઠી જેવો સામાન્ય કે સામાન્યથી પણ વિશેષ બુદ્ધિઆંક ધરાવતા હોવા છતાં વાંચનમાં નબળા પડે છે.",
+      "તેઓ કોઈ પણ બાબત શીખી શકતા જ નથી.",
+      "તેઓ માત્ર મગજના લકવાથી પીડિત હોય છે."
+    ],
+    "ans": 1,
+    "unit": "એકમ 2: વિશિષ્ટ જરૂરિયાતવાળા બાળકો",
+    "exp": "મોડ્યુલ પાના 23-24 અનુસાર ડિસ્લેક્સિયા ધરાવતા બાળકોનો IQ સામાન્ય કે તેનાથી પણ વધુ હોઈ શકે છે, છતાં તેમની વાંચન ક્ષમતા વિસંગત હોય છે."
+  },
+  {
+    "q": "પ્રશ્ન 61. એક બાળક સંખ્યા લખવામાં અંકોના ક્રમ ઉલટાવી નાખે છે (જેમ કે '31' ને બદલે '13' લખે, 319 ને બદલે 391 લખે) અને ગાણિતિક ચિહ્નો '+' અને '×' વચ્ચે ગૂંચવાય છે. આ લક્ષણ કઈ અક્ષમતાનું છે?",
+    "options": [
+      "ડિસ્લેક્સિયા",
+      "ડિસ્કેલ્ક્યુલિયા (Dyscalculia - ગણનમાં અક્ષમતા)",
+      "ડિસ્ગ્રાફિયા",
+      "ઓટીઝમ"
+    ],
+    "ans": 1,
+    "unit": "એકમ 2: વિશિષ્ટ જરૂરિયાતવાળા બાળકો",
+    "exp": "મોડ્યુલ પાના 24 અનુસાર ગણનમાં વિસંગતતા, ગાણિતિક સંકેતોની ગૂંચવણ અને અંકોના ક્રમ બદલવા એ ડિસ્કેલ્ક્યુલિયાના મુખ્ય લક્ષણો છે."
+  },
+  {
+    "q": "પ્રશ્ન 62. એક વિદ્યાર્થી મૌખિક પ્રશ્નોત્તરીમાં ખૂબ સચોટ જવાબો આપે છે, પરંતુ જ્યારે તેને લખવાનું કહેવામાં આવે ત્યારે પેન અયોગ્ય રીતે પકડે છે, અક્ષરો અત્યંત ખરાબ અને આડા-અવળા કાઢે છે, અને 'BAT' ને બદલે 'ABT' કે 'Man' ને બદલે 'Wan' લખે છે. આ બાળક કઈ ખામી ધરાવે છે?",
+    "options": [
+      "ડિસ્ગ્રાફિયા (Dysgraphia - લેખનમાં અક્ષમતા)",
+      "શ્રવણ મંદતા",
+      "સેરેબ્રલ પાલ્સી",
+      "માનસિક મંદતા"
+    ],
+    "ans": 0,
+    "unit": "એકમ 2: વિશિષ્ટ જરૂરિયાતવાળા બાળકો",
+    "exp": "મોડ્યુલ પાના 25-26 અનુસાર મૌખિક રજૂઆત ઉત્તમ હોવા છતાં લેખિત રજૂઆતમાં સ્નાયવિક સંકલનની ખામીથી શબ્દો આડા-અવળા લખવા એ Dysgraphia છે."
+  },
+  {
+    "q": "પ્રશ્ન 63. નેશનલ ટ્રસ્ટ એક્ટ 1999 મુજબ 'સ્વલીનતા' (Autism) ની સાચી વ્યાખ્યા અને મુખ્ય લક્ષણો કયા છે?",
+    "options": [
+      "માત્ર હાડકાની ખામી અને ચાલવામાં મુશ્કેલી.",
+      "અવ્યવસ્થિત કૌશલ્ય વિકાસની એવી અવસ્થા કે જે પ્રત્યાયન અને સામાજિક વર્તનને અસર કરે છે, જેમાં વ્યક્તિ એકધારું/પુનરાવર્તિત વર્તન કરે છે અને આઈ-કોન્ટેક્ટ ટાળે છે.",
+      "અતિશય વાચાળપણું અને અજાણ્યા લોકો સાથે તરત ભળી જવું.",
+      "માત્ર 60 વર્ષ પછી થતી બીમારી."
+    ],
+    "ans": 1,
+    "unit": "એકમ 2: વિશિષ્ટ જરૂરિયાતવાળા બાળકો",
+    "exp": "મોડ્યુલ પાના 26 અનુસાર ઓટીઝમ એ કમ્યુનિકેશન અને સામાજિક વર્તનને અસર કરતી સ્થિતિ છે જેમાં સામાજિક વિમુખતા અને પુનરાવર્તિત હલનચલન જોવા મળે છે."
+  },
+  {
+    "q": "પ્રશ્ન 64. ઓટીઝમ ધરાવતા બાળકના મૂલ્યાંકન માટે કયા પાસાંને કેન્દ્રમાં રાખી મૂલ્યાંકન કસોટી રચવી જોઈએ?",
+    "options": [
+      "માત્ર લેખિત ગણિત કસોટી",
+      "સામાજિકતા વિકાસ અને ભાષા અભિવ્યક્તિ (કથન કૌશલ્ય) દર્શાવતા માપદંડો",
+      "દોડવાની સ્પર્ધા",
+      "સામાન્ય સામાન્ય જ્ઞાનની પરીક્ષા"
+    ],
+    "ans": 1,
+    "unit": "એકમ 2: વિશિષ્ટ જરૂરિયાતવાળા બાળકો",
+    "exp": "મોડ્યુલ પાના 27 અનુસાર ઓટીઝમ બાળક એકલવાયું હોવાથી સામાજિકતા વિકાસ અને કથન કૌશલ્યને ધ્યાને રાખીને મૂલ્યાંકન કરવું જોઈએ."
+  },
+  {
+    "q": "પ્રશ્ન 65. અધ્યયન અક્ષમતા ધરાવતા બાળકોના શિક્ષણ માટે નીચેના પૈકી કયો શિક્ષણશાસ્ત્રીય સિદ્ધાંત સૌથી વધુ કારગત નીવડે છે?",
+    "options": [
+      "એકસાથે આખા પ્રકરણનું ગોખણપટ્ટી કરાવવું.",
+      "'નાના પગલાંનો સિદ્ધાંત' (Principle of Small Steps) અને કાર્ય વિભાજન (Task Analysis)",
+      "ભૂલો કરવા બદલ શારીરિક શિક્ષા કરવી.",
+      "અન્ય તેજસ્વી વિદ્યાર્થીઓ સાથે સતત સરખામણી કરવી."
+    ],
+    "ans": 1,
+    "unit": "એકમ 2: વિશિષ્ટ જરૂરિયાતવાળા બાળકો",
+    "exp": "મોડ્યુલ પાના 27-28 અનુસાર નાના પગલાંના સિદ્ધાંતથી શીખવવું, કાર્યનું વિભાજન કરવું અને ભૂલ સુધારની જરૂરિયાત ઊભી કરવી એ શ્રેષ્ઠ અભિગમ છે."
+  },
+  {
+    "q": "પ્રશ્ન 66. વિશ્વપ્રસિદ્ધ વૈજ્ઞાનિક એડિસન, ચિત્રકાર પાબ્લો પિકાસો અને ગ્રેહામ બેલના જીવનનો સંદર્ભ મોડ્યુલના સારાંશમાં કયા હેતુથી આપવામાં આવ્યો છે?",
+    "options": [
+      "તેઓ જન્મથી જ શ્રીમંત હતા તે દર્શાવવા.",
+      "બાળપણમાં અધ્યયન વિસંગતતા/વિશિષ્ટ લક્ષણો હોવા છતાં યોગ્ય માવજત અને આત્મવિશ્વાસથી તેઓ અપ્રતિમ સર્જક અને પ્રતિભાવંત બન્યા હતા તે સાબિત કરવા.",
+      "તેઓ વિશિષ્ટ શાળાઓમાં ભણ્યા હતા તે દર્શાવવા.",
+      "સામાન્ય શિક્ષણ નકામું છે તે પુરવાર કરવા."
+    ],
+    "ans": 1,
+    "unit": "એકમ 2: વિશિષ્ટ જરૂરિયાતવાળા બાળકો",
+    "exp": "મોડ્યુલ પાના 28 અનુસાર યોગ્ય માવજતથી અક્ષમતા ધરાવતા બાળકોમાંથી પણ એડિસન, પિકાસો કે ગ્રેહામ બેલ જેવા પ્રતિભાવંત વ્યક્તિઓ સમાજને મળી શકે છે."
+  },
+  {
+    "q": "પ્રશ્ન 67. RPWD Act 2016 અનુસાર વિકલાંગ વિદ્યાર્થીઓની જરૂરિયાત સંતોષવા પરીક્ષા વ્યવસ્થામાં કઈ સુવિધાઓ આપવી ફરજિયાત છે?",
+    "options": [
+      "પરીક્ષા પેપર પૂર્ણ કરવા માટે વધારાનો સમય આપવો.",
+      "લહિયા (Scribe) અથવા શ્રુતલેખકની સુવિધા આપવી.",
+      "દ્વિતીય અને તૃતીય ભાષાના અભ્યાસક્રમમાંથી મુક્તિ આપવી.",
+      "ઉપરોક્ત તમામ"
+    ],
+    "ans": 3,
+    "unit": "એકમ 2: વિશિષ્ટ જરૂરિયાતવાળા બાળકો",
+    "exp": "મોડ્યુલ પાના 17 પર ક્રમાંક 13 હેઠળ વધારાનો સમય, લહિયાની સુવિધા અને બીજી-ત્રીજી ભાષામાંથી મુક્તિ આ ત્રણેય બાબતો દર્શાવેલી છે."
+  },
+  {
+    "q": "પ્રશ્ન 68. પ્રાચીન ભારતીય ઈતિહાસમાં 'અષ્ટાવક્ર' અને 'સૂરદાસ' નું દ્રષ્ટાંત મોડ્યુલમાં કયા સંદર્ભે પ્રસ્તુત કરવામાં આવ્યું છે?",
+    "options": [
+      "સમાજમાં વિકલાંગ વ્યક્તિઓના અનાદરનું પ્રતીક",
+      "શારીરિક/દ્રષ્ટિની ક્ષતિ હોવા છતાં તત્કાલીન સમાજમાં સ્વીકાર, સન્માન અને જ્ઞાન પ્રાપ્તિનું ઉત્તમ ઉદાહરણ",
+      "પ્રાચીન સમયમાં વિશિષ્ટ શાળાઓની હાજરી સાબિત કરવા",
+      "ગુરુકુળ પ્રથામાં પ્રવેશબંધી દર્શાવવા"
+    ],
+    "ans": 1,
+    "unit": "એકમ 2: વિશિષ્ટ જરૂરિયાતવાળા બાળકો",
+    "exp": "મોડ્યુલ પાના 15 અનુસાર અષ્ટાવક્ર અને સૂરદાસ એ વિકલાંગ હોવા છતાં સમાજમાં સ્વીકૃતિ અને શિક્ષણમાં સમાવેશનનું ગૌરવપૂર્ણ ઐતિહાસિક પ્રતીક છે."
+  },
+  {
+    "q": "પ્રશ્ન 69. વિધાન (A): સંવેદન અંગોની ક્ષતિથી જ્ઞાનાત્મક પ્રક્રિયાનું પ્રથમ સોપાન 'પ્રત્યક્ષીકરણ' અવરોધાય છે. \nકારણ (R): પ્રત્યક્ષીકરણ માટે આંખ, કાન, સ્પર્શ જેવી પંચેન્દ્રિયો દ્વારા ઉદ્દીપકનું ગ્રહણ થવું અનિવાર્ય છે. \nયોગ્ય વિકલ્પ પસંદ કરો:",
+    "options": [
+      "(A) સાચું છે અને (R) ખોટું છે.",
+      "(A) ખોટું છે અને (R) સાચું છે.",
+      "(A) અને (R) બંને સાચાં છે અને (R) એ (A) ની સાચી સમજૂતી છે.",
+      "બંને વિધાનો અસત્ય છે."
+    ],
+    "ans": 2,
+    "unit": "એકમ 2: વિશિષ્ટ જરૂરિયાતવાળા બાળકો",
+    "exp": "જો પંચેન્દ્રિયમાં ખામી હોય તો ઉદ્દીપક મગજ સુધી પહોંચતું નથી, જેથી પ્રત્યક્ષીકરણ ખંડિત થાય છે અને અધ્યયન મુશ્કેલી સર્જાય છે."
+  },
+  {
+    "q": "પ્રશ્ન 70. ઓટીઝમ ધરાવતા બાળકના વર્તનમાં કઈ વિશિષ્ટ સંવેદનાત્મક બાબત વારંવાર જોવા મળે છે?",
+    "options": [
+      "તે હંમેશા ખૂબ ઊંચા અવાજમાં સંગીત સાંભળવાનું પસંદ કરે છે.",
+      "તે અવાજ અને સ્પર્શ પ્રત્યે અસાધારણ સંવેદનશીલતા (Hypersensitivity) દર્શાવે છે અને અનપેક્ષિત તીવ્ર પ્રતિક્રિયા આપે છે.",
+      "તેને અજાણ્યા લોકો સાથે ગળે મળવું ગમે છે.",
+      "તે ક્યારેય એક રમકડાં સાથે રમતું નથી."
+    ],
+    "ans": 1,
+    "unit": "એકમ 2: વિશિષ્ટ જરૂરિયાતવાળા બાળકો",
+    "exp": "મોડ્યુલ પાના 27 અનુસાર ઓટીઝમ ધરાવતા બાળકો અવાજ અને સ્પર્શ પ્રત્યે અતિસંવેદનશીલ હોવાથી ઘણીવાર અસાધારણ પ્રતિક્રિયા આપી બેસે છે. \n★ એકમ 3: જાતિ, શાળા અને સમાજ"
+  },
+  {
+    "q": "પ્રશ્ન 71. શિક્ષણની મુખ્ય ચાર આધારશિલાઓ કઈ કઈ છે જે પરસ્પરાવલંબી ગણાય છે?",
+    "options": [
+      "ભૌતિક, રસાયણ, ગણિત અને જીવવિજ્ઞાન",
+      "તાત્વિક (Philosophical), સામાજિક (Sociological), મનોવૈજ્ઞાનિક (Psychological) અને જૈવિક (Biological)",
+      "પ્રાથમિક, માધ્યમિક, ઉચ્ચતર અને ટેકનિકલ",
+      "વાંચન, ગણન, લેખન અને ચિંતન"
+    ],
+    "ans": 1,
+    "unit": "એકમ 3: જાતિ, શાળા અને સમાજ",
+    "exp": "મોડ્યુલ પાના 31 પર પ્રસ્તાવનામાં જ પ્રથમ વાક્ય છે: 'શિક્ષણની મુખ્ય ચાર આધારશિલાઓ છે: તાત્વિક, સામાજિક, મનોવૈજ્ઞાનિક અને જૈવિક.'"
+  },
+  {
+    "q": "પ્રશ્ન 72. અંગ્રેજી ભાષાના બે શબ્દો 'Sex' અને 'Gender' વચ્ચેનો તાત્વિક અને વૈજ્ઞાનિક તફાવત કયો છે?",
+    "options": [
+      "બંને શબ્દો સંપૂર્ણપણે એકબીજાના પર્યાય છે.",
+      "'Sex' એ જૈવિક લિંગભેદ (સ્ત્રી અને પુરુષની જન્મજાત શારીરિક રચના) છે; જ્યારે 'Gender' એ જૈવિક નહીં પરંતુ સામાજિક, સાંસ્કૃતિક અને મનોવૈજ્ઞાનિક આધાર પર નક્કી થતી બાબત (સ્ત્રીત્વ અને પુરુષત્વના ગુણલક્ષણો) છે.",
+      "Gender જન્મજાત હોય છે અને Sex સમાજ નક્કી કરે છે.",
+      "Sex માત્ર ભારતમાં વપરાય છે અને Gender માત્ર પશ્ચિમમાં."
+    ],
+    "ans": 1,
+    "unit": "એકમ 3: જાતિ, શાળા અને સમાજ",
+    "exp": "મોડ્યુલ પાના 31 અનુસાર Sex જૈવિક શારીરિક રચના દર્શાવે છે જ્યારે Gender એ સમાજ અને સંસ્કૃતિ દ્વારા ઘડાયેલી ભૂમિકાઓ અને ગુણો સૂચવે છે."
+  },
+  {
+    "q": "પ્રશ્ન 73. સમાજમાં પરંપરાગત રીતે પુરુષત્વ અને સ્ત્રીત્વ માટે અપેક્ષિત ગુણલક્ષણો સંદર્ભે કયું વિધાન સાચું છે?",
+    "options": [
+      "સ્ત્રીમાં માત્ર પુરુષના અને પુરુષમાં માત્ર સ્ત્રીના ગુણો હોય છે.",
+      "ખડતલપણું, શૂરવીરતા અને બહાદુરી પુરુષ પાસે જ્યારે કોમળતા, દયા, લાગણી અને સહનશીલતા સ્ત્રી પાસે અપેક્ષિત મનાય છે; પરંતુ વાસ્તવમાં દરેક વ્યક્તિમાં બંને ગુણો પરિસ્થિતિ મુજબ હોય છે.",
+      "શૂરવીર સ્ત્રીઓ ક્યારેય અસ્તિત્વમાં હોતી નથી.",
+      "પુરુષોમાં લાગણી કે દયાનો સંપૂર્ણ અભાવ હોય છે."
+    ],
+    "ans": 1,
+    "unit": "એકમ 3: જાતિ, શાળા અને સમાજ",
+    "exp": "મોડ્યુલ પાના 31 અનુસાર સમાજમાં પરંપરાગત માન્યતાઓ હોવા છતાં 'શૂરવીર સ્ત્રી' અને 'કોમળ પુરુષ' ના દાખલા જોવા મળે છે અને બંને ગુણો દરેક વ્યક્તિમાં રહેલા છે."
+  },
+  {
+    "q": "પ્રશ્ન 74. NCF 2005 ના પાંચ મુખ્ય માર્ગદર્શક સિદ્ધાંતોમાં નીચેના પૈકી કોનો સમાવેશ થતો નથી?",
+    "options": [
+      "જ્ઞાનને શાળા બહારના જીવન સાથે જોડવું",
+      "ભણતર ગોખણપટ્ટીની પદ્ધતિઓથી મુક્ત રહે તે સુનિશ્ચિત કરવું",
+      "પાઠ્યપુસ્તક કેન્દ્રી શિક્ષણને બદલે બાળકોના સર્વાંગી વિકાસની તક પૂરી પાડવી",
+      "વાર્ષિક પરીક્ષામાં વિદ્યાર્થીઓને ક્રમાંક આપી રેન્કિંગ આપવું"
+    ],
+    "ans": 3,
+    "unit": "એકમ 3: જાતિ, શાળા અને સમાજ",
+    "exp": "મોડ્યુલ પાના 33 અનુસાર NCF-2005 ના 5 માર્ગદર્શક સિદ્ધાંતોમાં જ્ઞાનને બહારના જીવન સાથે જોડવું, ગોખણપટ્ટી મુક્તિ, સર્વાંગી વિકાસ, જીવન-શિક્ષણ જોડાણ અને મૂલ્યાંકનમાં લવચિકતા છે; રેન્કિંગ આપવાનો સિદ્ધાંત નથી."
+  },
+  {
+    "q": "પ્રશ્ન 75. સંરચનાવાદી (Constructivist) અધ્યાપન અભિગમ મુજબ અભ્યાસક્રમમાં બાળકની ભૂમિકા શું સ્વીકારવામાં આવી છે?",
+    "options": [
+      "બાળક માત્ર જ્ઞાનનો ઉપભોક્તા (Consumer) છે.",
+      "બાળક જ્ઞાનનો રચિયેતા (Constructor) છે, માત્ર ઉપભોક્તા નહીં; તે અનુભવો અને ક્રિયા દ્વારા જ્ઞાનનું સર્જન જાતે કરે છે.",
+      "બાળક કોરી સ્લેટ (Tabula Rasa) છે.",
+      "બાળકે શિક્ષકના વ્યાખ્યાનને મુખપાઠ કરી લેવાનું છે."
+    ],
+    "ans": 1,
+    "unit": "એકમ 3: જાતિ, શાળા અને સમાજ",
+    "exp": "મોડ્યુલ પાના 33 અનુસાર 'બાળક જ્ઞાનનો રચિયેતા છે ઉપભોક્તા નહીં તે સિદ્ધાંત પર અભ્યાસક્રમમાં અધ્યયન અનુભવોની ગોઠવણી' કરવામાં આવી છે."
+  },
+  {
+    "q": "પ્રશ્ન 76. પાઠ્યપુસ્તકોમાં જાતિગત સમાનતા (Gender Equity) સુનિશ્ચિત કરવા માટે કઈ બાબતની ખાસ તકેદારી રાખવામાં આવે છે?",
+    "options": [
+      "માત્ર પુરુષ મહાનુભાવોના જીવનચરિત્રો મૂકવા.",
+      "સ્ત્રી અને પુરુષ પાત્રોની રજૂઆત સમાન રીતે કરવી, લખાણની શૈલીમાં તટસ્થ ભાષા વાપરવી અને વ્યવસાયો કે ઘરકામમાં લિંગભેદ દૂર કરી બંનેના દરજ્જાને સમાન બતાવવો.",
+      "વિજ્ઞાન વિષયમાં સ્ત્રી પાત્રોને સંપૂર્ણ અવગણવા.",
+      "પુરુષોને માત્ર ઘરકામમાં અને સ્ત્રીઓને માત્ર યુદ્ધમાં જ દર્શાવવા."
+    ],
+    "ans": 1,
+    "unit": "એકમ 3: જાતિ, શાળા અને સમાજ",
+    "exp": "મોડ્યુલ પાના 34 અનુસાર પાઠ્યપુસ્તકોમાં ચિત્રો, ઉદાહરણો, પાત્રો અને સામાજિક ભૂમિકાઓમાં જાતિગત સમાનતા અને તટસ્થતા જળવાય છે."
+  },
+  {
+    "q": "પ્રશ્ન 77. સામાન્ય રીતે અસરકારક વર્ગખંડ વ્યવહાર (Classroom Interaction) ને મુખ્ય કયા ત્રણ વર્ગોમાં વિભાજિત કરી શકાય?",
+    "options": [
+      "1. વાંચન, 2. લેખન, 3. ગણન",
+      "1. શિક્ષકનું પ્રત્યાયન, 2. વિદ્યાર્થીનું પ્રત્યાયન, અને 3. શાંતિની સ્થિતિ (મૌન/ક્ષણિક વિરામ અને દ્વિધાભરી સ્થિતિ)",
+      "1. પ્રશ્નોત્તરી, 2. ગૃહકાર્ય, 3. મૂલ્યાંકન",
+      "1. શિસ્ત, 2. સજા, 3. ઈનામ"
+    ],
+    "ans": 1,
+    "unit": "એકમ 3: જાતિ, શાળા અને સમાજ",
+    "exp": "મોડ્યુલ પાના 34-35 અનુસાર અસરકારક વર્ગખંડ વ્યવહારના 3 વર્ગો: (1) શિક્ષકનું પ્રત્યાયન, (2) વિદ્યાર્થીનું પ્રત્યાયન, અને (3) શાંતિની સ્થિતિ છે."
+  },
+  {
+    "q": "પ્રશ્ન 78. વર્ગખંડ વ્યવહારમાં 'વિદ્યાર્થીના પ્રત્યાયન' (Student Talk) માં મુખ્યત્વે કયા બે ઘટકોનો સમાવેશ થાય છે?",
+    "options": [
+      "શિક્ષા અને ઈનામ",
+      "વિદ્યાર્થીનો પ્રતિભાવ (Student Response) અને વિદ્યાર્થીની પહેલ (Student Initiation)",
+      "ગેરહાજરી અને અનિયમિતતા",
+      "માત્ર લેખિત પરીક્ષા"
+    ],
+    "ans": 1,
+    "unit": "એકમ 3: જાતિ, શાળા અને સમાજ",
+    "exp": "મોડ્યુલ પાના 35 અનુસાર વિદ્યાર્થીના પ્રત્યાયનમાં 'વિદ્યાર્થીનો પ્રતિભાવ અને પહેલ' નો સમાવેશ થાય છે (જે ફ્લેન્ડર્સ વર્ગ વ્યવહાર વિશ્લેષણ આધારિત છે)."
+  },
+  {
+    "q": "પ્રશ્ન 79. વર્ગખંડમાં જાતિગત સમાનતા જાળવવા માટે શિક્ષકે બેઠક વ્યવસ્થા અને જવાબદારીઓની વહેંચણીમાં શું કરવું જોઈએ?",
+    "options": [
+      "છોકરાઓને આગળ બેસાડવા અને છોકરીઓને પાછળ.",
+      "વર્ગખંડની બેઠક વ્યવસ્થામાં જાતિગત ભેદભાવ ન રાખવો અને રોજિંદી જવાબદારીઓ લિંગભેદ આધારિત નહીં પરંતુ વિદ્યાર્થીના રસ, રુચિ અને આવડત અનુસાર સોંપવી.",
+      "સફાઈનું કામ માત્ર કન્યાઓને અને વજન ઊંચકવાનું કામ માત્ર કુમારોને આપવું.",
+      "છોકરા-છોકરીઓ વચ્ચે સંપૂર્ણ વાતચીત બંધ કરાવવી."
+    ],
+    "ans": 1,
+    "unit": "એકમ 3: જાતિ, શાળા અને સમાજ",
+    "exp": "મોડ્યુલ પાના 35-36 અનુસાર વર્ગની જવાબદારીઓ જાતિગત પૂર્વગ્રહ વગર રસ-રુચિ અને આવડતને આધારે સોંપવી જોઈએ."
+  },
+  {
+    "q": "પ્રશ્ન 80. હકારાત્મક વર્ગખંડ ભાવાવરણના નિર્માણ માટે શિક્ષક અને વિદ્યાર્થી વચ્ચે થતી આંતરક્રિયા કેવી હોવી અનિવાર્ય છે?",
+    "options": [
+      "માત્ર એકતરફી (શિક્ષક કેન્દ્રી)",
+      "દ્વિધ્રુવી (Bipolar / Two-way) અને પારસ્પરિક હૂંફ તેમજ સન્માનયુક્ત",
+      "ભય અને દંડ આધારિત",
+      "સંપૂર્ણ મૌન આધારિત"
+    ],
+    "ans": 1,
+    "unit": "એકમ 3: જાતિ, શાળા અને સમાજ",
+    "exp": "મોડ્યુલ પાના 36 અનુસાર હકારાત્મક વર્ગખંડ ભાવાવરણ માટે શિક્ષક-વિદ્યાર્થી વચ્ચેની આંતરક્રિયા દ્વિધ્રુવી હોવી અનિવાર્ય છે; એકતરફી પ્રત્યાયન વર્ગને નીરસ બનાવે છે."
+  },
+  {
+    "q": "પ્રશ્ન 81. શિક્ષક-વિદ્યાર્થી આંતરક્રિયામાં જાતિગત ભેદભાવ દૂર કરવા માટે શિક્ષકે કઈ ભૂમિકા ભજવવી જોઈએ?",
+    "options": [
+      "અધિકારવાદી શાસકની",
+      "સુગમકર્તા (Facilitator) ની, જે વિદ્યાર્થીઓના વ્યક્તિત્વનો બિનશરતી સ્વીકાર કરી બંનેને અભિવ્યક્તિની સમાન તકો આપે",
+      "માત્ર મૌન દર્શકની",
+      "કઠોર પરીક્ષકની"
+    ],
+    "ans": 1,
+    "unit": "એકમ 3: જાતિ, શાળા અને સમાજ",
+    "exp": "મોડ્યુલ પાના 36 અનુસાર શિક્ષકે 'સુગમકર્તા' ની ભૂમિકા ભજવી વિદ્યાર્થીઓના આત્મગૌરવને જાળવવું જોઈએ."
+  },
+  {
+    "q": "પ્રશ્ન 82. શાળામાં સહ-અભ્યાસિક પ્રવૃત્તિઓ જેવી કે NCC, NSS અને સ્કાઉટ-ગાઈડનું આયોજન કયા ઉમદા ઉદ્દેશથી કરવામાં આવે છે?",
+    "options": [
+      "શાળાનું મેદાન સાફ રાખવા માટે",
+      "વિદ્યાર્થીઓની મૂળ વૃત્તિઓનું ઉર્ધ્વીકરણ (Sublimation) કરવા અને સમતાલક્ષી શિસ્તનું નિર્માણ કરવા",
+      "પરીક્ષાના ગુણ ઘટાડવા માટે",
+      "સમય પસાર કરવા"
+    ],
+    "ans": 1,
+    "unit": "એકમ 3: જાતિ, શાળા અને સમાજ",
+    "exp": "મોડ્યુલ પાના 37 અનુસાર સ્કાઉટ ગાઈડ, એનસીસી અને એનએસએસ જેવી રચનાત્મક પ્રવૃત્તિઓ દ્વારા વિદ્યાર્થીઓની વૃત્તિઓનું ઉર્ધ્વીકરણ થાય છે."
+  },
+  {
+    "q": "પ્રશ્ન 83. કુટુંબના સામાજિક માળખા સાથેના પ્રત્યાયન સંદર્ભે મોડ્યુલમાં આપેલ 'કોમલના કુટુંબ' ના ઉદાહરણનો મુખ્ય નિષ્કર્ષ શું છે?",
+    "options": [
+      "કુટુંબે માત્ર પોતાના સગા-સંબંધીઓ સાથે જ સંબંધ રાખવો જોઈએ.",
+      "કુટુંબના સભ્યો જ્ઞાતિ, વ્યવસાય જૂથ, સામાજિક સેવા સંસ્થાઓ અને કલા મંડળો જેવી વિવિધ સંસ્થાઓ સાથે આદાન-પ્રદાન કરી પોતાની આગવી ઓળખ ઊભી કરે છે અને તંદુરસ્ત સમાજ રચે છે.",
+      "વ્યાવસાયિક કુટુંબો સમાજ સેવા કરી શકતા નથી.",
+      "કુટુંબ એ શાળાથી સ્વતંત્ર એકમ છે."
+    ],
+    "ans": 1,
+    "unit": "એકમ 3: જાતિ, શાળા અને સમાજ",
+    "exp": "મોડ્યુલ પાના 32 અનુસાર કોમલના કુટુંબ દ્વારા દર્શાવાયું છે કે કુટુંબ સમાજના અન્ય ઘટકો સાથે આદાન-પ્રદાન કરીને પરસ્પર લાભાન્વિત થાય છે."
+  },
+  {
+    "q": "પ્રશ્ન 84. શિક્ષકે કુમાર અને કન્યા વચ્ચે ઉંમર અને લિંગભેદને કારણે સર્જાતા શારીરિક-માનસિક ફેરફારોને કઈ રીતે મૂલવવા જોઈએ?",
+    "options": [
+      "તેને શરમજનક બાબત ગણી વર્ગમાં ચર્ચા ટાળવી.",
+      "સહજ જાતિગત ફેરફારોની વૈજ્ઞાનિક સમજ વિદ્યાર્થીઓને આપવી અને સ્વસ્થ દ્રષ્ટિકોણ કેળવવો.",
+      "કન્યાઓને અલગ વર્ગખંડમાં બેસાડી દેવી.",
+      "વાલીઓને બોલાવીને વિદ્યાર્થી સામે ફરિયાદ કરવી."
+    ],
+    "ans": 1,
+    "unit": "એકમ 3: જાતિ, શાળા અને સમાજ",
+    "exp": "મોડ્યુલ પાના 36 અનુસાર ઉંમર અને લિંગભેદને કારણે સર્જાતા સહજ જાતિગત ફેરફારોની વૈજ્ઞાનિક સમજ શિક્ષકે વિદ્યાર્થીઓને આપવી જોઈએ."
+  },
+  {
+    "q": "પ્રશ્ન 85. વિજ્ઞાન અને ટેક્નોલોજીના પાઠ્યપુસ્તકોમાં જાતિગત લિંગભેદને કયા દ્રષ્ટિકોણથી સમજાવવાનો પ્રયાસ કરવામાં આવ્યો છે?",
+    "options": [
+      "સામાજિક કુરિવાજોના આધારે",
+      "શરીર વિજ્ઞાનના વૈજ્ઞાનિક દ્રષ્ટિકોણથી (Anatomical & Physiological Perspective)",
+      "ધાર્મિક માન્યતાઓના આધારે",
+      "માત્ર આર્થિક બાબતોના સંદર્ભમાં"
+    ],
+    "ans": 1,
+    "unit": "એકમ 3: જાતિ, શાળા અને સમાજ",
+    "exp": "મોડ્યુલ પાના 34 અનુસાર વિજ્ઞાન અને ટેકનોલોજીના અભ્યાસક્રમમાં જાતિગત લિંગભેદ શરીર વિજ્ઞાનના વૈજ્ઞાનિક દ્રષ્ટિકોણથી સમજાવવામાં આવ્યો છે."
+  },
+  {
+    "q": "પ્રશ્ન 86. સમાજની વ્યાખ્યા આપતા મોડ્યુલમાં કયું લક્ષણ પ્રમુખ ગણાવવામાં આવ્યું છે?",
+    "options": [
+      "માત્ર સમાન ભાષા બોલતા લોકોનો મેળાવડો",
+      "સમાન ઉદ્દેશોની પૂર્તિ માટે બે કે તેથી વધુ વ્યક્તિઓનો સમૂહ કે જે પરસ્પર દરજ્જો (Status) અને ભૂમિકા (Role) સાથે સંલગ્ન હોય",
+      "કોઈપણ કાયદા વગર રહેતો જનસમૂહ",
+      "માત્ર એક જ જ્ઞાતિના લોકોનું સંગઠન"
+    ],
+    "ans": 1,
+    "unit": "એકમ 3: જાતિ, શાળા અને સમાજ",
+    "exp": "મોડ્યુલ પાના 31 અનુસાર 'સમાજ એ સમાન ઉદ્દેશોની પૂર્તિ માટે બે કે તેથી વધુ વ્યક્તિઓનો સમૂહ છે કે જે પરસ્પર દરજ્જો અને ભૂમિકા સાથે સંલગ્ન હોય છે.'"
+  },
+  {
+    "q": "પ્રશ્ન 87. 'શાળા એ સમાજની લઘુ આવૃત્તિ છે' - આ વિધાનનો શૈક્ષણિક સૂચિતાર્થ શું છે?",
+    "options": [
+      "શાળા મકાન નાનું હોવું જોઈએ.",
+      "શાળા વિદ્યાર્થીઓમાં સમાજ જીવનના આવશ્યક ગુણો, સમરસતા અને સામાજિકતા ખીલવતી પાયારૂપ સંસ્થા છે.",
+      "શાળામાં માત્ર ગામના વડીલો જ નિર્ણયો લઈ શકે.",
+      "શાળાએ સામાજિક નિયમોથી અલગ વર્તવું જોઈએ."
+    ],
+    "ans": 1,
+    "unit": "એકમ 3: જાતિ, શાળા અને સમાજ",
+    "exp": "મોડ્યુલ પાના 31 અને 37 અનુસાર શાળા એ વિદ્યાર્થીઓમાં સામાજિકતા અને શ્રેષ્ઠ નાગરિકત્વ ખીલવતી સમાજની લઘુ આવૃત્તિ છે."
+  },
+  {
+    "q": "પ્રશ્ન 88. શાળા પંચાયત (School Cabinet) ની રચનામાં જાતિગત સમાનતાનું કઈ રીતે પ્રતિબિંબ પડવું જોઈએ?",
+    "options": [
+      "મુખ્ય હોદ્દાઓ માત્ર કુમારોને અને સહાયક પદો કન્યાઓને આપવા.",
+      "હોદ્દાઓ અને મંત્રીમંડળની સોંપણીમાં કુમાર-કન્યા બંનેને સમાન પ્રતિનિધિત્વ અને નેતૃત્વની તક આપવી.",
+      "માત્ર તેજસ્વી કન્યાઓને જ મંત્રી બનાવવી.",
+      "જાતિ આધારિત અલગ-અલગ બે પંચાયત રચવી."
+    ],
+    "ans": 1,
+    "unit": "એકમ 3: જાતિ, શાળા અને સમાજ",
+    "exp": "મોડ્યુલ પાના 37 અનુસાર શાળા પંચાયતની રચના અને સહઅભ્યાસિક પ્રવૃત્તિઓમાં જાતીય સમાનતાના પાસાંની ખાસ કાળજી રાખવાની હોય છે."
+  },
+  {
+    "q": "પ્રશ્ન 89. શાળામાં જાતીય સમાનતા કેળવવા માટે શિક્ષકે વાલીઓ સાથે કયું કાર્ય કરવું જરૂરી બને છે?",
+    "options": [
+      "વાલીઓ પર દંડ લાદવો.",
+      "વાલી શિક્ષણ અને જનજાગૃતિનું કાર્ય કરવું જેથી ઘરે પણ દીકરા-દીકરી વચ્ચે ભેદભાવ ન રહે.",
+      "વાલીઓની શાળા મુલાકાત બંધ કરવી.",
+      "માત્ર વિદ્યાર્થીઓને જ ઉપદેશ આપવો."
+    ],
+    "ans": 1,
+    "unit": "એકમ 3: જાતિ, શાળા અને સમાજ",
+    "exp": "મોડ્યુલ પાના 37 પર સ્પષ્ટ મુદ્દો છે: 'શાળાએ સમાજમાં જાતીય સમાનતા સ્થપાય તે માટે વાલી શિક્ષણ અને જન જાગૃતિનું કાર્ય કરવું.'"
+  },
+  {
+    "q": "પ્રશ્ન 90. પાઠ્યપુસ્તકોમાં ભાષા અને સામાજિક વિજ્ઞાન વિષયોમાં જાતીય સમાનતાનું કયું પાસું વિશેષપણે વણી લેવામાં આવ્યું છે?",
+    "options": [
+      "ભાવાત્મક પાસું (Affective Domain - સંવેદનશીલતા અને સહાનુભૂતિ)",
+      "માત્ર વ્યાકરણના નિયમો",
+      "આંકડાકીય પ્રશ્નો",
+      "યાંત્રિક નિયમો"
+    ],
+    "ans": 0,
+    "unit": "એકમ 3: જાતિ, શાળા અને સમાજ",
+    "exp": "મોડ્યુલ પાના 34 અનુસાર 'ભાષાઓ અને સામાજિક વિજ્ઞાનના અભ્યાસક્રમમાં જાતીય સમાનતાના ભાવાત્મક પાસાંને સ્થાન આપવામાં આવ્યું છે.'"
+  },
+  {
+    "q": "પ્રશ્ન 91. નિર્ણય ઘડતર (Decision Making) ના ચાર ઘટકો સંદર્ભે નીચેના પૈકી કયું ઘટક યોગ્ય નથી?",
+    "options": [
+      "નક્કી કરેલ ધ્યેય પર ધ્યાન કેન્દ્રીકરણ કરી બીજા ઉદ્દીપકોને બાજુમાં ધકેલી દેવા.",
+      "ધ્યેય પાર પાડવા માટે વિકલ્પો વિચારવા અને તેનું મૂલ્યાંકન કરી શ્રેષ્ઠ વિકલ્પ પસંદ કરવો.",
+      "પસંદ કરેલ વિકલ્પ અનુસાર વર્તન કરવું અને વર્તનનું અવલોકન કરવું.",
+      "કોઈપણ વિચારણા વિના અન્યના કહ્યા મુજબ આંધળું અનુકરણ કરવું."
+    ],
+    "ans": 3,
+    "unit": "એકમ 3: જાતિ, શાળા અને સમાજ",
+    "exp": "મોડ્યુલ પાના 22 અનુસાર નિર્ણય ઘડતરમાં ધ્યાન કેન્દ્રીકરણ, વિકલ્પોનો વિચાર, મૂલવણી અને પસંદ કરેલ વિકલ્પનું વર્તનમાં રૂપાંતર સામેલ છે."
+  },
+  {
+    "q": "પ્રશ્ન 92. પ્રાથમિક શાળાના શિક્ષક તરીકે ડિસ્લેક્સિયા ધરાવતા બાળકના મૂલ્યાંકન માટે નીચેના પૈકી કઈ પ્રવૃત્તિ સૌથી યોગ્ય ગણાશે?",
+    "options": [
+      "તેને આખા વર્ગ સામે મોટેથી કઠિન સંસ્કૃત શ્લોકો વંચાવી ઉપહાસ કરવો.",
+      "અક્ષર પત્તામાંથી સમાન અક્ષરોની જોડીઓ બનાવવી, શબ્દ કાર્ડ શોધવા, ચિત્ર વાર્તાનું વાચન કરાવવું અને મોટા અક્ષરે લખેલા કાર્ડ્સનો ઉપયોગ કરવો.",
+      "તેને લેખિત કસોટીમાંથી બાકાત કરી ગેરહાજર બતાવવો.",
+      "તેને વારંવાર 100 વખત શબ્દો લખવાની સજા આપવી."
+    ],
+    "ans": 1,
+    "unit": "એકમ 3: જાતિ, શાળા અને સમાજ",
+    "exp": "મોડ્યુલ પાના 24 પર ડિસ્લેક્સિયાના મૂલ્યાંકન માટે અક્ષર પત્તા, શબ્દ કાર્ડ શોધવા, ચિત્ર વાર્તા વાચન જેવી વૈવિધ્યપૂર્ણ રચનાત્મક પદ્ધતિઓ દર્શાવી છે."
+  },
+  {
+    "q": "પ્રશ્ન 93. વિકલાંગ વ્યક્તિઓના અધિકારો માટેનો અધિનિયમ (RPWD Act) 2016 સંસદમાં ક્યારે પસાર થયો અને ગેઝેટમાં ક્યારે પ્રસિદ્ધ થયો?",
+    "options": [
+      "2014 માં લોકસભામાં અને 2015 માં ગેઝેટમાં",
+      "14 ડિસેમ્બર 2016 ના રોજ રાજ્યસભા અને લોકસભામાં પસાર થયો અને 28 ડિસેમ્બર 2016 ના રોજ ભારત સરકારના ગેઝેટમાં પ્રસિદ્ધ થયો.",
+      "26 જાન્યુઆરી 2017 ના રોજ",
+      "15 ઓગસ્ટ 2016 ના રોજ"
+    ],
+    "ans": 1,
+    "unit": "એકમ 3: જાતિ, શાળા અને સમાજ",
+    "exp": "મોડ્યુલ પાના 15 પર સ્પષ્ટ તારીખો આપેલી છે: 14 ડિસેમ્બર 2016 સંસદમાં અને 28 ડિસેમ્બર 2016 ગેઝેટમાં પ્રસિદ્ધ."
+  },
+  {
+    "q": "પ્રશ્ન 94. RPWD Act 2016 માં કુલ કેટલા પ્રકરણો અને કેટલા ખંડો (Sections) નો સમાવેશ કરવામાં આવેલ છે?",
+    "options": [
+      "5 પ્રકરણ અને 50 ખંડ",
+      "કુલ સાત પ્રકરણ અને ૧૦૨ ખંડો",
+      "12 પ્રકરણ અને 80 ખંડ",
+      "10 પ્રકરણ અને 120 ખંડ"
+    ],
+    "ans": 1,
+    "unit": "એકમ 3: જાતિ, શાળા અને સમાજ",
+    "exp": "મોડ્યુલ પાના 16 પર સ્પષ્ટ ઉલ્લેખ છે: 'વિકલાંગતા ધરાવતી વ્યક્તિઓના અધિકારો માટેનો અધિનિયમ ૨૦૧૬ માં કુલ સાત પ્રકરણ અને ૧૦૨ ખંડોનો સમાવેશ કરવામાં આવેલ છે.'"
+  },
+  {
+    "q": "પ્રશ્ન 95. RPWD Act 2016 અનુસાર રોજગાર કચેરીમાં કેટલા સમયથી નોંધાયેલ વિકલાંગ વ્યક્તિઓને નોકરી ન મળે તો બેરોજગારી ભથ્થું પૂરું પાડવાની જોગવાઈ છે?",
+    "options": [
+      "છ માસ કરતાં વધુ સમયથી",
+      "એક વર્ષ કરતાં વધુ સમયથી",
+      "બે વર્ષ કરતાં વધુ સમયથી નોંધાયેલ હોય ત્યારે",
+      "પાંચ વર્ષ કરતાં વધુ સમયથી"
+    ],
+    "ans": 2,
+    "unit": "એકમ 2: વિશિષ્ટ જરૂરિયાતવાળા બાળકો",
+    "exp": "મોડ્યુલ પાના 18 પર નોંધાયેલ છે: 'રોજગાર કચેરીમાં બે વર્ષ કરતાં વધુ સમયથી નોંધાયેલ હોય અને તેમને વ્યવસાયમાં નિયુક્ત ન કરી શકાયા હોય તેવી વ્યક્તિઓને બેરોજગારી ભથ્થું પૂરું પાડવું.'"
+  },
+  {
+    "q": "પ્રશ્ન 96. RPWD Act 2016 માં વિકલાંગ વ્યક્તિના સશક્તિકરણ માટે કયા સિદ્ધાંતો સ્થાપિત કરવામાં આવ્યા છે?",
+    "options": [
+      "આત્મગૌરવ માટે આદર, વ્યક્તિગત સ્વાયત્તતા અને સ્વતંત્રતા",
+      "ભેદભાવ રહિતતા અને સમાજમાં સંપૂર્ણ અને અસરકારક ભાગીદારી",
+      "તકની સમાનતા, સુલભતા અને સ્ત્રી-પુરુષ સમાનતા",
+      "આપેલ તમામ"
+    ],
+    "ans": 3,
+    "unit": "એકમ 2: વિશિષ્ટ જરૂરિયાતવાળા બાળકો",
+    "exp": "મોડ્યુલ પાના 16 પર અધિનિયમના 8 સ્થાપિત સિદ્ધાંતોમાં આ તમામ બાબતોનો સમાવેશ થાય છે."
+  },
+  {
+    "q": "પ્રશ્ન 97. વિશિષ્ટ જરૂરિયાતવાળા બાળકો માટે શાળાઓમાં 'રિસોર્સ રૂમ' (Resource Room) માટે સામાન્ય શાળા જોગવાઈ હેઠળ કેટલા રૂપિયાની ગ્રાન્ટ નિર્ધારિત થયેલી હતી?",
+    "options": [
+      "રૂા. 5,000/-",
+      "રૂા. 10,000/-",
+      "રૂા. 30,000/-",
+      "રૂા. 50,000/-"
+    ],
+    "ans": 2,
+    "unit": "એકમ 2: વિશિષ્ટ જરૂરિયાતવાળા બાળકો",
+    "exp": "મોડ્યુલ પાના 18 અનુસાર 'એક રીસોર્સ રૂમના રૂા. ૩૦,૦૦૦/-' અને ઇન્સ્ટ્રક્શનલ મટીરિયલ માટે રૂા. 5,000/- સુધીની સહાય નિર્ધારિત છે."
+  },
+  {
+    "q": "પ્રશ્ન 98. ગંભીર વિકલાંગતા ધરાવતા બાળક માટે સહાયક 'એસ્કોર્ટ એલાઉન્સ' (Escort Allowance) વિદ્યાર્થી દીઠ કેટલું દર્શાવેલ છે?",
+    "options": [
+      "રૂા. 25/- પ્રતિ માસ",
+      "રૂા. 100/- પ્રતિ માસ",
+      "રૂા. 500/- પ્રતિ માસ",
+      "રૂા. 1,000/- પ્રતિ માસ"
+    ],
+    "ans": 0,
+    "unit": "એકમ 2: વિશિષ્ટ જરૂરિયાતવાળા બાળકો",
+    "exp": "મોડ્યુલ પાના 18 પર નાણાકીય સહાયના કોષ્ટકમાં 'ગંભીર વિકલાંગતા ધરાવતા બાળક માટે એસ્કોર્ટ એલાઉન્સ વિદ્યાર્થી દીઠ રૂા. 25/-' દર્શાવેલ છે."
+  },
+  {
+    "q": "પ્રશ્ન 99. કોર્સ 2 (બ) મોડ્યુલની સંરચનામાં જીસીઇઆરટી ઉપરાંત કઈ આંતરરાષ્ટ્રીય સંસ્થાનો આર્થિક તેમજ શૈક્ષણિક સહયોગ પ્રાપ્ત થયેલ છે?",
+    "options": [
+      "વિશ્વ બેંક (World Bank)",
+      "યુનિસેફ (UNICEF)",
+      "યુનેસ્કો (UNESCO)",
+      "એશિયન ડેવલપમેન્ટ બેંક (ADB)"
+    ],
+    "ans": 1,
+    "unit": "અભ્યાસક્રમ પરિચય",
+    "exp": "મોડ્યુલ પાના 2 ની પ્રસ્તાવના અનુસાર 'UNICEF નો પણ આર્થિક તેમજ શૈક્ષણિક સહયોગ પ્રાપ્ત થયો છે.'"
+  },
+  {
+    "q": "પ્રશ્ન 100. વિકલાંગ બાળકો માટે શાળામાં સામાન્ય શાળામાં 1995 ના નિયમ મુજબ પ્રવેશ માટે કઈ વય સુધી દાખલ કરવાનો પરિપત્ર થયેલો હતો?",
+    "options": [
+      "10 વર્ષ",
+      "13 વર્ષની ઉંમર સુધી દાખલ કરવા અંગેનો પરિપત્ર",
+      "18 વર્ષ",
+      "કોઈ વય મર્યાદા નથી"
+    ],
+    "ans": 1,
+    "unit": "એકમ 2: વિશિષ્ટ જરૂરિયાતવાળા બાળકો",
+    "exp": "મોડ્યુલ પાના 17 અનુસાર 'સામાન્ય શાળામાં વિકલાંગ બાળકોને 13 વર્ષની ઉંમર સુધી દાખલ કરવા અંગેનો પરિપત્ર' અમલમાં હતો."
+  }
+];
+
+let studentName = "", studentPhone = "", studentEmail = "";
+let currentQ = 0;
+let userAnswers = new Array(questions.length).fill(null);
+let flaggedQuestions = new Array(questions.length).fill(false);
+let startTime, timerInterval;
+
+function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+    const isDark = document.body.classList.contains("dark-mode");
+    const btn = document.getElementById("themeToggleBtn");
+    btn.innerHTML = isDark ? '<i class="fa-solid fa-sun"></i> લાઈટ મોડ' : '<i class="fa-solid fa-moon"></i> ડાર્ક મોડ';
+}
+
+function showNotice(msg, type = "info") {
+    const box = document.getElementById("noticeMsg");
+    box.className = "msg-box " + (type === "error" ? "msg-error" : "msg-info");
+    box.innerText = msg;
+    box.style.display = "block";
+    setTimeout(() => { box.style.display = "none"; }, 6000);
+}
+
+/* ૧. ઑથેન્ટિકેશન & OTP */
+function requestOTP() {
+    studentName = document.getElementById("name").value.trim();
+    studentPhone = document.getElementById("phone").value.trim();
+    studentEmail = document.getElementById("email").value.trim();
+
+    if (!studentName || studentPhone.length < 10 || !studentEmail.includes("@")) {
+        showNotice("કૃપા કરીને પૂરું નામ, ૧૦ અંકનો સાચો મોબાઇલ નંબર અને માન્ય ઇમેઇલ દાખલ કરો.", "error");
+        return;
+    }
+
+    const btn = document.getElementById("getOtpBtn");
+    btn.disabled = true;
+    btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> OTP મોકલાઈ રહ્યો છે...';
+
+    fetch(SCRIPT_URL, {
+        method: "POST",
+        mode: "no-cors",
+        headers: { "Content-Type": "text/plain" },
+        body: JSON.stringify({
+            action: "sendOTP",
+            name: studentName,
+            email: studentEmail
+        })
+    })
+    .then(function() {
+        showNotice("આપના ઈમેઈલ પર ૪ અંકનો OTP મોકલવામાં આવ્યો છે. ઇનબોક્સ/સ્પામ તપાસો.", "info");
+        document.getElementById("otpContainer").style.display = "block";
+        btn.innerHTML = '<i class="fa-solid fa-rotate-right"></i> OTP ફરીથી મોકલો';
+        btn.disabled = false;
+    })
+    .catch(function() {
+        showNotice("OTP મોકલવામાં ક્ષતિ આવી. ફરી પ્રયાસ કરો.", "error");
+        btn.disabled = false;
+        btn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> OTP મેળવો અને આગળ વધો';
+    });
+}
+
+function verifyAndStart() {
+    const enteredOTP = document.getElementById("otpInput").value.trim();
+    if (enteredOTP.length !== 4) {
+        showNotice("કૃપા કરીને ૪ અંકનો સાચો OTP દાખલ કરો.", "error");
+        return;
+    }
+
+    const vBtn = document.getElementById("verifyBtn");
+    vBtn.disabled = true;
+    vBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> ચકાસણી ચાલુ છે...';
+
+    fetch(SCRIPT_URL, {
+        method: "POST",
+        body: JSON.stringify({
+            action: "verifyOTP",
+            email: studentEmail,
+            otp: enteredOTP
+        })
+    })
+    .then(res => res.json())
+    .then(data => {
+        if (data.status === "success" && data.verified) {
+            document.getElementById("loginScreen").style.display = "none";
+            document.getElementById("quizScreen").style.display = "block";
+            initQuestionPalette();
+            startTime = new Date();
+            timerInterval = setInterval(updateTimer, 1000);
+            loadQuestion();
+        } else {
+            showNotice("ખોટો OTP અથવા સમય વીતી ગયો છે! ફરી ચકાસો.", "error");
+            vBtn.disabled = false;
+            vBtn.innerHTML = '<i class="fa-solid fa-unlock-keyhole"></i> OTP ચકાસો અને મોક ટેસ્ટ શરૂ કરો';
+        }
+    })
+    .catch(() => {
+        showNotice("ચકાસણીમાં ભૂલ થઈ. ફરી પ્રયાસ કરો.", "error");
+        vBtn.disabled = false;
+        vBtn.innerHTML = '<i class="fa-solid fa-unlock-keyhole"></i> OTP ચકાસો અને મોક ટેસ્ટ શરૂ કરો';
+    });
+}
+
+/* ૨. ટાઈમર */
+function updateTimer() {
+    const elapsed = Math.floor((new Date() - startTime) / 1000);
+    const mins = String(Math.floor(elapsed / 60)).padStart(2, '0');
+    const secs = String(elapsed % 60).padStart(2, '0');
+    document.getElementById("timerDisplay").innerText = `${mins}:${secs}`;
+}
+
+/* ૩. પ્રશ્ન પેલેટ (Question Palette 1-100) */
+function initQuestionPalette() {
+    const container = document.getElementById("questionGridContainer");
+    container.innerHTML = "";
+    for (let i = 0; i < questions.length; i++) {
+        const pill = document.createElement("div");
+        pill.className = "q-pill";
+        pill.id = `qPill_${i}`;
+        pill.innerText = i + 1;
+        pill.onclick = () => jumpToQuestion(i);
+        container.appendChild(pill);
+    }
+    updatePaletteStats();
+}
+
+function updatePaletteStats() {
+    let answered = 0;
+    for (let i = 0; i < questions.length; i++) {
+        const pill = document.getElementById(`qPill_${i}`);
+        if (!pill) continue;
+        pill.className = "q-pill";
+        
+        if (i === currentQ) {
+            pill.classList.add("status-current");
+        }
+        if (flaggedQuestions[i]) {
+            pill.classList.add("status-flagged");
+        } else if (userAnswers[i] !== null) {
+            pill.classList.add("status-answered");
+            answered++;
+        }
+    }
+    const totalAns = userAnswers.filter(a => a !== null).length;
+    document.getElementById("answeredCountBadge").innerText = `${totalAns} / ${questions.length} પૂર્ણ`;
+}
+
+function jumpToQuestion(idx) {
+    currentQ = idx;
+    loadQuestion();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+/* ૪. પ્રશ્ન લોડિંગ અને Flagging */
+function loadQuestion() {
+    const q = questions[currentQ];
+    document.getElementById("qProgress").innerText = `પ્રશ્ન ${currentQ + 1} / ${questions.length}`;
+    document.getElementById("unitBadge").innerText = `📘 ${q.unit}`;
+    document.getElementById("questionText").innerText = q.q;
+
+    const flagBtn = document.getElementById("flagBtn");
+    if (flaggedQuestions[currentQ]) {
+        flagBtn.className = "btn-flag active-flag";
+        flagBtn.innerHTML = '<i class="fa-solid fa-bookmark"></i> Flag કરેલ છે 🚩';
+    } else {
+        flagBtn.className = "btn-flag";
+        flagBtn.innerHTML = '<i class="fa-regular fa-bookmark"></i> Flag (રિવ્યુ માટે)';
+    }
+
+    const optContainer = document.getElementById("optionsContainer");
+    optContainer.innerHTML = "";
+
+    q.options.forEach((opt, idx) => {
+        const label = document.createElement("label");
+        label.className = "option-label";
+        const isChecked = userAnswers[currentQ] === idx ? "checked" : "";
+        label.innerHTML = `
+            <input type="radio" name="opt" value="${idx}" ${isChecked} onchange="onOptionSelect(${idx})">
+            <span><strong>(${String.fromCharCode(65 + idx)})</strong> ${opt}</span>
+        `;
+        optContainer.appendChild(label);
+    });
+
+    document.getElementById("prevBtn").style.visibility = (currentQ === 0) ? "hidden" : "visible";
+    document.getElementById("nextBtn").innerHTML = (currentQ === questions.length - 1) 
+        ? '<i class="fa-solid fa-flag-checkered"></i> કસોટી પૂર્ણ કરો' 
+        : 'આગળ <i class="fa-solid fa-arrow-right"></i>';
+
+    updatePaletteStats();
+}
+
+function onOptionSelect(idx) {
+    userAnswers[currentQ] = idx;
+    updatePaletteStats();
+}
+
+function toggleFlagCurrentQuestion() {
+    flaggedQuestions[currentQ] = !flaggedQuestions[currentQ];
+    loadQuestion();
+}
+
+function prevQuestion() {
+    if (currentQ > 0) {
+        currentQ--;
+        loadQuestion();
+    }
+}
+
+function nextQuestion() {
+    if (currentQ < questions.length - 1) {
+        currentQ++;
+        loadQuestion();
+    } else {
+        confirmSubmitQuiz();
+    }
+}
+
+function confirmSubmitQuiz() {
+    const unans = userAnswers.filter(a => a === null).length;
+    const flagCount = flaggedQuestions.filter(f => f === true).length;
+    
+    let msg = "શું આપ ખરેખર કસોટી સબમિટ કરવા માંગો છો?";
+    if (unans > 0 || flagCount > 0) {
+        msg = `ધ્યાન આપો:
+- ${unans} પ્રશ્નોના ઉત્તર બાકી છે.
+- ${flagCount} પ્રશ્નો Flag કરેલા છે.
+
+શું આપ કસોટી સબમિટ કરવા માંગો છો?`;
+    }
+    
+    if (confirm(msg)) {
+        submitQuiz();
+    }
+}
+
+/* ૫. સબમિશન અને પરિણામ */
+function submitQuiz() {
+    clearInterval(timerInterval);
+    const elapsed = Math.floor((new Date() - startTime) / 1000);
+    const mins = Math.floor(elapsed / 60);
+    const secs = elapsed % 60;
+    const formattedTime = `${mins} મિનિટ ${secs} સેકન્ડ`;
+
+    let score = 0;
+    let wrongIndices = [];
+    questions.forEach((q, i) => {
+        if (userAnswers[i] === q.ans) {
+            score++;
+        } else {
+            wrongIndices.push(i);
+        }
+    });
+    const percent = ((score / questions.length) * 100).toFixed(2);
+    const flagCount = flaggedQuestions.filter(f => f === true).length;
+
+    document.getElementById("quizScreen").style.display = "none";
+    document.getElementById("resultScreen").style.display = "block";
+
+    document.getElementById("resName").innerText = studentName;
+    document.getElementById("resPhone").innerText = studentPhone;
+    document.getElementById("resTime").innerText = `${mins}m ${secs}s`;
+    document.getElementById("resScore").innerText = `${score} / ${questions.length}`;
+    document.getElementById("resPercent").innerText = `${percent}% ગુણાંક`;
+    document.getElementById("resCorrectCount").innerText = score;
+    document.getElementById("resWrongCount").innerText = questions.length - score;
+    document.getElementById("resFlagCount").innerText = flagCount;
+
+    // ૧. માત્ર ખોટા પડેલા પ્રશ્નો રેન્ડર કરવા
+    renderWrongQuestions(wrongIndices);
+
+    // ૨. આપેલા જવાબો સાથેનું સંપૂર્ણ પ્રશ્નપત્ર
+    renderFullAnswerKey();
+
+    // ૩. મૂળ પ્રશ્નપત્ર (Blank Question Paper)
+    renderBlankPaper();
+
+    // ૪. Apps Script માટે HTML રિવ્યુ પેક કરવો
+    prepareAndSendBackendResult(score, percent, formattedTime);
+}
+
+function switchResultTab(tabName) {
+    document.getElementById("tabBtnWrong").classList.remove("active-tab");
+    document.getElementById("tabBtnAnswers").classList.remove("active-tab");
+    document.getElementById("tabBtnBlank").classList.remove("active-tab");
+
+    document.getElementById("tabContentWrong").style.display = "none";
+    document.getElementById("tabContentAnswers").style.display = "none";
+    document.getElementById("tabContentBlank").style.display = "none";
+
+    if (tabName === "wrong") {
+        document.getElementById("tabBtnWrong").classList.add("active-tab");
+        document.getElementById("tabContentWrong").style.display = "block";
+    } else if (tabName === "answers") {
+        document.getElementById("tabBtnAnswers").classList.add("active-tab");
+        document.getElementById("tabContentAnswers").style.display = "block";
+    } else if (tabName === "blank") {
+        document.getElementById("tabBtnBlank").classList.add("active-tab");
+        document.getElementById("tabContentBlank").style.display = "block";
+    }
+}
+
+function renderWrongQuestions(wrongIndices) {
+    const container = document.getElementById("wrongQuestionsList");
+    container.innerHTML = "";
+
+    if (wrongIndices.length === 0) {
+        container.innerHTML = `
+            <div style="text-align: center; padding: 35px; background: var(--container-bg); border-radius: 12px; border: 2px solid #10b981;">
+                <i class="fa-solid fa-circle-check fa-3x" style="color: #10b981; margin-bottom: 12px;"></i>
+                <h3 style="color: #065f46; font-size: 18px;">અભિનંદન! તમારો એક પણ પ્રશ્ન ખોટો પડ્યો નથી!</h3>
+                <p style="color: var(--subheading-color); font-size: 13.5px; margin-top: 6px;">આપે ૧૦૦ માંથી ૧૦૦ સંપૂર્ણ ગુણ મેળવી શ્રેષ્ઠ પ્રદર્શન કરેલ છે.</p>
+            </div>
+        `;
+        return;
+    }
+
+    wrongIndices.forEach((i) => {
+        const q = questions[i];
+        const userChoiceText = userAnswers[i] !== null ? q.options[userAnswers[i]] : "જવાબ આપ્યો નથી (ખાલી છોડેલ)";
+        const correctChoiceText = q.options[q.ans];
+
+        const item = document.createElement("div");
+        item.className = "review-item is-wrong";
+        item.innerHTML = `
+            <p style="font-weight: 800; font-size: 15px; margin-bottom: 8px;">
+                ${q.q}
+            </p>
+            <p style="margin: 4px 0; font-weight: 700; color: #b91c1c;">
+                ❌ તમારો ઉત્તર: ${userChoiceText}
+            </p>
+            <p style="margin: 4px 0; font-weight: 700; color: #047857;">
+                ✅ સાચો ઉત્તર: <strong>(${String.fromCharCode(65 + q.ans)}) ${correctChoiceText}</strong>
+            </p>
+            <div class="exp-box">
+                <div style="font-size: 11.5px; font-weight: 800; color: #2563eb; margin-bottom: 3px;">📘 ${q.unit}</div>
+                <strong>વિગતવાર સમજૂતી:</strong> ${q.exp}
+            </div>
+        `;
+        container.appendChild(item);
+    });
+}
+
+function renderFullAnswerKey() {
+    const container = document.getElementById("allAnswersList");
+    container.innerHTML = "";
+
+    questions.forEach((q, i) => {
+        const isCorrect = (userAnswers[i] === q.ans);
+        const userChoiceText = userAnswers[i] !== null ? q.options[userAnswers[i]] : "જવાબ આપ્યો નથી";
+        const correctChoiceText = q.options[q.ans];
+
+        const item = document.createElement("div");
+        item.className = "review-item " + (isCorrect ? "is-correct" : "is-wrong");
+        item.innerHTML = `
+            <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:6px;">
+                <span style="font-weight: 800; font-size: 15px;">${q.q}</span>
+                <span style="font-size: 12px; font-weight: 800; padding: 2px 8px; border-radius: 6px; background:${isCorrect ? '#10b981' : '#ef4444'}; color:white; white-space:nowrap;">
+                    ${isCorrect ? '✅ સાચો' : '❌ ખોટો'}
+                </span>
+            </div>
+            <div style="margin: 6px 0; font-size: 13.5px;">
+                ${q.options.map((opt, oIdx) => `
+                    <div style="padding: 2px 0; ${oIdx === q.ans ? 'font-weight:bold; color:#047857;' : ''}">
+                        (${String.fromCharCode(65 + oIdx)}) ${opt} ${oIdx === q.ans ? '⭐ (સાચો ઉત્તર)' : ''}
+                    </div>
+                `).join('')}
+            </div>
+            <p style="margin: 6px 0; font-weight: 700;">
+                તમે પસંદ કરેલ જવાબ: <span style="color:${isCorrect ? '#047857' : '#b91c1c'};">${userChoiceText}</span>
+            </p>
+            <div class="exp-box">
+                <div style="font-size: 11.5px; font-weight: 800; color: #2563eb; margin-bottom: 3px;">📘 ${q.unit}</div>
+                <strong>સમજૂતી:</strong> ${q.exp}
+            </div>
+        `;
+        container.appendChild(item);
+    });
+}
+
+function renderBlankPaper() {
+    const container = document.getElementById("blankQuestionsList");
+    container.innerHTML = `
+        <div style="background: var(--card-gradient); padding: 14px; border-radius: 10px; margin-bottom: 14px; border: 1.5px solid var(--border-color); text-align: center;">
+            <h3 style="color: var(--heading-color); font-size: 16px; font-weight: 800;">📝 મૂળ પ્રશ્નપત્ર (Offline / Practice View)</h3>
+            <p style="color: var(--subheading-color); font-size: 12.5px;">આ પ્રશ્નપત્રમાં કોઈપણ જવાબ ટીક કરેલ નથી. તમે સ્વ-અધ્યયન કે પુનરાવર્તન માટે તેનો ઉપયોગ કરી શકો છો.</p>
+        </div>
+    `;
+
+    questions.forEach((q, i) => {
+        const box = document.createElement("div");
+        box.className = "blank-q-card";
+        box.innerHTML = `
+            <div style="font-weight: 800; font-size: 14.5px; margin-bottom: 8px; color: var(--heading-color);">${q.q}</div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 6px; font-size: 13.5px; color: var(--text-color);">
+                ${q.options.map((opt, oIdx) => `
+                    <div style="background: var(--option-bg); padding: 7px 10px; border-radius: 6px; border: 1px solid var(--border-color);">
+                        <strong>(${String.fromCharCode(65 + oIdx)})</strong> ${opt}
+                    </div>
+                `).join('')}
+            </div>
+        `;
+        container.appendChild(box);
+    });
+}
+
+function prepareAndSendBackendResult(score, percent, formattedTime) {
+    let emailReviewHtml = "";
+    
+    questions.forEach((q, i) => {
+        const isCorrect = (userAnswers[i] === q.ans);
+        const userChoiceText = userAnswers[i] !== null ? q.options[userAnswers[i]] : "જવાબ આપ્યો નથી";
+        const correctChoiceText = q.options[q.ans];
+
+        emailReviewHtml += `
+            <div style="border: 1px solid #cbd5e1; border-radius: 6px; padding: 12px; margin-bottom: 12px; background-color: ${isCorrect ? '#f0fdf4' : '#fff1f2'};">
+                <p style="margin: 0 0 6px 0; font-weight: bold; color: #1e293b;">${q.q}</p>
+                <p style="margin: 3px 0; color: ${isCorrect ? '#166534' : '#9f1239'};">
+                    <strong>પરીક્ષાર્થીનો ઉત્તર:</strong> ${userChoiceText} ${isCorrect ? '✅' : '❌'}
+                </p>
+                ${!isCorrect ? `<p style="margin: 3px 0; color: #166534; font-weight: bold;"><strong>સાચો ઉત્તર:</strong> (${String.fromCharCode(65 + q.ans)}) ${correctChoiceText}</p>` : ''}
+                <div style="background-color: #f8fafc; padding: 8px; border-radius: 4px; margin-top: 6px; font-size: 12.5px; border-left: 3px solid #2563eb;">
+                    <div style="color: #1e40af; font-weight: bold; margin-bottom: 2px;">📘 ${q.unit}</div>
+                    <strong>સમજૂતી:</strong> ${q.exp}
+                </div>
+            </div>
+        `;
+    });
+
+    fetch(SCRIPT_URL, {
+        method: "POST",
+        mode: "no-cors",
+        headers: { "Content-Type": "text/plain" },
+        body: JSON.stringify({
+            action: "submitResult",
+            dateTime: new Date().toLocaleString('gu-IN', { timeZone: 'Asia/Kolkata' }),
+            name: studentName,
+            phone: studentPhone,
+            email: studentEmail,
+            timeTaken: formattedTime,
+            score: `${score} / ${questions.length}`,
+            percentage: `${percent}%`,
+            subject: "GCERT D.El.Ed. કોર્સ - 2 (બ): વૈવિધ્ય, જાતિ અને સમાવેશી શિક્ષણ (૧૦૦ HOTS)",
+            detailedReviewHtml: emailReviewHtml,
+            repoName: "sy",
+            testFileName: "sysb07112026part1.html",
+            testUploadDate: "2026-11-09"
+        })
+    });
+}
+</script>
+</body>
+</html>
